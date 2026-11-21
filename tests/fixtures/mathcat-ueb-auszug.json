@@ -1,0 +1,28 @@
+{
+ "quelle": "MathCAT, Rules/Braille/UEB/unicode.yaml und UEB_Rules.yaml (Hauptzweig), abgerufen 07.11.2026, MIT-Lizenz, https://github.com/daisy/MathCAT",
+ "hinweis": "Nur die Zeichen, die Plus in en benutzt. Kleinbuchstaben o/c/N/L in MathCAT sind Marker (offen/zu/Ziffer) und wurden entfernt. Bruch: Regeln simple-number und common-fraction-mixed-number (N + ⠌).",
+ "zeichen": {
+  "=": "⠐⠶",
+  "≠": "⠐⠶⠈⠱",
+  "<": "⠈⠣",
+  "≤": "⠸⠈⠣",
+  ">": "⠈⠜",
+  "≥": "⠸⠈⠜",
+  "+": "⠐⠖",
+  "−": "⠐⠤",
+  "·": "⠐⠲",
+  "×": "⠐⠦",
+  "÷": "⠐⠌",
+  "(": "⠐⠣",
+  ")": "⠐⠜",
+  "[": "⠨⠣",
+  "]": "⠨⠜",
+  "{": "⠸⠣",
+  "}": "⠸⠜",
+  "%": "⠨⠴"
+ },
+ "bruch": {
+  "einfach": "⠌",
+  "gemischtAusserhalb": "#"
+ }
+}

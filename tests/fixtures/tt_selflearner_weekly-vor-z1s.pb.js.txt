@@ -1,0 +1,225 @@
+/// <reference path="../pb_data/types.d.ts" />
+//
+// Wochenbericht für SELBSTLERNENDE (09.08.2026)
+// =============================================
+// Wer ohne Klasse und ohne Lehrkraft übt (`tt_pupils.selfManaged = true`), hat
+// niemanden, der den Wochenbericht bekäme — also bekommt er ihn selbst.
+// Montags früh, an die eigene E-Mail-Adresse.
+//
+// Zwei Regeln von Johannes (09.08.), die diesen Bericht vom Klassen-Bericht
+// unterscheiden:
+//
+//   1. **Keine Mail ohne Übung.** Wer in der Vorwoche nichts gemacht hat,
+//      bekommt auch keine Post mit „0 min" — das wäre eine Mahnung, keine
+//      Rückmeldung. (Der Klassen-Bericht listet dagegen ALLE Kinder, weil die
+//      Lehrkraft genau die Lücken sehen muss.)
+//   2. **Nur die Programme, die benutzt wurden.** Wer Klangpunkte geübt hat,
+//      liest keine Zeile über Tastenflow.
+//
+// Quelle ist das vereinheitlichte Lernwerkstatt-Modell `lw_events` (eine Zeile
+// je Kind UND Programm, `data.events` = Liste mit `ts` und `ms`/`activeMs`).
+// Damit gilt derselbe Weg für alle vier Programme — Tastenflow, im Griff,
+// Punktgenau, Klangpunkte —, ohne dass dieser Hook ihre Innereien kennt.
+//
+// Idempotenz: `tt_pupils.lastReportWeek` (ISO-Woche) wird VOR dem Versand
+// gesetzt (claim-then-send) — ein zweiter Lauf schickt nichts nach.
+//
+// ── Abbestellen (23.08.2026) ─────────────────────────────────────────────────
+// Regel 3 kommt dazu: **Wer abbestellt hat, bekommt nichts.**
+// `tt_pupils.mailWeeklyOptOut = true` überspringt dieses Konto — und zwar VOR
+// dem Setzen der Wochen-Marke, damit ein späteres Wieder-Einschalten nicht auf
+// einer Marke sitzt, die nie zu einer Mail gehört hat.
+// Jede Mail trägt unten den Ein-Klick-Abbestell-Link (Fußzeile aus
+// mail_abbestellen_lib) plus die Kopfzeilen nach RFC 8058, damit Mail-Anbieter
+// den Abbestellen-Knopf selbst anbieten.
+//
+// Absender: sensorik@weingartner.org (wie überall).
+// Deploy: Datei nach pb_hooks/ + Neustart → „Update LMS (komplett)".
+
+cronAdd("tt_selflearner_weekly", "10 7 * * 1", () => {
+  // Hook-Scope-Fallstrick: Cron-Rückrufe laufen in eigener Goja-VM und sehen
+  // keine Top-Level-Funktionen. Die Abbestell-Logik daher INNERHALB laden.
+  const abbestellen = require(`${__hooks}/mail_abbestellen_lib.pb.js`);
+  // ★ EN9 (19.09.2026): der Text der Mail (deutsch UND englisch) steht in
+  // tt_mail_texte_lib.pb.js - die Sprache ist die des Kontos (`bedienSprache`).
+  const mailTexte = require(`${__hooks}/tt_mail_texte_lib.pb.js`);
+  const PROGRAMME = {
+    tippen: { name: "Tastenflow", pfad: "/programme/tastenflow" },
+    computer: { name: "im Griff", pfad: "/programme/computer" },
+    braille: { name: "Punktgenau", pfad: "/programme/punktgenau" },
+    klangpunkte: { name: "Klangpunkte", pfad: "/programme/klangpunkte" },
+  };
+
+  const parse = (raw) => {
+    if (raw == null) return null;
+    try {
+      return JSON.parse(String(raw));
+    } catch (_) {
+      return null;
+    }
+  };
+  const pad2 = (n) => (n < 10 ? "0" + n : "" + n);
+  const isPlaceholderAddr = (a) => {
+    const s = String(a || "").trim().toLowerCase();
+    if (!s || s.indexOf("@") < 0) return true;
+    const domain = s.split("@").pop();
+    if (!domain || domain.indexOf(".") < 0) return true;
+    return /\.(local|localhost|invalid|test|example|lan|internal)$/.test(domain);
+  };
+  const dayKey = (ts) => {
+    const d = new Date(ts);
+    return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+  };
+  const startOfWeek = (ts) => {
+    const d = new Date(ts);
+    d.setHours(0, 0, 0, 0);
+    const dow = (d.getDay() + 6) % 7; // Mo=0 … So=6
+    d.setDate(d.getDate() - dow);
+    return d.getTime();
+  };
+  const isoWeek = (ts) => {
+    const d = new Date(ts);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
+    const firstThursday = new Date(d.getFullYear(), 0, 4);
+    firstThursday.setDate(
+      firstThursday.getDate() + 3 - ((firstThursday.getDay() + 6) % 7),
+    );
+    const no = 1 + Math.round((d.getTime() - firstThursday.getTime()) / (7 * 86400000));
+    return { key: d.getFullYear() + "-W" + pad2(no), no: no };
+  };
+
+  const now = Date.now();
+  const thisWeekStart = startOfWeek(now);
+  const prevStart = thisWeekStart - 7 * 86400000;
+  const prevEnd = thisWeekStart;
+  const prevWeek = isoWeek(prevStart);
+
+  let appUrl = "";
+  try {
+    appUrl = String($app.settings().meta.appURL || "");
+  } catch (_) {
+    appUrl = "";
+  }
+  const fromAddr = { address: "sensorik@weingartner.org", name: "Sensorik" };
+
+  let lernende = [];
+  try {
+    lernende = $app.findRecordsByFilter("tt_pupils", "selfManaged = true", "name", 0, 0, {});
+  } catch (err) {
+    $app.logger().warn("[tt-selfweek] tt_pupils nicht lesbar", "err", String(err));
+    return;
+  }
+
+  for (const p of lernende) {
+    try {
+      // Schon berichtet? (Ein zweiter Lauf derselben Woche tut nichts.)
+      if (String(p.getString("lastReportWeek") || "") === prevWeek.key) continue;
+
+      const email = String(p.getString("email") || "");
+      if (isPlaceholderAddr(email)) continue;
+      // ★ 09.08.2026: NUR an bestätigte Adressen. Wer sich beim Anlegen
+      // vertippt hat, würde sonst wöchentlich ein fremdes Postfach bekommen —
+      // und der Vertipper selbst nie merken, warum nichts kommt. Bestätigen
+      // geht jederzeit unter „Meine Zugangsdaten".
+      if (!p.getBool("verified")) continue;
+      // ★ 23.08.2026: Abbestellt heißt abbestellt. Steht VOR der ganzen
+      // Rechnerei — wer keine Post will, dessen Übungsdaten müssen wir dafür
+      // auch nicht durchsehen.
+      if (p.getBool("mailWeeklyOptOut")) continue;
+
+      // --- Vorwoche je Programm zusammenzählen ----------------------------
+      let zeilen = [];
+      let minutenGesamt = 0;
+      const tageGesamt = {};
+      for (const key in PROGRAMME) {
+        let events = [];
+        try {
+          const rec = $app.findFirstRecordByFilter(
+            "lw_events",
+            "pupilUid = {:p} && program = {:pr}",
+            { p: p.id, pr: key },
+          );
+          // Beide Formate (gepackt seit 29.08.2026, tt_events_pack_lib.pb.js).
+          const d = rec ? parse(rec.get("data")) : null;
+          events = require(`${__hooks}/tt_events_pack_lib.pb.js`).unpack(d);
+        } catch (_) {
+          events = [];
+        }
+
+        let ms = 0;
+        let anzahl = 0;
+        const tage = {};
+        for (let i = 0; i < events.length; i++) {
+          const ev = events[i];
+          if (!ev || ev.ts < prevStart || ev.ts >= prevEnd) continue;
+          ms += Math.max(0, typeof ev.activeMs === "number" ? ev.activeMs : ev.ms || 0);
+          anzahl++;
+          tage[dayKey(ev.ts)] = 1;
+          tageGesamt[dayKey(ev.ts)] = 1;
+        }
+        const minuten = Math.round(ms / 60000);
+        // Regel 2: nur benutzte Programme kommen in die Mail.
+        if (anzahl === 0) continue;
+        minutenGesamt += minuten;
+        zeilen.push({
+          programm: key,
+          name: PROGRAMME[key].name,
+          minuten: minuten,
+          tage: Object.keys(tage).length,
+          anzahl: anzahl,
+        });
+      }
+
+      // Regel 1: keine Übung, keine Mail. Auch die Wochen-Marke bleibt dann
+      // ungesetzt — sie steht für „berichtet", nicht für „geprüft".
+      if (zeilen.length === 0) continue;
+
+      // Claim-then-send: erst merken, dann schicken.
+      p.set("lastReportWeek", prevWeek.key);
+      try {
+        $app.save(p);
+      } catch (err) {
+        $app.logger().warn("[tt-selfweek] Marke speichern fehlgeschlagen", "err", String(err));
+        continue;
+      }
+
+      const name = String(p.getString("name") || "");
+      const sprache = mailTexte.spracheVon(p);
+      const mail = mailTexte.selbstWocheMail(
+        {
+          name: name,
+          wocheNr: prevWeek.no,
+          wocheStartMs: prevStart,
+          minutenGesamt: minutenGesamt,
+          tageAktiv: Object.keys(tageGesamt).length,
+          zeilen: zeilen,
+          appUrl: appUrl,
+          fussHtml: abbestellen.fussFuer("tt-woche", p.id, sprache),
+        },
+        sprache,
+      );
+
+      try {
+        const message = new MailerMessage({
+          from: fromAddr,
+          to: [{ address: email }],
+          headers: abbestellen.mitKopfzeilen(
+            { "Reply-To": "sensorik@weingartner.org" },
+            "tt-woche",
+            p.id,
+            sprache,
+          ),
+          subject: mail.subject,
+          html: mail.html,
+        });
+        $app.newMailClient().send(message);
+        $app.logger().info("[tt-selfweek] gesendet", "pupil", p.id, "programme", zeilen.length);
+      } catch (err) {
+        $app.logger().warn("[tt-selfweek] Versand fehlgeschlagen", "pupil", p.id, "error", String(err));
+      }
+    } catch (err) {
+      $app.logger().warn("[tt-selfweek] Konto übersprungen", "error", String(err));
+    }
+  }
+});

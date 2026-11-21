@@ -1,0 +1,148 @@
+/**
+ * ★ D-LERNDATEN (25.10.2026): DIE QUELLWÖRTER DES BUCHSTABENSALATS des Weges „uk" (Ukrainisch) - gefüllt aus den vorbereiteten Lerndaten.
+ *
+ * Quelle: iCloud `sprachen-2026-10-25/tf-fest-neu/uk/tf-fest-uk.json`, Schlüssel `schreibWoerter` (Zuordnung: Rezept
+ * Teil D). Geprüft vom unabhängigen Prüfer der PC-Sitzung: `PRUEFBERICHT.md` im selben Ordner (25.10.2026) - Urteil:
+ * „Freigabefähig: ja - für den internen Einbau (hinter `?ukrainisch-lehrgang=1`). Für die öffentliche Freigabe von `/uk`: nein, noch nicht“ (Abnahme durch eine Muttersprachlerin und eine Fachperson für traumasensible Arbeit).
+ * Übernommen vom Erzeuger-Skript der Etappe D-LERNDATEN im Format von `buchstabensalatCs.ts`, Eintrag für Eintrag in der Reihenfolge der
+ * Quelle. Geändert wurde nur Typografie, die keine Tastatur hat (gezählt im Befund `BEFUND-2026-10-25-D-LERNDATEN.md`).
+ * ⚠️ Eine Lese-Abnahme durch eine Person mit Ukrainisch als Erstsprache steht aus (Prüfbericht; Falle 59).
+ *
+ * ⚠️ Der Ertrag je Quellwort (mindestens `SALAT_ZIEL` echte Wörter) ist NICHT gemessen: er wird gegen das Lexikon der Sprache
+ * gezählt (`lexikonWoerter("uk")`), und ein Fach für „uk" baut erst F8 (`lexicon.ts`). Bis dahin findet der Salat auf diesem
+ * Weg keine Funde und bietet sich nicht an - die Daten liegen bereit.
+ *
+ * Verteiler: `buchstabensalat.ts` (Namen ausschliessen: `salatNamen${Xx}.ts`, noch leer) - liest diese Datei seit G3c; leer hiess Englisch, gefüllt gilt diese Liste (`geruestRueckfall.ts`).
+ * Unsichtbar, bis der Schalter `?ukrainisch-lehrgang=1` an ist (Vorgabe AUS). Wächter: `tests/tastenflow-lerndaten-uk.test.ts`
+ * (Regeln je Sprache in `tests/helfer/lerndatenNeueWege.ts`).
+ *
+ * ⚠️ DATENBLATT (`scripts/buendel-aufteilung.ts`): nur `import type`, kein Code.
+ */
+import type { Salatwort } from "./buchstabensalat";
+
+const ALLE: Salatwort["stufen"] = ["kids", "teens", "erwachsen"];
+const AB_TEENS: Salatwort["stufen"] = ["teens", "erwachsen"];
+const NUR_ERWACHSENE: Salatwort["stufen"] = ["erwachsen"];
+
+export const SALATWOERTER_UK: Salatwort[] = [
+  { wort: "м'яч", stufen: ALLE },
+  { wort: "п'ять", stufen: ALLE },
+  { wort: "сім'я", stufen: ALLE },
+  { wort: "ім'я", stufen: ALLE },
+  { wort: "пам'ять", stufen: ALLE },
+  { wort: "дев'ять", stufen: ALLE },
+  { wort: "м'ясо", stufen: ALLE },
+  { wort: "комп'ютер", stufen: ALLE },
+  { wort: "здоров'я", stufen: ALLE },
+  { wort: "солов'ї", stufen: ALLE },
+  { wort: "п'ятниця", stufen: ALLE },
+  { wort: "кав'ярня", stufen: ALLE },
+  { wort: "з'їсти", stufen: ALLE },
+  { wort: "бур'ян", stufen: ALLE },
+  { wort: "м'ята", stufen: ALLE },
+  { wort: "пір'я", stufen: ALLE },
+  { wort: "в'язати", stufen: ALLE },
+  { wort: "дерев'яний", stufen: AB_TEENS },
+  { wort: "пам'ятник", stufen: AB_TEENS },
+  { wort: "під'їзд", stufen: AB_TEENS },
+  { wort: "життя", stufen: ALLE },
+  { wort: "знання", stufen: ALLE },
+  { wort: "взуття", stufen: ALLE },
+  { wort: "весілля", stufen: ALLE },
+  { wort: "обличчя", stufen: ALLE },
+  { wort: "волосся", stufen: ALLE },
+  { wort: "питання", stufen: ALLE },
+  { wort: "завдання", stufen: ALLE },
+  { wort: "заняття", stufen: ALLE },
+  { wort: "ванна", stufen: ALLE },
+  { wort: "осінній", stufen: ALLE },
+  { wort: "віддати", stufen: ALLE },
+  { wort: "оповідання", stufen: AB_TEENS },
+  { wort: "щоденний", stufen: AB_TEENS },
+  { wort: "старанно", stufen: AB_TEENS },
+  { wort: "бездоганний", stufen: NUR_ERWACHSENE },
+  { wort: "день", stufen: ALLE },
+  { wort: "сіль", stufen: ALLE },
+  { wort: "кінь", stufen: ALLE },
+  { wort: "осінь", stufen: ALLE },
+  { wort: "пальто", stufen: ALLE },
+  { wort: "донька", stufen: ALLE },
+  { wort: "дідусь", stufen: ALLE },
+  { wort: "учитель", stufen: ALLE },
+  { wort: "сміється", stufen: ALLE },
+  { wort: "вчиться", stufen: ALLE },
+  { wort: "вчишся", stufen: ALLE },
+  { wort: "читаєш", stufen: ALLE },
+  { wort: "кит", stufen: ALLE },
+  { wort: "кіт", stufen: ALLE },
+  { wort: "дитина", stufen: ALLE },
+  { wort: "лисиця", stufen: ALLE },
+  { wort: "тигр", stufen: ALLE },
+  { wort: "син", stufen: ALLE },
+  { wort: "сир", stufen: ALLE },
+  { wort: "сірий", stufen: ALLE },
+  { wort: "листопад", stufen: ALLE },
+  { wort: "шипшина", stufen: ALLE },
+  { wort: "їжак", stufen: ALLE },
+  { wort: "їжа", stufen: ALLE },
+  { wort: "заєць", stufen: ALLE },
+  { wort: "моє", stufen: ALLE },
+  { wort: "єнот", stufen: ALLE },
+  { wort: "майбутнє", stufen: ALLE },
+  { wort: "її", stufen: ALLE },
+  { wort: "мрії", stufen: ALLE },
+  { wort: "країна", stufen: ALLE },
+  { wort: "поїзд", stufen: ALLE },
+  { wort: "щастя", stufen: ALLE },
+  { wort: "дощ", stufen: ALLE },
+  { wort: "щука", stufen: ALLE },
+  { wort: "борщ", stufen: ALLE },
+  { wort: "кущ", stufen: ALLE },
+  { wort: "площа", stufen: ALLE },
+  { wort: "джерело", stufen: ALLE },
+  { wort: "бджола", stufen: ALLE },
+  { wort: "дзвоник", stufen: ALLE },
+  { wort: "дзеркало", stufen: ALLE },
+  { wort: "кукурудза", stufen: ALLE },
+  { wort: "ґудзик", stufen: ALLE },
+  { wort: "ґанок", stufen: ALLE },
+  { wort: "ґрунт", stufen: ALLE },
+  { wort: "село", stufen: ALLE },
+  { wort: "зима", stufen: ALLE },
+  { wort: "весна", stufen: ALLE },
+  { wort: "черепаха", stufen: ALLE },
+  { wort: "пиріг", stufen: ALLE },
+  { wort: "кишеня", stufen: ALLE },
+  { wort: "тиждень", stufen: ALLE },
+  { wort: "медовий", stufen: AB_TEENS },
+  { wort: "щасливий", stufen: ALLE },
+  { wort: "пізно", stufen: ALLE },
+  { wort: "радісний", stufen: ALLE },
+  { wort: "український", stufen: ALLE },
+  { wort: "людський", stufen: ALLE },
+  { wort: "якісний", stufen: AB_TEENS },
+  { wort: "київський", stufen: AB_TEENS },
+  { wort: "львівський", stufen: AB_TEENS },
+  { wort: "одеський", stufen: AB_TEENS },
+  { wort: "харківський", stufen: AB_TEENS },
+  { wort: "карпатський", stufen: AB_TEENS },
+  { wort: "сказати", stufen: ALLE },
+  { wort: "спитати", stufen: ALLE },
+  { wort: "зробити", stufen: ALLE },
+  { wort: "сходи", stufen: ALLE },
+  { wort: "зварити", stufen: ALLE },
+  { wort: "сфотографувати", stufen: AB_TEENS },
+  { wort: "інформація", stufen: NUR_ERWACHSENE },
+  { wort: "розклад", stufen: NUR_ERWACHSENE },
+  { wort: "квитанція", stufen: NUR_ERWACHSENE },
+  { wort: "лікарня", stufen: NUR_ERWACHSENE },
+  { wort: "оголошення", stufen: NUR_ERWACHSENE },
+  { wort: "домовленість", stufen: NUR_ERWACHSENE },
+  { wort: "співбесіда", stufen: NUR_ERWACHSENE },
+  { wort: "резюме", stufen: NUR_ERWACHSENE },
+  { wort: "кваліфікація", stufen: NUR_ERWACHSENE },
+  { wort: "відповідальність", stufen: NUR_ERWACHSENE },
+  { wort: "навушники", stufen: AB_TEENS },
+  { wort: "чемпіонат", stufen: AB_TEENS },
+  { wort: "проєкт", stufen: AB_TEENS },
+];

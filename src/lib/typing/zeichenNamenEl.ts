@@ -1,0 +1,121 @@
+/**
+ * ★★★ G3b (25.10.2026): EINHÄNGEPUNKT für die Zeichennamen der Sprachausgabe auf Griechisch (Weg „el").
+ *
+ * ★★★ F58 (29.10.2026): GEFÜLLT nach dem Glossar `recherche-griechisch-2026-10-25/GLOSSAR-el.md` §2.8 („Zeichennamen der Sprachausgabe"). Jedes Zeichen der Tastaturen
+ * des Weges und des Korpus hat einen Namen in der Sprache (Wächter `tests/tastenflow-f58-vorlesen-neun.test.ts`), dazu JEDER
+ * Grossbuchstabe des Alphabets („κεφαλαίο" vor dem Namen: „κεφαλαίο άλφα με τόνο") - vorher sagte die Stimme „capital …", „space", „full stop" (gemessen 29.10.2026).
+ * Ein fehlender Eintrag fällt weiter auf den englischen Namen zurück, nie auf den deutschen (Falle 30).
+ * ⚠️ Am Gerät NICHT gehört (keine Stimme der Sprache auf dem Mess-PC, Befund F58); die Namen mit [G] im Glossar warten auf die
+ * Lese-Abnahme durch eine Person mit Griechisch als Erstsprache.
+ * `;` ist im Griechischen das FRAGEZEICHEN („ερωτηματικό", nie „Semikolon"), `?` das „αγγλικό ερωτηματικό"; `σ` steht im
+ * Alphabet vor `ς`, damit `Σ` „κεφαλαίο σίγμα" heisst. Lateinische Buchstaben heissen „λατινικό a" (Glossar §2.8).
+ */
+import { zeichenTabelle, lateinMitVorwort, LATEIN_KLEIN } from "./zeichenNamenHilfe";
+
+/** Satz- und Sonderzeichen, Totasten (Glossar §2.8). */
+const ZEICHEN: Readonly<Record<string, string>> = {
+  " ": "διάστημα",
+  "\n": "Enter",
+  "\t": "Tab",
+  ".": "τελεία",
+  ",": "κόμμα",
+  ";": "ερωτηματικό",
+  "\u037E": "ερωτηματικό",
+  "?": "αγγλικό ερωτηματικό",
+  ":": "άνω κάτω τελεία",
+  "\u00B7": "άνω τελεία",
+  "\u0387": "άνω τελεία",
+  "!": "θαυμαστικό",
+  "'": "απόστροφος",
+  "’": "απόστροφος",
+  "‘": "απόστροφος",
+  "\"": "εισαγωγικά",
+  "«": "άνοιγμα εισαγωγικών",
+  "»": "κλείσιμο εισαγωγικών",
+  "“": "άνοιγμα αγγλικών εισαγωγικών",
+  "”": "κλείσιμο αγγλικών εισαγωγικών",
+  "(": "άνοιγμα παρένθεσης",
+  ")": "κλείσιμο παρένθεσης",
+  "[": "άνοιγμα αγκύλης",
+  "]": "κλείσιμο αγκύλης",
+  "{": "άνοιγμα αγκίστρου",
+  "}": "κλείσιμο αγκίστρου",
+  "-": "παύλα",
+  "_": "κάτω παύλα",
+  "/": "κάθετος",
+  "\\": "ανάποδη κάθετος",
+  "|": "μπάρα",
+  "@": "παπάκι",
+  "#": "δίεση",
+  "&": "εμπορικό και",
+  "%": "τοις εκατό",
+  "<": "μικρότερο",
+  ">": "μεγαλύτερο",
+  "=": "ίσον",
+  "+": "συν",
+  "*": "αστερίσκος",
+  "€": "ευρώ",
+  "$": "δολάριο",
+  "£": "λίρα",
+  "§": "παράγραφος",
+  "\u00B0": "βαθμοί",
+  "^": "δύναμη",
+  "~": "περισπωμένη",
+  "`": "βαρεία",
+  "¨": "διαλυτικά",
+  "΄": "τόνος",
+  "΅": "διαλυτικά και τόνος",
+  "\u00B5": "μίκρο",
+  "\u2026": "τρεις τελείες",
+  "\u00A6": "διακεκομμένη μπάρα",
+  "©": "πνευματικά δικαιώματα",
+  "¬": "άρνηση",
+  "±": "συν πλην",
+  "²": "στο τετράγωνο",
+  "³": "στον κύβο",
+  "½": "ένα δεύτερο",
+  "\u2015": "οριζόντια γραμμή",
+};
+
+/** Kleine Buchstaben mit eigenem Namen (die übrigen heissen wie sie selbst). */
+const BUCHSTABEN: Readonly<Record<string, string>> = {
+  ...lateinMitVorwort("λατινικό"),
+  "α": "άλφα",
+  "β": "βήτα",
+  "γ": "γάμμα",
+  "δ": "δέλτα",
+  "ε": "έψιλον",
+  "ζ": "ζήτα",
+  "η": "ήτα",
+  "θ": "θήτα",
+  "ι": "γιώτα",
+  "κ": "κάπα",
+  "λ": "λάμδα",
+  "μ": "μι",
+  "ν": "νι",
+  "ξ": "ξι",
+  "ο": "όμικρον",
+  "π": "πι",
+  "ρ": "ρο",
+  "σ": "σίγμα",
+  "ς": "τελικό σίγμα",
+  "τ": "ταυ",
+  "υ": "ύψιλον",
+  "φ": "φι",
+  "χ": "χι",
+  "ψ": "ψι",
+  "ω": "ωμέγα",
+  "ά": "άλφα με τόνο",
+  "έ": "έψιλον με τόνο",
+  "ή": "ήτα με τόνο",
+  "ί": "γιώτα με τόνο",
+  "ό": "όμικρον με τόνο",
+  "ύ": "ύψιλον με τόνο",
+  "ώ": "ωμέγα με τόνο",
+  "ϊ": "γιώτα με διαλυτικά",
+  "ϋ": "ύψιλον με διαλυτικά",
+  "ΐ": "γιώτα με διαλυτικά και τόνο",
+  "ΰ": "ύψιλον με διαλυτικά και τόνο",
+};
+
+export const ZEICHENNAMEN_EL: Readonly<Record<string, string>> = zeichenTabelle(ZEICHEN, BUCHSTABEN, "αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋΐΰς" + LATEIN_KLEIN, (n) => `κεφαλαίο ${n}`);

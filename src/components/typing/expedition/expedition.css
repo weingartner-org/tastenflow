@@ -1,0 +1,903 @@
+/*
+ * Polar-Expedition — Bühnen- und Figur-Stil (Neubau des Tastenflow-Spiels,
+ * Bauplan 2026-07-12). Bewusst als EIGENE, gekapselte Datei (nicht in index.css):
+ * Alle Klassen/Keyframes sind mit `px-` bzw. `.px-*` abgegrenzt, damit der Block
+ * spurlos entfernbar bleibt und nichts im übrigen LMS berührt.
+ *
+ * Technik-Gesetz (Bauplan §2): SVG + CSS/rAF, kein Canvas. Alle Figur-Posen sind
+ * transform-only (transform-box:fill-box). Die Posen-Keyframes sind 1:1 aus der
+ * verbindlichen Design-Referenz (Artifact 20c1048a) übernommen — nur die
+ * @keyframes-Namen wurden `px-`-präfixt und die Selektoren unter `.px-fig`
+ * gescoped.
+ *
+ * Barrierefreiheit (Bauplan §7): prefers-reduced-motion stellt alle Bewegung
+ * still (Posen bleiben als Standbild lesbar); forced-colors/HCM hält Chrome und
+ * Text lesbar.
+ */
+
+/* =========================================================================
+   OVERLAY-CHROME — Vollbild-Bühne
+   ========================================================================= */
+.px-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  /* Letterbox-Ränder folgen der Tageszeit der Zone (Tag→Nacht-Bogen, §4.5) — die Szene
+     selbst hat ihre eigene feste Palette. Default = Nachthimmel-Blau (Vorschau/ohne data-time). */
+  background: var(--px-letterbox, #0a1422);
+  color: #eaf3fa;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+/* Der Weltausschnitt füllt den Rest zwischen HUD (oben) und Steuerleiste (unten). */
+.px-viewport {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  /* Fällt der Sichtbereich breiter als die 16:9-Welt aus (z. B. mit Debug-Leiste),
+     füllt dieser Verlauf die Letterbox-Ränder nahtlos zur Zone. Er folgt der Tageszeit
+     (§4.5); Default = Packeis-Morgen mit Horizont bei ~60 %. */
+  background: var(
+    --px-viewport-bg,
+    linear-gradient(180deg, #6fa9d6 0%, #b8d9ee 42%, #ffd9a0 58%, #2b83b4 60.2%, #0b3d5e 100%)
+  );
+}
+
+/* Tag→Nacht-Bogen (§4.5): Letterbox-Rand + Randverlauf je Tageszeit der Zone. Nur die
+   CSS-Variablen werden gesetzt — die eigentlichen Hintergründe (oben) lesen sie. */
+.px-stage[data-time="morning"] {
+  --px-letterbox: #16324f;
+  --px-viewport-bg: linear-gradient(180deg, #6fa9d6, #b8d9ee 42%, #ffd9a0 58%, #2b83b4 60.2%, #0b3d5e);
+}
+.px-stage[data-time="golden"] {
+  --px-letterbox: #3a2a1c;
+  --px-viewport-bg: linear-gradient(180deg, #f2b56a, #ffd39a 44%, #e8894a 60%, #7a4a2a);
+}
+.px-stage[data-time="dark"] {
+  --px-letterbox: #05070f;
+  --px-viewport-bg: linear-gradient(180deg, #0e1220, #191d2e);
+}
+.px-stage[data-time="twilight"] {
+  --px-letterbox: #221d34;
+  --px-viewport-bg: linear-gradient(180deg, #464264, #6a5886 55%, #392f4e);
+}
+.px-stage[data-time="evening"] {
+  --px-letterbox: #271a2b;
+  --px-viewport-bg: linear-gradient(180deg, #3a2b52, #7d4d63 52%, #d98a5a);
+}
+.px-stage[data-time="night"] {
+  --px-letterbox: #060c19;
+  --px-viewport-bg: linear-gradient(180deg, #0a1430, #122a52 55%, #20406e);
+}
+.px-world {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* Fokus liegt auf dem Spielfeld (role=application) — dezenter, klarer Ring. */
+.px-viewport:focus-visible {
+  outline: 3px solid #63cff2;
+  outline-offset: -3px;
+}
+
+/* Schmale Kopfzeile: Zonenname + Mini-Reisekarte (Bauplan §2 Hud.tsx). */
+.px-hud {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.55rem 1rem;
+  background: rgba(6, 16, 28, 0.72);
+  font-size: 1rem;
+}
+.px-hud__zone {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.px-hud__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+/* Herzen der Zone (Johannes 14.07.): zwei je Zone; jeder Fehler kostet eines. Ein verlorenes
+   Herz sackt kurz zusammen und bleibt dann als blasse Hülle stehen — sichtbar, was fehlt. */
+.px-hud__lives {
+  display: inline-flex;
+  gap: 0.15rem;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.px-hud__heart {
+  transition: transform 0.25s ease;
+}
+.px-hud__heart--lost {
+  opacity: 0.45;
+  transform: scale(0.82);
+}
+
+/* Braille-Spur der Bauchrutsche: für Screenreader/Braillezeile abtastbar, optisch versteckt
+   (die Sicht-Fassung ist die Eisplatte in der Szene). Kein aria-live → kein Sprech-Spam. */
+.px-track {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Bauchrutsche: die heranfliegende Eisplatte und das Tor leuchten im Trefferfenster auf. */
+.px-slideTile {
+  transition: filter 0.12s ease;
+}
+.px-slideTile--hot {
+  filter: drop-shadow(0 0 14px rgba(255, 215, 106, 0.9));
+}
+.px-slideGate--hot {
+  filter: drop-shadow(0 0 10px rgba(255, 215, 106, 0.75));
+}
+@media (prefers-reduced-motion: reduce) {
+  .px-slideTile,
+  .px-hud__heart {
+    transition: none;
+  }
+}
+
+/* Kontrastschalter „helle Höhle" — schlanker Segment-Toggle (≈32 px). */
+.px-hud__toggle {
+  font: inherit;
+  /* ★ Kontrast (29.10.2026): 0.82rem war zu klein, der Rand (rgba .4) nur 2,4 : 1. */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #eaf3fa;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #9ec2e6;
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  min-height: 36px;
+}
+.px-hud__toggle:hover {
+  border-color: #63cff2;
+}
+.px-hud__toggle[aria-pressed="true"] {
+  background: #0a6a94; /* ★ weiße Schrift 6,0 : 1 (vorher #0e86ba = 4,1 : 1) */
+  border-color: #63cff2;
+  color: #fff;
+}
+.px-hud__toggle:focus-visible {
+  outline: 3px solid #63cff2;
+  outline-offset: 2px;
+}
+
+/* Steuerleiste unten: Statuszeile + Knöpfe. */
+.px-controls {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
+  background: rgba(6, 16, 28, 0.72);
+}
+.px-status {
+  flex: 1 1 100%;
+  text-align: center;
+  min-height: 1.4em;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Countdown-Balken (rein visuell — hörbar warnt das Eisknacken, Bauplan §4.1). */
+.px-timer {
+  flex: 1 1 100%;
+  height: 8px;
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+.px-timer > div {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #63cff2, #f2b705);
+  transition: width 0.1s linear;
+}
+
+/* Aktions-Knöpfe im freien Spiel (Nochmal / Fertig) nebeneinander. */
+.px-btnrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+/* Debug-Posenleiste (nur in der Bau-/Abnahme-Ansicht sichtbar). */
+.px-debugbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background: rgba(6, 16, 28, 0.85);
+  border-top: 1px solid rgba(120, 160, 200, 0.25);
+}
+.px-btn {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #eaf3fa;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #9ec2e6;
+  border-radius: 999px;
+  padding: 0.42rem 0.95rem;
+  min-height: 40px;
+  transition: border-color 0.15s, background 0.15s, transform 0.06s;
+}
+.px-btn:hover {
+  border-color: #63cff2;
+}
+.px-btn:active {
+  transform: scale(0.97);
+}
+.px-btn:focus-visible {
+  outline: 3px solid #63cff2;
+  outline-offset: 2px;
+}
+.px-btn[aria-pressed="true"] {
+  background: #0a6a94; /* ★ weiße Schrift 6,0 : 1 (vorher #0e86ba = 4,1 : 1) */
+  border-color: #63cff2;
+  color: #fff;
+}
+/* Aktions-Knöpfe (Schließen usw.) an die 44-px-Regel; Segment-Toggles bleiben schlank. */
+.px-btn--action {
+  min-height: 44px;
+  padding: 0.5rem 1.15rem;
+}
+
+/* =========================================================================
+   PINGUIN-RIG — Posen (1:1 aus der Design-Referenz)
+   ========================================================================= */
+.px-fig .p-rig,
+.px-fig .p-walker,
+.px-fig .p-head,
+.px-fig .p-wingL,
+.px-fig .p-wingR,
+.px-fig .p-footL,
+.px-fig .p-footR,
+.px-fig .p-body,
+.px-fig .p-pupils,
+.px-fig .p-scarfTail,
+.px-fig .p-brows,
+.px-fig .p-spray,
+.px-fig .p-stars,
+.px-fig .p-side,
+.px-fig .p-sideSpray,
+.px-fig .p-sideLines,
+.px-fig .p-scarfSide {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.px-fig .p-rig {
+  transform-origin: 50% 100%;
+}
+.px-fig .p-body {
+  transform-origin: 50% 100%;
+}
+.px-fig .p-wingL {
+  transform-origin: 85% 8%;
+}
+.px-fig .p-wingR {
+  transform-origin: 15% 8%;
+}
+.px-fig .p-scarfTail {
+  transform-origin: 50% 0%;
+}
+.px-fig .p-brows {
+  opacity: 0;
+}
+.px-fig .p-spray,
+.px-fig .p-stars {
+  opacity: 0;
+}
+.px-fig .p-pupils circle {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.px-fig .p-side {
+  opacity: 0;
+}
+
+/* immer: blinzeln + Schal-Wehen */
+.px-fig .p-pupils {
+  animation: px-pBlink 4.6s infinite;
+}
+.px-fig .p-scarfTail {
+  animation: px-pScarf 3.4s ease-in-out infinite;
+}
+@keyframes px-pBlink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  94%, 96% { transform: scaleY(0.08); }
+}
+@keyframes px-pScarf {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(7deg); }
+}
+
+/* Stehen & atmen */
+.px-fig[data-pose="idle"] .p-body { animation: px-pBreath 3.4s ease-in-out infinite; }
+.px-fig[data-pose="idle"] .p-head { animation: px-pLook 7s ease-in-out infinite; }
+.px-fig[data-pose="idle"] .p-wingL { animation: px-pWingIdleL 3.4s ease-in-out infinite; }
+.px-fig[data-pose="idle"] .p-wingR { animation: px-pWingIdleR 3.4s ease-in-out infinite; }
+@keyframes px-pBreath {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.02) scaleX(1.005); }
+}
+@keyframes px-pLook {
+  0%, 100% { transform: rotate(0deg); }
+  30% { transform: rotate(-3deg); }
+  60% { transform: rotate(2.5deg); }
+}
+@keyframes px-pWingIdleL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-5deg); }
+}
+@keyframes px-pWingIdleR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+/* Watscheln */
+.px-fig[data-pose="walk"] .p-walker { animation: px-pStroll 5s ease-in-out infinite alternate; }
+.px-fig[data-pose="walk"] .p-rig { animation: px-pRock 0.8s ease-in-out infinite; }
+.px-fig[data-pose="walk"] .p-footL { animation: px-pStepL 0.8s ease-in-out infinite; }
+.px-fig[data-pose="walk"] .p-footR { animation: px-pStepR 0.8s ease-in-out infinite; }
+.px-fig[data-pose="walk"] .p-wingL { animation: px-pWingWalkL 0.8s ease-in-out infinite; }
+.px-fig[data-pose="walk"] .p-wingR { animation: px-pWingWalkR 0.8s ease-in-out infinite; }
+@keyframes px-pStroll {
+  from { transform: translateX(-70px); }
+  to { transform: translateX(70px); }
+}
+@keyframes px-pRock {
+  0%, 100% { transform: rotate(-5.5deg); }
+  50% { transform: rotate(5.5deg); }
+}
+@keyframes px-pStepL {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-11px); }
+}
+@keyframes px-pStepR {
+  0%, 100% { transform: translateY(0); }
+  75% { transform: translateY(-11px); }
+}
+@keyframes px-pWingWalkL {
+  0%, 100% { transform: rotate(-14deg); }
+  50% { transform: rotate(6deg); }
+}
+@keyframes px-pWingWalkR {
+  0%, 100% { transform: rotate(14deg); }
+  50% { transform: rotate(-6deg); }
+}
+
+/* Springen — Anlauf, Absprung mit Squash & Stretch, Landung */
+.px-fig[data-pose="jump"] .p-rig { animation: px-pJump 1.7s cubic-bezier(0.3, 0, 0.4, 1) infinite; }
+.px-fig[data-pose="jump"] .p-wingL { animation: px-pWingJumpL 1.7s ease-in-out infinite; }
+.px-fig[data-pose="jump"] .p-wingR { animation: px-pWingJumpR 1.7s ease-in-out infinite; }
+.px-fig[data-pose="jump"] .p-footL,
+.px-fig[data-pose="jump"] .p-footR { animation: px-pFeetTuck 1.7s ease-in-out infinite; }
+@keyframes px-pJump {
+  0%, 100% { transform: translateY(0) scale(1, 1); }
+  12% { transform: translateY(2px) scale(1.1, 0.82); }
+  30% { transform: translateY(-118px) scale(0.94, 1.1); }
+  46% { transform: translateY(-132px) scale(1, 1); }
+  62% { transform: translateY(-40px) scale(0.97, 1.06); }
+  72% { transform: translateY(0) scale(1.12, 0.84); }
+  84% { transform: translateY(0) scale(0.98, 1.03); }
+}
+@keyframes px-pWingJumpL {
+  0%, 100% { transform: rotate(0); }
+  12% { transform: rotate(18deg); }
+  30%, 55% { transform: rotate(-72deg); }
+  72% { transform: rotate(12deg); }
+}
+@keyframes px-pWingJumpR {
+  0%, 100% { transform: rotate(0); }
+  12% { transform: rotate(-18deg); }
+  30%, 55% { transform: rotate(72deg); }
+  72% { transform: rotate(-12deg); }
+}
+@keyframes px-pFeetTuck {
+  0%, 100% { transform: translateY(0); }
+  30%, 55% { transform: translateY(-8px) scaleX(0.85); }
+}
+
+/* Bauchrutsche — echte Seitenansicht auf dem Bauch */
+.px-fig .p-side,
+.px-fig .p-sideSpray,
+.px-fig .p-sideLines,
+.px-fig .p-scarfSide {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.px-fig[data-pose="slide"] .p-front { opacity: 0; }
+.px-fig[data-pose="slide"] .p-side { opacity: 1; animation: px-pSlideSide 0.8s ease-in-out infinite; }
+.px-fig[data-pose="slide"] .p-sideSpray { animation: px-pSpray 0.45s linear infinite; }
+.px-fig[data-pose="slide"] .p-sideLines { animation: px-pLines 0.4s linear infinite; }
+.px-fig[data-pose="slide"] .p-scarfSide { animation: px-pScarfSide 0.5s ease-in-out infinite; transform-origin: 100% 50%; }
+@keyframes px-pSlideSide {
+  0%, 100% { transform: translate(-12px, 0) rotate(-1.5deg); }
+  50% { transform: translate(12px, 3px) rotate(1deg); }
+}
+@keyframes px-pScarfSide {
+  0%, 100% { transform: rotate(4deg) scaleX(1); }
+  50% { transform: rotate(-7deg) scaleX(1.08); }
+}
+@keyframes px-pSpray {
+  0% { transform: translate(0, 0) scale(0.7); opacity: 0.9; }
+  100% { transform: translate(-30px, -18px) scale(1.3); opacity: 0; }
+}
+@keyframes px-pLines {
+  0% { transform: translateX(0); opacity: 0.8; }
+  100% { transform: translateX(-52px); opacity: 0; }
+}
+
+/* Erschrecken (Höhle!) */
+.px-fig[data-pose="scare"] .p-rig { animation: px-pJitter 0.14s linear infinite; }
+.px-fig[data-pose="scare"] .p-wingL { transform: rotate(74deg) translate(10px, -30px); }
+.px-fig[data-pose="scare"] .p-wingR { transform: rotate(-74deg) translate(-10px, -30px); }
+.px-fig[data-pose="scare"] .p-pupils circle { transform: scale(0.6); }
+.px-fig[data-pose="scare"] .p-brows { opacity: 1; }
+@keyframes px-pJitter {
+  0% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  100% { transform: translateX(-3px); }
+}
+
+/* Jubeln */
+.px-fig[data-pose="cheer"] .p-rig { animation: px-pHop 0.55s ease-in-out infinite; }
+.px-fig[data-pose="cheer"] .p-wingL { animation: px-pFlapL 0.28s ease-in-out infinite alternate; }
+.px-fig[data-pose="cheer"] .p-wingR { animation: px-pFlapR 0.28s ease-in-out infinite alternate; }
+.px-fig[data-pose="cheer"] .p-stars { opacity: 1; animation: px-pStars 1.1s ease-out infinite; }
+@keyframes px-pHop {
+  0%, 100% { transform: translateY(0) scale(1, 1); }
+  30% { transform: translateY(-26px); }
+  60% { transform: translateY(0) scale(1.06, 0.92); }
+}
+@keyframes px-pFlapL {
+  from { transform: rotate(-84deg); }
+  to { transform: rotate(-42deg); }
+}
+@keyframes px-pFlapR {
+  from { transform: rotate(84deg); }
+  to { transform: rotate(42deg); }
+}
+@keyframes px-pStars {
+  0% { transform: translateY(6px) scale(0.6); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(-30px) scale(1.15); opacity: 0; }
+}
+
+/* =========================================================================
+   SZENEN-Deko — Packeis (Ambient, transform-only)
+   ========================================================================= */
+.px-scene .bob1,
+.px-scene .bob2,
+.px-scene .bob3,
+.px-scene .gull,
+.px-scene .wave,
+.px-scene .crackFloe,
+.px-scene .fishFin,
+.px-scene .fishTail {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.px-scene .bob1 { animation: px-bob 3.6s ease-in-out infinite; }
+.px-scene .bob2 { animation: px-bob 4.3s ease-in-out 0.6s infinite; }
+.px-scene .bob3 { animation: px-bob 3.1s ease-in-out 1.1s infinite; }
+@keyframes px-bob {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(7px) rotate(0.6deg); }
+}
+.px-scene .crackFloe { animation: px-crackTilt 2.2s ease-in-out infinite; }
+@keyframes px-crackTilt {
+  0%, 100% { transform: translateY(2px) rotate(-1.2deg); }
+  50% { transform: translateY(9px) rotate(1.4deg); }
+}
+.px-scene .wave { animation: px-waveShift 7s linear infinite; }
+@keyframes px-waveShift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-140px); }
+}
+.px-scene .gull { animation: px-gullFly 16s linear infinite; }
+.px-scene .gull.g2 { animation-duration: 22s; animation-delay: -9s; }
+@keyframes px-gullFly {
+  from { transform: translate(-160px, 10px); }
+  50% { transform: translate(760px, -24px); }
+  to { transform: translate(1720px, 6px); }
+}
+
+/* Schollen (px-floe = Wipp-Ebene; die Position sitzt auf der äußeren Gruppe). */
+.px-scene .px-floe,
+.px-scene .px-fishJump,
+.px-scene .px-fishBody,
+.px-scene .px-fishTail,
+.px-scene .px-fishFin,
+.px-scene .px-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Bonus-Fisch: Sprung aus dem Wasser + Flossenschlag (Bauplan §4.1). */
+.px-scene .px-fishJump { animation: px-fishHop 1.15s ease-in-out infinite; }
+.px-scene .px-fishTail { transform-origin: left center; animation: px-fishTail 0.3s ease-in-out infinite; }
+.px-scene .px-fishFin { animation: px-fishFin 0.5s ease-in-out infinite; }
+@keyframes px-fishHop {
+  0%, 100% { transform: translateY(28px) scale(0.92); }
+  45% { transform: translateY(-14px) scale(1.04); }
+}
+@keyframes px-fishTail {
+  0%, 100% { transform: rotate(-16deg); }
+  50% { transform: rotate(16deg); }
+}
+@keyframes px-fishFin {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(9deg); }
+}
+
+/* Wasser-Ringe (Fisch tauchte / Scholle sank). */
+.px-scene .px-ring { fill: none; stroke: #cfe8f6; stroke-width: 3; opacity: 0; }
+.px-scene .px-ring--1 { animation: px-ring 0.9s ease-out; }
+.px-scene .px-ring--2 { animation: px-ring 0.9s ease-out 0.18s; }
+@keyframes px-ring {
+  0% { transform: scale(0.2); opacity: 0.8; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+
+/* Polarlicht-Bänder tanzen sanft (nur fehlerfreier Lauf, Bauplan §4.6). */
+.px-scene .px-aurora path { animation: px-auroraWave 6s ease-in-out infinite; }
+.px-scene .px-aurora path:nth-child(2) { animation-delay: -2s; }
+.px-scene .px-aurora path:nth-child(3) { animation-delay: -4s; }
+@keyframes px-auroraWave {
+  0%, 100% { opacity: 0.5; transform: translateY(0); }
+  50% { opacity: 0.9; transform: translateY(10px); }
+}
+
+/* Steilwand: Steinchen/Risse rieseln, wenn die Zeit am Tritt knapp wird (§4.2). */
+.px-scene .px-rockle { animation: px-rockle 0.5s ease-in-out infinite; }
+@keyframes px-rockle {
+  0%, 100% { transform: translateY(0); opacity: 0.85; }
+  50% { transform: translateY(2.5px); opacity: 1; }
+}
+
+/* Steilwand-Folgen-Tafeln (E7-Politur): benachbarte Tafeln überlappen am steilen Berg;
+   der Hook rendert die aktive Ziel-Tafel zuletzt (oben). Beim Wechsel „ploppt" sie kurz
+   nach vorn — ein kleiner Effekt, damit man sieht, welche Tafel jetzt dran ist. */
+.px-scene .px-climb-sign {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+.px-scene .px-climb-sign--active {
+  animation: px-climbPop 0.34s ease-out;
+}
+@keyframes px-climbPop {
+  0% { transform: scale(0.9); }
+  60% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+/* Echo-Höhle (E4, §4.3): Kristallschimmer, blinzelnde Augen, pochendes Echo-Ziel. */
+.px-scene .px-cave-crystal {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: px-crystal 3.2s ease-in-out infinite;
+}
+@keyframes px-crystal {
+  0%, 100% { opacity: 0.5; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
+.px-scene .px-cave-eye { animation: px-caveEye 5.4s ease-in-out infinite; }
+@keyframes px-caveEye {
+  0%, 43%, 51%, 100% { opacity: 0.9; }
+  47% { opacity: 0.04; } /* Blinzeln */
+}
+.px-scene .px-echo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: px-echoPulse 1.9s ease-out infinite;
+}
+.px-scene .px-echo--urgent { animation-duration: 0.72s; } /* Zeit knapp → pocht dringlich */
+@keyframes px-echoPulse {
+  0% { opacity: 0.95; transform: scale(0.82); }
+  70% { opacity: 0.28; transform: scale(1.14); }
+  100% { opacity: 0.95; transform: scale(0.82); }
+}
+
+/* =========================================================================
+   Barrierefreiheit
+   ========================================================================= */
+/* Bewegung reduzieren: alle Bewegung still, Posen bleiben als Standbild lesbar. */
+/* Schneesturm (E5, §4.4): wehender Schnee treibt seitwärts; die Merk-Tafel blendet
+   beim Erscheinen sanft ein. Beide werden von der reduced-motion-Regel stillgelegt. */
+@keyframes px-stormDrift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-96px);
+  }
+}
+.px-storm-snow {
+  animation: px-stormDrift 1.1s linear infinite;
+}
+@keyframes px-stormBoardIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Nur Deckkraft animieren — das translate steckt im SVG-transform-Attribut und darf
+   nicht von einer CSS-transform-Animation überschrieben werden. */
+.px-storm-board {
+  animation: px-stormBoardIn 0.35s ease-out;
+}
+
+/* Polarstation (E6, §4.5, Wort-Raten): Rate-Tafel blendet ein (nur Deckkraft, s. o.);
+   die rote Mastlampe blinkt ruhig; Funkwellen blitzen beim Senden auf; die Rate-Tafel
+   wackelt kurz bei einem Fehlgriff. Alle werden von der reduced-motion-Regel stillgelegt. */
+.px-station-board {
+  animation: px-stormBoardIn 0.35s ease-out;
+}
+@keyframes px-stationLamp {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.px-station-lamp {
+  animation: px-stationLamp 2s ease-in-out infinite;
+}
+/* Funkwellen: nur Deckkraft aufblitzen (die Position steckt im SVG-transform-Attribut). */
+@keyframes px-stationWave {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.px-station-waves {
+  animation: px-stationWave 1.1s ease-out;
+}
+/* Wort-Raten: die Rate-Tafel wackelt kurz bei einem Fehlgriff (Wort-Raten, §4.5). */
+@keyframes px-stationShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+.px-station-shake {
+  animation: px-stationShake 0.3s ease-in-out;
+}
+
+/* =========================================================================
+   E7 — Reise-Dramaturgie: Mini-Reisekarte, Tagebuch, Rückenwind-Meter
+   ========================================================================= */
+
+/* Mini-Reisekarte in der Kopfzeile (Hud.tsx): „Zone i/N" + ein Punkt je Zone. */
+.px-hud__map {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.px-hud__step {
+  /* ★ Kontrast (29.10.2026): vorher 0.82rem und Deckkraft .85. */
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.px-hud__dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+/* ★ Kontrast (29.10.2026): die Punkte standen mit Deckkraft .32/.4/.85 auf dem dunklen Balken
+   (die dunklen Zeiten Dämmerung/Nacht bis herab auf 1,3 : 1). Jetzt hat JEDER Punkt einen hellen
+   Rand (≥ 3 : 1), und der Stand steht in der FORM, nicht in der Blässe: noch offen = hohl,
+   geschafft = gefüllt mit der Farbe der Tageszeit, jetzt = gefüllt, größer, mit weißem Ring. */
+.px-hud__dot {
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  border-radius: 999px;
+  background: var(--dot, #7fb2dd);
+  border: 2px solid #c9dcee;
+  transition: transform 0.2s;
+}
+.px-hud__dot--done {
+  background: var(--dot, #7fb2dd);
+}
+.px-hud__dot--current {
+  transform: scale(1.5);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85), 0 0 8px var(--dot);
+}
+.px-hud__dot--todo {
+  background: transparent;
+}
+
+/* Rückenwind-Meter (§4.8): schmaler Balken, füllt sich bei gleichmäßigem Tippen. */
+.px-tailwind {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 340px;
+  margin: 0 auto;
+}
+.px-tailwind__label {
+  font-size: 1rem;
+}
+.px-tailwind__track {
+  flex: 1 1 auto;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+.px-tailwind__fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #7de3a8, #63cff2);
+  transition: width 0.35s ease-out;
+}
+
+/* Weiche Zwischen-Zeile (Reise-Modus: „Weiter geht die Reise …"). */
+.px-status--soft {
+  font-weight: 600;
+}
+
+/* Expeditionstagebuch (§4.7): Blatt über dem Spielfeld, halbdunkler Hintergrund. */
+.px-diary {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background: rgba(6, 12, 24, 0.62);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+.px-diary__page {
+  max-width: 30rem;
+  width: 100%;
+  background: linear-gradient(180deg, #fffaf0, #fdf1dc);
+  color: #3a2c1a;
+  border: 1px solid #e6d3ad;
+  border-left: 8px solid #d9b877;
+  border-radius: 12px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+  padding: 1.3rem 1.5rem 1.4rem;
+}
+.px-diary__eyebrow {
+  margin: 0 0 0.5rem;
+  /* ★ Kontrast (29.10.2026): `#9a7a3e` auf dem Blatt war 3,6 : 1 bei 13 px. */
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #6e5217;
+  text-transform: uppercase;
+}
+.px-diary__zone {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #2b2010;
+}
+.px-diary__task {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+.px-diary__example {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  color: #5a4526;
+  font-style: italic;
+}
+.px-diary__probe {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+  color: #1f5a37;
+  background: #e7f6ec;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+}
+.px-diary__hint {
+  margin: 0.7rem 0 0;
+  font-size: 1rem;
+  color: #5a4526;
+}
+.px-diary__hint kbd {
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid #cdb488;
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  padding: 0.05rem 0.4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .px-stage *,
+  .px-stage *::before,
+  .px-stage *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}
+
+/* Höchstkontrast/forced-colors: Chrome + Text lesbar halten (Szene behält Palette). */
+@media (forced-colors: active) {
+  .px-stage {
+    background: Canvas;
+    color: CanvasText;
+  }
+  .px-hud,
+  .px-controls,
+  .px-debugbar {
+    background: Canvas;
+    border: 1px solid CanvasText;
+  }
+  .px-btn,
+  .px-hud__toggle {
+    color: ButtonText;
+    background: ButtonFace;
+    border-color: ButtonText;
+  }
+  .px-btn[aria-pressed="true"],
+  .px-hud__toggle[aria-pressed="true"] {
+    color: HighlightText;
+    background: Highlight;
+    border-color: HighlightText;
+  }
+  .px-viewport:focus-visible {
+    outline-color: Highlight;
+  }
+  /* Die Reisepunkte: hohl = offen, gefüllt = geschafft / jetzt (die Farbe der Tageszeit entfällt). */
+  .px-hud__dot {
+    border-color: CanvasText;
+    background: Canvas;
+  }
+  .px-hud__dot--done,
+  .px-hud__dot--current {
+    background: CanvasText;
+  }
+}

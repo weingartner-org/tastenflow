@@ -1,0 +1,3700 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Stand-Marke (22.08.2026): einmalig geaendert, damit die CSS-Datei einen neuen
+   Namen bekommt - Browser, die waehrend des Ausfalls 20:36-20:39 eine
+   HTML-Fehlantwort unter dem alten Namen gecacht haben, laden so frisch. */
+:root {
+  --sensorik-stand: "2026-08-22b";
+}
+
+/* Atkinson Hyperlegible (Braille Institute, SIL OFL): eine Schrift, die eigens
+   für Menschen mit Sehbeeinträchtigung auf maximale Unterscheidbarkeit der
+   Buchstaben (b/d, I/l/1, 0/O …) entwickelt wurde. Mitgeliefert (public/fonts),
+   damit sie auf JEDEM Gerät erscheint — unabhängig davon, was installiert ist.
+   Genutzt im Tipptrainer „Flinke Finger". */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ★ SCHRIFTWAHL IM ÜBUNGSFELD (09.10.2026) - `src/lib/typing/schriftart.ts`.
+   Der Browser lädt eine Datei erst, wenn die Schrift gebraucht wird; wer bei
+   Atkinson bleibt, lädt keine davon. Herkunft und Lizenzen:
+   `public/fonts/SCHRIFTEN-LIZENZEN.md`. */
+@font-face {
+  font-family: "Tastenflow Primae Druck";
+  src: url("/fonts/primae-druck-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Primae Druck";
+  src: url("/fonts/primae-druck-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Primae Druck";
+  src: url("/fonts/primae-druck-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Primae Schreib";
+  src: url("/fonts/primae-schreib-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Primae Schreib";
+  src: url("/fonts/primae-schreib-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Primae Schreib";
+  src: url("/fonts/primae-schreib-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Andika";
+  src: url("/fonts/andika-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Andika";
+  src: url("/fonts/andika-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Lexend";
+  src: url("/fonts/lexend-variabel.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Luciole";
+  src: url("/fonts/luciole-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Luciole";
+  src: url("/fonts/luciole-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow OpenDyslexic";
+  src: url("/fonts/opendyslexic-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow OpenDyslexic";
+  src: url("/fonts/opendyslexic-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Atkinson Mono";
+  src: url("/fonts/atkinson-mono-variabel.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tastenflow Inclusive Sans";
+  src: url("/fonts/inclusive-sans-variabel.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+/* Johannes 09.10.2026: umschaltbar ist NUR die Schrift im Übungsfeld - die
+   Zeile zum Abschreiben, die getippte Zeile und das (durchsichtige)
+   Eingabefeld darüber, das gleich breit setzen muss. Die Programmschrift
+   bleibt Atkinson. Zwei Klassen, damit `font-legible` sicher verliert. */
+.tt-uebungsschrift.font-legible {
+  font-family: var(--tt-uebungsschrift, "Atkinson Hyperlegible"), "Atkinson Hyperlegible",
+    -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+/* ★★ SCHREIBSCHRIFT (`tt-schreibschrift` an <html>, gemessen 09.10.2026):
+   Als Flex-Elemente formt der Browser jedes Zeichen für sich - die Buchstaben
+   verbinden sich nicht, und das „H" der Primæ zerfällt in „Il". Als INLINE-
+   Spannen in EINER Zeile ohne Innenabstand und ohne Sperrung bleibt die
+   Schrift verbunden, und das aktive Zeichen trägt seine Balken trotzdem.
+   Der CVI-Abstand kommt dann aus `letter-spacing` statt aus `gap` - genau
+   die Rechnung, die das Eingabefeld ohnehin hat (`TypingSession.tsx`,
+   Basis dort 0 statt 0,145em). */
+.tt-schreibschrift .tt-uebungsschrift.flex {
+  display: block;
+}
+.tt-schreibschrift .tt-uebungsschrift {
+  letter-spacing: 0;
+}
+.tt-schreibschrift .tt-uebungsschrift.tt-laufweite {
+  letter-spacing: calc((var(--tt-laufweite, 1) - 1) * 0.75ch);
+}
+.tt-schreibschrift .tt-uebungsschrift > span {
+  padding-inline: 0;
+}
+
+/* ══ PLUS: der Übungsbildschirm (Johannes, 16.10.2026, Entwurf „A2 neu") ══════
+   ★ Das Türkis von Plus (seit 21.10.2026, vorher das Grün des Zeichens #1F8427) als Akzent - NUR in Hell und Dunkel. Die
+   fünf Kontrastmodi bringen ihre eigene Palette mit und bleiben unberührt
+   (`:not(...)`); dort trägt wie überall der Rahmen, nicht die Fläche.
+   Die Klasse `plus-flaeche` setzt `usePlusFlaeche()` an `<html>`, solange Plus
+   offen ist - so gilt sie auch für das Zahnrad und die Hilfe, die ausserhalb
+   der Seite zeichnen. Die Kopfzeile (gehört allen Apps) bleibt unverändert und
+   liest nur die Farbwerte. */
+:root.plus-flaeche:not(:is([data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"])) {
+  --c-accent: 0 118 110;
+  --c-accent-hover: 0 92 87;
+  --c-accent-soft: 214 248 244;
+  --c-accent-solid: 0 170 158;
+  --c-accent-solid-hover: 0 156 146;
+  --c-on-accent: 2 40 38;
+  --c-surface: 251 246 236;
+  --c-surface-sunken: 243 237 223;
+  --c-hairline: 205 196 176;
+}
+:root.dark.plus-flaeche:not(:is([data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"])) {
+  --c-accent: 94 216 205;
+  --c-accent-hover: 130 230 220;
+  --c-accent-soft: 20 60 58;
+  --c-accent-solid: 45 190 178;
+  --c-accent-solid-hover: 80 210 198;
+  --c-on-accent: 4 32 30;
+  --c-surface: 38 38 42;
+  --c-surface-sunken: 62 62 68;
+  --c-hairline: 84 84 92;
+}
+
+/* ══ LEXAMI: heller Cremegrund (Johannes, 14.11.2026: „ich möchte das helle beige auf der
+   ganzen seite") ══ Dasselbe Creme wie Zeichen und Startbild (#FFF4E0). NUR im hellen
+   Modus; Dunkel und die fünf Kontrastmodi bleiben unberührt. Gesetzt von
+   `useLexamiFlaeche()` (lib/woerterbuch/flaeche.ts). Karten bleiben weiß (raised).
+   Gemessen: Text ink-muted (110 110 115) auf #FFF4E0 = 4,7:1. */
+:root.lexami-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) {
+  --c-surface: 255 244 224;
+  --c-surface-sunken: 247 233 207;
+  --c-hairline: 222 205 175;
+}
+
+/* ══ LEXAMI: Standardschrift und Name (Johannes 14.11.2026) ══ Die gewählte Schrift gilt für die ganze
+   Seite (auch Fenster an `body`), gesetzt von `useLexamiSchriftAnwenden()`. Der Name „Lexami" bleibt
+   IMMER Fredoka (`lx-wortmarke`) - die Schrift des Zeichens, vom eigenen Server. */
+:root.lexami-schrift body {
+  font-family: var(--lx-schrift), "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@font-face {
+  font-family: "Lexami Fredoka";
+  src: url("/fonts/fredoka-variabel.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+.lx-wortmarke {
+  font-family: "Lexami Fredoka", "Atkinson Hyperlegible", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* ★★★ PLUS, HELLE ANSICHT (Johannes, 21.10.2026: „Plus kann schon grün bleiben, aber ich wollte
+   den Farbverlauf und je nach Beispielart den Rechenbereich eingefärbt"). Plus bleibt grün
+   (Akzent, Cremegrund); der RECHENBEREICH - Sprechblase und Antwortfeld - trägt je nach Familie
+   der Aufgabenart einen Farbverlauf und einen Streifen links: rechnen türkis, muster blau,
+   prüfen orange, sach lila, knobel pink (`artFamilie()` in `PlusUebung.tsx`). Nur Farbe, kein
+   erzeugter Inhalt; die Art steht weiter im Text. Nur Hell - Dunkel und die fünf Kontrastmodi
+   bleiben unberührt. */
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-rechenbereich {
+  --k: 0 170 158; --kt: 170 242 235;
+  padding: 1rem;
+  border-radius: 22px;
+  border: 1px solid rgb(var(--k) / 0.25);
+  border-left: 8px solid rgb(var(--k));
+  background: linear-gradient(135deg, rgb(var(--kt)) 0%, #fff 85%);
+  box-shadow: 0 2px 10px rgba(30, 50, 100, 0.07);
+}
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-rechenbereich[data-art="muster"]  { --k: 29 78 216;  --kt: 196 216 255; }
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-rechenbereich[data-art="pruefen"] { --k: 194 65 12;  --kt: 255 210 176; }
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-rechenbereich[data-art="sach"]    { --k: 126 34 206; --kt: 222 200 255; }
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-rechenbereich[data-art="knobel"]  { --k: 190 24 93;  --kt: 255 198 220; }
+
+/* ★ LICHT (Johannes, 21.10.2026: „noch ein bisschen heller und mit Lichteffekt, es soll ein wenig
+   strahlen"). Das Türkis ist jetzt hell (`0 170 158`), darauf steht DUNKLE Schrift (`--c-on-accent`,
+   5,4:1) - weisse Schrift hielte 4,5:1 nur bei dunklerem Türkis. Der Schein ist statisch (kein
+   Blinken, keine Bewegung) und nur Zusatz: ein Lichtfleck oben links, ein weicher Schein ums Feld.
+   Nur Hell; Dunkel und die fünf Kontrastmodi bleiben unberührt. */
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-rechenbereich {
+  background-image:
+    radial-gradient(circle at 12% 0%, rgb(255 255 255 / 0.85) 0%, transparent 45%),
+    linear-gradient(135deg, rgb(var(--kt)) 0%, #fff 85%);
+  box-shadow: 0 0 26px rgb(var(--k) / 0.28), 0 2px 10px rgba(30, 50, 100, 0.07), inset 0 1px 0 rgb(255 255 255 / 0.9);
+}
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) .plus-knopf-haupt {
+  background-image: linear-gradient(180deg, rgb(255 255 255 / 0.38) 0%, transparent 60%);
+  box-shadow: 0 4px 0 rgb(var(--c-accent-solid-hover)), 0 0 22px rgb(0 200 185 / 0.5);
+}
+:root.plus-flaeche:not(.dark, [data-theme="sw"], [data-theme="ws"], [data-theme="sg"], [data-theme="gs"], [data-theme="gb"]) section[aria-labelledby="plus-training"] {
+  background-image:
+    radial-gradient(circle at 14% 8%, rgb(255 255 255 / 0.55) 0%, transparent 50%),
+    linear-gradient(135deg, rgb(0 235 215 / 0.5) 0%, transparent 70%) !important;
+  box-shadow: 0 0 30px rgb(0 200 185 / 0.45), inset 0 1px 0 rgb(255 255 255 / 0.7);
+}
+
+/* Die Rückmeldung am Eingabefeld: einmal ein weicher Ring (richtig), einmal
+   ein kurzes, leises Zittern (falsch). Beides nur Zusatz - Zeichen im Feld und
+   der Satz darunter sagen es immer auch. „Weniger Bewegung" im System: die
+   Regel weiter oben kürzt jede Animation auf einen Augenblick. */
+@keyframes plus-halo {
+  0% { box-shadow: 0 0 0 0 rgb(var(--c-success) / 0.5); }
+  100% { box-shadow: 0 0 0 18px rgb(var(--c-success) / 0); }
+}
+@keyframes plus-nudge {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  45% { transform: translateX(5px); }
+  70% { transform: translateX(-3px); }
+}
+@keyframes plus-zeichen {
+  from { opacity: 0; transform: scale(0.6); }
+  to { opacity: 1; transform: scale(1); }
+}
+.plus-fx-richtig { animation: plus-halo 0.9s ease-out 1; }
+.plus-fx-falsch { animation: plus-nudge 0.45s ease-in-out 1; }
+.plus-fx-zeichen { animation: plus-zeichen 0.25s ease-out 1; }
+
+/* Die drei Knöpfe der Übung - gross, damit man sie auch bei starker
+   Vergrösserung trifft. Eigene Klassen: `.btn-primary` hat durch die
+   Einheitshöhe der Bedienelemente (R1, weiter unten) nur 36 px. */
+.plus-knopf {
+  display: inline-flex;
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.25rem 1.75rem;
+  border: 2px solid rgb(var(--c-accent-solid));
+  border-radius: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.plus-knopf-haupt {
+  background: rgb(var(--c-accent-solid));
+  color: rgb(var(--c-on-accent));
+  box-shadow: 0 4px 0 rgb(var(--c-accent-solid-hover));
+}
+.plus-knopf-zweit {
+  background: rgb(var(--c-surface-raised));
+  color: rgb(var(--c-accent));
+  border-color: rgb(var(--c-accent));
+}
+.plus-knopf-klein {
+  min-height: 3rem;
+  padding: 0.25rem 1.25rem;
+  border-radius: 999px;
+  font-size: 1.125rem;
+}
+.plus-knopf-leise {
+  min-height: 3rem;
+  border-color: transparent;
+  background: transparent;
+  color: rgb(var(--c-ink-muted));
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@layer base {
+  /* Light theme (default). All values WCAG 2.1 AA verified against the
+     surfaces they sit on. RGB triplets so Tailwind can apply opacity. */
+  :root {
+    color-scheme: light;
+    --focus-ring: 0 0 0 4px rgba(0, 102, 204, 0.45);
+
+    --c-ink: 29 29 31;
+    --c-ink-soft: 58 58 60;
+    --c-ink-muted: 110 110 115;
+    --c-surface: 251 251 253;
+    --c-surface-raised: 255 255 255;
+    --c-surface-sunken: 242 242 247;
+    --c-accent: 0 102 204;
+    --c-accent-hover: 0 85 171;
+    --c-accent-soft: 232 241 252;
+    --c-success: 30 126 52;
+    --c-success-soft: 230 244 234;
+    --c-warning: 161 86 0;
+    --c-warning-soft: 255 244 224;
+    --c-danger: 199 0 11;
+    --c-danger-soft: 253 236 236;
+    --c-hairline: 210 210 215;
+
+    /* solid action surfaces (buttons) keep their own fg for contrast */
+    --c-accent-solid: 0 102 204;
+    --c-accent-solid-hover: 0 85 171;
+    --c-on-accent: 255 255 255;
+  }
+
+  /* Dark theme — softened "Apple grey" elevation (not near-black).
+     Contrast re-verified: body text >= 9:1, secondary >= 4.7:1 on cards. */
+  :root.dark {
+    color-scheme: dark;
+    --focus-ring: 0 0 0 4px rgba(122, 178, 255, 0.55);
+
+    --c-ink: 245 245 247;
+    --c-ink-soft: 213 213 219;
+    --c-ink-muted: 170 170 178;
+    --c-surface: 38 38 42; /* page background: clear grey */
+    --c-surface-raised: 52 52 57; /* cards: a touch lighter */
+    --c-surface-sunken: 62 62 68; /* controls / wells: lighter still */
+    --c-accent: 130 184 255;
+    --c-accent-hover: 162 204 255;
+    --c-accent-soft: 36 58 88;
+    --c-success: 86 214 130;
+    --c-success-soft: 28 60 40;
+    --c-warning: 244 186 100;
+    --c-warning-soft: 70 54 20;
+    --c-danger: 255 132 132;
+    --c-danger-soft: 78 32 34;
+    --c-hairline: 84 84 92;
+
+    --c-accent-solid: 56 132 255;
+    --c-accent-solid-hover: 90 155 255;
+    --c-on-accent: 11 11 12;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+    /* ★★ 28.09.2026: Ausnahme - das Gleiten der Übungszeile mit CVI-
+       Zeichenabstand. Es ist die für dieses Kind gewählte Einstellung (Zeile
+       gleitet langsam im eigenen Takt statt zu springen), keine Verzierung;
+       an Schulrechnern ist „weniger Bewegung" oft von der IT für alle gesetzt.
+       Die Dauer setzt TypingSession je Anschlag (`--tt-gleit-ms`). */
+    .tt-cvi-gleiten {
+      transition-duration: var(--tt-gleit-ms, 300ms) !important;
+    }
+  }
+
+  body {
+    @apply bg-surface text-ink font-sans antialiased;
+    margin: 0;
+    min-height: 100vh;
+    /* Kontrastmodi setzen --contrast-weight auf 600 → Atkinson mappt zu Bold (700),
+       Systemschrift zu Semibold (600). hell/dunkel: Fallback 400 = Normal. */
+    font-weight: var(--contrast-weight, 400);
+  }
+
+  /*
+   * ★★★★★ WO MAN STEHT, MUSS MAN SEHEN - 4,5px (Johannes, 07.09.2026, zweimal
+   * am selben Tag: „wir brauchen dickere textramen in der aktiven zelle/Schalter
+   * damit man sieht wo man steht" und abends „mach den rahmen der fokuszelle
+   * auch im nicht kontrastmodus etwas dicker, nicht so dick wie im
+   * kontrastmodus aber dicker").
+   *
+   * ⚠️ Ein Fokusrahmen ist kein Schmuck: Er ist bei einem Kind mit Sehrest das
+   * einzige Zeichen dafür, wo die nächste Taste hinwirkt. 3px waren auf einem
+   * 800%-vergrösserten Blatt ein Haarstrich neben 40px hohen Ziffern.
+   *
+   * ★★★ DIE DREI DICKEN GEHÖREN ZUSAMMEN und stehen in dieser Ordnung:
+   * 3px war zu dünn · **4,5px im gewöhnlichen Modus** · 5px im
+   * Windows-Hochkontrastmodus (unten, `forced-colors`). Dort ist der Umriss
+   * das EINZIGE Zeichen - kein sanftes Blau, kein Schatten daneben -, darum
+   * bleibt er dort der dickste.
+   *
+   * ⚠️⚠️ Diese Regel hat die Gewichtung 0 (`:where`) und verliert damit gegen
+   * JEDE Tailwind-Utility. Wer irgendwo `focus:outline-2` schreibt, hat an
+   * dieser Stelle wieder 2px - gemessen am 07.09. an sechs Stellen im
+   * Mathecoach-Revier (Aufgabentext, Tabellenzelle, Rechnungsschild,
+   * Satzzeile). Sie sind auf dieselbe Dicke gehoben; wer eine neue anlegt,
+   * schreibt `focus:outline-[4.5px]`.
+   */
+  :where(a, button, input, select, textarea, [tabindex], [role="button"]):focus-visible {
+    outline: 4.5px solid theme("colors.accent.DEFAULT");
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: theme("colors.accent.soft");
+    color: theme("colors.ink.DEFAULT");
+  }
+}
+
+@layer components {
+  /* ---- Skip link --------------------------------------------------- */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    background: theme("colors.accent.DEFAULT");
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0 0 12px 12px;
+    transition: top 0.15s theme("transitionTimingFunction.apple");
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /*
+   * ★ 05.09.2026 - Zeilenlänge hinter der Anmeldung.
+   *
+   * Gemessen auf 1600 px: Erklärungstexte liefen über die volle Breite -
+   * „Konten bleiben über die ganze Studienzeit erhalten ..." mit **126
+   * Zeichen je Zeile** in der Verwaltung, 118 im Komponisten. Das sind genau
+   * die Sätze, die erklären, was ein Schalter anrichtet; wer sie nicht liest,
+   * klickt raten.
+   *
+   * Begrenzt wird der TEXT, nicht der Rahmen: Tabellen, Formularraster und
+   * Karten behalten ihre Breite - die Verwaltung steht bewusst auf 1400 px,
+   * weil sie Tabellen zeigt. 80ch statt der 75ch im Lehrpfad, weil das hier
+   * Handreichungen sind und keine Lesetexte.
+   *
+   * ⚠️ Die Klasse gehört an die HÜLLE (`Layout.tsx`, `AdminLayout.tsx`), nicht
+   * an einzelne Seiten - sonst hat sie in einem Monat die halbe Plattform und
+   * die andere Hälfte nicht.
+   * ⚠️ `.ce-callout` gehört dazu: Die Hinweis-Kästen sind DIVs, kein `p` - der
+   * erste Zuschnitt liess sie mit 132 Zeichen stehen.
+   *
+   * ⚠️⚠️ `li` gehört NICHT dazu, obwohl es nach Text aussieht. Gemessen: Die
+   * zweite Fassung dieser Regel nahm `li` mit - und schnitt damit die
+   * Termin-Kacheln der Kursinformation auf 705 px zusammen, weil die Kacheln
+   * `li`-Elemente einer Liste sind, kein Fliesstext. Eine Aufzählung ist auf
+   * dieser Plattform genauso oft Layout wie Text; `p` und `.ce-callout` sind
+   * es nie.
+   */
+  .lesbare-breite :where(p, .ce-callout) {
+    max-width: 80ch;
+  }
+  .lesbare-breite :where(td, th, label, .card--breit) :where(p, .ce-callout) {
+    max-width: none;
+  }
+
+  /* ---- Hörsaal: den Platz nutzen, vom Tablet bis zum 4K-Monitor -------
+   * Muster von Statable (10.10.2026): kein fester Höchstwert für die Breite -
+   * der Seitenrand wächst mit dem Fenster (clamp), Karten und Listen
+   * füllen die Fläche als Raster (auto-fill), nur Fließtext behält seine
+   * Zeilenlänge (.lesbare-breite, max-w-prose). Gilt NUR im Hörsaal:
+   * `.hs-seite` steht in Layout.tsx und AdminLayout.tsx, nicht in den
+   * Kinder-Apps - `max-w-content` (Mathecoach u. a.) bleibt unberührt. */
+  :root {
+    --hs-rand: clamp(0.5rem, 1.6vw, 2.5rem);
+    --hs-menue: calc(13.5rem + var(--hs-rand));
+  }
+  @media (min-width: 1700px) {
+    :root { --hs-menue: calc(15.5rem + var(--hs-rand)); }
+  }
+  @media (min-width: 2400px) {
+    :root { --hs-menue: calc(18rem + var(--hs-rand)); }
+  }
+  .hs-seite {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--hs-rand);
+  }
+  /* Ein Streifen, der über den Seitenrand hinausragt (Kurs-Reiter): */
+  .hs-seite-aussen {
+    margin-inline: calc(-1 * var(--hs-rand));
+  }
+  .hs-seite-voll {
+    width: 100%;
+  }
+  /* Kachelraster: so viele Spalten, wie in die Breite passen. */
+  .hs-kacheln {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(100%, var(--hs-kachel, 22rem)), 1fr)
+    );
+    align-items: start;
+  }
+  .hs-kacheln--breit {
+    --hs-kachel: 32rem;
+  }
+  /* Arbeitsfläche (C): links die Kurs-Seitenleiste, rechts der Kurs.
+   * Erst ab lg (1024 px) zwei Spalten; darunter steht nur der Kurs. */
+  .hs-arbeitsflaeche {
+    display: block;
+  }
+  @media (min-width: 1024px) {
+    .hs-arbeitsflaeche {
+      display: grid;
+      grid-template-columns: var(--hs-leiste, 13rem) minmax(0, 1fr);
+      column-gap: var(--hs-rand);
+      align-items: start;
+    }
+    .hs-kursleiste {
+      position: sticky;
+      top: calc(var(--topbar-height, 3.5rem) + 1rem);
+    }
+  }
+  @media (min-width: 1700px) {
+    .hs-arbeitsflaeche { --hs-leiste: 15rem; }
+  }
+  @media (min-width: 2400px) {
+    .hs-arbeitsflaeche { --hs-leiste: 17rem; }
+  }
+  /* Kursinfo: Termine links, "Was noch offen ist" und Bewertung rechts.
+   * Erst ab 1400 px, sonst eine Spalte wie bisher. */
+  .hs-kursinfo-spalten {
+    display: block;
+  }
+  @media (min-width: 1400px) {
+    .hs-kursinfo-spalten {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(22rem, 30rem);
+      column-gap: 1.5rem;
+      row-gap: 0;
+      align-items: start;
+    }
+    .hs-kursinfo-spalten > * {
+      grid-column: 1;
+    }
+    .hs-kursinfo-spalten > .hs-kursinfo-rand {
+      grid-column: 2;
+      grid-row: 1 / span 20;
+      position: sticky;
+      top: calc(var(--topbar-height, 3.5rem) + 4rem);
+    }
+  }
+  /* Große Bildschirme: die Grundschrift wächst mit, sonst wird der Text
+   * auf einem 4K-Monitor winzig. Die Klasse setzt der Hörsaal-Rahmen
+   * selbst auf <html> (useHoersaalWeite) und nimmt sie beim Verlassen
+   * wieder weg; die Kinder-Apps bleiben bei 100 %. Alles in rem wächst
+   * mit, die Raster bekommen entsprechend mehr Platz. */
+  @media (min-width: 2200px) {
+    html.hs-welt { font-size: 112.5%; }
+  }
+  @media (min-width: 3000px) {
+    html.hs-welt { font-size: 137.5%; }
+  }
+
+  /* ---- Rendered Moodle content ------------------------------------- */
+  .ce-content {
+    @apply text-ink leading-relaxed;
+    font-size: 1.0625rem;
+  }
+  .ce-content > * + * {
+    margin-top: 1rem;
+  }
+
+  /*
+   * ★ 05.09.2026 - Zeilenlänge im Lehrpfad.
+   *
+   * Gemessen auf 1600 px: Der Fliesstext einer Lektion stand über die volle
+   * Kartenbreite, 1102 px = **107 Zeichen je Zeile**. Lesbar ist der Bereich
+   * um 65 bis 80; darüber verliert das Auge beim Zeilenwechsel den Anschluss -
+   * und genau das trifft die Studierenden, die hier am längsten lesen, sowie
+   * jede Person, die den Text vergrössert.
+   *
+   * Begrenzt wird deshalb der TEXT, nicht der Rahmen: Tabellen, Bilder,
+   * Videos, Code und die eingebetteten Bausteine (Simulationen, Quizze)
+   * behalten die volle Breite - sie brauchen sie. Dieselbe Bauart wie in den
+   * Simulationen und den Rechtstexten: Rahmen weit, Text schmal.
+   *
+   * ⚠️ Wer hier ein Element ergänzt, das breit sein MUSS, nimmt es unten aus.
+   */
+  /* ⚠️ NICHT `> p`: Der gerenderte Lektionsinhalt liegt eine Ebene tiefer,
+     in einem anonymen Wrapper-DIV. Die erste Fassung dieser Regel traf
+     deshalb nichts - gemessen blieben es 107 Zeichen. `:where()` hält die
+     Spezifität bei 0, damit ein Baustein sie mit einer eigenen Klasse
+     überschreiben kann, ohne `!important`. */
+  .ce-content :where(p, ul, ol, dl, h2, h3, h4, blockquote, .ce-callout) {
+    max-width: 75ch;
+  }
+  /* Was breit sein MUSS, bleibt breit - auch der Text darin. */
+  .ce-content :where(table, figure, .media-mount, .widget-mount)
+    :where(p, ul, ol, dl, h2, h3, h4, blockquote, .ce-callout),
+  .ce-content :where(table, figure, .media-mount, .widget-mount) {
+    max-width: none;
+  }
+  .ce-content h2,
+  .ce-content h3,
+  .ce-content h4 {
+    @apply font-semibold text-ink;
+    line-height: 1.25;
+    margin-top: 1.75rem;
+  }
+  .ce-content h3 {
+    font-size: 1.3rem;
+  }
+  .ce-content h4 {
+    font-size: 1.1rem;
+  }
+  .ce-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  .ce-content ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+  }
+  .ce-content li + li {
+    margin-top: 0.4rem;
+  }
+  .ce-content a {
+    @apply text-accent underline underline-offset-2;
+  }
+  .ce-content a:hover {
+    @apply text-accent-hover;
+  }
+  .ce-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  .ce-content th,
+  .ce-content td {
+    border: 1px solid theme("colors.hairline");
+    padding: 0.55rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .ce-content th {
+    @apply bg-surface-sunken font-semibold;
+  }
+  .ce-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  /* 1.1 — Medien-Insert im Autoren-Editor: rohe <video>/<audio>-Tags
+     erscheinen auch ohne MediaRef-Token. Layout theme-safe. */
+  .ce-content video,
+  .ce-content audio {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  .ce-content video {
+    border-radius: 12px;
+    background: rgb(var(--c-surface-sunken));
+  }
+  .ce-content audio {
+    width: 100%;
+  }
+
+  /* ---- YouTube-Vorschau (datensparsam, kein Auto-Embed) ------------ */
+  .ce-yt {
+    display: block;
+    max-width: 33rem;
+    text-decoration: none !important;
+    border: 1px solid rgb(var(--c-hairline) / 0.6);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .ce-yt__frame {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: rgb(var(--c-ink) / 0.06);
+  }
+  .ce-yt__thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  .ce-yt__play {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+  }
+  .ce-yt__play svg {
+    filter: drop-shadow(0 1px 4px rgb(0 0 0 / 0.45));
+    transition: transform 0.15s ease;
+  }
+  .ce-yt:hover .ce-yt__play svg,
+  .ce-yt:focus-visible .ce-yt__play svg {
+    transform: scale(1.08);
+  }
+  .ce-yt__label {
+    @apply bg-surface-sunken text-ink-soft;
+    display: block;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .ce-yt:focus-visible {
+    outline: 3px solid rgb(var(--c-accent));
+    outline-offset: 2px;
+  }
+  /* Inline-Wiedergabe (kein neuer Tab): Player ersetzt das Vorschaubild */
+  .ce-yt--playing {
+    border: 0;
+  }
+  .ce-yt__iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  /* ---- Callouts (mapped from Moodle alert-* classes) ---------------
+     Theme-safe: soft tint background, themed ink text, coloured accent
+     edge. Works identically in light and dark. */
+  .ce-callout {
+    border-radius: 14px;
+    margin: 0.875rem 0;
+    padding: 0.75rem 1rem;
+    color: rgb(var(--c-ink));
+    border: 1px solid rgb(var(--c-hairline) / 0.6);
+    border-left-width: 4px;
+  }
+  /* zwei direkt aufeinander folgende Kästen brauchen sichtbare Luft */
+  .ce-callout + .ce-callout {
+    margin-top: 1rem;
+  }
+  /* erstes/letztes Element in einem Kasten nicht zusätzlich abstoßen */
+  .ce-callout > :first-child {
+    margin-top: 0;
+  }
+  .ce-callout > :last-child {
+    margin-bottom: 0;
+  }
+  .ce-callout :where(strong, b) {
+    color: rgb(var(--c-ink));
+  }
+  .ce-callout--info {
+    background: rgb(var(--c-accent-soft));
+    border-left-color: rgb(var(--c-accent));
+  }
+  .ce-callout--success {
+    background: rgb(var(--c-success-soft));
+    border-left-color: rgb(var(--c-success));
+  }
+  .ce-callout--warning {
+    background: rgb(var(--c-warning-soft));
+    border-left-color: rgb(var(--c-warning));
+  }
+  .ce-callout--danger {
+    background: rgb(var(--c-danger-soft));
+    border-left-color: rgb(var(--c-danger));
+  }
+
+  /* ★ Wissens-Quiz + Lehrpfad-Fluss (16.09.2026): Kinder sahen bei einer
+     Antwort nur eine ruhige Farbfläche und wussten nicht sicher, ob sie
+     richtig lagen — vor allem „falsch" hing bisher an derselben blassblauen
+     Fläche wie ein neutraler Hinweis. Die Fläche bekommt jetzt zusätzlich
+     eine kurze, einmalige Bewegung. „Weniger Bewegung" kürzt sie über die
+     globale Regel oben auf 0,001 ms - `backwards` statt `both`/`forwards`,
+     damit hier (wie beim Seiten-Übergang oben) kein `transform` über das
+     Animationsende hinaus stehen bleibt. */
+  @keyframes iq-feedback-pop {
+    0% {
+      transform: scale(0.92);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.035);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes iq-feedback-in {
+    0% {
+      transform: scale(0.97);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .iq-feedback-correct {
+    animation: iq-feedback-pop 380ms cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+  }
+  .iq-feedback-wrong {
+    animation: iq-feedback-in 260ms ease-out backwards;
+  }
+
+  .card {
+    @apply bg-surface-raised rounded-2xl shadow-card border border-hairline/60;
+  }
+
+  /* ⚠️ 44 px (`min-h-[44px]`) bleiben die Regel der Plattform - auf den
+     Übungsbildschirmen der Kinder ist die grosse Zielgrösse Absicht. Auf „Meine
+     Klassen" und in der Kopfzeile aller Apps gilt 36 px über `.bedien-schlank`
+     (weiter unten; `apps/tastenflow/BAUPLAN-2026-09-11-KLASSENSEITE-
+     EINHEITLICH.md`, R1 und R10). Diese Klasse bleibt, wie sie ist. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl font-medium
+      px-4 py-2 min-h-[44px] transition-colors duration-150 ease-apple
+      disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn;
+    background: rgb(var(--c-accent-solid));
+    color: rgb(var(--c-on-accent));
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: rgb(var(--c-accent-solid-hover));
+  }
+  .btn-secondary {
+    @apply btn bg-surface-sunken text-ink hover:bg-hairline/40;
+  }
+  .btn-ghost {
+    @apply btn text-accent hover:bg-accent-soft;
+  }
+  /* Kompakter Umschalter (Segment-/Toggle-Knöpfe) — schlanker als ein
+     vollwertiger Aktions-Button. Wird mit .btn-primary/.btn-secondary
+     kombiniert. Aus `py-1.5` ergeben sich 32 px, mit `btn-umriss` 34 px.
+     ⚠️ Das ist KEINE Regel mehr für „Meine Klassen" und die Kopfzeile: Dort
+     setzt `.bedien-schlank` die Höhe auf 36 px (Bauplan 11.09.2026, R1) - wer
+     hier die Polsterung ändert, ändert nur noch die übrigen Stellen. */
+  .btn-toggle {
+    @apply !min-h-0 !rounded-lg !px-3 !py-1.5 text-sm;
+  }
+
+  /* ★★★ SPIELEN + KLASSENMATCH WERDEN RUND, WENN DER PLATZ NICHT REICHT
+     (18.09.2026, Johannes: „Die Symbole auf der Übeseite für Spielen und
+     Klassenmatch passen nicht zum Rest. Die Schalter sollen klein und rund
+     werden, wenn der Platz nicht reicht.")
+
+     Reicht die Breite der Stand-Zeile SELBST (nicht die des Bildschirms -
+     eine eigene benannte Abfrage, dieselbe Bauart wie `.blatt-flaeche` weiter
+     unten in dieser Datei), zeigen beide Schalter Sinnbild + Wort wie bisher.
+     Wird die Zeile schmäler als die Schwelle, schrumpfen sie zu runden
+     36-px-Knöpfen wie in der Kopfzeile (`AppKopfzeile.tsx`, `rundKlasse`):
+     das Sinnbild bleibt sichtbar, das WORT WANDERT UNSICHTBAR IN DEN KNOPF -
+     dieselbe Technik wie Tailwinds `.sr-only` (Position ausserhalb des
+     sichtbaren Bilds statt `display:none`), damit der Name für
+     Sprachausgabe und Braillezeile unverändert bleibt. `aria-describedby`
+     und `aria-keyshortcuts` sitzen am Knopf selbst und sind von alledem
+     nicht betroffen.
+
+     ⚠️ Muss IN diesem Layer und mit `!important` stehen: `.btn-toggle`
+     darüber setzt Polsterung und Rundung ebenfalls mit `!important` - nur
+     eine spätere Regel im selben Layer mit derselben Waffe gewinnt
+     (anders als bei `.blatt-flaeche`, das ausserhalb jedes Layers steht und
+     genau darum OHNE `!important` auskommt).
+
+     ⚠️ SCHÄTZUNG, KEINE MESSUNG: jsdom kennt kein Layout. 48 rem (768 px) ist
+     dieselbe Schwelle wie beim Arbeitsblatt weiter unten - dort an einer
+     Vergrösserung von rund 170 % auf einem 1280-Punkte-Schirm gemessen, hier
+     nur ÜBERNOMMEN, weil auch die Stand-Zeile bei dieser Breite eng wird
+     (Übungsstufe, Übezeit, Wochenziel, Nächste Taste und der lange Hinweis
+     „Klassenmatch läuft gerade" nebeneinander). Die Schwelle braucht einen
+     Blick in den echten Browser (auch bei 200 % Textgröße) - jsdom kann das
+     nicht bestätigen. */
+  .standzeile-leiste {
+    container: standzeile / inline-size;
+  }
+  .standzeile-schalter-sinnbild {
+    width: 1rem;
+    height: 1rem;
+  }
+  @container standzeile (max-width: 48rem) {
+    .standzeile-schalter {
+      width: 2.25rem !important;
+      height: 2.25rem !important;
+      padding: 0 !important;
+      border-radius: 9999px !important;
+      gap: 0 !important;
+    }
+    .standzeile-schalter-sinnbild {
+      width: 1.375rem;
+      height: 1.375rem;
+    }
+    /* Das Wort bleibt im Baum (Name für Sprachausgabe/Braillezeile) - nur
+       ausserhalb des sichtbaren Bilds, nie `display:none` (das entfernte den
+       Namen ebenfalls aus dem Baum). */
+    .standzeile-schalter-wort {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  }
+  /* Rand + Fläche wie die runden Kopfzeilen-Knöpfe - NUR ausserhalb des
+     Kontrastmodus: Dort bekommt `.btn-secondary` seinen Rand schon weiter
+     unten in diesem Layer (`border: 1px solid ButtonBorder` im
+     `forced-colors`-Block). Eine feste Farbe hier würde diesen Systemrand
+     überschreiben, obwohl beide Regeln denselben Knopf treffen. */
+  @media (forced-colors: none) {
+    @container standzeile (max-width: 48rem) {
+      .standzeile-schalter {
+        border: 1px solid rgb(var(--c-hairline));
+        background-color: rgb(var(--c-surface-raised));
+      }
+      .standzeile-schalter:hover {
+        background-color: rgb(var(--c-surface-sunken));
+      }
+    }
+  }
+
+  /*
+   * ════════════════════════════════════════════════════════════════════════
+   * ★★★ DER EXCEL-SCHALTER WIRD RUND, WENN DER ZEITRAUM-KOPF ENG WIRD
+   * (18.09.2026, Bauplan „Meine Klassen" E1)
+   * ════════════════════════════════════════════════════════════════════════
+   * Dieselbe Bauart wie oben bei „Spielen"/„Klassenmatch" (`.standzeile-*`):
+   * Der Kopf über der Lernenden-Tabelle (`ZeitraumKopf.tsx`) trägt jetzt LINKS
+   * nur noch den Klassennamen und RECHTS eine einzige Gruppe - Blättern,
+   * Woche, Schuljahr, Gesamt, Blättern, Excel. Das ist mehr Inhalt in einer
+   * Zeile als vorher (der Zeitraum stand bis dahin in einer eigenen
+   * Überschrift zwischen den Pfeilen). Reicht die Breite nicht, weicht als
+   * Erstes der Excel-Schalter aus - er ist der einzige, der nicht sagt, WAS
+   * gerade gewählt ist (das tun die drei Zeitraum-Schalter, die darum ihr
+   * Wort immer behalten).
+   *
+   * ⚠️ SCHWELLE ÜBERNOMMEN, NICHT NEU GEMESSEN: 35rem (560 px) ist genau der
+   * Wert aus dem abgestimmten Entwurf (ENTWURF-2026-09-18-MEINE-KLASSEN-
+   * UMBAU.html, `.exportknopf`, `@container (max-width: 560px)`) - dieselbe
+   * Zeile (Klassenname + Zeitraum-Gruppe), dieselben Schalter. Auf typischen
+   * Laptop-Breiten bleibt die Karte (`max-w-6xl` in `MeineKlassePage.tsx`,
+   * abzüglich Kartenrand) deutlich über 560 px breit, der Kopf bleibt also
+   * einzeilig mit Wort am Excel-Schalter; erst in einer schmaleren Karte oder
+   * bei starker Vergrösserung weicht er zum runden Symbol aus. jsdom kennt
+   * kein Layout - eine Sichtprüfung im echten Browser steht noch aus.
+   */
+  .zeitraum-kopf {
+    container: zeitraum-kopf / inline-size;
+  }
+  @container zeitraum-kopf (max-width: 35rem) {
+    /* ⚠️ So ein langer Selektor mit Absicht (18.09.2026, im Browser gemessen):
+       Die Lehrkraft-Seite liegt in `.bedien-schlank`, und deren
+       `:is(…, .btn-toggle, …):not(…)`-Regel setzt `border-radius: 0.5rem`
+       ebenfalls mit `!important`. `:is()`/`:not()` nehmen die Spezifität
+       ihres STÄRKSTEN Arguments an (`input[type="text"]`) - zusammen 0,3,1.
+       Mit nur `.zeitraum-aktion` (0,1,0) blieb der Knopf eckig; dieser hier
+       hat 0,4,1 und gilt auch ausserhalb von `.bedien-schlank`. */
+    .zeitraum-kopf button.zeitraum-aktion[type="button"].btn-toggle {
+      width: 2.25rem !important;
+      height: 2.25rem !important;
+      padding: 0 !important;
+      border-radius: 9999px !important;
+      gap: 0 !important;
+      justify-content: center;
+    }
+    /* Das Wort bleibt im Baum (Name für Sprachausgabe/Braillezeile) - nur
+       ausserhalb des sichtbaren Bilds, nie `display:none` (dieselbe Technik
+       wie `.standzeile-schalter-wort` oben). */
+    .zeitraum-aktion-wort {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  }
+
+  /*
+   * ════════════════════════════════════════════════════════════════════════
+   * ★★★ EIN SCHALTER MUSS WIE EINER AUSSEHEN - AUCH AUF DUNKLEM GRUND
+   * ════════════════════════════════════════════════════════════════════════
+   * Johannes, 01.09.2026: *„Schalter werden optisch nicht als solche erkannt,
+   * erstelle einen Rahmen um ‚Für alle übernehmen', ‚Schuljahr 2026/27',
+   * ‚Gesamt' genau so wie oben bei ‚gegenüber Schuljahresbeginn'."*
+   *
+   * ── Die Ursache, gemessen ───────────────────────────────────────────────
+   * Alle drei tragen dieselbe Klasse wie „gegenüber Schuljahresbeginn":
+   * `btn-secondary`. Und `btn-secondary` hat als Grund `bg-surface-sunken` -
+   * genau die Farbe, auf der die Zeitraum-Leiste und der Wochenziel-Kasten
+   * stehen. Auf einer Karte (`bg-surface-raised`) hebt sich der Schalter also
+   * ab, in diesen beiden Kästen ist er unsichtbar. Es fehlte nie ein Rahmen,
+   * es fehlte der KONTRAST - und den kann eine Fläche allein nicht liefern,
+   * wenn sie dieselbe Farbe hat wie der Grund.
+   *
+   * ⇒ `btn-umriss` gibt dem Schalter eine sichtbare Kante. Er ist damit auch
+   *   in den Kontrastmodi und bei „forced colors" als Bedienelement erkennbar,
+   *   wo Flächenfarben ohnehin ersetzt werden (WCAG 1.4.11).
+   */
+  .btn-umriss {
+    @apply border border-hairline;
+  }
+
+  /*
+   * ★★ EINE HÖHE FÜR ALLES IN EINER ZEILE (Johannes, 01.09.2026): *„mach alle
+   * Schalter, Eingabefelder und Pulldownmenüs genau so hoch wie den Schalter
+   * oben: ‚gegenüber Vorwoche'."*
+   *
+   * `field-input` bringt 44 px mit; nebeneinander sah das aus wie zwei
+   * verschiedene Bauarten.
+   *
+   * ⚠️ Bewusst als EIGENE Klasse und nicht als Änderung an `field-input`:
+   * Das Feld gehört der ganzen Plattform, und 44 px sind dort die Regel
+   * (WCAG 2.5.5). Schlank wird nur, was in einer Zeile mit Umschaltern steht -
+   * und 34 px liegen weiterhin klar über der AA-Mindestgröße von 24 px
+   * (WCAG 2.5.8).
+   *
+   * ★★★ 01.09.2026, GEMESSEN IM BROWSER: Die erste Fassung stellte nur
+   * dieselben Abstände ein (`py-1.5`) und nahm an, daraus folge dieselbe Höhe.
+   * Sie folgte nicht. Bei gleicher Polsterung kam heraus:
+   *
+   *     Umschalter „gegenüber Vorwoche"   34 px
+   *     <select>                          33 px   (eigene Zeilenhöhe)
+   *     <input type="time">               36 px   (innere Bedienzeichen)
+   *
+   * Drei Bauteile, eine Regel, drei Höhen - genau der Eindruck, den Johannes
+   * gemeldet hat. ⇒ Die Höhe wird jetzt GESETZT statt errechnet, und die
+   * Polsterung darf sie nicht mehr verschieben (`!py-0`; senkrecht zentriert
+   * der Browser den Inhalt von selbst).
+   *
+   * ⚠️ 2,125 rem = 34 px ist die Höhe, die {@link .btn-toggle} aus `py-1.5`
+   * plus Rahmen ergibt. Wer dort die Polsterung ändert, muss diesen Wert
+   * mitziehen - sonst laufen sie wieder auseinander. Und: In jsdom fällt das
+   * NIE auf (dort hat alles die Höhe 0), das prüft nur der Browser.
+   *
+   * ⚠️⚠️ 11.09.2026: 34 px sind KEINE Regel mehr für „Meine Klassen" und die
+   * Kopfzeile. Dort setzt `.bedien-schlank` (unter diesem Block) jedes
+   * Bedienelement auf 36 px - Johannes zählte auf der Seite „5 verschiedene
+   * höhen", gemessen waren es sieben (`apps/tastenflow/BAUPLAN-2026-09-11-
+   * KLASSENSEITE-EINHEITLICH.md`). Für die übrigen Stellen bleibt diese
+   * Klasse, wie sie ist.
+   */
+  .feld-schlank {
+    @apply !min-h-0 !h-[2.125rem] !rounded-lg !px-3 !py-0 !text-sm !leading-5;
+  }
+
+  /* Mitwachsendes Eingabefeld (Mathecoach, 24.08.2026): Der Browser macht die
+     Höhe so groß, wie der Inhalt sie braucht - eine Zeile, solange eine Zeile
+     genügt. Das ersetzt das übliche JavaScript-Nachmessen vollständig.
+     Gemessen: Chrome 151, Brave 151, WebKit 27 (Safari). Nach caniuse:
+     Chrome/Edge ab 123, Opera ab 109, Safari ab 26.2, Firefox ab 152.
+     ⚠️ Ältere Browser kennen die Regel nicht: Dort misst `feldWachstum.ts` die Höhe nach
+     (Johannes, 21.10.2026: Eingabefelder müssen immer mehrzeilig sein, Enter macht eine neue
+     Zeile) - ein einzeiliges Feld, in dem Enter scheinbar nichts tut, ist verboten. */
+  .feld-waechst {
+    field-sizing: content;
+  }
+
+
+  .field-label {
+    @apply block text-sm font-medium text-ink-soft mb-1.5;
+  }
+  /*
+   * ★★★★★ HIER STAND `focus:outline-none` - UND DAS WAR DER FEHLER
+   * (gemessen 07.09.2026).
+   *
+   * ⚠️⚠️ Das Feld zeigte seinen Fokus AUSSCHLIESSLICH über die RAHMENFARBE
+   * (`focus:border-accent`). Im Windows-Hochkontrastmodus erzwingt das
+   * Betriebssystem aber alle Rahmenfarben - der fokussierte Rahmen sieht dort
+   * genauso aus wie jeder andere. Johannes: „im SW Kontrastmodus von Windows
+   * sieht man garnicht was gerade aktiv ist. Diesen modus verwenden gerade
+   * viele kinder."
+   *
+   * ★★★ Die Farbe bleibt (sie hilft im gewöhnlichen Modus), aber sie ist nicht
+   * mehr das EINZIGE Zeichen: Der Umriss aus der Grundregel oben darf jetzt
+   * stehen bleiben. Ein Zeichen, das ein Betriebssystem wegnehmen kann, darf
+   * nie das einzige sein.
+   */
+  /* ⚠️ 44 px bleiben hier die Regel - sie gehört der ganzen Plattform. Auf
+     „Meine Klassen" und in der Kopfzeile gilt 36 px über `.bedien-schlank`
+     (gleich unter diesem Block, Bauplan 11.09.2026). Nicht diese Klasse ändern. */
+  .field-input {
+    @apply w-full rounded-xl border border-hairline bg-surface-raised px-3 py-2
+      min-h-[44px] text-ink placeholder:text-ink-muted
+      focus:border-accent;
+  }
+}
+
+/*
+ * ════════════════════════════════════════════════════════════════════════════
+ * ★★★★★ EINE BEDIENHÖHE: 36 PX - „Meine Klassen" und die Kopfzeile ALLER Apps
+ * ════════════════════════════════════════════════════════════════════════════
+ * Johannes, 11.09.2026 abends, zu seinem Bildschirmfoto von „Meine Klassen":
+ * *„schaue dir die schalterhöhen an, ich glaube es gibt 5 verschiedene höhen,
+ * auch in der Kopfzeile sind sie nicht alle gleich, bitte gestalte diese
+ * wichtige seite richtig ansprechend übersichtlich und schlank"*.
+ * Gemessen waren es sieben Bedienhöhen (28 · 32 · 34 · 36 · 40 · 44 px, dazu
+ * 20-px-Aufklappzeilen) - `apps/tastenflow/BAUPLAN-2026-09-11-KLASSENSEITE-
+ * EINHEITLICH.md` §1, hier umgesetzt: R1 (Höhe), R2 (Form), R4 (Schrift),
+ * R5 (waagrechte Polsterung), R10 (Geltungsbereich).
+ *
+ * ── Warum ein GELTUNGSBEREICH und keine Änderung an `.btn` ─────────────────
+ * `.btn`, `.field-input`, `.btn-toggle` und `.feld-schlank` gehören der ganzen
+ * Plattform. Auf den Übungsbildschirmen der Kinder sind 44 px Absicht (grosse
+ * Zielgrösse, WCAG 2.5.5) - dort ändert sich nichts. 36 px gelten nur unter
+ * der Klasse `bedien-schlank`:
+ *   · am Wurzelelement von `MeineKlassePage` (alle vier Programm-Reiter),
+ *   · am `<header>` von `AppKopfzeile` - samt allem, was eine App über `extra`
+ *     hineinreicht („Selbst üben", „Melden") und dem Umschalter „Lernstand |
+ *     Kinder und Zugänge" im Klassenkopf (E2, 18.09.2026).
+ * Warum 36: Die runden Knöpfe der Kopfzeile sind es schon (30.08.2026), es
+ * liegt im 4-px-Raster (`h-9`) und klar über der Mindestgrösse von 24 px
+ * (WCAG 2.5.8).
+ *
+ * ── Die Höhe wird GESETZT, nicht aus Polsterung errechnet ─────────────────
+ * Die Lehre vom 01.09.2026 (`.feld-schlank`): Gleiche Polsterung ergab 33, 34
+ * und 36 px. Darum `height` + `min-height: 0` + senkrechte Polsterung 0 - den
+ * Inhalt zentriert der Browser selbst.
+ * ⚠️ `!important` ist hier nötig, nicht bequem: `.btn-toggle` und
+ * `.feld-schlank` setzen Höhe, Polsterung und Rundung selbst mit `!important`.
+ * Dagegen gewinnt nur eine wichtige Regel mit höherer Spezifität - die hat
+ * diese durch den vorangestellten Bereich.
+ *
+ * ── Was NICHT darunter fällt ──────────────────────────────────────────────
+ *  · Dialoge (`[role="dialog"]`) - ein eigenes Fenster mit eigenen Massen.
+ *    `Modal` hängt sich ohnehin an `body`; die Ausnahme sichert auch Fenster,
+ *    die das nicht tun.
+ *  · runde Sinnbild-Knöpfe (`rounded-full`) behalten Rundung und Polsterung (R2).
+ *  · mehrzeilige Felder (`textarea`), Kontrollkästchen, Optionsfelder.
+ *  · Eigenbauten ohne diese Klassen (Programm-Reiter, Aufklapp-Zeilen, der
+ *    Ausklapp-Knopf je Kind) - sie tragen `h-9` bzw. `min-h-9` selbst.
+ *
+ * ⚠️ Keine Farbe, kein `outline`, kein `border`: Der Kontrastmodus
+ * (`forced-colors`, weiter unten) bleibt unberührt - Fokusring und
+ * „ausgewählt" stehen dort wie bisher.
+ * ⚠️ jsdom rechnet kein CSS. Ob hier 36 herauskommt, zeigt nur der Browser
+ * (Messung nach Bauplan §4, `getBoundingClientRect`).
+ */
+.bedien-schlank {
+  --bedienhoehe: 2.25rem;
+}
+.bedien-schlank
+  :is(.btn, .btn-primary, .btn-secondary, .btn-ghost, .btn-toggle, .field-input, .feld-schlank, select, input:not([type]), input[type="text"], input[type="number"], input[type="time"], input[type="date"], input[type="search"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"]):not(textarea, [role="dialog"] *) {
+  height: var(--bedienhoehe) !important;
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* R2 · EINE Form: rechteckige Bedienelemente 8 px - runde bleiben rund. */
+.bedien-schlank
+  :is(.btn, .btn-primary, .btn-secondary, .btn-ghost, .btn-toggle, .field-input, .feld-schlank, select, input:not([type]), input[type="text"], input[type="number"], input[type="time"], input[type="date"], input[type="search"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"]):not(textarea, .rounded-full, [role="dialog"] *) {
+  border-radius: 0.5rem !important;
+}
+/* R5 · waagrecht 12 px in Schaltern (`.btn` bringt 16 mit). Bewusst OHNE
+   `!important`: Wer eine eigene Polsterung braucht, setzt sie mit `!px-…`. */
+.bedien-schlank
+  :is(.btn, .btn-primary, .btn-secondary, .btn-ghost):not(.rounded-full, [role="dialog"] *) {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+/* R4 · 14 px in Bedienelementen. ⚠️ Die Spezifität ist mit Absicht NIEDRIG
+   (genau ein Elementname, alles andere in `:where`): Sie schlägt die Grundregel
+   von Tailwind (`button, select { font-size: 100% }`, steht davor), aber keine
+   Schriftklasse, die ein Element selbst trägt. Die frühere Ausnahme `text-xl`
+   an der Klassenauswahl ist seit 11.09.2026 (Nacht) gestrichen - Johannes:
+   „verkleinere die Schriftart bei dem Klassenwahlschalter" (jetzt `text-sm
+   font-medium` wie der Name im Programm-Reiter). Nur ein Kommentar geändert. */
+:where(.bedien-schlank)
+  :is(a, button, select, input):where(.btn, .btn-primary, .btn-secondary, .btn-ghost, .btn-toggle, .field-input, .feld-schlank, select, input):where(:not([role="dialog"] *)) {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/*
+ * ════════════════════════════════════════════════════════════════════════════
+ * ★★★★ LEXAMI: EINE BAUART FÜR JEDES BEDIENELEMENT (14.11.2026)
+ * ════════════════════════════════════════════════════════════════════════════
+ * Johannes: „in der kopfzeile gibt es drei verschiedene formen von schaltern,
+ * auch sonst überall ist es eine mischung … datei hochladen ist eckig, die
+ * anderen abgerundet. mach die anderen schalter weniger hoch."
+ * Gezählt vorher: 8 Knopf-Bauarten (rounded-lg/-xl/-full, 32 · 34 · 36 · 40 ·
+ * 44 · 48 px), 4 Feld-Bauarten, ein eckiger Dateiknopf des Browsers.
+ *
+ * ★ DIE REGEL - eine Form, zwei Höhen:
+ *   · SCHALTER UND EINGABEFELDER sind abgerundete Rechtecke wie auf der ganzen
+ *     Plattform (R2 oben): 8 px für Knöpfe, Felder, Auswahlmenüs, Umschalter
+ *     und Filter, 6 px für die Teile im Umschalter. Sinnbild-Knöpfe sind
+ *     Quadrate mit denselben 8 px. Karten (20 px) und Schilder bleiben, wie
+ *     sie sind - es ging nur um Schalter und Felder (Johannes). ⚠️ Bis 14.11.2026 (abends) standen hier Kapseln und
+ *     Kreise (`rounded-full`); Johannes nach dem neuen Bausteine-Zeichen: „zum
+ *     neuen logo passen die abgerundeten rechtecke von der restlichen
+ *     plattform besser als die ganz runden". Die runden Knöpfe der
+ *     gemeinsamen Kopfzeile bleiben rund - sie gehören allen Apps.
+ *   · 32 px für alles (Johannes 14.11.2026 abends: „die Schalter etwas flacher").
+ *     40 px (`--gross`) NUR für die Haupthandlung einer Ansicht: Suchfeld +
+ *     „Suchen", alles im Quiz. 32 px liegen klar über der Mindestgröße von
+ *     24 px (WCAG 2.5.8). Die Höhen stehen EINMAL in `--lx-hoehe…` (`.lx-app`).
+ *   · Hauptknopf = gefüllt (Akzentfarbe), alle anderen = Umriss. Pro Gruppe
+ *     höchstens EIN gefüllter Knopf.
+ *
+ * ★ IM `components`-LAYER mit Absicht: Tailwinds Hilfsklassen (`utilities`)
+ * dürfen eine Bauart ergänzen - der farbige linke Rand einer Karte
+ * (`border-l-[6px] border-l-accent`), `w-full`, `text-left`. Darum stehen in
+ * Lexami KEINE alten Form-Klassen mehr neben `lx-…` (kein `rounded-lg`,
+ * kein `px-3 py-2`) - die würden sonst gewinnen.
+ * ⚠️ Nur Lexami benutzt `lx-…`. Die übrigen Apps sehen davon nichts.
+ * ⚠️ In der Kopfzeile (`.bedien-schlank`) setzt die Plattform bei `select` die
+ * Rundung mit `!important` auf 8 px - das ist jetzt genau die Lexami-Form.
+ * Kein `rounded-full` neben `lx-…` setzen: Tailwind gewänne.
+ */
+/* Die Höhen der Bauart - an der Wurzel jeder Lexami-Fläche (`.lx-app`) und als
+   Rückfall an `:root`, damit ein `lx-…`-Element ausserhalb (Fenster an `body`)
+   dieselbe Höhe hat. */
+:root,
+.lx-app {
+  --lx-hoehe: 2rem;
+  --lx-hoehe-gross: 2.5rem;
+}
+/* ★ Die gemeinsame Kopfzeile (`AppKopfzeile`) und „Meine Klassen" setzen ihre
+   Bedienhöhe über `--bedienhoehe` (36 px, `.bedien-schlank` oben). In Lexami gilt
+   32 px - auch für die runden Kopfzeilen-Knöpfe, sonst stünden zwei Höhen in einer
+   Zeile. Nur unter `.lx-app`; die anderen Apps bleiben bei 36 px. */
+.lx-app .bedien-schlank,
+.lx-app.bedien-schlank,
+.bedien-schlank .lx-app {
+  --bedienhoehe: var(--lx-hoehe);
+}
+.lx-app header.bedien-schlank :is(a, button).rounded-full.h-9 {
+  height: var(--lx-hoehe);
+  width: var(--lx-hoehe);
+}
+
+/*
+ * ★★ LEXAMI AM HANDY (Johannes 14.11.2026, am Handy getestet): „alle Schalter oben
+ * müssen klein werden, der Sensorik-Schalter und der Lexami-Schalter brauchen sinnlos
+ * eine ganze Zeile - wenn kein Platz ist, Sensorik weg und Lexami links oben."
+ * Unter 640 px (sm):
+ *   · Das Sensorik-Zeichen und der Strich danach fallen weg (der Weg zur Plattform
+ *     bleibt über die Startseite; Lexami ist am Handy eine eigene App).
+ *   · Das Lexami-Zeichen steht links oben, die Werkzeuge rücken in dieselbe Zeile
+ *     und brechen erst danach um.
+ *   · Alle Schalter 28 px statt 32 (über der WCAG-Mindestgrösse von 24 px), engere Abstände.
+ *   · Der Kurztasten-Knopf („Alt") fällt auf Touch-Geräten weg - ohne Tastatur gibt es
+ *     keine Kurztasten. Mit Tastatur oder Maus bleibt er.
+ * Nur unter `.lx-app`; die gemeinsame Kopfzeile der anderen Apps bleibt, wie sie ist.
+ */
+@media (max-width: 639.98px) {
+  .lx-app {
+    --lx-hoehe: 1.75rem;
+  }
+  /* Das Zeichen steht als `float` links oben, die Schalter fliessen wie Text daneben und in
+     der zweiten Zeile über die volle Breite - auch UNTER dem Zeichen. Mit Flex ginge das nicht:
+     Dort bliebe unter dem Zeichen eine leere Spalte, und ein Knopf rutschte allein in Zeile 3. */
+  .lx-app header.bedien-schlank {
+    display: block;
+  }
+  .lx-app header.bedien-schlank::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .lx-app header.bedien-schlank > div {
+    float: left;
+    margin: 0 0.5rem 0.375rem 0;
+  }
+  .lx-app header.bedien-schlank > nav {
+    display: block;
+  }
+  .lx-app header.bedien-schlank > nav > * {
+    margin: 0 0.375rem 0.375rem 0;
+    vertical-align: middle;
+  }
+  .lx-app header.bedien-schlank > span:first-child:has(> a[href]),
+  .lx-app header.bedien-schlank > [data-trennstrich] {
+    display: none;
+  }
+  .lx-app header.bedien-schlank > div svg,
+  .lx-app header.bedien-schlank > div img {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+  .lx-app header.bedien-schlank select.lx-feld {
+    padding-left: 0.625rem;
+    padding-right: 1.75rem;
+    font-size: 0.875rem;
+    background-position:
+      right 0.875rem center,
+      right 0.5625rem center;
+  }
+  .lx-app header.bedien-schlank .lx-segment__teil {
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+  }
+  .lx-app header.bedien-schlank :is(button, a) svg {
+    max-height: 1.125rem;
+    max-width: 1.125rem;
+  }
+  .lx-app header.bedien-schlank [data-trennstrich],
+  .lx-app header.bedien-schlank nav > span.w-px {
+    display: none;
+  }
+}
+/*
+ * ★★ HANDY-MENÜ ALS LISTE (Johannes 15.11.2026: „ein Burgermenü ist keine zweite Kopfzeile,
+ * sondern eine Liste - schau dir die Standards für Apple-Apps an"). Gebaut nach Apples
+ * Pull-down-Menü (Human Interface Guidelines, „Menus" / „Pull-down buttons"):
+ *  - Die Liste schwebt unter dem Knopf über dem Inhalt (Karte mit runden Ecken und Schatten),
+ *    die Kopfzeile bleibt EINE Zeile: Zeichen, „Nachschlagen | Lernen", Menü-Knopf.
+ *  - Je Eintrag eine Zeile, mindestens 44 pt hoch, ganze Breite tippbar, Text links in
+ *    17 pt, Sinnbild rechts, feine Trennlinie zwischen den Zeilen.
+ *  - Gruppen mit einem breiteren Abstand: was etwas ÖFFNET, dann was etwas sofort ÄNDERT
+ *    (Farben, Vorlesen) - dieselbe Trennung wie der Strich in der breiten Kopfzeile.
+ *  - Konto- und Farbmenü klappen in der Liste darunter auf, statt ein zweites Fenster zu öffnen.
+ *  - Ein Tippen auf einen Eintrag schließt die Liste (WoerterbuchPage), Esc und Tippen daneben auch.
+ * WoerterbuchPage setzt `data-kopfmenue="zu|offen"` um die Kopfzeile und stellt Bereich-Schalter
+ * und Knopf am Handy in eine eigene Leiste (`data-kopf-handy`). Die Zeilentexte kommen aus
+ * `data-kopf-text` (AppKopfzeile, ohne Tastenkürzel). Ab 640 px gibt es das alles nicht.
+ * Die Auswahl beginnt mit `header.bedien-schlank`, damit sie die 36-px-Regel für runde Knöpfe
+ * (`.lx-app header.bedien-schlank :is(a, button).rounded-full.h-9`) schlägt.
+ */
+.lx-app [data-kopf-handy] {
+  display: none;
+}
+/* ★ Johannes 17.11.2026: „Das Lexami-Logo mit Schrift ist irgendwo in der Mitte, es gehört nach links."
+   Die gemeinsame Kopfzeile stellt Zeichen + Titel in die Mitte (drei Zonen) - in Lexami steht beides
+   links, gleich neben dem Sensorik-Zeichen. Nur hier, die anderen Apps bleiben, wie sie sind. */
+.lx-app header.bedien-schlank > div.flex-auto.justify-center {
+  justify-content: flex-start;
+}
+.lx-app [data-kopf-zeile] {
+  display: contents;
+}
+/*
+ * ★★ KOPFZEILE BLEIBT EINZEILIG (Johannes 17.11.2026, bei großem Zoom: „die Schalter müssen alle klein
+ * werden bis zum Burgermenü, damit die Kopfzeile einzeilig bleibt"). WoerterbuchPage MISST, ob die Zeile
+ * umbricht, und setzt `data-kopf-modus`: voll → kompakt (kleinere Schalter, „Meine Klassen" nur als Zeichen,
+ * kein Strich) → menue (die Liste unten). Keine feste Breite: Zoom, Textgröße und Sprache zählen mit.
+ */
+.lx-app [data-kopf-modus="kompakt"] {
+  --lx-hoehe: 1.75rem;
+}
+.lx-app [data-kopf-modus="kompakt"] > header.bedien-schlank,
+.lx-app [data-kopf-modus="kompakt"] > header.bedien-schlank > nav {
+  gap: 0.375rem;
+}
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank select.lx-feld {
+  padding-left: 0.5rem;
+  padding-right: 1.625rem;
+  font-size: 0.875rem;
+  background-position:
+    right 0.8125rem center,
+    right 0.5rem center;
+}
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank .lx-segment__teil {
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+}
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank :is(button, a) svg {
+  max-height: 1.125rem;
+  max-width: 1.125rem;
+}
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank > div svg,
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank > div img {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank [data-trennstrich],
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank nav > span.w-px {
+  display: none;
+}
+/* „Meine Klassen": nur das Zeichen. Das Wort bleibt im Namen (Schriftgröße 0, nicht versteckt). */
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank nav a.btn-secondary {
+  gap: 0;
+  font-size: 0;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
+}
+.lx-app [data-kopf-modus="kompakt"] header.bedien-schlank nav a.btn-secondary svg {
+  height: 1rem;
+  width: 1rem;
+}
+/* Menü-Modus (früher nur unter 640 px): die Kopfzeile ist EINE Zeile, der Rest steht in der Liste. */
+.lx-app [data-kopf-modus="menue"] {
+  --lx-hoehe: 1.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lx-app [data-kopf-modus="menue"] > header.bedien-schlank {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-width: 0;
+}
+.lx-app [data-kopf-modus="menue"] > header.bedien-schlank::after {
+  display: none;
+}
+.lx-app [data-kopf-modus="menue"] > header.bedien-schlank > div {
+  float: none;
+  margin: 0;
+}
+.lx-app [data-kopf-modus="menue"] [data-kopf-handy] {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.375rem;
+}
+/* Der Bereich-Schalter steht am Handy in der eigenen Leiste, nicht in der Liste. */
+.lx-app [data-kopf-modus="menue"] > header.bedien-schlank > nav > .lx-segment {
+  display: none;
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="zu"] > header.bedien-schlank > nav {
+  display: none;
+}
+/* Offen: die schwebende Liste. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] > header.bedien-schlank > nav {
+  position: absolute;
+  top: calc(100% + 0.375rem);
+  right: 0;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  width: min(21rem, 100%);
+  max-height: calc(100dvh - 5.5rem);
+  overflow-y: auto;
+  padding: 0;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 14px;
+  background: rgb(var(--c-surface-raised));
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.22);
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] > header.bedien-schlank > nav > * {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid rgb(var(--c-hairline));
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] > header.bedien-schlank > nav > :first-child,
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] > header.bedien-schlank > nav > .lx-segment + * {
+  border-top: 0;
+}
+/* Der Strich zwischen „öffnet" und „ändert sofort" wird zum Gruppenabstand. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] > header.bedien-schlank > nav > span[aria-hidden="true"]:empty {
+  display: block;
+  height: 0.5rem;
+  background: rgb(var(--c-surface-sunken));
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] > header.bedien-schlank > nav > * > .relative {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* Eine Zeile: Text links, Sinnbild rechts, 44 pt hoch, ganze Breite. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav button.rounded-full,
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav button[data-kopf-text],
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav a.btn-secondary {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  height: auto;
+  /* ★ Johannes 17.11.2026: „die Abstände im Burgermenü müssen für den Finger größer werden" - 56 px statt 44. */
+  min-height: 3.5rem;
+  padding: 0 1.125rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgb(var(--c-ink));
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: left;
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav a.btn-secondary {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav button.rounded-full:active,
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav button[data-kopf-text]:active,
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav a.btn-secondary:active {
+  background: rgb(var(--c-surface-sunken));
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav button[data-kopf-text]::after {
+  content: attr(data-kopf-text);
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: normal;
+  padding: 0.625rem 0;
+}
+/* Das Sinnbild rechts behält seine Größe, auch neben langem Text. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav :is(button.rounded-full, button[data-kopf-text]) > svg {
+  flex: 0 0 auto;
+}
+/* „Melden" trägt sein Wort als unsichtbaren Text - in der Liste wird er sichtbar. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav button.rounded-full > .sr-only {
+  position: static;
+  flex: 1 1 auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+/* Konto- und Farbmenü klappen in der Liste darunter auf. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav div.absolute.z-30 {
+  position: static;
+  width: auto;
+  margin: 0 0 0.5rem;
+  padding: 0 0.5rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+/* Hinweise beim Zeigen braucht die Liste nicht: Der Text steht in der Zeile. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav [role="tooltip"] {
+  display: none;
+}
+/* Sprache und Richtung: Name links, Auswahl rechts. */
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav [data-kopf-zeile] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 3.5rem;
+  padding: 0.375rem 0.625rem 0.375rem 1.125rem;
+  font-size: 1.125rem;
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav [data-kopf-zeile] > label.sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: nowrap;
+}
+.lx-app [data-kopf-modus="menue"][data-kopfmenue="offen"] header.bedien-schlank nav [data-kopf-zeile] > select {
+  min-width: 0;
+  max-width: 60%;
+}
+/*
+ * ★★ QUIZ: RICHTIG LEUCHTET AUF (Johannes 14.11.2026: „eine Animation, wenn es richtig war,
+ * über den Rahmen, und dann gleich nächstes Wort"). Die Karte mit dem Wort und die gewählte
+ * Antwort bekommen einen grünen Rahmen, ein Ring läuft nach aussen, ein Haken springt auf.
+ * Danach kommt die nächste Frage von selbst (Quiz.tsx, RICHTIG_PAUSE_MS).
+ * Die Lösung ist nie nur Farbe: Die Statusregion sagt „Richtig." bzw. die Lösung.
+ */
+@keyframes lx-richtig-ring {
+  0% { box-shadow: 0 0 0 0 rgb(var(--c-success) / 0.55); }
+  100% { box-shadow: 0 0 0 0.875rem rgb(var(--c-success) / 0); }
+}
+@keyframes lx-richtig-haken {
+  0% { opacity: 0; transform: scale(0.4); }
+  60% { opacity: 1; transform: scale(1.15); }
+  100% { opacity: 1; transform: scale(1); }
+}
+/* Der Haken als `::after` - nur Schmuck: Der leere Ersatztext nach „/" hält ihn aus der
+   Sprachausgabe heraus, und im Text der Frage (Legende, Beschriftung) steht er nicht. */
+.lx-fragekarte::after {
+  content: "\2713" / "";
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background: rgb(var(--c-success));
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 900;
+  opacity: 0;
+  pointer-events: none;
+}
+.lx-quiz[data-urteil="richtig"] .lx-fragekarte,
+.lx-quiz[data-urteil="richtig"] .lx-wahl:has(:checked),
+.lx-quiz[data-urteil="richtig"] .lx-feld--antwort {
+  border-color: rgb(var(--c-success)) !important;
+  animation: lx-richtig-ring 700ms ease-out;
+}
+.lx-quiz[data-urteil="richtig"] .lx-wahl:has(:checked) {
+  background: rgb(var(--c-success-soft)) !important;
+}
+.lx-quiz[data-urteil="richtig"] .lx-fragekarte::after {
+  animation: lx-richtig-haken 380ms ease-out forwards;
+}
+/* ★ Klassenmatch „Alle gleichzeitig" (Johannes 17.11.2026): die richtige Wahl leuchtet grün wie im Quiz. */
+.lx-wahl[data-richtig-gewaehlt] {
+  border-color: rgb(var(--c-success)) !important;
+  background: rgb(var(--c-success-soft)) !important;
+  animation: lx-richtig-ring 700ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lx-wahl[data-richtig-gewaehlt] { animation: none; }
+}
+/* Nicht gewusst: die Lösung grün umrandet, die eigene Wahl tritt zurück - nichts blinkt, nichts wackelt. */
+.lx-quiz:is([data-urteil="nein"], [data-urteil="fast"]) .lx-wahl[data-loesung] {
+  border-color: rgb(var(--c-success)) !important;
+  background: rgb(var(--c-success-soft)) !important;
+}
+.lx-quiz[data-urteil="nein"] .lx-wahl:has(:checked):not([data-loesung]) {
+  opacity: 0.55;
+}
+/* ★ Johannes 17.11.2026: „das richtige Wort ist nicht gut hervorgehoben, soll sofort ins Auge stechen".
+   Die Lösung in der Rückmeldung: groß, fett, grün auf hellem Grün, eigene Zeile. Die eigene falsche
+   Eingabe tritt durchgestrichen zurück. Nur zum Sehen - der Text für Screenreader bleibt gleich. */
+.lx-loesung {
+  display: inline-block;
+  margin: 0.25rem 0.125rem;
+  padding: 0.125rem 0.625rem;
+  border: 2px solid rgb(var(--c-success));
+  border-radius: 0.625rem;
+  background: rgb(var(--c-success-soft));
+  color: rgb(var(--c-success));
+  font-size: 1.6em;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.lx-quiz[data-urteil="nein"] .lx-feld--antwort {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: rgb(var(--c-ink-muted));
+}
+@media screen and (forced-colors: active) {
+  .lx-loesung { border-color: Highlight; color: CanvasText; background: Canvas; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lx-quiz[data-urteil="richtig"] :is(.lx-fragekarte, .lx-wahl, .lx-feld--antwort),
+  .lx-quiz[data-urteil="richtig"] .lx-fragekarte::after {
+    animation: none;
+  }
+  .lx-quiz[data-urteil="richtig"] .lx-fragekarte::after {
+    opacity: 1;
+  }
+}
+@media screen and (forced-colors: active) {
+  .lx-quiz[data-urteil="richtig"] :is(.lx-fragekarte, .lx-wahl:has(:checked), .lx-feld--antwort),
+  .lx-quiz .lx-wahl[data-loesung] {
+    outline: 3px solid Highlight;
+  }
+}
+
+@media (max-width: 639.98px) and (pointer: coarse) {
+  .lx-app header.bedien-schlank nav > span:has(button[aria-keyshortcuts="Alt+T"]) {
+    display: none;
+  }
+}
+
+@layer components {
+.lx-knopf {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  height: var(--lx-hoehe);
+  padding: 0 0.875rem;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 0.5rem;
+  background: rgb(var(--c-surface-raised));
+  color: rgb(var(--c-ink));
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms, border-color 150ms;
+}
+.lx-knopf:hover {
+  background: rgb(var(--c-surface-sunken));
+}
+/* Gefüllt: die eine Haupthandlung. Dieselben Farben wie `.btn-primary`. */
+.lx-knopf--haupt {
+  border-color: rgb(var(--c-accent-solid));
+  background: rgb(var(--c-accent-solid));
+  color: rgb(var(--c-on-accent));
+}
+.lx-knopf--haupt:hover {
+  border-color: rgb(var(--c-accent-solid-hover));
+  background: rgb(var(--c-accent-solid-hover));
+}
+.lx-knopf--gross {
+  height: var(--lx-hoehe-gross);
+  padding: 0 1.25rem;
+  font-size: 1rem;
+}
+/* Quadrat für ein Sinnbild - dieselben 8 px wie die Knöpfe mit Text. */
+.lx-knopf--rund {
+  width: var(--lx-hoehe);
+  padding: 0;
+}
+/* Klein in einer Tabellenzeile oder neben einem Wort (Lautsprecher, ×). */
+.lx-knopf--klein {
+  height: 1.75rem;
+  padding: 0 0.625rem;
+  font-size: 0.875rem;
+}
+.lx-knopf--klein.lx-knopf--rund {
+  width: 1.75rem;
+  padding: 0;
+}
+/* Etwas, das man nicht rückgängig machen kann: rot erst beim Zeigen. */
+.lx-knopf--gefahr:hover {
+  border-color: rgb(var(--c-danger));
+  color: rgb(var(--c-danger));
+}
+/* Ein Knopf, der aussieht wie ein Verweis - für Nebensachen im Fliesstext. */
+.lx-verweis {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: rgb(var(--c-accent));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+/* Felder und Auswahlmenüs: dieselbe Form, dieselbe Höhe wie die Knöpfe. */
+.lx-feld {
+  height: var(--lx-hoehe);
+  min-width: 0;
+  padding: 0 1rem;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--c-surface-raised));
+  color: rgb(var(--c-ink));
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.lx-feld::placeholder {
+  color: rgb(var(--c-ink-muted));
+}
+select.lx-feld {
+  padding-right: 2.25rem;
+  cursor: pointer;
+  /* ★ Eigener Pfeil (Johannes 14.11.2026: „die kleinen Pfeile der Ausklapplisten sind zu weit
+     rechts"). Der Pfeil des Browsers klebt am Rand.
+     Zwei schräge Verläufe in `currentColor`: folgt Hell, Dunkel und jedem Farbschema. Im
+     Windows-Kontrastmodus kommt der Pfeil des Systems zurück (weiter unten). */
+  appearance: none;
+  -webkit-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    right 1.125rem center,
+    right 0.8125rem center;
+  background-size: 0.3125rem 0.3125rem;
+  background-repeat: no-repeat;
+  /* So breit wie die GEWÄHLTE Sprache, nicht wie „Deutsch (Erklärungen)" - in der
+     Kopfzeile zählt jeder Zentimeter. Browser ohne diese Regel nehmen die alte Breite. */
+  field-sizing: content;
+}
+.lx-feld--gross {
+  height: var(--lx-hoehe-gross);
+  padding: 0 1.25rem;
+  font-size: 1.25rem;
+}
+/* Die Antwort im Quiz: gross, mit Akzentrand - wohin das Kind schreibt. */
+.lx-feld--antwort {
+  /* ★ 15.11.2026 (Johannes): ein klein wenig größer, damit man mit dem Apple Pencil besser schreibt. */
+  height: 4rem;
+  padding: 0 1.5rem;
+  border-width: 2px;
+  border-color: rgb(var(--c-accent));
+  font-size: 1.75rem;
+}
+
+/*
+ * ★ DATEI HOCHLADEN: der eckige Knopf des Browsers war der Auslöser.
+ * Das echte `<input type="file">` bleibt im Baum (Name, Tastatur, Screenreader
+ * melden „Datei auswählen") und liegt UNSICHTBAR über der ganzen Kapsel -
+ * Klick und Tastatur treffen es, der Fokusring steht an der Kapsel.
+ * Nie `display:none`: dann wäre es für die Tastatur weg.
+ */
+.lx-datei {
+  position: relative;
+  overflow: hidden;
+}
+.lx-datei input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.lx-datei:has(:focus-visible) {
+  outline: 3px solid rgb(var(--c-accent));
+  outline-offset: 2px;
+}
+
+/*
+ * ★ Umschalter aus mehreren Teilen (Nachschlagen | Lernen, Sprachen):
+ * ein Rahmen mit innen kleineren Teilen (6 px) - das gewählte Teil gefüllt.
+ * „Gewählt" sagt `aria-current` bzw. `aria-pressed`, nie nur die Farbe:
+ * Im Kontrastmodus zeichnet die gemeinsame Regel dafür einen Umriss.
+ */
+.lx-segment {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.125rem;
+  min-height: var(--lx-hoehe);
+  padding: 0.125rem;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 0.5rem;
+  background: rgb(var(--c-surface-raised));
+}
+.lx-segment__teil {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  height: calc(var(--lx-hoehe) - 0.375rem);
+  padding: 0 0.75rem;
+  border: 0;
+  border-radius: 0.375rem;
+  background: transparent;
+  color: rgb(var(--c-ink));
+  font-size: 0.9375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lx-segment__teil:hover {
+  background: rgb(var(--c-surface-sunken));
+}
+.lx-segment__teil:is([aria-current="page"], [aria-current="true"], [aria-pressed="true"]) {
+  background: rgb(var(--c-accent-solid));
+  color: rgb(var(--c-on-accent));
+}
+
+/* Kleines Schild (Stufe geschafft, Niveau): Kapsel, 24 px, nicht bedienbar - kein Schalter, darum rund. */
+.lx-schild {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: 1.5rem;
+  padding: 0 0.625rem;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 9999px;
+  color: rgb(var(--c-ink-muted));
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.lx-schild--gut {
+  border-color: rgb(var(--c-success));
+  background: rgb(var(--c-success-soft));
+  color: rgb(var(--c-success));
+}
+/* Filter zum An- und Abwählen: ein Kontrollkästchen in einem Rahmen. */
+.lx-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  height: 1.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 0.5rem;
+  background: rgb(var(--c-surface-raised));
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.lx-filter:hover {
+  background: rgb(var(--c-surface-sunken));
+}
+.lx-filter:has(:checked) {
+  border-color: rgb(var(--c-accent-solid));
+  background: rgb(var(--c-accent-solid));
+  color: rgb(var(--c-on-accent));
+}
+.lx-filter:has(:focus-visible) {
+  outline: 3px solid rgb(var(--c-accent));
+  outline-offset: 2px;
+}
+
+/* Die Karte: EIN Kasten für alles (vorher rounded-lg, -xl und -2xl gemischt). */
+.lx-karte {
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 1.25rem;
+  background: rgb(var(--c-surface-raised));
+  padding: 1rem;
+}
+/* Kartenraster, das den Platz nutzt (wie Statable): so viele Spalten wie passen. */
+.lx-raster {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+}
+
+/* ★ „Jetzt üben" (Lernen, Vorschlag B 14.11.2026): eine Übung = ein großer Link mit Zeichen. */
+.lx-uebung {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  min-height: 5rem;
+  height: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(var(--c-hairline));
+  border-radius: 1rem;
+  background: rgb(var(--c-surface-raised));
+  color: rgb(var(--c-ink));
+  text-decoration: none;
+}
+.lx-uebung:hover {
+  border-color: rgb(var(--c-accent));
+}
+.lx-uebung:hover > span:last-child > span:first-child {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.lx-uebung__zeichen {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+.lx-uebung__zeichen--blau { background: rgb(var(--c-accent-soft)); color: rgb(var(--c-accent)); }
+.lx-uebung__zeichen--gelb { background: rgb(var(--c-warning-soft)); color: rgb(var(--c-warning)); }
+.lx-uebung__zeichen--gruen { background: rgb(var(--c-success-soft)); color: rgb(var(--c-success)); }
+.lx-uebung__zeichen--rot { background: rgb(var(--c-danger-soft)); color: rgb(var(--c-danger)); }
+
+/* ★ Reiter (Lernen: Meine Lernlisten | Bibliothek | + Neue Lernliste). Der offene trägt einen Balken
+   UND fette Schrift - nicht nur Farbe. */
+.lx-reiter {
+  height: 3rem;
+  padding: 0 1rem;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: rgb(var(--c-ink-muted));
+  font-weight: 500;
+}
+.lx-reiter:hover {
+  color: rgb(var(--c-ink));
+}
+.lx-reiter--offen {
+  border-bottom-color: rgb(var(--c-accent-solid));
+  color: rgb(var(--c-ink));
+  font-weight: 700;
+}
+
+/* ⚠️ `screen and` mit Absicht: `tests/fokus-waechter.test.ts` liest den ERSTEN Block
+   „@media (forced-colors: active)" als DEN Kontrastmodus-Block der Plattform (weiter
+   unten). Dieser kleine Lexami-Block stünde sonst davor und verdeckte ihn. */
+@media screen and (forced-colors: active) {
+  .lx-knopf,
+  .lx-feld,
+  .lx-segment,
+  .lx-filter,
+  .lx-schild,
+  .lx-uebung,
+  .lx-karte {
+    border-color: ButtonBorder;
+  }
+  .lx-reiter--offen {
+    border-bottom-color: Highlight;
+  }
+  .lx-knopf--haupt {
+    border: 2px solid Highlight;
+  }
+  .lx-filter:has(:checked) {
+    outline: 3px solid Highlight;
+    outline-offset: -3px;
+  }
+  select.lx-feld {
+    appearance: auto;
+    -webkit-appearance: auto;
+    background-image: none;
+  }
+}
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.not-sr-only:focus,
+.focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  clip: auto;
+}
+
+/* Seiten-Übergang: neues Dokument blendet sanft ein (greift auf alle Routen). */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ★★★★ `backwards` und NICHT `both` - gemessen am 04.09.2026.
+ *
+ * Bis heute stand hier `both`. Das schliesst `forwards` ein: Nach den 200 ms
+ * BLEIBT der Endzustand der Animation stehen - also `transform: translateY(0)`.
+ * Das sieht aus wie nichts, ist aber nicht nichts: Ein Element mit einem
+ * `transform` ungleich `none` wird zum **umgebenden Block** für alles, was
+ * darunter `position: fixed` ist. Die Fixierung wird damit still zu einem
+ * `absolute` - dauerhaft, auf JEDER Route, denn `.page-transition` umschliesst
+ * den gesamten `<Outlet>` (App.tsx).
+ *
+ * Gemessen auf `/programme/bild-beschreiben`: Bei `scrollY = 80` stand der
+ * Knopf der oberen Leiste bei `getBoundingClientRect().y = -63.75` - genau
+ * `16 - 80`. Er scrollte also weg, obwohl er `fixed right-4 top-4` trägt.
+ *
+ * Was daran hing, war mehr als eine Leiste:
+ *   · die Schalter-Leiste von `PublicHeader` (Hilfe, Melden, Hell/Dunkel) auf
+ *     allen öffentlichen Seiten - auf den langen Seiten ausser Reichweite,
+ *   · jeder Vollbild-Dialog mit `fixed inset-0`, der NICHT portaliert
+ *     (`TastenErkunden`, `LehrerHilfe`, `TippenHilfe`, `VoiceInstallHelp`,
+ *     `SubmissionGrader` und die Fenster in Tastenflow und „im Griff") - ein
+ *     gescrolltes Fenster deckte den Bildschirm nicht mehr ab,
+ *   · der Sprungmarken-Link des Hörbuch-Studios (`focus:fixed`).
+ *
+ * ⚠️ „Weniger Bewegung" half NICHT: Die globale Regel oben kürzt nur die
+ * DAUER auf 0,001 ms. Der Endzustand wurde danach genauso festgehalten.
+ *
+ * ⇒ `backwards` behält, wofür `both` gedacht war (kein Aufblitzen, bevor die
+ *   Animation greift), und lässt den Endzustand los. Das ist gefahrlos, weil
+ *   der Endzustand mit dem Normalzustand identisch ist: `opacity: 1` und kein
+ *   Versatz. Nach 200 ms steht `transform` wieder auf `none` - und `fixed`
+ *   heisst wieder fixiert.
+ *
+ * Ein Wächter hält das fest: `tests/seiten-uebergang-sperrt-kein-fixed.test.ts`.
+ */
+.page-transition {
+  animation: page-in 200ms ease-out backwards;
+}
+
+/* „Flinke Finger" — Belohnung: Sterne ploppen kurz riesig auf (Wunsch #3).
+   Bei „weniger Bewegung" greift die globale prefers-reduced-motion-Regel oben. */
+@keyframes tt-pop {
+  0% {
+    transform: scale(0) rotate(-30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.25) rotate(8deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes tt-ring-burst {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.6);
+    opacity: 0;
+  }
+}
+@keyframes tt-rise {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.tt-star {
+  display: inline-block;
+  font-size: clamp(2.75rem, 13vw, 4.75rem);
+  line-height: 1;
+  animation: tt-pop 0.5s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+.tt-levelup {
+  animation: tt-rise 0.4s ease-out both;
+}
+.tt-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 9999px;
+  border: 4px solid rgb(var(--c-warning, 234 179 8));
+  pointer-events: none;
+  animation: tt-ring-burst 0.7s ease-out both;
+}
+
+/* „Flinke Finger" — Rundenfortschritt: die 12 Striche einer Runde. Als CSS-Boxen
+   (nicht als Schrift-Glyphen) gezeichnet, damit gefüllte und leere Striche EXAKT
+   gleich hoch sind und auf derselben Mittellinie sitzen. Ein voll gewordener
+   Strich ploppt einmal kräftig auf und bleibt danach etwas größer und in sehr
+   kontrastreicher Farbe stehen (Wunsch von Johannes). */
+.tt-ticks {
+  display: inline-flex;
+  /* Bricht bei vielen Strichen um, statt die Seite waagrecht aufzureissen -
+     Prüfpunkt 8.2 (320 px), gemessen 25./26.08.2026: Ohne das war diese Reihe
+     einer der drei unabhängigen Übeltäter im Tastenflow-Übungskopf. Kein
+     Strich verschwindet, die Reihe wird nur mehrzeilig. */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.24rem;
+}
+.tt-tick {
+  display: inline-block;
+  width: 0.42rem;
+  height: 1.5rem;
+  border-radius: 0.22rem;
+  background: rgb(var(--c-hairline));
+  transition:
+    background-color 120ms ease-out,
+    transform 120ms ease-out;
+  transform-origin: center center;
+}
+/* ★ Der Strich, der sich GERADE füllt - die Minutenleiste der Tippchallenge
+   (Johannes 10.09.2026: „für jede Minute soll ein Strich voll werden").
+   Nur dieser eine Strich bekommt `position` und `overflow`: `.tt-tick` gehört
+   auch »Im Griff« und Punktgenau, dort ändert sich nichts. */
+.tt-tick--laeuft {
+  position: relative;
+  overflow: hidden;
+}
+.tt-tick-fuellung {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: rgb(var(--c-accent-solid));
+}
+.tt-tick--on {
+  background: rgb(var(--c-accent-solid));
+  /* gleiche Grund-Box wie die leeren → gleiche Höhe/Mittellinie; im Ruhezustand
+     etwas größer (nie kleiner). Transform verschiebt das Layout nicht. Die
+     Animation spielt einmal, wenn der Strich voll wird. */
+  transform: scale(1.12);
+  animation: tt-tick-pop 0.45s cubic-bezier(0.2, 1.5, 0.4, 1) both;
+}
+@keyframes tt-tick-pop {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.55);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+/* Kurze Einblendung „Zeile X von Y" (Tastenkürzel Alt+Z). */
+.tt-flash {
+  animation: tt-rise 0.25s ease-out both;
+}
+
+/* „Flinke Finger" — große Feier, wenn ein neues Zeichen freigeschaltet wird.
+   Vollflächige Einblendung mit aufpoppender Karte, Glitzer-Ring und Konfetti.
+   Bei „weniger Bewegung" greift die globale prefers-reduced-motion-Regel oben
+   (die Animationen laufen dann praktisch sofort durch, die Karte bleibt stehen). */
+.tt-celebrate {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(var(--c-ink) / 0.45);
+  animation: tt-fade 0.2s ease-out both;
+}
+@keyframes tt-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.tt-celebrate-card {
+  position: relative;
+  max-width: 30rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 1.25rem;
+  border: 2px solid rgb(var(--c-accent-solid));
+  background: rgb(var(--c-surface));
+  box-shadow: 0 20px 60px rgb(var(--c-ink) / 0.35);
+  padding: 1.75rem 1.5rem;
+  animation: tt-pop 0.5s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+.tt-celebrate-glyph {
+  display: inline-block;
+  font-size: clamp(3.5rem, 18vw, 6rem);
+  line-height: 1;
+  font-weight: 800;
+}
+/* Konfetti-Stückchen — werden im Markup als mehrere Spans mit --tt-x/--tt-delay
+   gestreut; reine Deko (aria-hidden). */
+.tt-confetti {
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  width: 0.6rem;
+  height: 0.9rem;
+  border-radius: 0.15rem;
+  pointer-events: none;
+  opacity: 0;
+  animation: tt-confetti-fall 1.1s ease-in both;
+  animation-delay: var(--tt-delay, 0ms);
+}
+@keyframes tt-confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tt-x, 0), 16rem) rotate(540deg);
+  }
+}
+
+/* --- Abzeichen-Groß-Ansicht (Klick auf eine Medaille in der Statistik) -------
+   Die Medaille poppt mit Schwung auf; über das Metall wandert regelmäßig ein
+   Glanz-Streifen. Bei „weniger Bewegung" greift die globale
+   prefers-reduced-motion-Regel (Animationen ≈ aus, die Medaille steht groß da). */
+.tt-medal-zoom {
+  position: relative;
+  display: inline-block;
+  animation: tt-medal-pop 0.7s cubic-bezier(0.2, 1.5, 0.4, 1) both;
+}
+@keyframes tt-medal-pop {
+  from { transform: scale(0.2) rotate(-14deg); opacity: 0; }
+  60% { opacity: 1; }
+  to { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.tt-medal-shine {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.tt-medal-shine::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  bottom: -20%;
+  left: 0;
+  width: 30%;
+  transform: rotate(16deg) translateX(-240%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 0.5),
+    transparent
+  );
+  animation: tt-medal-shine 3.4s ease-in-out 0.75s infinite;
+}
+@keyframes tt-medal-shine {
+  0% { transform: rotate(16deg) translateX(-240%); }
+  38% { transform: rotate(16deg) translateX(480%); }
+  100% { transform: rotate(16deg) translateX(480%); }
+}
+
+/* Kontrastmodi: Buttons und Labels haben durch @apply font-medium / font-weight:500
+   eine explizit gesetzte Stärke, die die body-Vererbung überschreibt. Deshalb werden
+   sie in den 5 Spezial-Modi direkt auf Semibold angehoben.
+   Spezifität (0,2,0) schlägt die Komponenten-Klasse (0,1,0).
+   NUR sw/ws/sg/gs/gb — NICHT hell/dunkel (die setzen data-theme=light/dark). */
+:root:is([data-theme="sw"],[data-theme="ws"],[data-theme="sg"],[data-theme="gs"],[data-theme="gb"]) .btn,
+:root:is([data-theme="sw"],[data-theme="ws"],[data-theme="sg"],[data-theme="gs"],[data-theme="gb"]) .field-label,
+:root:is([data-theme="sw"],[data-theme="ws"],[data-theme="sg"],[data-theme="gs"],[data-theme="gb"]) .ce-yt__label {
+  font-weight: 600;
+}
+
+/* Kontrastmodi: Ein AKTIVIERTER Schalter (gedrückt oder aufgeklappt) bekommt
+   einen DICKEN Rand (Johannes 30.08.2026). In sw/ws/sg/gs/gb gibt es keine
+   Akzentfarbe, die den Zustand tragen könnte - der Rand ist das Zeichen, das
+   nicht an Farbe hängt. `border-box` lässt den Rand nach INNEN wachsen:
+   nichts wird größer, nichts springt. NUR die 5 Spezial-Modi - in hell/dunkel
+   sagt es weiterhin die Farbe. */
+:root:is([data-theme="sw"],[data-theme="ws"],[data-theme="sg"],[data-theme="gs"],[data-theme="gb"]) button[aria-pressed="true"],
+:root:is([data-theme="sw"],[data-theme="ws"],[data-theme="sg"],[data-theme="gs"],[data-theme="gb"]) button[aria-expanded="true"] {
+  border-width: 3px;
+  border-style: solid;
+  /* Tinte des Modus, nicht `currentColor`: Die läge auf einem Knopf mit
+     gedämpfter Schriftfarbe ebenfalls gedämpft - der Rand soll aber immer
+     die volle Zeichenfarbe des Modus tragen. */
+  border-color: rgb(var(--c-ink));
+}
+
+/*
+ * ════════════════════════════════════════════════════════════════════════════
+ * ★★★★ DAS AKTIVE ZEICHEN DER TIPPZEILE: ZWEI BALKEN, OBEN UND UNTEN
+ *      (Hell/Dunkel und die fünf Spezial-Kontraste - der Windows-Kontrastmodus
+ *       setzt weiter unten nur noch andere FARBEN darauf)
+ * ════════════════════════════════════════════════════════════════════════════
+ *
+ * Johannes, 09.09.2026: *„wenn die Tastatur mit Farben an ist, sind die
+ * Klammern um das zu schreibende Zeichen total dick - mach es wie im
+ * Kontrastmodus, oben und unten Balken, die können dick sein und verfärben sich
+ * und blähen sich auf, wenn sich jemand verschrieben hat"* - dazu: *„die Balken
+ * können natürlich die Farbe je nach Finger ändern."*
+ *
+ * ── WARUM ES EINE KLAMMER WURDE, obwohl niemand eine gezeichnet hat ─────────
+ * Bis dahin stand am aktiven Zeichen ein `outline` rings herum (Fingerfarbe,
+ * 0,14em) bzw. ein `ring-2`. Zu sehen waren davon immer nur die zwei
+ * SENKRECHTEN Kanten: Die Zeichen sind Flex-Elemente und werden auf die volle
+ * Höhe des Streifens gestreckt - der Streifen (`.tt-prompt-spur`) hat
+ * `overflow-hidden` und endet damit auf DEMSELBEN Pixel wie das Zeichen. Die
+ * waagrechten Kanten lagen also genau auf der Schnittkante und fielen weg.
+ * ⚠️ Das ist dieselbe Fehlerform wie im Windows-Kontrastmodus, aber eine ANDERE
+ * Ursache: dort stanzt die Backplate die waagrechten Kanten heraus, hier
+ * schneidet sie `overflow-hidden` ab. Wer nur eine der beiden repariert, sieht
+ * die Klammer in der anderen Darstellung weiter.
+ *
+ * ── WAS TRÄGT ──────────────────────────────────────────────────────────────
+ * Zwei Kästchen ober- und unterhalb des Zeichens (`::before`/`::after`,
+ * `absolute`). Sie hängen NICHT am Textfluss - ein `padding-block` am Zeichen
+ * selbst schiebt den Buchstaben nach unten, weil seine Nachbarn als
+ * Flex-Elemente oben bleiben (im Kontrastmodus gemessene 9,97 px).
+ *
+ * ⚠️ DEN PLATZ MUSS DER STREIFEN VORHALTEN. `overflow-hidden` schneidet an der
+ * Innenkante der Polsterung ab; ohne `padding-block` an `.tt-prompt-spur` wäre
+ * jeder Balken restlos weg. Genau daran ist der Kontrastmodus zweimal
+ * gescheitert. Die Polsterung deckt den DICKSTEN Fall ab (den Fehlgriff).
+ *
+ * ✅ Das unsichtbare Eingabefeld darüber (es trägt den echten Schreibzeiger)
+ * braucht KEINEN Ausgleich, und das ist nachgerechnet und am Bild gemessen:
+ * Es liegt `absolute inset-0`, seine Textzeile steht also in der Mitte des
+ * gewachsenen Kastens - und weil die Polsterung oben und unten GLEICH gross
+ * ist, wandert die sichtbare Zeile um genau denselben Betrag mit. Der Cursor
+ * bleibt unter dem sichtbaren Zeichen. ⚠️ Wer hier je einseitig polstert, muss
+ * das Feld nachziehen: Bildschirmlupen und Windows' Cursorhervorhebung fahren
+ * dem Zeiger nach, nicht dem Buchstaben.
+ *
+ * ⚠️ SCHON GESCHRIEBENE ZEICHEN BEKOMMEN HIER KEINE BALKEN (Johannes: *„die
+ * Farbänderung bei den geschriebenen Buchstaben soll bleiben, keine kleinen
+ * Striche wie im Kontrastmodus"*). In Hell/Dunkel sagt die Farbe das
+ * zuverlässig; im Kontrastmodus gibt es keine Farbe, die es sagen könnte -
+ * darum steht die halbdicke Spur NUR im `forced-colors`-Block weiter unten.
+ */
+.tt-prompt-spur {
+  /*
+   * ★★★★ DIE LUFT WIRD AUSGERECHNET, NICHT GESCHÄTZT - und sie muss den
+   * DICKSTEN Fall tragen, das ist der Fehlgriff.
+   *
+   * Ein Balken ragt um (Dicke + Luft - 0,165em) über die Zeichenbox hinaus.
+   * Nachgerechnet über alle zehn Vergrösserungsstufen (die Zeile steht auf
+   * 2,4rem × Stufe, also 38 px bis 307 px):
+   *   38 px Schrift → 15 px · 77 px → 28 px · 96 px → 34 px · 115 px → 33 px
+   *   · 154 px → 28 px · 192 px → 22 px · 307 px → 4 px
+   * ⚠️ Der Überstand ist also NICHT bei der grössten Schrift am grössten,
+   * sondern in der MITTE (rund 100 px) - dort ist die Dicke schon am Anschlag
+   * `0.5em`, die Luft der Zeichenbox `0.165em` aber noch klein. Eine feste
+   * Zahl, die bei gewöhnlicher Schrift passt, schneidet dort ab: 24 px hätten
+   * bei Stufe 2 bis 4 rund 10 px des Fehler-Balkens weggenommen. Genau diese
+   * Falle hat der Kontrastmodus am 09.09. mit `clamp(20px, 0.13em, 28px)`
+   * ebenfalls gehabt - die Zahl war dort in Wahrheit immer 20 px.
+   *
+   * ⇒ Hier steht darum dieselbe Rechnung wie am Balken, plus 2 px Rest.
+   * ⚠️ Das `em` trägt nur, weil `PromptText` diesem Streifen die Schriftgrösse
+   * der Zeile mitgibt - er steht ausserhalb der Zeichen und erbte sonst die
+   * Grundschrift.
+   */
+  --tt-spur-luft: max(
+    0px,
+    clamp(12px, 0.5em, 50px) + clamp(2px, 0.02em, 5px) - 0.165em + 2px
+  );
+  /* ★ Schriftwahl (09.10.2026): je Schrift eigene Luft oben/unten
+     (`--tt-balken-oben`/`-unten`, siehe „Das aktive Zeichen"). Ohne Wahl
+     ist beides 0.165 - dann ist es genau `--tt-spur-luft`. */
+  padding-top: max(
+    0px,
+    clamp(12px, 0.5em, 50px) + clamp(2px, 0.02em, 5px) -
+      var(--tt-balken-oben, 0.165) * 1em + 2px
+  );
+  padding-bottom: max(
+    0px,
+    clamp(12px, 0.5em, 50px) + clamp(2px, 0.02em, 5px) -
+      var(--tt-balken-unten, 0.165) * 1em + 2px
+  );
+}
+.tt-prompt-active {
+  /* ⚠️ Gedeckelt wird nur nach OBEN. Der mittlere Wert ist die Dicke bei
+     gewöhnlicher Schrift; ein Balken, der ungebremst mitwächst, wird bei
+     starker Vergrösserung zum Block. Dieselben Masse wie im Kontrastmodus -
+     die hat Johannes dort abgenommen. */
+  --tt-balken-dicke: clamp(5px, 0.24em, 26px);
+  --tt-balken-luft: clamp(2px, 0.02em, 5px);
+  /* Vorgabe ohne Fingerfarben (auch in den fünf Spezial-Kontrasten): die
+     Akzentfarbe des Modus - dieselbe, die vorher der Ring trug. Sind die
+     Fingerfarben an, überschreibt `PromptText` diese Variable INLINE mit der
+     Farbe des Fingers, der dran ist. */
+  --tt-balken-farbe: rgb(var(--c-accent));
+  /* Nur der Bezugspunkt für die zwei Kästchen - `relative` verschiebt nichts. */
+  position: relative;
+}
+/* ⚠️ Der Fehlgriff steht NACH `.tt-prompt-active` (gleiche Spezifität, also
+   gewinnt die spätere Regel) und trägt beides, was Johannes genannt hat:
+   verfärben (Warnfarbe) und aufblähen. Aufgebläht wird in die DICKE und zur
+   SEITE, nie nach innen - ein Balken, der in die Zeile hineinragt, überdeckt
+   den i-Punkt. Der Fehlgriff dauert 320 ms (`setFlash`).
+   ⚠️ Die Farbe kommt hier aus der Regel, nicht inline: `PromptText` setzt die
+   Fingerfarbe beim Fehlgriff bewusst nicht (`!flash`) - ein Inline-Wert würde
+   jede Regel schlagen. */
+.tt-prompt-fehler {
+  --tt-balken-dicke: clamp(12px, 0.5em, 50px);
+  --tt-balken-farbe: rgb(var(--c-danger));
+}
+.tt-prompt-active::before,
+.tt-prompt-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--tt-balken-dicke);
+  border-radius: calc(var(--tt-balken-dicke) / 2.5);
+  background: var(--tt-balken-farbe);
+  /* ⚠️ HIER STEHT BEWUSST KEIN `transition`. Zwei Gründe: Der Fehlgriff dauert
+     320 ms und soll als SPRUNG ankommen, nicht als Bewegung - und ein
+     Farbübergang macht jede Messung an dieser Stelle unzuverlässig. Genau das
+     ist am 09.09. an `.tt-tick` passiert: Wer sofort nach dem Klassenwechsel
+     misst, liest bei laufendem Übergang noch den Startwert. */
+}
+/* `0.165em` ist die gemessene Luft in der Zeichenbox (die Flex-Streckung auf
+   die Zeilenhöhe). Was hier steht, ist der Weg von der Boxkante bis knapp an
+   den Buchstaben - so bleibt der Balken bei JEDER Schriftgrösse gleich nah.
+   ★★ Schriftwahl (Johannes 09.10.2026: „teste jede schrift, dass der Abstand
+   der Balken zu der schrift passt"): Jede Schrift hat andere Ober- und
+   Unterlängen. `--tt-balken-oben`/`-unten` (Zahl, mal 1em) setzt
+   `useSchriftartAnwenden` aus der Messung in `schriftart.ts` - so steht der
+   Balken bei jeder Schrift so weit vom Buchstaben wie bei Atkinson.
+   `--tt-balken-schraeg`: bei schräger Schrift (Primæ Schreibschrift, 15°)
+   rückt der obere Balken nach rechts, der untere nach links (Johannes:
+   „bei kursiver schrift müssen die balken auch oben und unten leicht
+   versetzt sein"). */
+.tt-prompt-active::before {
+  top: calc(var(--tt-balken-oben, 0.165) * 1em - var(--tt-balken-dicke) - var(--tt-balken-luft));
+  translate: calc(var(--tt-balken-schraeg, 0) * 1em) 0;
+}
+.tt-prompt-active::after {
+  bottom: calc(var(--tt-balken-unten, 0.165) * 1em - var(--tt-balken-dicke) - var(--tt-balken-luft));
+  translate: calc(var(--tt-balken-schraeg, 0) * -1em) 0;
+}
+.tt-prompt-fehler::before,
+.tt-prompt-fehler::after {
+  left: calc(-1 * clamp(5px, 0.14em, 22px));
+  right: calc(-1 * clamp(5px, 0.14em, 22px));
+}
+
+/*
+ * ════════════════════════════════════════════════════════════════════════════
+ * ★★★★★ „ZEICHENABSTAND GROSS (CVI)" - LAUFWEITE ZWISCHEN JEDEM ZEICHEN
+ *        (E11, 18./19.09.2026)
+ * ════════════════════════════════════════════════════════════════════════════
+ *
+ * Johannes: *„die Laufweite muss zwischen jedem Zeichen größer werden, nicht
+ * nur bei Leerzeichen"* - für Kinder mit zerebraler Sehbehinderung (CVI), bei
+ * denen eng stehende Zeichen ineinanderlaufen (Crowding).
+ *
+ * EIN Mechanismus für JEDEN Bildschirm, auf dem ein Kind Text abschreibt: Die
+ * Zeichen der Übungszeile sind FLEX-Elemente (siehe „Das aktive Zeichen"
+ * oben) - `gap` auf ihrem Flex-Container setzt darum genau den verlangten
+ * Zusatzabstand zwischen JEDEM Nachbarpaar, auch zwischen zwei Buchstaben,
+ * nicht nur an Wortgrenzen. `--tt-laufweite` trägt den FAKTOR selbst (2, 3
+ * oder 4 - „aus" bekommt weder die Klasse noch die Variable, siehe
+ * `laufweiteAttrs` in `zeichenabstand.ts`), `1ch` ist eine angenäherte
+ * Zeichenbreite der jeweiligen Schriftgrösse: doppelt (Faktor 2) fügt eine
+ * ganze Zeichenbreite Zusatzabstand ein, dreifach zwei, vierfach drei -
+ * genau die Vorgabe „jedes Zeichen nimmt das Vielfache seiner eigenen Breite
+ * ein".
+ *
+ * ⚠️ Das unsichtbare Eingabefeld (der echte Schreibzeiger) bekommt DIESELBE
+ * Zusatzstrecke über sein `letterSpacing` (`TypingSession.tsx`) - sonst liegt
+ * der Cursor neben dem sichtbaren aktiven Zeichen, genau die Falle der
+ * Balken vom 09.09.2026 (siehe oben). `gap` wirkt nur zwischen Geschwistern,
+ * `letterSpacing` nach jedem Zeichen inklusive - für die Cursor-Position vor
+ * dem `index`-ten Zeichen ist das dieselbe Anzahl Zwischenräume.
+ *
+ * ⚠️ Die aktiven Balken, der Fehler-Zustand und die Kontrastmodus-Balken
+ * hängen an der BOX des einzelnen Zeichens (`left:0;right:0` relativ zu
+ * `.tt-prompt-active`) - `gap` ändert nur den Abstand ZWISCHEN den Boxen,
+ * nie ihre eigene Breite. Die Balken sitzen darum unverändert auf dem
+ * richtigen Zeichen, mit mehr Luft zum Nachbarn.
+ */
+/* ★ 19.09.2026: 0.75ch je Stufe statt 1ch (Johannes: „alle um 25 % kleiner") -
+   dieselbe Zahl wie `LAUFWEITE_CH_JE_STUFE` in `lib/typing/zeichenabstand.ts`
+   (das Eingabefeld liest sie dort; der Wächter vergleicht beide). */
+.tt-laufweite {
+  gap: calc((var(--tt-laufweite, 1) - 1) * 0.75ch);
+}
+
+/* Windows-Hochkontrastmodus: Farben werden vom Betriebssystem erzwungen.
+   Das Tippfeld-Overlay braucht alternative visuelle Hinweise (Rahmen statt
+   Hintergrundfarbe, Unterstreichung statt Textfarbe), damit der Tipper-Status
+   auch im HCM erkennbar bleibt. */
+@media (forced-colors: active) {
+  /*
+   * ════════════════════════════════════════════════════════════════════════
+   * ★★★★★ IM KONTRASTMODUS TRÄGT NIE DIE FARBE EINEN ZUSTAND - SONDERN
+   *        EINE FLÄCHE ODER EINE FORM (09.09.2026, an der App gemessen)
+   * ════════════════════════════════════════════════════════════════════════
+   * Johannes am Windows-Kontrastmodus: *„1. Vorlesen ist an, den dünnen Rand
+   * erkennt man kaum. 2. Die 12 Zeilenstriche sieht man gar nicht. 3. Die
+   * Klammern um das zu schreibende Zeichen sind genauso hell und irritieren -
+   * steht hier ein L oder i?"*
+   *
+   * ── DIE MESSUNG (Chrome mit `forced-colors: active`, echte Seite) ────────
+   * Sie sagt etwas Schärferes als „kaum zu erkennen":
+   *
+   * | Stelle              | gewöhnlich (dunkel)        | Kontrastmodus      |
+   * |---------------------|----------------------------|--------------------|
+   * | Vorlesen AN  Rand   | rgb(130,184,255) blau      | rgb(255,255,255)   |
+   * | Kurztasten AUS Rand | rgb(84,84,92)  grau        | rgb(255,255,255)   |
+   * | Vorlesen AN  Grund  | rgb(36,58,88)  dunkelblau  | rgb(0,0,0)         |
+   * | Kurztasten AUS Grund| rgb(52,52,57)  dunkelgrau  | rgb(0,0,0)         |
+   *
+   * **„An" und „aus" sind im Kontrastmodus BIT FÜR BIT dasselbe.** Der Rand,
+   * den Johannes „kaum erkennt", ist der Rand, den JEDER Knopf trägt - er
+   * sagt nichts über den Zustand. Nichts war zu dünn; es war nichts da.
+   *
+   * Derselbe Befund an den anderen zwei Stellen:
+   *   - `.tt-tick` hat `background: rgb(var(--c-hairline))` und KEINEN Rand.
+   *     Gemessen im Kontrastmodus: `rgb(0,0,0)` bei `border-width: 0px` -
+   *     also genau die Hintergrundfarbe. Schwarz auf Schwarz, alle zwölf.
+   *   - Am aktiven Zeichen gewinnt der Finger-Rahmen aus dem Inline-Stil
+   *     (`outline: 0.14em`, hier 5px) gegen die Regel, die hier stand (2px).
+   *     Windows erzwingt seine Farbe auf `rgb(255,255,255)` - dieselbe Farbe
+   *     wie der Buchstabe, 1px daneben. Daraus wird die „Klammer", die als
+   *     Teil des Zeichens gelesen wird: `[j]` sieht aus wie l, i oder j.
+   *     ⚠️ Die 2px-Regel hat also nie gewirkt - ein Inline-Stil schlägt jede
+   *     Regel ohne `!important`.
+   *
+   * ── WAS WINDOWS ÜBRIG LÄSST ─────────────────────────────────────────────
+   * Es ersetzt jede Vorder-, Hinter- und Randfarbe durch vier Systemfarben.
+   * Damit bleiben genau zwei Mittel, um einen Zustand zu zeigen:
+   *   • eine GEFÜLLTE FLÄCHE in `Highlight` (Windows' eigene Sprache für
+   *     „ausgewählt/eingeschaltet") - dazu `HighlightText` für den Inhalt,
+   *   • eine FORM: Umriss, Dicke, Abstand.
+   * Beides sind Systemfarben, also tragen sie in HELLEN Kontrastdesigns
+   * („Wüste", „Weiß") genauso wie in dunklen. Eine feste Farbe kann das
+   * nicht: Ein weißer Umriss - wie er hier stand - ist auf hellem Grund
+   * unsichtbar.
+   *
+   * ⚠️ ALLES IN DIESEM BLOCK GILT NUR IM KONTRASTMODUS. Hell, dunkel und
+   * unsere fünf eigenen Kontrastmodi bleiben unberührt - dort sagt weiterhin
+   * die Farbe, was an ist.
+   */
+
+  /*
+   * ⚠️⚠️ EINE FÜLLUNG HINTER TEXT GEHT HIER NICHT - DIE „BACKPLATE"
+   * ────────────────────────────────────────────────────────────────────────
+   * Das war der erste Versuch, und er ist am Bild gescheitert: Chrome (und
+   * Edge) zeichnen im Kontrastmodus hinter JEDEN Text eine deckende Fläche in
+   * `Canvas`, damit Text auch über Bildern lesbar bleibt. Diese Backplate
+   * liegt ÜBER einem selbstgesetzten Hintergrund. Gemessen hatte das Zeichen
+   * brav `background: Highlight` und `color: HighlightText` - zu SEHEN war ein
+   * cyanfarbener Rahmen mit schwarzem Kern und keinem Buchstaben darin. Am
+   * Schalter „Tastatur ausblenden" dasselbe: ein cyaner Balken mit schwarzem
+   * Block statt Beschriftung.
+   * ⇒ Wo Text steht, trägt nur die FORM: Umriss, Dicke, Abstand, und die
+   *   Systemfarbe `Highlight` statt der Schriftfarbe. Eine Fläche bleibt nur
+   *   dort richtig, wo KEIN Text drinsteht - siehe die Striche unten.
+   */
+
+  /*
+   * ════════════════════════════════════════════════════════════════════════
+   * ★★★★ EINE SPRACHE FÜR ALLE VIER APPS (Johannes, 09.09.2026: „ob in den
+   *      anderen Apps die Kontraste und Rahmen genauso eingestellt sind?")
+   * ════════════════════════════════════════════════════════════════════════
+   * Die Antwort war nein, und die Durchsicht hat drei Sorten Uneinheitlichkeit
+   * gezeigt: „gerade dran" war mal 5, mal 4, mal 3 Pixel dick · „schon
+   * erledigt" gab es in den Braille-Apps gar nicht · und Klangpunktes fertige
+   * Taktstriche trugen die Farbe von „dran" statt die von „erledigt".
+   *
+   * ⇒ Vier Zustände, vier feste Antworten - überall dieselben:
+   *
+   * | Zustand              | Farbe        | Dicke   | Strich      |
+   * |----------------------|--------------|---------|-------------|
+   * | gerade dran, gewählt | `Highlight`  | dick    | durchgehend |
+   * | schon erledigt       | `LinkText`   | dünn    | durchgehend |
+   * | falsch               | `CanvasText` | dick    | gestrichelt |
+   * | Hinweis, Lösung      | `Highlight`  | dick    | gestrichelt |
+   *
+   * ⚠️ Die DICKE trägt die Auskunft, die Farbe kommt dazu: Ein Kind stellt
+   * seine Kontrastfarben selbst ein, und `LinkText` liegt im hellen Design nah
+   * an `Highlight`. Halb so dick bleibt halb so dick.
+   * ⚠️ Gestrichelt gegen durchgehend ist der zweite Träger - er hängt an gar
+   * keiner Farbe.
+   */
+  :root {
+    --hcm-dick: 5px;
+    --hcm-duenn: 3px;
+  }
+
+  /* ── 1. „AN" IST EIN DICKER RING IN DER AUSWAHLFARBE ─────────────────────
+     Gilt für JEDEN Schalter, nicht nur für `.btn-toggle`: Die Kopfzeilen-
+     Knöpfe (Vorlesen, Kontrast, Zahnrad) tragen diese Klasse nicht, und genau
+     an ihnen ist es Johannes aufgefallen. 113 Stellen im Baum setzen
+     `aria-pressed`; im Kontrastmodus war „an" bisher an keiner davon zu sehen.
+     Zwei Unterschiede auf einmal - FARBE (Highlight statt der Randfarbe, die
+     jeder Knopf hat) und DICKE (3 statt 1 Pixel). Der Ring liegt INNEN
+     (`-3px`), damit nichts wächst und nichts springt.
+     ⚠️ `border-color` steht bewusst DANEBEN: Der Fokusring weiter unten ist
+     ebenfalls ein `outline` und trägt `!important`. Hat ein aktiver Schalter
+     den Fokus, überschreibt er diesen Ring - dann bleibt die cyanfarbene
+     Kante das Zeichen dafür, dass der Schalter an ist.
+     ⚠️ Die Farbe wird NICHT per `forced-color-adjust: none` gerettet (so stand
+     es hier bis 09.09.): Die App-Farbe steht dann auch im hellen
+     Kontrastdesign da, wo sie nicht hingehört. `Highlight` ist die Farbe, die
+     das Kind in SEINEM Design für „ausgewählt" eingestellt hat. */
+  :is(button, [role="button"])[aria-pressed="true"],
+  :is(button, [role="button"])[aria-expanded="true"],
+  [role="radio"][aria-checked="true"],
+  [role="tab"][aria-selected="true"],
+  [role="treeitem"][aria-selected="true"],
+  [role="option"][aria-selected="true"],
+  [aria-current]:not([aria-current="false"]) {
+    border-color: Highlight;
+    /* ⚠️ 5 px, nicht 3 (Johannes, 09.09.2026: „der Rand um die ausgewählten
+       Felder und Schalter ist gut, aber muss noch dicker werden"). Er wächst
+       nach INNEN (`-5px`), also wird kein Schalter grösser und keine Reihe
+       verschiebt sich. Dieselbe Dicke wie der Fokusring weiter unten - im
+       Kontrastmodus ist der Umriss das einzige Zeichen, das Windows übrig
+       lässt, und ein dünner Umriss ist dort keine Auskunft. */
+    outline: var(--hcm-dick) solid Highlight;
+    outline-offset: calc(-1 * var(--hcm-dick));
+  }
+
+  /* ★★★ DIESELBE FRAGE STEHT IM HTML IN FÜNF SPRACHEN (09.09.2026 an allen vier
+     Apps durchgesucht). „Dieses hier ist gewählt" heisst je nach Bauteil
+     `aria-pressed`, `aria-checked` (Punktgenaus Schreiben/Lesen-Wähler),
+     `aria-selected` (der Datei-Baum in »Im Griff«) oder `aria-current` (die
+     Übungsliste) - und wer nur eine davon abfängt, repariert ein Viertel der
+     Plattform. Sie stehen darum in EINER Regel.
+     ⚠️ `[aria-current="false"]` ist ausgenommen: Das Attribut wird oft an JEDEM
+     Eintrag gesetzt und nur beim aktuellen auf einen Wert gestellt. */
+
+  /* ── 1a. AUCH EINE ARBEITSFLÄCHE MUSS ZEIGEN, DASS SIE DEN FOKUS HAT ─────
+     Punktgenaus Braille-Eingabe und die fünf Übungsflächen von Klangpunkte
+     sind `role="application"` mit `tabIndex={0}` - keine Knöpfe, keine
+     Eingabefelder. Der Fokusblock weiter unten zählt aber Elementarten auf
+     und lässt `[tabindex]` bewusst aus (gedacht war das für Container mit
+     `tabIndex={-1}`, die den Fokus nur für die Sprachausgabe bekommen). Diese
+     Flächen fielen dadurch durch beide Netze: Ihr Fokus ist eine Randfarbe
+     plus `shadow-focus`, und der Kontrastmodus nimmt beides.
+     ⚠️ Ohne diese Regel sieht ein Kind nicht, ob seine Tastendrücke überhaupt
+     ankommen - an einer Stelle, an der es nichts anderes tut als tippen. */
+  [role="application"]:focus,
+  [role="application"]:focus-visible {
+    outline: 5px solid Highlight !important;
+    outline-offset: 2px !important;
+  }
+
+  /* ── 1b. „AUSGEWÄHLT" GEGEN „NICHT AUSGEWÄHLT" AN DEN GRUNDKNÖPFEN ───────
+     `.btn-primary` und `.btn-secondary` unterscheiden sich AUSSCHLIESSLICH in
+     Fläche und Schriftfarbe (index.css oben) - im Kontrastmodus also gar
+     nicht. Sie tragen die Auswahl an mehreren Stellen: die aufgelöste
+     Antwortfrage in Klangpunkte, der Richtungswähler in Punktgenau.
+     Ein Rahmen genügt: `.btn-secondary` bekommt die gewöhnliche Kante,
+     `.btn-primary` die kräftige in der Auswahlfarbe. */
+  .btn-primary {
+    border: 2px solid Highlight;
+  }
+  .btn-secondary {
+    border: 1px solid ButtonBorder;
+  }
+
+  /* ── 2. DIE ZEILENSTRICHE BEKOMMEN EINE KANTE ────────────────────────────
+     Ein Kästchen, das nur aus Hintergrundfarbe besteht, verschwindet hier
+     restlos. Leer = Umriss, voll = gefüllt: Das ist derselbe Unterschied wie
+     sonst (blass/kräftig), nur in einem Mittel, das Windows stehen lässt.
+     Die Kante wächst nach innen (`border-box` gilt im ganzen Projekt) - kein
+     Strich wird größer, keiner springt, alle zwölf bleiben gleich hoch.
+     ⚠️ Gilt auch für »Im Griff« und Punktgenau - sie benutzen dieselben
+     Striche (`tt-ticks`), damit ein Kind sie wiedererkennt. */
+  .tt-tick {
+    background: Canvas;
+    border: 1px solid CanvasText;
+  }
+  .tt-tick--on {
+    background: Highlight;
+    border-color: Highlight;
+  }
+  /* Die Füllung des laufenden Minutenstrichs (Tippchallenge) - dieselbe Farbe
+     wie ein voller Strich, sonst verschwände sie wie die Striche vorher. */
+  .tt-tick-fuellung {
+    background: Highlight;
+  }
+
+  /* ── 3. DAS AKTIVE ZEICHEN: ZWEI BALKEN, OBEN UND UNTEN ─────────────────
+     Johannes, 09.09.2026: *„der Rahmen ist links und rechts des Zeichens
+     störend, mach oben und unten Balken und die noch etwas dicker."*
+     Und er hat recht: Was links und rechts eines Buchstabens steht, liest man
+     als Teil des Buchstabens - genau darum ging die erste Meldung („steht hier
+     ein L oder i?"). Oben und unten kann nichts mit einem Zeichen verwechselt
+     werden.
+
+     ── Wie zwei Balken aus einer Fläche werden ─────────────────────────────
+     Chrome legt im Kontrastmodus hinter jeden Text eine deckende Fläche in
+     Hintergrundfarbe („Backplate"), damit Text über Bildern lesbar bleibt.
+     Sie ist so breit wie der Text und so hoch wie seine Zeile. Wer also eine
+     Fläche hinter das Zeichen legt, sieht von ihr genau das, was die Backplate
+     überragt - der Buchstabe bleibt dabei in seiner Schriftfarbe und lesbar.
+     Ohne seitliches Padding bleiben davon zwei Balken übrig: oben und unten.
+     Die Dicke ist `padding-block`.
+
+     ⚠️ DER PLATZ DAFÜR IST NICHT VON SELBST DA. Gemessen am 09.09.: Der
+     Streifen der Zeile hat `overflow-hidden` und endet auf DEMSELBEN Pixel wie
+     das Zeichen (beide 287) - ein Balken darüber oder darunter wäre restlos
+     abgeschnitten. Darum bekommt `.tt-prompt-spur` hier senkrecht Luft; nur im
+     Kontrastmodus, sonst steht die Zeile unverändert.
+
+     ⚠️ Was hier NICHT stehen darf, jedes einzeln am Bild gescheitert:
+       · `color: HighlightText` dazu - dann steht der Buchstabe in der Farbe
+         der Backplate, also unsichtbar. Die Schriftfarbe bleibt unangetastet.
+       · ein Rahmen eng am Zeichen - die Backplate stanzt seine waagrechten
+         Kanten heraus, übrig bleiben die zwei senkrechten Striche, also genau
+         die Klammer aus der Meldung.
+       · ein Rahmen mit `outline-offset` - er liegt dann über den Nachbarn.
+       · ein Balken als `::after` unter dem Zeichen - siehe der Platz oben.
+
+     ⚠️ HISTORISCH, und die Lehre daraus trägt weiter: Bis 09.09.2026 kam der
+     Finger-Farbrahmen als INLINE-Stil aus `PromptText`
+     (`outline: 0.14em solid <fingerfarbe>`) - und ein Inline-Stil schlägt jede
+     Regel ohne `!important`. Die Regel, die hier stand (2px Highlight, ohne
+     `!important`), hat deshalb NIE gewirkt; gemessen waren es die 5px des
+     Inline-Stils in der erzwungenen Schriftfarbe, und genau daraus wurde die
+     Klammer. Seit dem Abend des 09.09. gibt es diesen Rahmen nirgends mehr:
+     Die gewöhnliche Darstellung zeichnet dieselben Balken (Grundregel weiter
+     oben), `PromptText` reicht nur noch die Fingerfarbe als Variable herein.
+     Hier im Kontrastmodus ist die Fingerfarbe ohnehin verloren; welcher Finger
+     dran ist, sagt die Zeile darüber im Klartext. */
+  /*
+   * ★★★★ DIE BALKEN DÜRFEN BEI VERGRÖSSERUNG NICHT WEGWANDERN (Johannes,
+   * 09.09.2026, an seinem Bildschirm bei starker Vergrösserung: *„man sieht die
+   * Balken kaum noch. Wenn das vergrössert ist, dann wird der Abstand zu den
+   * beiden Balken oben und unten auch grösser, das darf nicht sein, halte die
+   * Balken nahe.")
+   *
+   * ── Warum sie wegwanderten, gemessen bei 200 px Schrift ──────────────────
+   * Zwei Beträge addierten sich, und BEIDE wuchsen mit der Schrift:
+   *   · der Abstand, den die Regel selbst setzte: 0,22em = 44 px
+   *   · die Luft, die in der Zeichenbox ohnehin steckt: 33 px oben UND unten
+   *     (0,165em - die Zeichen sind Flex-Elemente und werden auf die Zeilenhöhe
+   *     gestreckt, der Buchstabe sitzt in der Mitte dieser Box)
+   * Macht 77 px zwischen Balken und Buchstabe. Bei doppelter Schrift wären es
+   * 154 px gewesen - der Balken hat mit dem Zeichen nichts mehr zu tun.
+   *
+   * ⇒ Beide Masse sind jetzt GEDECKELT (`clamp`), und der Anschlag rechnet die
+   * Luft der Box heraus: `0.165em` ist genau der gemessene Stretch, davon gehen
+   * Dicke und ein kleiner Rest ab. Damit sitzt der Balken bei JEDER Schriftgrösse
+   * ein paar Pixel über bzw. unter dem Buchstaben - bei 200 px gemessen 4 px
+   * statt 77. Die Dicke wächst mit, aber auch nur bis zu einer Grenze: Ein
+   * mitwachsender Balken wird sonst zum Block.
+   */
+  .tt-prompt-active {
+    /* ⚠️ Der mittlere Wert ist die Dicke bei GEWÖHNLICHER Schrift - sie muss
+       bleiben, wie Johannes sie abgenommen hat (0,24em). Gedeckelt wird nur
+       nach oben: Ein Balken, der ungebremst mitwächst, wird zum Block. Eine
+       erste Fassung hatte hier 0,13em und machte die Balken im Normalfall
+       dünner als vorher - am Bild gesehen. */
+    --tt-balken-dicke: clamp(5px, 0.24em, 26px);
+    --tt-balken-luft: clamp(2px, 0.02em, 5px);
+    /* ⚠️⚠️ `!important` IST HIER PFLICHT, und der Wächter hat es bewiesen
+       (`npm run pruefstand:kontrast`, Prüfung 4, am 09.09. abends):
+       `PromptText` setzt die Fingerfarbe INLINE in genau diese Variable, und
+       ein Inline-Wert schlägt jede Regel ohne `!important`. In den Balken
+       stünde dann eine App-Farbe - und Chrome ersetzt im Kontrastmodus jede
+       App-Farbe durch die Hintergrundfarbe. Gemessen kam `rgb(0,0,0)` heraus:
+       schwarze Balken auf schwarzem Grund, also gar keine Balken.
+       `Highlight` dagegen ist eine SYSTEMFARBE - die lässt Windows stehen.
+       Die Fingerfarbe ist im Kontrastmodus ohnehin verloren; welcher Finger
+       dran ist, sagt die Zeile darüber im Klartext. */
+    --tt-balken-farbe: Highlight !important;
+  }
+  /* Schon geschrieben: halb so dick, andere Farbe. */
+  .tt-prompt-typed {
+    --tt-balken-dicke: clamp(3px, 0.12em, 13px);
+    --tt-balken-luft: clamp(2px, 0.02em, 5px);
+    /* `!important` aus demselben Grund wie oben - und damit die Regel
+       unabhängig davon trägt, in welcher Reihenfolge die Fassungen für
+       gewöhnliche Darstellung und Kontrastmodus in dieser Datei stehen. */
+    --tt-balken-farbe: LinkText !important;
+    --tt-balken-einzug: 22%;
+  }
+  /* ⚠️ Der Fehler wächst vor allem in die DICKE, nicht in den Abstand
+     (Johannes, 09.09.2026: „der Effekt, dass bei falscher Taste die Balken kurz
+     grösser werden, ist toll - lass sie noch etwas stärker grösser werden").
+     Das hat zwei Gründe: Ein Balken, der zugleich wegrückt, wandert wieder von
+     dem Zeichen weg, um das es geht - und alles, was nach aussen wächst, muss
+     `.tt-prompt-spur` als Platz vorhalten, also auch im ruhigen Zustand. So
+     bleibt der Balken gleich nah und wird nur kräftig dicker: gemessen bei
+     gewöhnlicher Schrift 19 px gegen 9 px, also gut das Doppelte. */
+  .tt-prompt-fehler {
+    --tt-balken-dicke: clamp(12px, 0.5em, 50px);
+  }
+  /* ⚠️ Die LUFT für die Balken steht seit 09.09.2026 nicht mehr hier, sondern
+     als `--tt-spur-luft` in der Grundregel weiter oben: Seit die gewöhnliche
+     Darstellung dieselben Balken zeichnet, braucht der Streifen sie in JEDER
+     Darstellung - und zwei Zahlen für dasselbe Mass laufen auseinander.
+     Nur so viel Luft, wie der dickste Fall (der Fehler) nach aussen braucht;
+     eine frühere Fassung hielt hier 0,5em frei, also bei 200 px Schrift 100 px
+     Leerraum um die Zeile.
+     ⚠️ Ebenfalls entfallen: `outline: none !important` am aktiven Zeichen. Es
+     musste den INLINE-Rahmen der Fingerfarbe abwehren (`outline: 0.14em solid
+     <fingerfarbe>`) - genau der wurde hier zur gemeldeten Klammer. Den Rahmen
+     gibt es seit 09.09. nirgends mehr; `PromptText` gibt nur noch die FARBE in
+     die Balken. */
+  /*
+   * ⚠️⚠️ DIE BALKEN DÜRFEN DEN BUCHSTABEN NICHT VERSCHIEBEN (Johannes,
+   * 09.09.2026: *„in den Beispielen sieht das so aus, als würden die Buchstaben
+   * vertikal verschoben sein, das darf nicht sein"* - er hatte recht).
+   *
+   * Die erste Fassung erzeugte die Balken über `padding-block` an der Fläche
+   * selbst. Das geht hier NICHT, und der Grund steht im Bauteil: Die Zeichen
+   * liegen in einem FLEX-Behälter (`PromptText`, `className="flex w-max …"`),
+   * sind also Flex-Elemente. Bei `align-items: stretch` - der Vorgabe - sind
+   * alle gleich hoch und ihr Inhalt beginnt oben; ein `padding-top` an einem
+   * einzelnen schiebt dessen Buchstaben nach unten, während die Nachbarn oben
+   * bleiben. In gewöhnlichem Fliesstext wäre das nie aufgefallen.
+   *
+   * ⇒ Die Balken hängen darum NICHT mehr am Textfluss, sondern liegen als
+   * eigene Kästchen daneben (`::before`/`::after`, `absolute`). Sie enthalten
+   * keinen Text, bekommen also keine Backplate und bleiben ganz stehen; und
+   * weil sie aus dem Fluss genommen sind, kann sich durch sie nichts
+   * verschieben - weder senkrecht noch waagrecht.
+   *
+   * ⚠️ Den PLATZ dafür gibt `.tt-prompt-spur` oben: Der Streifen der Zeile hat
+   * `overflow-hidden` und endete gemessen auf DEMSELBEN Pixel wie das Zeichen
+   * (beide 287) - ohne diese Luft wäre jeder Balken restlos abgeschnitten.
+   * Genau daran ist ein früherer Versuch gescheitert.
+   */
+  /*
+   * ★★★ DIE ZEILE SPRICHT EINE SPRACHE: BALKEN (Johannes, 09.09.2026 - *„wenn
+   * eine Taste geschrieben wurde, dann hat sie halb so dicke Balken wie die,
+   * die zu schreiben ist, und eine andere Farbe").
+   *
+   * Vorher sagten zwei verschiedene Zeichen dasselbe: Balken für „hier bist
+   * du", eine Unterstreichung für „schon geschrieben". Jetzt ist es EIN Zeichen
+   * in zwei Stärken - das liest sich als Fortschritt und nicht als zwei Regeln.
+   * Nebenbei erledigt sich damit die Doppellinie beim Leerzeichen: Das `␣` ist
+   * selbst ein waagrechter Strich, und eine Unterstreichung darunter ergab zwei
+   * Striche übereinander.
+   *
+   * ⚠️ ZUR FARBE, weil die Frage berechtigt war: Ja, es gibt im Kontrastmodus
+   * mehr als eine Farbe - aber nur wenige, die in JEDEM Design tragen. Gemessen
+   * (alle 19 Systemfarben, hell und dunkel): `LinkText` ist im dunklen Design
+   * gelb auf Schwarz, im hellen Dunkelblau auf Weiss - beides kontrastreich.
+   * ⚠️⚠️ Im HELLEN Design liegt es allerdings nah an `Highlight` (beide
+   * dunkelblau), und ein Kind kann seine Farben selbst einstellen. **Darum
+   * trägt die DICKE die Auskunft und die Farbe kommt dazu** - halb so dick ist
+   * auch dann noch halb so dick, wenn zwei Farben einmal zusammenfallen.
+   */
+  .tt-prompt-active,
+  .tt-prompt-typed {
+    position: relative;
+  }
+  .tt-prompt-active::before,
+  .tt-prompt-active::after,
+  .tt-prompt-typed::before,
+  .tt-prompt-typed::after {
+    content: "";
+    position: absolute;
+    /* Der Einzug ist NUR für die schon geschriebenen Zeichen gedacht (Johannes,
+       09.09.2026: „die Striche der bereits geschriebenen Zeichen sind zu lang,
+       mach sie kürzer, aber nicht die Balken über dem aktuellen Zeichen").
+       Ohne ihn stossen sie fast aneinander und lesen sich als eine durchgehende
+       Leiste statt als Spur einzelner Zeichen. Prozent, nicht Pixel: So bleibt
+       das Verhältnis bei jeder Schriftgrösse und auch beim doppelt so breiten
+       Leerzeichen gleich. */
+    left: var(--tt-balken-einzug, 0);
+    right: var(--tt-balken-einzug, 0);
+    height: var(--tt-balken-dicke);
+    border-radius: calc(var(--tt-balken-dicke) / 2.5);
+    background: var(--tt-balken-farbe);
+  }
+  /* `0.165em` ist die gemessene Luft in der Zeichenbox - siehe oben. Was hier
+     steht, ist der Weg von der Boxkante bis knapp an den Buchstaben. */
+  .tt-prompt-active::before,
+  .tt-prompt-typed::before {
+    top: calc(var(--tt-balken-oben, 0.165) * 1em - var(--tt-balken-dicke) - var(--tt-balken-luft));
+    translate: calc(var(--tt-balken-schraeg, 0) * 1em) 0;
+  }
+  .tt-prompt-active::after,
+  .tt-prompt-typed::after {
+    bottom: calc(var(--tt-balken-unten, 0.165) * 1em - var(--tt-balken-dicke) - var(--tt-balken-luft));
+    translate: calc(var(--tt-balken-schraeg, 0) * -1em) 0;
+  }
+
+  /* ── 3a. EIN FALSCHER ANSCHLAG ──────────────────────────────────────────
+     Auftrag von Johannes am 09.09. Bisher sagte ihn nur die Farbe (`bg-danger`
+     gegen `bg-accent-soft`) - und Farbe ist genau das, was der Kontrastmodus
+     ersetzt: Richtig und falsch sahen dort gleich aus.
+
+     ⚠️ EINE ZWEITE FARBE IST HIER KEIN AUSWEG, und das ist gemessen: Von den
+     19 Systemfarben kontrastieren nur zwei Paare verlässlich, `Canvas`/
+     `CanvasText` und `Highlight`/`HighlightText`. `Mark` - das Naheliegende -
+     ist in BEIDEN Designs gelb (`rgb(255,255,0)`), also im hellen
+     Kontrastdesign gelb auf Weiß. Ein Kind mit Sehrest sähe dort nichts.
+
+     ⇒ Der Unterschied ist die FORM - und zwar dreifach, weil einer zu wenig
+     war: Die erste Fassung machte die Balken nur dicker, und am Bild war das
+     vom ruhigen Zustand kaum zu unterscheiden. Jetzt werden sie DICKER, sie
+     rücken WEITER weg, und sie ragen SEITLICH über das Zeichen hinaus. Aus
+     zwei schlanken Strichen wird ein Klammergriff.
+
+     ⚠️ Seitlich überstehen dürfen sie, ohne den Nachbarn zu schaden: Die
+     Balken liegen ober- und unterhalb der Textzeile, also in einem Bereich, in
+     dem beim Nachbarzeichen ohnehin kein Buchstabe steht. Was Johannes
+     ausdrücklich nicht wollte, sind senkrechte Striche NEBEN dem Zeichen - die
+     gibt es hier nach wie vor nicht.
+
+     ⚠️ Alle drei Änderungen wachsen nach AUSSEN, nie nach innen: Ein Balken,
+     der in die Zeile hineinragt, überdeckt den i-Punkt. Den Platz dafür gibt
+     `.tt-prompt-spur` oben. Er dauert 320 ms (`setFlash`). */
+  .tt-prompt-fehler::before,
+  .tt-prompt-fehler::after {
+    left: calc(-1 * clamp(5px, 0.14em, 22px));
+    right: calc(-1 * clamp(5px, 0.14em, 22px));
+  }
+  /* ── 3b. DIE TASTE, DIE DRAN IST ────────────────────────────────────────
+     Auftrag von Johannes am 09.09.: dieselbe Farbe wie die Balken in der Zeile,
+     dick umrandet. Damit sagen Zeile und Tastatur dasselbe in derselben
+     Sprache - das Kind sucht nicht zweimal.
+
+     Auf der Bildschirm-Tastatur trägt jede Taste einen Rand; die nächste ist
+     bisher nur DICKER (0,22em gegen 0,1em) und in der Fassung ohne
+     Fingerfarben zusätzlich `border-accent` + `ring-accent`. Im Kontrastmodus
+     wird jede dieser Farben zur selben Randfarbe, und `ring-*` ist ein
+     `box-shadow` - beides sagt dort nichts mehr.
+
+     ⚠️ `!important`: Rand und Randfarbe stehen in der Fassung mit Fingerfarben
+     als INLINE-Stil (`borderColor: <fingerfarbe>`, `borderWidth`), und den
+     schlägt keine Regel ohne ihn.
+     ⚠️ Der Rand wächst nach INNEN - die Tasten haben feste Maße (2,1em) und
+     `border-box`, also verschiebt sich keine Reihe.
+     ⚠️ Die Regel gilt für alle drei Ziel-Tasten: Buchstabe, Leertaste und die
+     Umschalt-/AltGr-Taste der Gegenhand. */
+  .tt-taste-ziel {
+    border-style: solid !important;
+    border-color: Highlight !important;
+    border-width: 0.26em !important;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════════════
+   * DIE ANDEREN DREI APPS (09.09.2026, Auftrag von Johannes: „der
+   * Kontrastmodus ist bei Im Griff, Punktgenau und Klangpunkte das gleiche
+   * Problem")
+   * ═══════════════════════════════════════════════════════════════════════
+   * Durchsucht wurden alle drei Reviere. Das meiste hängt an denselben zwei
+   * allgemeinen Regeln weiter oben - „gewählt" heisst im HTML nur je nach
+   * Bauteil anders (`aria-pressed`, `aria-checked`, `aria-selected`,
+   * `aria-current`), und die Arbeitsflächen brauchten nur ihren Fokus.
+   *
+   * ✅ Was gesetzt und was leer ist, war in beiden Braille-Apps schon in
+   * Ordnung: `BrailleCell` zeichnet einen gesetzten Punkt als volle Scheibe
+   * und einen leeren als hohlen Ring - ein Formunterschied, der bleibt.
+   *
+   * Hier stehen die Fälle, die einen eigenen Haken im Bauteil brauchten. Sie
+   * folgen alle derselben Regel: Was Farbe sagte, sagt hier eine FORM.
+   */
+
+  /* Braille-Zelle: richtig / falsch / gerade dran (Punktgenau UND Klangpunkte -
+     beide benutzen dieselbe Zelle). `fill` wird im Kontrastmodus mit erzwungen,
+     die vier Zustände waren dort also eine einzige Farbe. Ein falsch
+     geschriebenes Zeichen ist die wichtigste Auskunft und bekommt darum den
+     auffälligsten Umriss - gestrichelt, damit es sich auch von „dran"
+     unterscheidet und nicht nur von „richtig". */
+  [data-zustand="wrong"] {
+    outline: var(--hcm-dick) dashed CanvasText;
+    outline-offset: 2px;
+  }
+  [data-zustand="pending"] {
+    outline: var(--hcm-dick) solid Highlight;
+    outline-offset: 2px;
+  }
+  /* ⚠️ „Schon geschrieben" fehlte in BEIDEN Braille-Apps ganz - die Zelle sagte
+     es nur über ihre Füllfarbe, und die ersetzt der Kontrastmodus. Dünn und in
+     der zweiten Farbe, genau wie die Spur in der Tippzeile. */
+  [data-zustand="correct"] {
+    outline: var(--hcm-duenn) solid LinkText;
+    outline-offset: 2px;
+  }
+
+  /* Punktgenau: welche Zelle gerade dran ist, und wo die Lösung zum Nachtasten
+     eingeblendet wird. Der Hinweis ist gestrichelt - er ist etwas anderes als
+     „hier schreibst du". */
+  [data-zelle="aktuell"] {
+    outline: var(--hcm-dick) solid Highlight;
+    outline-offset: 1px;
+  }
+  [data-zelle="hinweis"] {
+    outline: var(--hcm-dick) dashed Highlight;
+    outline-offset: 1px;
+  }
+
+  /* Klangpunkte: die Note, die gerade klingt. ⚠️ `outline` greift auf einem
+     SVG-`<g>` nicht - der Umriss muss darum an die Zeichnung selbst, und das
+     geht über `stroke`. Die Note wird zusätzlich dicker gezeichnet, damit die
+     Auskunft nicht allein an der Farbe hängt. */
+  [data-klingt="ja"] :is(circle, ellipse, path, line, rect, text) {
+    stroke: Highlight;
+    stroke-width: var(--hcm-dick);
+  }
+
+  /* Klangpunkte: welche Taktstriche schon geschrieben sind. Fläche und
+     Randfarbe waren der einzige Unterschied, die Dicke blieb gleich - hier
+     sagt es die Dicke. */
+  /* ⚠️ „fertig" trug bisher `Highlight`, also die Farbe von „gerade dran" -
+     ein geschriebener Taktstrich sah aus wie der, der als Nächstes dran ist. */
+  [data-takt="fertig"] {
+    border-width: var(--hcm-duenn) !important;
+    border-color: LinkText !important;
+  }
+  [data-takt="hinweis"] {
+    border-width: var(--hcm-dick) !important;
+    border-style: dashed !important;
+    border-color: Highlight !important;
+  }
+
+  /* »Im Griff«: der Fehlgriff in der PRÜFUNG. Dort gibt es keine
+     Rückmeldungszeile - dieser Blitz ist die einzige sichtbare Antwort auf
+     einen falschen Anschlag, und er war eine reine Fläche. */
+  [data-blitz="fehler"] {
+    outline: var(--hcm-dick) dashed CanvasText;
+    outline-offset: calc(-1 * var(--hcm-dick));
+  }
+
+  /* »Im Griff«: die aufgelöste Zelle bzw. der gesuchte Ordner nach dem
+     Gewinnen, und die zwei Antwortzustände im Wege-Trainer. Der Hinweis auf
+     die richtige Taste ist die EINZIGE Stelle, an der das Kind erfährt, was
+     es hätte drücken sollen. */
+  [data-ziel="ja"],
+  [data-antwort="hinweis"] {
+    outline: var(--hcm-dick) dashed Highlight;
+    outline-offset: calc(-1 * var(--hcm-dick));
+  }
+  [data-antwort="falsch"] {
+    outline: var(--hcm-dick) dashed CanvasText;
+    outline-offset: calc(-1 * var(--hcm-dick));
+  }
+
+  /* ★ Z4 (19.09.2026): der Leuchtrahmen der Einführung/des Rundgangs
+     (`SimEinfuehrung.tsx`, Simulationen UND Tastenflow). Seine Abdunklung ist
+     ein Schlagschatten - den nimmt der Kontrastmodus ganz weg, und übrig
+     bliebe ein dünner Rand in der Textfarbe, einer unter vielen. Hier sagt es
+     die Tabelle oben: „gerade dran" = dick, durchgehend, `Highlight`. */
+  [data-einfuehrung-rahmen] {
+    outline: var(--hcm-dick) solid Highlight;
+    outline-offset: 0;
+  }
+  /* Der Kasten mit dem Text: ein eigener, deutlicher Rand - er steht über der
+     Seite und muss sich von ihr abheben, auch ohne Schatten. */
+  [data-einfuehrung] {
+    border: var(--hcm-duenn) solid CanvasText;
+  }
+
+  /* Bereits getippte Zeichen: Unterstreichung statt text-success */
+  /*
+   * ⚠️⚠️ DIE SENKRECHTE LINIE MITTEN IN DER ZEILE (Johannes, 09.09.2026: *„die
+   * komischen Rahmenlinien in Türkis (dünn vertikal) sind immer irgendwo?")
+   *
+   * Das war der Fokus-Umriss des ECHTEN Eingabefeldes. Es liegt unsichtbar über
+   * der Zeile (`absolute inset-0`, `text-transparent`) und wird für die
+   * Teleprompter-Mitte weit zur Seite geschoben - gemessen bis 547 px. Sein
+   * Umriss wandert mit und steht dann als senkrechter Strich irgendwo im Text;
+   * das Feld selbst sieht man ja nicht. Es trägt zwar `outline-none`, aber die
+   * allgemeine Fokusregel weiter unten hat `!important` und schlug das.
+   *
+   * ⇒ Der Fokus gehört an die KARTE um die Zeile, nicht an das verschobene
+   * Feld. Dort steht er ruhig und umschliesst das, was das Kind sieht.
+   */
+  textarea[data-typing-field="practice"]:focus {
+    outline: none !important;
+  }
+  .card:has(textarea[data-typing-field="practice"]):focus-within {
+    outline: var(--hcm-dick) solid Highlight;
+    outline-offset: calc(-1 * var(--hcm-dick));
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  [role="button"]:focus-visible {
+    outline: 5px solid Highlight !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* ⚠️ EIGENER `utilities`-Layer, NACH Tailwind: `break-words` und dieser
+   Umbruch setzen dieselbe Eigenschaft, und im `components`-Layer verlor er
+   jedes Mal (gemessen 24.08.2026 - die Regel stand da, wirkte aber nie). */
+@layer utilities {
+  /* ★★★ UMBRUCH AUCH MITTEN IM WORT, WENN ES NICHT ANDERS GEHT (Mathecoach,
+     24.08.2026 abends, beim Messen von 800 % Textgröße).
+     `break-words` (`overflow-wrap: break-word`) bricht ein zu langes Wort zwar
+     in der Zeile um - aber es zählt bei der MINDESTBREITE eines Elements nicht
+     mit. Ein Kasten ist dadurch immer mindestens so breit wie sein längstes
+     Wort, und bei 800 % ist „Rechnungen" breiter als ein Handy-Bildschirm: Die
+     Seite schob sich waagrecht auf, gemessen 9 px an einer Gruppen-Überschrift.
+     `anywhere` zählt mit - und genau darum steht es hier.
+     ⚠️ Nur dort einsetzen, wo waagrechtes Scrollen schlimmer wäre als ein
+     getrenntes Wort. Bei sehr großer Schrift ist es das immer: Wer die Zeile
+     seitlich verschieben muss, verliert beim Zurückspringen den Anfang. */
+  .umbruch-notfalls {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ===========================================================================
+   ARBEITSBLATT-BAUART - FÜR ALLE PROGRAMME DER LERNWERKSTATT
+   ===========================================================================
+   ★★★ Johannes, 25.08.2026: „Wie müssen HTML-Arbeitsblätter für blinde und
+   sehbehinderte Schüler aussehen. Bitte speichere das in einem extra Bereich,
+   auf den andere Programme der Lernplattform auch zugreifen können … im Griff
+   soll genau auf dieses Wissen zugreifen können, und auch andere Apps."
+
+   Alles ab hier gehört KEINEM Programm allein. Die Klassennamen sind bewusst
+   ohne Programmnamen gehalten - `blatt-`, `feld-`, `umbruch-`:
+
+   | Klasse | Wofür |
+   |---|---|
+   | `blatt-flaeche` | die Fläche, auf der ein Arbeitsblatt steht (Behälter für `cqi`) |
+   | `blatt-stapel`  | die Liste der Aufgaben darin |
+   | `blatt-karte`   | ein Kasten, dessen Rand bei wenig Platz mitschrumpft |
+   | `blatt-gestapelt` | Frage über Antwort statt daneben (starke Vergrößerung) |
+   | `blatt-tabelle` | eine Tabelle mit eigenem waagrechten Bildlauf |
+   | `feld-zeile`    | eine Zeile aus Beschriftung und Antwort |
+   | `feld-waechst`  | ein Schreibfeld, das mit dem Inhalt mitwächst |
+   | `feld-mit-liste`| ein Schreibfeld, neben dem noch eine Auswahlliste steht |
+   | `liste-kurz`    | eine Auswahlliste, die nur ihren Inhalt breit ist |
+   | `umbruch-notfalls` | Umbruch auch mitten im Wort, wenn es nicht anders geht |
+
+   ⚠️ DIE BEGRÜNDUNGEN STEHEN IN
+   `Sensorik/BAUART-ARBEITSBLATT-BARRIEREFREI.md`. Wer hier etwas ändert,
+   ändert es dort mit - sonst gibt es zwei Wahrheiten.
+
+   ★★★★ UND SIE WÄCHST MIT (Johannes, 25.08.2026): „Immer wenn etwas an der
+   Bauart von Arbeitsblättern nachgebessert wird, soll es im allgemeinen Wissen
+   für alle Apps gespeichert werden." Drei Schritte: Regel ins Dokument,
+   Bauteil hierher bzw. nach `src/lib/arbeitsblatt/`, Eintrag in den
+   Änderungsverlauf §18 - mit der Angabe, welche Programme noch nachziehen
+   müssen. Schritt 3 vergisst man, und er ist der wichtigste.
+
+   ⚠️ UND ALLES HIER LIEGT AUSSERHALB JEDES `@layer`: Ein Layer gewinnt gegen
+   JEDE Spezifität eines früheren, und Tailwinds Hilfsklassen liegen im
+   `utilities`-Layer. Im `components`-Layer wirkte davon nichts.
+   =========================================================================== */
+
+/* ★★★ INNENRAND, ECKEN UND ABSTÄNDE RICHTEN SICH NACH DEM PLATZ IM BEHÄLTER -
+   NICHT NACH UNSEREM VERGRÖSSERUNGS-FAKTOR.
+
+   ⚠️ DER FEHLER, DER DAHINTER STECKTE (Johannes, 24.08.2026 spätabends): „Ich
+   und die Schüler verwenden immer nur Strg + + oder auf dem Mac Command + +
+   und nie Alt + +."
+
+   Es gibt ZWEI Vergrößerungen, und sie sehen gleich aus:
+     • die des BROWSERS (Strg/Cmd + Plus) - die benutzen die Kinder, sie hört
+       bei 500 % auf, und sie verkleinert den Anzeigebereich in CSS-Pixeln;
+     • unsere eigene (Alt + Plus, CSS `zoom`) - die geht bis 800 %.
+
+   Die erste Fassung dieser Regeln rechnete den Rand aus UNSEREM Faktor aus
+   (`innenrandRem()` in `einstellungen.ts`). Bei der Browser-Vergrößerung ist
+   dieser Faktor aber 1 - also griff dort nichts, und der Rand blieb fett.
+   Genau das war auf Johannes' Bildschirmfoto zu sehen.
+
+   `cqi` ist ein Hundertstel der Breite des BEHÄLTERS. Es misst damit das, worauf
+   es wirklich ankommt: wie viel Platz noch da ist - egal, welche der beiden
+   Vergrößerungen ihn weggenommen hat. Eine Regel für beide.
+
+   Die Zahlen: Bei voller Breite (896 px) ergeben 2,2 cqi rund 20 px und
+   1,8 cqi rund 16 px - genau die bisherigen Werte von `p-5` und `rounded-2xl`.
+   Wer nicht vergrößert, sieht keinen Unterschied. Schrumpft der Behälter, geht
+   beides mit; am Bildschirm bleibt der Rand dadurch ungefähr gleich breit,
+   statt sich zu verachtfachen.
+
+   ⚠️ DIESE REGELN LIEGEN AUSSERHALB JEDES `@layer`. Tailwinds `p-4`/`p-5` und
+   `rounded-2xl` stehen im `utilities`-Layer, und ein Layer gewinnt gegen JEDE
+   Spezifität eines früheren Layers - im `components`-Layer stand diese Regel
+   schon einmal und wirkte nie (gemessen 24.08.2026). */
+.blatt-flaeche {
+  /* Benannt, damit die Abfragen unten sicher DIESEN Behälter meinen und nicht
+     einen, den irgendwann jemand dazwischenschiebt. */
+  container: blatt / inline-size;
+}
+
+/* ★★★★ SIE GREIFT ERST, WENN DER PLATZ WIRKLICH KNAPP IST (25.08.2026,
+   beim Übertragen auf die anderen Programme).
+
+   Die erste Fassung stand ohne Bedingung da. Für Mathecoach ging das gut: Dort
+   haben alle Blatt-Karten `p-4 sm:p-5`, und 2,2 cqi ergeben bei voller Breite
+   genau diese 20 Pixel - es war nicht zu sehen.
+
+   ⚠️ FÜR JEDE ANDERE APP WÄRE ES EIN UMBAU GEWESEN. In Tastenflow,
+   Klangpunkte und Punktgenau sagt jede Karte ihren Innenrand selbst (`p-2`
+   neben `p-6`), und eine Regel ohne Layer schlägt sie ALLE. Aus einem
+   aufgeräumten Deckel mit `p-3` wäre ein Kasten mit 20 Pixel Rand geworden -
+   ohne dass jemand danach gefragt hätte.
+
+   ★ Die Bedingung löst das: Solange der Behälter breit genug ist, behält jede
+   Karte den Rand, den ihr Programm ihr gegeben hat. Wird er eng - und ENG WIRD
+   ER BEI BEIDEN VERGRÖSSERUNGEN -, übernimmt das gemeinsame Maß. Genau dann
+   ist Einheitlichkeit auch richtig: Bei 500 % geht es nicht mehr um Gestaltung,
+   sondern darum, dass der Text überhaupt Platz hat.
+
+   48 rem sind 768 Punkte - dieselbe Grenze, ab der ein Blatt bei 800 % noch
+   brauchbar ist (Bauart §6). Erreicht ist sie ab etwa 170 % Browser-
+   Vergrößerung auf einem 1280-Punkte-Schirm, und auf einem Handy von Anfang an
+   - dort ist der schmälere Rand ebenfalls das Bessere. */
+@container blatt (max-width: 48rem) {
+  /* ⚠️ ZWEI WEGE, WEIL DIE PROGRAMME ZWEI SPRACHEN SPRECHEN. `card` ist der
+     gemeinsame Kasten der Plattform - Mathecoach, Klangpunkte und das
+     Übungsfeld von Tastenflow benutzen ihn. »im Griff« und Punktgenau bauen
+     ihre Kästen dagegen von Hand (`rounded-xl border ... p-5`); dort wird
+     `blatt-karte` dazugeschrieben.
+
+     ★ Ausdrücklich und nicht geraten: Eine Regel über `[class*="rounded-"]`
+     hätte auch jede Schaltfläche, jedes Abzeichen und jede runde Anzeige
+     erwischt - und aus einer Pille einen Kasten gemacht. Eine Marke, die
+     jemand hinschreibt, trifft genau das, was gemeint ist. */
+  .blatt-flaeche :is(.card, .blatt-karte) {
+    padding: clamp(0.2rem, 2.2cqi, 1.25rem);
+    border-radius: clamp(0.2rem, 1.8cqi, 1rem);
+  }
+
+  .blatt-flaeche .blatt-stapel > * + * {
+    margin-top: clamp(0.25rem, 1.8cqi, 1rem);
+  }
+}
+
+/* ★★★ DIE ZEICHNUNG BEKOMMT DEN PLATZ, DEN DER RAHMEN NICHT BRAUCHT
+   (Johannes, 24.08.2026: „auch der Rahmen der Zeichnung ist so groß, dass die
+   Zeichnung unnötig klein wird").
+   Der Aufklapp-Bereich hatte 0,75 rem Innenrand und `rounded-xl` - bei starker
+   Vergrößerung wurde das Bild dadurch schmäler als der Text darüber. Genau
+   verkehrt: Wer die Zeichnung groß aufklappt, will sie GROSS. */
+@container blatt (max-width: 48rem) {
+  .blatt-flaeche .grafik-flaeche {
+    padding: clamp(0.2rem, 2.2cqi, 0.75rem);
+    border-radius: clamp(0.2rem, 1.8cqi, 0.75rem);
+  }
+}
+
+.blatt-flaeche .grafik-flaeche svg {
+  width: 100%;
+  height: auto;
+  /* ★★★ Nie höher als ein Bildschirm (Meldung 17.11.2026, ein Kind: „das
+     Thermometer ist über 3 Seiten groß ... nicht größer wie eine Seite").
+     Eine Zeichnung im Hochformat (Thermometer 340 x 860) wurde auf volle
+     Breite gezogen und war 3 Bildschirme hoch. Die Zeichnung bleibt dabei
+     unverzerrt und mittig; groß ansehen geht über „Im Fenster vergrößern".
+     ★★★ 18.11.2026 auf die HÄLFTE (Meldung eines Kindes: „die grafiken sind
+     wieder viel zu groß"): Mit 85 % war jedes der acht Thermometer der
+     SÜ KW 47 Mi fast einen Bildschirm hoch (Fenster 2196 x 1224). */
+  max-height: 50vh;
+  max-height: 50svh;
+  display: block;
+  /* ★ Die Beschriftung wird beim Anzeigen größer gesetzt (29.09.2026,
+     `lib/mathecoach/grafik/beschriftung.ts`) - eine Zahl am Rand darf dabei
+     über den Rahmen der Zeichnung hinausragen statt abgeschnitten zu werden.
+     Die `grafik-flaeche` hat dafür ihren Innenabstand. */
+  overflow: visible;
+}
+
+/* ★★★ BEI STARKER VERGRÖSSERUNG RUTSCHT DIE RECHNUNG ÜBER DAS FELD
+   (Johannes, 24.08.2026 abends: „Ab extremer Vergrößerung, zB 500 %, könnte
+   auch die Rechnung über die Eingabezeile springen.")
+
+   Nebeneinander ist die Bauart eines Schulhefts und bleibt der Normalfall.
+   Ab fünffacher Schrift teilen sich Rechnung und Feld aber dieselbe Zeile,
+   und beide werden zu schmal - die Rechnung bricht mitten im Wort um, und
+   daneben bleibt ein Feld für drei Zeichen. Übereinander bekommt jedes die
+   volle Breite.
+
+   ⚠️ FÜR DIE SPRACHAUSGABE ÄNDERT SICH DABEI NICHTS: Die Rechnung ist die
+   BESCHRIFTUNG des Feldes und steht auf der Braillezeile vor dem Feldinhalt -
+   ob sie links davon oder darüber gezeichnet wird, spielt dafür keine Rolle.
+   Genau deshalb DARF man sie hier verschieben.
+
+   Ab wann, entscheidet `sollStapeln()` in `src/lib/mathecoach/einstellungen.ts`. */
+.blatt-gestapelt .feld-zeile {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Das `pt-1.5` richtet die Beschriftung an der Grundlinie des Feldes aus -
+   übereinander gibt es keine gemeinsame Grundlinie mehr, und der Abstand wäre
+   nur noch eine Lücke. */
+.blatt-gestapelt .feld-zeile > label,
+.blatt-gestapelt .feld-zeile > label[data-rechnung] {
+  padding-top: 0;
+}
+
+/* Das Feld darf jetzt die ganze Breite nehmen - `w-56` war die Startbreite für
+   das Nebeneinander. */
+.blatt-gestapelt .feld-zeile textarea,
+.blatt-gestapelt .feld-zeile select {
+  width: 100%;
+}
+
+/* ★★★ UND AUCH DANN, WENN DAS FELD UNTER 20 ZEICHEN FÄLLT
+   (Johannes, 24.08.2026 abends: „oder wenn die Eingabefelder kleiner wie
+   20 Zeichen groß werden auch")
+
+   Diese Regel ist die bessere der beiden: Sie fragt nicht nach einer Zahl,
+   sondern nach dem, worauf es ankommt - ob in das Feld noch eine Antwort
+   passt. Ein Feld mit acht Zeichen Breite ist unbrauchbar, egal ob es die
+   Vergrößerung war oder ein schmaler Bildschirm.
+
+   `ch` ist die Breite der Ziffer null in der gerade eingestellten Schrift. Sie
+   wächst also mit der Vergrößerung UND mit einer Schriftumstellung mit -
+   „20 Zeichen" bleibt dadurch immer wirklich 20 Zeichen und wird nie zu einer
+   Pixelzahl, die irgendwann nicht mehr stimmt.
+
+   WIE ES WIRKT: Die Zeile darf umbrechen (`flex-wrap`). Verlangt das Feld
+   20 Zeichen und bleibt neben der Rechnung nicht so viel übrig, rutscht es in
+   die nächste Zeile - und die Rechnung steht darüber. Genau das Gewünschte,
+   ohne eine einzige Zeile JavaScript und ohne dass jemand messen muss.
+
+   ⚠️ `min-width: min(20ch, 100%)` und nicht `min-width: 20ch`: In CSS gewinnt
+   `min-width` gegen `max-width`. Auf einem Schirm, der keine 20 Zeichen mehr
+   hergibt, schöbe die strenge Fassung die Seite waagrecht auf - statt
+   umzubrechen, wofür die Regel ja da ist. */
+.feld-zeile > textarea:not(.feld-mit-liste),
+.feld-zeile > select:not(.liste-kurz) {
+  flex: 1 1 20ch;
+  min-width: min(20ch, 100%);
+}
+
+/* ★★★ EIN FELD, NEBEN DEM NOCH EINE LISTE STEHT, FORDERT WENIGER - UND
+   BEKOMMT TROTZDEM MEHR (Johannes, 24.08.2026 spätabends: „Aufgabe 8 ist jetzt
+   das andere Extrem, die Einheit soll in normaler Zoomstufe unter 400 % nicht
+   in einer neuen Zeile stehen, sondern nebeneinander.")
+
+   ★★★ DER UNTERSCHIED ZWISCHEN FORDERN UND BEKOMMEN IST HIER ALLES.
+   `flex-basis` sagt, wie viel Platz ein Feld VERLANGT - und nur danach
+   entscheidet sich, ob die Zeile umbricht. `flex-grow: 1` sagt, dass es allen
+   übrigen BEKOMMT. Mit 20 Zeichen Forderung passten Beschriftung, Feld und
+   Liste zusammen nicht mehr in eine Zeile, und die Liste rutschte hinunter -
+   obwohl daneben Platz war.
+
+   Sechs Zeichen Forderung, voller Anspruch auf den Rest. Gemessen:
+
+   | Zeilenbreite | entspricht etwa | Feld | Liste |
+   |---|---|---|---|
+   | 855 Punkte | 100 % | 56 Zeichen | daneben |
+   | 369 Punkte | 300 % | 22 Zeichen | daneben |
+   | 271 Punkte | 400 % | 11 Zeichen | daneben |
+
+   ⚠️ Das ist KEIN Rückfall auf das kurze Feld von vorhin: Damals waren acht
+   Zeichen die BREITE, und das Feld blieb dabei. Jetzt sind sechs Zeichen nur
+   die Untergrenze, und das Feld nimmt alles, was die Zeile hergibt. */
+.feld-zeile > textarea.feld-mit-liste {
+  flex: 1 1 6ch;
+  min-width: min(6ch, 100%);
+}
+
+/* ★★★ EIN EINGABEFELD IST NIE KURZ (Johannes, 24.08.2026: „bei Aufgabe 8 …
+   wenn ich die Werte berechnen soll, brauchts ein längeres Eingabefeld,
+   bedenke das immer mit!").
+   Vorher waren es acht Zeichen - genug für „-1234,56" und viel zu wenig für
+   den Weg dorthin. In JEDES Schreibfeld dieser App gehört eine Rechnung, nicht
+   nur ihr Ergebnis; das ist die Bauart des Blattes und gilt ohne Ausnahme.
+   Kurz bleibt allein die AUSWAHLLISTE daneben - sie enthält nichts, was man
+   rechnen könnte. */
+.feld-zeile > .liste-kurz {
+  /* ⚠️ `width: auto` MUSS hier stehen. `field-input` bringt `w-full` mit, und
+     bei `flex-basis: auto` ist die Breitenangabe die Grundlage: Die Liste
+     forderte damit die GANZE Zeile und wurde prompt umgebrochen - genau der
+     Bruch, den Johannes am 24.08.2026 gemeldet hat. Ihre Grundlage ist jetzt
+     ihr Inhalt. */
+  width: auto;
+  flex: 0 0 auto;
+  min-width: min(12ch, 100%);
+}
+
+/* ★★★ DIE TABELLE IST DIE EINZIGE BAUART, DIE NICHT UMBRICHT
+   (Johannes, 24.08.2026 spätabends: „baue noch ein Beispiel mit einer Tabelle").
+   Ihre Spalten stehen nebeneinander, auch bei 800 %. Sie bekommt darum als
+   einzige einen EIGENEN waagrechten Bildlauf - besser, als sie abzuschneiden,
+   und besser, als die ganze Seite aufzuschieben.
+   ⚠️ `tabindex="0"` steht am Bereich (in `AufgabeTabelle.tsx`), sonst käme ein
+   Kind ohne Maus gar nicht an die rechten Spalten (WCAG 2.1.1). */
+.blatt-tabelle {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.blatt-tabelle table {
+  /* `auto` und nicht `fixed`: Die Zahlenspalte darf schmal bleiben, wenn die
+     Überschrift daneben breit ist. */
+  table-layout: auto;
+}
+
+/* Die Zellen folgen demselben Maß wie die Karten: Bei wenig Platz wird der
+   Innenrand schmäler, statt die Tabelle aufzublähen. */
+@container blatt (max-width: 48rem) {
+  .blatt-flaeche .blatt-tabelle :is(th, td) {
+    padding: clamp(0.15rem, 1cqi, 0.5rem);
+  }
+}
+
+/* ★★★ HERVORHEBUNGEN - DIE KURZE IM SATZ UND DER KASTEN UM EINEN ABSATZ
+   (Bauart §17, Bauteil `src/lib/arbeitsblatt/Hervorhebung.tsx`).
+
+   ★★★★ DER ANLASS, 25.08.2026: An dem Tag standen in den fünf Programmen
+   42 Dateien mit hervorgehobenen Kästen und 78 mit `<strong>` - und eine
+   Sprachausgabe sagt von beidem im Auslieferungszustand NICHTS an. Wo ein
+   sehendes Kind einen Merksatz sah, las ein Kind mit Blindheit Fließtext.
+
+   ⚠️ DAS AUSSEHEN IST HIER DER ZWEITE TEIL, NIE DER GANZE. Was hörbar wird,
+   macht das Bauteil (die Marke im Text und der benannte Bereich). Diese Regeln
+   sorgen nur dafür, dass ein sehendes Kind dasselbe sieht - nicht mehr. */
+
+/* Ein Wort, dessen Hervorhebung zur Aufgabe gehört - ein `<mark>`.
+   ⚠️ `<mark>` bringt vom Browser ein festes Gelb mit Schwarz mit. Das MUSS
+   überschrieben werden: In „Weiß auf Schwarz" wäre es der einzige helle Fleck
+   der Seite, und in „Gelb auf Blau" verschwände die Schrift darin.
+   ★ Die Rolle bleibt dabei erhalten - eine Sprachausgabe liest sie aus dem
+   Element, nicht aus seiner Farbe.
+   ⚠️ Farben NUR aus den Design-Marken ([[feedback_baukasten_layout]]): eine
+   fest eingebaute Farbe wäre in „Gelb auf Blau" unsichtbar.
+   ⚠️ Und NICHT nur Farbe: Der RAHMEN trägt die Hervorhebung auch dort, wo der
+   Kontrastmodus die Fläche wegnimmt (WCAG 1.4.1). Ein Unterstrich stand hier
+   zuerst - er liegt in den Unterlängen von g, j, p, q und y (Bauart §5.1). */
+.hervor {
+  /* ⚠️ Beide Farben ausdrücklich - sie überschreiben das feste Gelb-auf-Schwarz,
+     das der Browser einem `<mark>` mitgibt. `font-weight` steht hier, weil ein
+     `<mark>` anders als ein `<strong>` nicht von selbst fett ist. */
+  font-weight: 600;
+  background-color: rgb(var(--c-warning-soft));
+  color: rgb(var(--c-ink));
+  /* ★★★ KEIN UNTERSTRICH (Johannes, 25.08.2026: „Unterstrich ist für viele
+     Sehbehinderungen auch nicht optimal"). Er liegt in den Unterlängen von g,
+     j, p, q und y und macht sie bei starker Vergrößerung unkenntlich - genau
+     dort, wo Lesen ohnehin anstrengend ist.
+     ★ Statt seiner ein RAHMEN: Er trägt dieselbe Aufgabe - ein Merkmal, das
+     nicht nur Farbe ist (WCAG 1.4.1) -, berührt aber keinen einzigen
+     Buchstaben. Zusammen mit dem Innenrand wird daraus eine Form, und eine
+     Form erkennt man auch dann, wenn Farben schwer zu unterscheiden sind. */
+  border: 1px solid rgb(var(--c-warning));
+  border-radius: 0.35em;
+  padding: 0.05em 0.3em;
+  /* Der Rahmen bleibt geschlossen, auch wenn das Wort am Zeilenende umbricht. */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Der Kasten: Merksatz, Hinweis, Beispiel, Warnung.
+   Er trägt `blatt-karte` und geht damit bei der Vergrößerung mit den Rändern
+   mit (§6.1) - der Innenrand steht deshalb hier NICHT fest, sondern kommt aus
+   der Behälter-Abfrage weiter oben. */
+.merkkasten {
+  margin: 0.875rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(var(--c-hairline) / 0.6);
+  border-left-width: 4px;
+  border-left-color: rgb(var(--c-accent));
+  border-radius: 14px;
+  background-color: rgb(var(--c-accent-soft));
+  color: rgb(var(--c-ink));
+}
+
+/* Die Marke („Merke") steht sichtbar da - für alle, nicht nur für die
+   Sprachausgabe. Sie ist der Teil, der auch dann noch trägt, wenn die Ansage
+   des Bereichs bei einer Sprachausgabe nicht ankommen sollte. */
+.merkkasten-marke {
+  font-weight: 600;
+  color: rgb(var(--c-ink));
+  margin-bottom: 0.25rem;
+}
+
+/* ★★ DER TITEL EINES BENANNTEN KASTENS (Bauteil `Blattbereich`, Bauart §5.1).
+
+   Er ist zugleich der NAME des Bereichs - eine Sprachausgabe sagt beim
+   Hineingehen „Bereich Das echte Haus" und beim Verlassen sein Ende.
+
+   ⚠️ KEINE VERSALIEN, und das ist eine Änderung am Aussehen. Vorher stand über
+   diesen Kästen eine Zeile in `text-xs uppercase tracking-widest` - hübsch, und
+   für ein Kind mit Sehrest die schlechteste aller Zeilen: winzig, gesperrt und
+   in Großbuchstaben, denen die Wortform fehlt, an der man ein Wort erkennt.
+   Jetzt sieht der Titel aus wie die Marke am Merkkasten - dieselbe Sache,
+   dasselbe Bild.
+   ★ Für die Sprachausgabe ändert das nichts: `text-transform` steht nur im
+   Stilblatt, im Text stand die normale Schreibung ohnehin schon. */
+.blattbereich-titel {
+  font-weight: 600;
+  color: rgb(var(--c-ink));
+  margin-bottom: 0.25rem;
+}
+
+.merkkasten[data-merkkasten="achtung"] {
+  border-left-color: rgb(var(--c-warning));
+  background-color: rgb(var(--c-warning-soft));
+}
+
+.merkkasten[data-merkkasten="beispiel"] {
+  border-left-color: rgb(var(--c-hairline));
+  background-color: rgb(var(--c-surface-sunken));
+}
+
+/* ★★ EINE AUFGELÖSTE TABELLE (Bauart §9, Bauteil
+   `src/lib/arbeitsblatt/tabelle.ts`). Sie ist keine Tabelle mehr, sondern eine
+   Liste von Zeilen - und sieht auch so aus. Die Zeilenmarke steht über ihren
+   Werten, damit man beim Überfliegen erkennt, wo eine Zeile anfängt. */
+.tabelle-aufgeloest > li + li {
+  margin-top: 0.75rem;
+  border-top: 1px solid rgb(var(--c-hairline) / 0.6);
+  padding-top: 0.75rem;
+}
+/* ★ Ein Tag mit seinen Aufgaben und Lösungen bleibt zusammen - eine
+   Teilaufgabe, die mitten im Seitenumbruch von ihrer Lösung getrennt würde,
+   wäre schlechter als gar kein Umbruch. */
+.druck-loesungen section {
+  break-inside: avoid;
+  margin-top: 1rem;
+}
+.druck-loesungen h3 {
+  margin-top: 0;
+}
+.druck-loesungen ol {
+  margin: 0.25rem 0 0.75rem 1.5rem;
+  padding: 0;
+}
+
+/*
+ * ★★★★ DIE SCHIEBESCHALTER IM LAUTSPRECHER-MENÜ IM KONTRASTMODUS (Johannes, 19.10.2026)
+ * *„Die Schiebeschalter sind im Windows-Kontrastmodus nicht zu sehen."*
+ * Spur und Knopf (`AkustikBausteine`: `.akustik-spur`, `.akustik-knopf`) bestehen
+ * nur aus Hintergrundfarben, und die ersetzt Windows durch Canvas: Der Knopf
+ * (`bg-surface-raised`) verschwand auf der Spur, "an" und "aus" waren gleich.
+ * ⇒ Drei Träger, keiner hängt an einer eigenen Farbe:
+ *   · FLÄCHE: aus = leere Spur mit Rand, an = Spur in `Highlight`
+ *   · KNOPF: aus = voll in `ButtonText`, an = `HighlightText` auf `Highlight`
+ *   · LAGE: links gegen rechts (das setzen die Utility-Klassen)
+ * Die Spur trägt keinen Text, also gibt es keine Backplate.
+ */
+@media (forced-colors: active) {
+  .akustik-spur {
+    background: Canvas;
+    border: 2px solid ButtonText;
+    box-shadow: none;
+  }
+  .akustik-knopf {
+    background: ButtonText;
+    box-shadow: none;
+    border: 0;
+  }
+  [role="switch"][aria-checked="true"].akustik-spur,
+  [role="switch"][aria-checked="true"] .akustik-spur {
+    background: Highlight;
+    border-color: Highlight;
+  }
+  [role="switch"][aria-checked="true"].akustik-spur .akustik-knopf,
+  [role="switch"][aria-checked="true"] .akustik-spur .akustik-knopf {
+    background: HighlightText;
+  }
+}
+html[data-theme="light"] [data-grafik-klar] .grafik-leiste-oben { border-bottom: 4px solid rgb(var(--k, 29 78 216)); }
+html[data-theme="light"] [data-grafik-klar] .grafik-leiste-unten { border-top: 4px solid rgb(var(--k, 29 78 216)); }
+html[data-theme="light"] [data-grafik-klar] h2 { color: rgb(var(--k, 29 78 216)); }
+html[data-theme="light"] [data-grafik-klar] .btn-secondary {
+  background: #fff;
+  border: 2px solid rgb(var(--k, 29 78 216));
+  color: rgb(var(--k, 29 78 216));
+  font-weight: 700;
+  border-radius: 999px;
+}
+html[data-theme="light"] [data-grafik-klar] .btn-secondary[aria-pressed="true"] {
+  background: rgb(var(--k, 29 78 216));
+  color: #fff;
+}
+
+/* ★ Ein Rollkasten mit IMMER sichtbarem Balken (25.10.2026, Testerin: Scroll-Balken
+   im Einstellungsfenster von Tastenflow). Windows 11 und macOS blenden Balken aus, bis
+   die Maus darüber steht - wer mit Lupe oder ohne Maus arbeitet, sieht dann nicht, dass
+   unten noch etwas kommt. Ein gestalteter `::-webkit-scrollbar` schaltet in Chrome und
+   Edge das Ausblenden ab; Firefox bekommt `scrollbar-color` (nur dort - in Chrome würde
+   es die gestalteten Balken wieder ersetzen). Die Höhe lässt Platz für Titel und den
+   Knopf „Zurück zum Üben"; bei starker Vergrösserung bleiben mindestens 14rem, dann
+   rollt zusätzlich das Fenster. */
+.rollkasten-sichtbar {
+  max-height: max(14rem, calc(100dvh - 17rem));
+  overflow-y: scroll;
+  padding-right: 0.5rem;
+}
+.rollkasten-sichtbar::-webkit-scrollbar {
+  width: 14px;
+}
+.rollkasten-sichtbar::-webkit-scrollbar-track {
+  background: rgb(var(--c-surface-sunken));
+  border-radius: 7px;
+}
+.rollkasten-sichtbar::-webkit-scrollbar-thumb {
+  background: rgb(var(--c-ink-muted));
+  border: 3px solid rgb(var(--c-surface-sunken));
+  border-radius: 7px;
+}
+.rollkasten-sichtbar::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--c-ink-soft));
+}
+@supports not selector(::-webkit-scrollbar) {
+  .rollkasten-sichtbar {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(var(--c-ink-muted)) rgb(var(--c-surface-sunken));
+  }
+}

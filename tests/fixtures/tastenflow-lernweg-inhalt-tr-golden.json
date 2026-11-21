@@ -1,0 +1,4207 @@
+{
+ "kern": {
+  "jeLayout": {
+   "tr-q": {
+    "n3": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n8": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 9,
+        "hash": "ae3dd8d193dde017a8f0b1f3"
+       },
+       "entries": {
+        "anzahl": 9,
+        "hash": "155bb00b3a74130b6a9df8a5"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 4,
+        "hash": "5fb5beef94f04c219a77bc82"
+       },
+       "entries": {
+        "anzahl": 4,
+        "hash": "92859cee27837df6cab02522"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 2,
+        "hash": "af16420ca844be3ff030f1ea"
+       },
+       "entries": {
+        "anzahl": 2,
+        "hash": "c9dfaf19ccce816c509ce8aa"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n12": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 45,
+        "hash": "08bd338688c6b89a814bc4f1"
+       },
+       "entries": {
+        "anzahl": 45,
+        "hash": "4fc60c23f14183f56f0c6ea3"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 29,
+        "hash": "f8409080830062a19f4a3439"
+       },
+       "entries": {
+        "anzahl": 29,
+        "hash": "82e0e74a01062aa6b1f50600"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 20,
+        "hash": "5b7cdd5bd37c0188b1f34601"
+       },
+       "entries": {
+        "anzahl": 20,
+        "hash": "962f67b11068609319d90bcc"
+       }
+      }
+     }
+    },
+    "n17": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 122,
+        "hash": "309de9d09aadfea54b982024"
+       },
+       "entries": {
+        "anzahl": 122,
+        "hash": "b68dec86c825b606a9330d79"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 94,
+        "hash": "456c1335955c373cc74c4bec"
+       },
+       "entries": {
+        "anzahl": 94,
+        "hash": "0eccbe5a67364433c82bc1cf"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 101,
+        "hash": "85d316d17363b14c6e09bff2"
+       },
+       "entries": {
+        "anzahl": 101,
+        "hash": "9e81dcebf668cc44e9a49163"
+       }
+      }
+     }
+    },
+    "n19": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 178,
+        "hash": "a9141f1bef53b2f9822b3197"
+       },
+       "entries": {
+        "anzahl": 178,
+        "hash": "57505cd2ec387bdc6b3e82d9"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 154,
+        "hash": "df75177c48548a80e6e2ff70"
+       },
+       "entries": {
+        "anzahl": 154,
+        "hash": "98e4faa8045aa3e22aa26d17"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 180,
+        "hash": "1997cfe35483f1766e1f96f2"
+       },
+       "entries": {
+        "anzahl": 180,
+        "hash": "ce6dc99d59a5c0a60bc377c0"
+       }
+      }
+     }
+    },
+    "n20": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 178,
+        "hash": "a9141f1bef53b2f9822b3197"
+       },
+       "entries": {
+        "anzahl": 178,
+        "hash": "57505cd2ec387bdc6b3e82d9"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 154,
+        "hash": "df75177c48548a80e6e2ff70"
+       },
+       "entries": {
+        "anzahl": 154,
+        "hash": "98e4faa8045aa3e22aa26d17"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 180,
+        "hash": "1997cfe35483f1766e1f96f2"
+       },
+       "entries": {
+        "anzahl": 180,
+        "hash": "ce6dc99d59a5c0a60bc377c0"
+       }
+      }
+     }
+    },
+    "n22": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 178,
+        "hash": "4f341b6b3603288f3b58ba2e"
+       },
+       "entries": {
+        "anzahl": 178,
+        "hash": "c690102158773fa87785960e"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 154,
+        "hash": "94e6a489b0f63505ccc16399"
+       },
+       "entries": {
+        "anzahl": 154,
+        "hash": "2eff583493ac2108a0526d2f"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 180,
+        "hash": "c5142ee66e1f87d0a4f94aeb"
+       },
+       "entries": {
+        "anzahl": 180,
+        "hash": "d5fa261ca2ca1c9158ca23e2"
+       }
+      }
+     }
+    },
+    "n25": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 222,
+        "hash": "6d6d0b81b1b2eeb104387de7"
+       },
+       "entries": {
+        "anzahl": 222,
+        "hash": "92764d926e267fb46958d534"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 204,
+        "hash": "6f2644548834f8095ab6bfa6"
+       },
+       "entries": {
+        "anzahl": 204,
+        "hash": "a3f5a8571441f51dea6f71da"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 248,
+        "hash": "03cebf77ec4e2715fc1f1d3b"
+       },
+       "entries": {
+        "anzahl": 248,
+        "hash": "cf9d8532fd910b915ecb704b"
+       }
+      }
+     }
+    },
+    "n30": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 362,
+        "hash": "353b026820230d39450bba02"
+       },
+       "entries": {
+        "anzahl": 362,
+        "hash": "6d2803c4e058c91683f46f3d"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 343,
+        "hash": "10e04fd6111de5a0338dc174"
+       },
+       "entries": {
+        "anzahl": 343,
+        "hash": "628c3ec33d55b841b51c12da"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 396,
+        "hash": "72e8e0787919bd24fca37e20"
+       },
+       "entries": {
+        "anzahl": 396,
+        "hash": "c6ffe7d9ac877003999bf92a"
+       }
+      }
+     }
+    },
+    "n34": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 560,
+        "hash": "02cad3997bf9f1fb03e08224"
+       },
+       "entries": {
+        "anzahl": 560,
+        "hash": "45b315bc3aa744a7cc797a9f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 554,
+        "hash": "e6b11c124a4c2ce09a4493a2"
+       },
+       "entries": {
+        "anzahl": 554,
+        "hash": "8ad864044bc1d059e7c3d408"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 604,
+        "hash": "fb4bf474bba6b15b5b9975a5"
+       },
+       "entries": {
+        "anzahl": 604,
+        "hash": "5f3dba3ad95f8154ff7d5e39"
+       }
+      }
+     }
+    },
+    "n37": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "40da3622bc90e6270922f5a8"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "f8c4ff24ec8b91b7601216a3"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "32e7f400a65c81348a213bd8"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "7d54720f01958e172846439d"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "4f046e89b249030c46f07526"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "4d2fac93d53df08950c03f8c"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 1212,
+        "hash": "7e45642b14efda3e60fd9218"
+       },
+       "entries": {
+        "anzahl": 1212,
+        "hash": "3c83f53ec729ef4d0a2ef098"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 1502,
+        "hash": "2b0a8e63b420c7a9f5efbb2c"
+       },
+       "entries": {
+        "anzahl": 1502,
+        "hash": "fe27b1c3e525019e0f736bb0"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 900,
+        "hash": "af71dd66caa7acaf14d86c6a"
+       },
+       "entries": {
+        "anzahl": 900,
+        "hash": "7203fbcc59db275e1a16fe50"
+       }
+      }
+     }
+    },
+    "n38": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "ee7ab87c7e0f814a148ba603"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "7694a38753761609fed69864"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "2835d1cddbf0a3a420e836ff"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "1f633d39bbad11b89156f6e7"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "b8f3963e5db01a2e27ef3482"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "40f3e8e019464a2de3fafc66"
+       }
+      }
+     }
+    },
+    "n42": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "d9f2bb9aa00e93ebb420838c"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "6af5be661cb7365fe98a6975"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "43a630bca9e3c9b09d50f9d6"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "dfe2013ba4c6486c9376d82c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "dfdf4525b10f7c5cb2049d7a"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "53278df93ae993757fb6959a"
+       }
+      }
+     }
+    },
+    "n44": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 566,
+        "hash": "96e04eb167098e8b8ae2e73d"
+       },
+       "entries": {
+        "anzahl": 566,
+        "hash": "1115349900d248d4fe83776c"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 561,
+        "hash": "e1a01d1e19fd5f7b8123e622"
+       },
+       "entries": {
+        "anzahl": 561,
+        "hash": "84ac52f8c72c3532aa69572d"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 610,
+        "hash": "e3a74ddf403c4312afb2dae6"
+       },
+       "entries": {
+        "anzahl": 610,
+        "hash": "a2a4f6c615ea1ab245d27ef2"
+       }
+      }
+     }
+    },
+    "n45": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "a416af6aed18b7088ae1baaf"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "563b1296e2159f7ecc8b2c17"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "aa0af4f30a513afd8601ef23"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "37929bf054536ea8a94a41a7"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "a4052b1669ba67dc1560ca9f"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "1cc4ac02de7ad0a5637f3383"
+       }
+      }
+     }
+    },
+    "n46": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 585,
+        "hash": "d0777e7917c5546ced2c3c7e"
+       },
+       "entries": {
+        "anzahl": 585,
+        "hash": "81152cf905e5929f2e4378a1"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 582,
+        "hash": "13b61536fef821f44e43cac5"
+       },
+       "entries": {
+        "anzahl": 582,
+        "hash": "8a9ce2de0fd36979a6f7fee9"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 632,
+        "hash": "ab03ccfeb79a1683e83d34a6"
+       },
+       "entries": {
+        "anzahl": 632,
+        "hash": "944d275775bc38d9691215ab"
+       }
+      }
+     }
+    },
+    "n52": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 645,
+        "hash": "0143507d38ee555f2f3a2852"
+       },
+       "entries": {
+        "anzahl": 645,
+        "hash": "59aa537aec8f466ddab12154"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 645,
+        "hash": "39cab1ebb60ed9eca5c75e30"
+       },
+       "entries": {
+        "anzahl": 645,
+        "hash": "6c17368bbb2f793e4c350d95"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 697,
+        "hash": "cb26c180f209dab392efbaa8"
+       },
+       "entries": {
+        "anzahl": 697,
+        "hash": "2160803e5dc86bbe66fc4c60"
+       }
+      }
+     }
+    },
+    "n55": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 677,
+        "hash": "83316366fd6cfcb7a1a5e78d"
+       },
+       "entries": {
+        "anzahl": 677,
+        "hash": "4506b4854bcf2d5fc73da447"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 680,
+        "hash": "377ea2f5685e22b28df96bc1"
+       },
+       "entries": {
+        "anzahl": 680,
+        "hash": "a97cbb355acd0b3149ca4f7c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 732,
+        "hash": "898b08ab4a4d0788596b10d7"
+       },
+       "entries": {
+        "anzahl": 732,
+        "hash": "d10002b034c712d8a8d93e8c"
+       }
+      }
+     }
+    },
+    "n56": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 685,
+        "hash": "a73adf46be2f9528f52453ed"
+       },
+       "entries": {
+        "anzahl": 685,
+        "hash": "6dc31b4a1f329603ec7a03e4"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 688,
+        "hash": "d86470921d58eb2e6a098220"
+       },
+       "entries": {
+        "anzahl": 688,
+        "hash": "529270e458a58eeccfbef364"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 741,
+        "hash": "4fbed177177ba9bbeca4f683"
+       },
+       "entries": {
+        "anzahl": 741,
+        "hash": "0b03b1787db70b0e1c65ffd1"
+       }
+      }
+     }
+    },
+    "n60": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 713,
+        "hash": "b4671217bf6c0ad514813b33"
+       },
+       "entries": {
+        "anzahl": 713,
+        "hash": "4f01fbc57dcbadab2fbbbf3e"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 717,
+        "hash": "cf193cb7e48e271f99886e55"
+       },
+       "entries": {
+        "anzahl": 717,
+        "hash": "f9266f49b136401a3c17a6f3"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 770,
+        "hash": "339c5933ba3440e148bdc1ac"
+       },
+       "entries": {
+        "anzahl": 770,
+        "hash": "c9502abf51efc884a219d7ec"
+       }
+      }
+     }
+    },
+    "n64": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 741,
+        "hash": "3a632e1741af9de4314eb7d1"
+       },
+       "entries": {
+        "anzahl": 741,
+        "hash": "b482e7a18dd51670c4df57a2"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 745,
+        "hash": "a9c4dfe101c30659786bce02"
+       },
+       "entries": {
+        "anzahl": 745,
+        "hash": "377e551d8362e636bc033f9a"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 798,
+        "hash": "4841d07f41081899a5e6598f"
+       },
+       "entries": {
+        "anzahl": 798,
+        "hash": "70710152574426845ab6c0f8"
+       }
+      }
+     }
+    },
+    "n68": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 762,
+        "hash": "3796c0d7518e13c05c5eb193"
+       },
+       "entries": {
+        "anzahl": 762,
+        "hash": "169fa3311d1b71b8a8b77de9"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 767,
+        "hash": "246ae94299778e9178e88af7"
+       },
+       "entries": {
+        "anzahl": 767,
+        "hash": "0d75b97643d4114985504d7c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 820,
+        "hash": "15852e5959c78639dc1a431c"
+       },
+       "entries": {
+        "anzahl": 820,
+        "hash": "c07464573be6332e2b43c6b7"
+       }
+      }
+     }
+    },
+    "n70": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 769,
+        "hash": "70f5d52cf3a1de4f099b0a6b"
+       },
+       "entries": {
+        "anzahl": 769,
+        "hash": "3ad1abdfdb011e711d1c79a3"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 774,
+        "hash": "d984460efc266ffdf9491655"
+       },
+       "entries": {
+        "anzahl": 774,
+        "hash": "a69fa001fec7cd013af15691"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 827,
+        "hash": "15aee8eeab6263c682d3fada"
+       },
+       "entries": {
+        "anzahl": 827,
+        "hash": "7ba439c339386487ae95db40"
+       }
+      }
+     }
+    },
+    "n72": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 783,
+        "hash": "f6219c64d6750320ec3c5449"
+       },
+       "entries": {
+        "anzahl": 783,
+        "hash": "d7fb6375cd0303f79d697de7"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 788,
+        "hash": "adfad3dea0cd5f94f6284fa3"
+       },
+       "entries": {
+        "anzahl": 788,
+        "hash": "e266189973e87c96a8fcbadf"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 841,
+        "hash": "19300149f5f189295b477cfa"
+       },
+       "entries": {
+        "anzahl": 841,
+        "hash": "e9b32c87e7a08b9dbd864cbf"
+       }
+      }
+     }
+    },
+    "n75": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 805,
+        "hash": "4e17a69f34c72b67fe578921"
+       },
+       "entries": {
+        "anzahl": 805,
+        "hash": "6ccf452bef753829122c71ab"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 811,
+        "hash": "1de580c67cdacd0a361dd7af"
+       },
+       "entries": {
+        "anzahl": 811,
+        "hash": "5299cae693e7b7a480a4fe42"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 867,
+        "hash": "a586e17a514779aec9bfed98"
+       },
+       "entries": {
+        "anzahl": 867,
+        "hash": "52ada924d301367af4b89830"
+       }
+      }
+     }
+    },
+    "n76": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 812,
+        "hash": "9ba7a5f5fd61f98750f43ad1"
+       },
+       "entries": {
+        "anzahl": 812,
+        "hash": "57005df2ff7d3cfe3e256fbd"
+       },
+       "letzteZeilen": [
+        "Kesirlerde yarım ½ şeklinde de yazılabilir.",
+        "Ninem çorbaya ½ limon suyu ekledi.",
+        "Ders ½ saat sonra bitecek.",
+        "Sütün ½ kadarını yoğurt mayalamak için ayırdık."
+       ]
+      },
+      "teens": {
+       "items": {
+        "anzahl": 819,
+        "hash": "266779feee7f15a9252bd885"
+       },
+       "entries": {
+        "anzahl": 819,
+        "hash": "a2697190695978308d826156"
+       },
+       "letzteZeilen": [
+        "Gönüllü ekibimizin ½ kadarı bu yıl mezun oluyor.",
+        "Antrenmanın ½ kadarı kondisyon çalışmasıydı.",
+        "Matematikte ½ ile 0,5 aynı sayıdır.",
+        "Kitabın ½ kadarını otobüste okudum."
+       ]
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 874,
+        "hash": "5da74f29d57af26d02364ede"
+       },
+       "entries": {
+        "anzahl": 874,
+        "hash": "bf74015e5b73e8a13c8ce889"
+       },
+       "letzteZeilen": [
+        "Bahçe duvarının masrafını komşumuzla ½ oranında paylaştık.",
+        "Sütlaca ½ çay bardağı pirinç koydum.",
+        "Doktor ilacın ½ dozuyla başlamamı söyledi.",
+        "Taşıt kredisinin ½ kısmını erken kapattık."
+       ]
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 1255,
+        "hash": "ae1c3245c857d785d19c6499"
+       },
+       "entries": {
+        "anzahl": 1255,
+        "hash": "5bb0038466af407103a17f2f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 1718,
+        "hash": "4793aa5fc356bf472c6e6dbc"
+       },
+       "entries": {
+        "anzahl": 1718,
+        "hash": "93098782f529989ec363a948"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 1085,
+        "hash": "a0459d83acfafbdcf56857ba"
+       },
+       "entries": {
+        "anzahl": 1085,
+        "hash": "2c3ec127b587a63fcfe16b17"
+       }
+      }
+     }
+    },
+    "ohneUmschalt": {
+     "n8": {
+      "items": {
+       "anzahl": 2,
+       "hash": "af16420ca844be3ff030f1ea"
+      },
+      "entries": {
+       "anzahl": 2,
+       "hash": "c9dfaf19ccce816c509ce8aa"
+      }
+     },
+     "n19": {
+      "items": {
+       "anzahl": 164,
+       "hash": "ec6787f48238dde68418b8ab"
+      },
+      "entries": {
+       "anzahl": 164,
+       "hash": "84d365b3d4d82abda3a97d0a"
+      }
+     },
+     "n20": {
+      "items": {
+       "anzahl": 164,
+       "hash": "ec6787f48238dde68418b8ab"
+      },
+      "entries": {
+       "anzahl": 164,
+       "hash": "84d365b3d4d82abda3a97d0a"
+      }
+     }
+    },
+    "lektionen": {
+     "ids": [
+      "tr-temel-1",
+      "tr-temel-2",
+      "tr-temel-3",
+      "tr-temel-4",
+      "tr-sik-1",
+      "tr-sik-2",
+      "tr-sik-3",
+      "tr-sik-4",
+      "tr-sik-5",
+      "tr-buyuk",
+      "tr-nokta-virgul",
+      "tr-zch",
+      "tr-gg",
+      "tr-uv",
+      "tr-pco",
+      "tr-kesme",
+      "tr-sapka",
+      "tr-wxq",
+      "tr-soru",
+      "tr-noktalama",
+      "tr-sayilar",
+      "tr-simge-1",
+      "tr-simge-2",
+      "tr-metin"
+     ],
+     "kinds": [
+      "home",
+      "home",
+      "home",
+      "home",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "shift",
+      "punctuation",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "punctuation",
+      "punctuation",
+      "numbers",
+      "symbols",
+      "symbols",
+      "text"
+     ],
+     "newKeys": [
+      [
+       "f",
+       "j"
+      ],
+      [
+       "d",
+       "k"
+      ],
+      [
+       "s",
+       "l"
+      ],
+      [
+       "a",
+       "ş"
+      ],
+      [
+       "e",
+       "i"
+      ],
+      [
+       "n",
+       "m"
+      ],
+      [
+       "b",
+       "r"
+      ],
+      [
+       "ı",
+       "t"
+      ],
+      [
+       "y",
+       "o",
+       "u"
+      ],
+      [],
+      [
+       ".",
+       ","
+      ],
+      [
+       "z",
+       "ç",
+       "h"
+      ],
+      [
+       "g",
+       "ğ"
+      ],
+      [
+       "ü",
+       "v"
+      ],
+      [
+       "p",
+       "c",
+       "ö"
+      ],
+      [
+       "'"
+      ],
+      [
+       "^"
+      ],
+      [
+       "w",
+       "x",
+       "q"
+      ],
+      [
+       "?",
+       "!"
+      ],
+      [
+       ":",
+       "\"",
+       ";",
+       "-",
+       "(",
+       ")"
+      ],
+      [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "0"
+      ],
+      [
+       "%",
+       "&",
+       "/",
+       "+",
+       "*",
+       "=",
+       "_",
+       ">",
+       "<",
+       "$"
+      ],
+      [
+       "@",
+       "#",
+       "[",
+       "]",
+       "{",
+       "}",
+       "\\",
+       "|",
+       "€",
+       "₺",
+       "½"
+      ],
+      []
+     ],
+     "titles": {
+      "anzahl": 24,
+      "hash": "3bc940949fa0ec6adaf77db1"
+     }
+    }
+   },
+   "tr-f": {
+    "n3": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n8": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 9,
+        "hash": "ae3dd8d193dde017a8f0b1f3"
+       },
+       "entries": {
+        "anzahl": 9,
+        "hash": "155bb00b3a74130b6a9df8a5"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 4,
+        "hash": "5fb5beef94f04c219a77bc82"
+       },
+       "entries": {
+        "anzahl": 4,
+        "hash": "92859cee27837df6cab02522"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 2,
+        "hash": "af16420ca844be3ff030f1ea"
+       },
+       "entries": {
+        "anzahl": 2,
+        "hash": "c9dfaf19ccce816c509ce8aa"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n12": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 45,
+        "hash": "08bd338688c6b89a814bc4f1"
+       },
+       "entries": {
+        "anzahl": 45,
+        "hash": "4fc60c23f14183f56f0c6ea3"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 29,
+        "hash": "f8409080830062a19f4a3439"
+       },
+       "entries": {
+        "anzahl": 29,
+        "hash": "82e0e74a01062aa6b1f50600"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 20,
+        "hash": "5b7cdd5bd37c0188b1f34601"
+       },
+       "entries": {
+        "anzahl": 20,
+        "hash": "962f67b11068609319d90bcc"
+       }
+      }
+     }
+    },
+    "n17": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 122,
+        "hash": "309de9d09aadfea54b982024"
+       },
+       "entries": {
+        "anzahl": 122,
+        "hash": "b68dec86c825b606a9330d79"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 94,
+        "hash": "456c1335955c373cc74c4bec"
+       },
+       "entries": {
+        "anzahl": 94,
+        "hash": "0eccbe5a67364433c82bc1cf"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 101,
+        "hash": "85d316d17363b14c6e09bff2"
+       },
+       "entries": {
+        "anzahl": 101,
+        "hash": "9e81dcebf668cc44e9a49163"
+       }
+      }
+     }
+    },
+    "n19": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 178,
+        "hash": "a9141f1bef53b2f9822b3197"
+       },
+       "entries": {
+        "anzahl": 178,
+        "hash": "57505cd2ec387bdc6b3e82d9"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 154,
+        "hash": "df75177c48548a80e6e2ff70"
+       },
+       "entries": {
+        "anzahl": 154,
+        "hash": "98e4faa8045aa3e22aa26d17"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 180,
+        "hash": "1997cfe35483f1766e1f96f2"
+       },
+       "entries": {
+        "anzahl": 180,
+        "hash": "ce6dc99d59a5c0a60bc377c0"
+       }
+      }
+     }
+    },
+    "n20": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 178,
+        "hash": "a9141f1bef53b2f9822b3197"
+       },
+       "entries": {
+        "anzahl": 178,
+        "hash": "57505cd2ec387bdc6b3e82d9"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 154,
+        "hash": "df75177c48548a80e6e2ff70"
+       },
+       "entries": {
+        "anzahl": 154,
+        "hash": "98e4faa8045aa3e22aa26d17"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 180,
+        "hash": "1997cfe35483f1766e1f96f2"
+       },
+       "entries": {
+        "anzahl": 180,
+        "hash": "ce6dc99d59a5c0a60bc377c0"
+       }
+      }
+     }
+    },
+    "n22": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 178,
+        "hash": "4f341b6b3603288f3b58ba2e"
+       },
+       "entries": {
+        "anzahl": 178,
+        "hash": "c690102158773fa87785960e"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 154,
+        "hash": "94e6a489b0f63505ccc16399"
+       },
+       "entries": {
+        "anzahl": 154,
+        "hash": "2eff583493ac2108a0526d2f"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 180,
+        "hash": "c5142ee66e1f87d0a4f94aeb"
+       },
+       "entries": {
+        "anzahl": 180,
+        "hash": "d5fa261ca2ca1c9158ca23e2"
+       }
+      }
+     }
+    },
+    "n25": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 222,
+        "hash": "6d6d0b81b1b2eeb104387de7"
+       },
+       "entries": {
+        "anzahl": 222,
+        "hash": "92764d926e267fb46958d534"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 204,
+        "hash": "6f2644548834f8095ab6bfa6"
+       },
+       "entries": {
+        "anzahl": 204,
+        "hash": "a3f5a8571441f51dea6f71da"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 248,
+        "hash": "03cebf77ec4e2715fc1f1d3b"
+       },
+       "entries": {
+        "anzahl": 248,
+        "hash": "cf9d8532fd910b915ecb704b"
+       }
+      }
+     }
+    },
+    "n30": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 362,
+        "hash": "353b026820230d39450bba02"
+       },
+       "entries": {
+        "anzahl": 362,
+        "hash": "6d2803c4e058c91683f46f3d"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 343,
+        "hash": "10e04fd6111de5a0338dc174"
+       },
+       "entries": {
+        "anzahl": 343,
+        "hash": "628c3ec33d55b841b51c12da"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 396,
+        "hash": "72e8e0787919bd24fca37e20"
+       },
+       "entries": {
+        "anzahl": 396,
+        "hash": "c6ffe7d9ac877003999bf92a"
+       }
+      }
+     }
+    },
+    "n34": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 560,
+        "hash": "02cad3997bf9f1fb03e08224"
+       },
+       "entries": {
+        "anzahl": 560,
+        "hash": "45b315bc3aa744a7cc797a9f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 554,
+        "hash": "e6b11c124a4c2ce09a4493a2"
+       },
+       "entries": {
+        "anzahl": 554,
+        "hash": "8ad864044bc1d059e7c3d408"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 604,
+        "hash": "fb4bf474bba6b15b5b9975a5"
+       },
+       "entries": {
+        "anzahl": 604,
+        "hash": "5f3dba3ad95f8154ff7d5e39"
+       }
+      }
+     }
+    },
+    "n37": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "40da3622bc90e6270922f5a8"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "f8c4ff24ec8b91b7601216a3"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "32e7f400a65c81348a213bd8"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "7d54720f01958e172846439d"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "4f046e89b249030c46f07526"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "4d2fac93d53df08950c03f8c"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 1212,
+        "hash": "7e45642b14efda3e60fd9218"
+       },
+       "entries": {
+        "anzahl": 1212,
+        "hash": "3c83f53ec729ef4d0a2ef098"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 1502,
+        "hash": "2b0a8e63b420c7a9f5efbb2c"
+       },
+       "entries": {
+        "anzahl": 1502,
+        "hash": "fe27b1c3e525019e0f736bb0"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 900,
+        "hash": "af71dd66caa7acaf14d86c6a"
+       },
+       "entries": {
+        "anzahl": 900,
+        "hash": "7203fbcc59db275e1a16fe50"
+       }
+      }
+     }
+    },
+    "n38": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "ee7ab87c7e0f814a148ba603"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "7694a38753761609fed69864"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "2835d1cddbf0a3a420e836ff"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "1f633d39bbad11b89156f6e7"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "b8f3963e5db01a2e27ef3482"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "40f3e8e019464a2de3fafc66"
+       }
+      }
+     }
+    },
+    "n42": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "d9f2bb9aa00e93ebb420838c"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "6af5be661cb7365fe98a6975"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "43a630bca9e3c9b09d50f9d6"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "dfe2013ba4c6486c9376d82c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "dfdf4525b10f7c5cb2049d7a"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "53278df93ae993757fb6959a"
+       }
+      }
+     }
+    },
+    "n44": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 566,
+        "hash": "96e04eb167098e8b8ae2e73d"
+       },
+       "entries": {
+        "anzahl": 566,
+        "hash": "1115349900d248d4fe83776c"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 561,
+        "hash": "e1a01d1e19fd5f7b8123e622"
+       },
+       "entries": {
+        "anzahl": 561,
+        "hash": "84ac52f8c72c3532aa69572d"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 610,
+        "hash": "e3a74ddf403c4312afb2dae6"
+       },
+       "entries": {
+        "anzahl": 610,
+        "hash": "a2a4f6c615ea1ab245d27ef2"
+       }
+      }
+     }
+    },
+    "n45": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 575,
+        "hash": "a416af6aed18b7088ae1baaf"
+       },
+       "entries": {
+        "anzahl": 575,
+        "hash": "563b1296e2159f7ecc8b2c17"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 572,
+        "hash": "aa0af4f30a513afd8601ef23"
+       },
+       "entries": {
+        "anzahl": 572,
+        "hash": "37929bf054536ea8a94a41a7"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 621,
+        "hash": "a4052b1669ba67dc1560ca9f"
+       },
+       "entries": {
+        "anzahl": 621,
+        "hash": "1cc4ac02de7ad0a5637f3383"
+       }
+      }
+     }
+    },
+    "n46": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 585,
+        "hash": "d0777e7917c5546ced2c3c7e"
+       },
+       "entries": {
+        "anzahl": 585,
+        "hash": "81152cf905e5929f2e4378a1"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 582,
+        "hash": "13b61536fef821f44e43cac5"
+       },
+       "entries": {
+        "anzahl": 582,
+        "hash": "8a9ce2de0fd36979a6f7fee9"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 632,
+        "hash": "ab03ccfeb79a1683e83d34a6"
+       },
+       "entries": {
+        "anzahl": 632,
+        "hash": "944d275775bc38d9691215ab"
+       }
+      }
+     }
+    },
+    "n52": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 645,
+        "hash": "0143507d38ee555f2f3a2852"
+       },
+       "entries": {
+        "anzahl": 645,
+        "hash": "59aa537aec8f466ddab12154"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 645,
+        "hash": "39cab1ebb60ed9eca5c75e30"
+       },
+       "entries": {
+        "anzahl": 645,
+        "hash": "6c17368bbb2f793e4c350d95"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 697,
+        "hash": "cb26c180f209dab392efbaa8"
+       },
+       "entries": {
+        "anzahl": 697,
+        "hash": "2160803e5dc86bbe66fc4c60"
+       }
+      }
+     }
+    },
+    "n55": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 677,
+        "hash": "83316366fd6cfcb7a1a5e78d"
+       },
+       "entries": {
+        "anzahl": 677,
+        "hash": "4506b4854bcf2d5fc73da447"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 680,
+        "hash": "377ea2f5685e22b28df96bc1"
+       },
+       "entries": {
+        "anzahl": 680,
+        "hash": "a97cbb355acd0b3149ca4f7c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 732,
+        "hash": "898b08ab4a4d0788596b10d7"
+       },
+       "entries": {
+        "anzahl": 732,
+        "hash": "d10002b034c712d8a8d93e8c"
+       }
+      }
+     }
+    },
+    "n56": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 685,
+        "hash": "a73adf46be2f9528f52453ed"
+       },
+       "entries": {
+        "anzahl": 685,
+        "hash": "6dc31b4a1f329603ec7a03e4"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 688,
+        "hash": "d86470921d58eb2e6a098220"
+       },
+       "entries": {
+        "anzahl": 688,
+        "hash": "529270e458a58eeccfbef364"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 741,
+        "hash": "4fbed177177ba9bbeca4f683"
+       },
+       "entries": {
+        "anzahl": 741,
+        "hash": "0b03b1787db70b0e1c65ffd1"
+       }
+      }
+     }
+    },
+    "n60": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 713,
+        "hash": "b4671217bf6c0ad514813b33"
+       },
+       "entries": {
+        "anzahl": 713,
+        "hash": "4f01fbc57dcbadab2fbbbf3e"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 717,
+        "hash": "cf193cb7e48e271f99886e55"
+       },
+       "entries": {
+        "anzahl": 717,
+        "hash": "f9266f49b136401a3c17a6f3"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 770,
+        "hash": "339c5933ba3440e148bdc1ac"
+       },
+       "entries": {
+        "anzahl": 770,
+        "hash": "c9502abf51efc884a219d7ec"
+       }
+      }
+     }
+    },
+    "n64": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 741,
+        "hash": "3a632e1741af9de4314eb7d1"
+       },
+       "entries": {
+        "anzahl": 741,
+        "hash": "b482e7a18dd51670c4df57a2"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 745,
+        "hash": "a9c4dfe101c30659786bce02"
+       },
+       "entries": {
+        "anzahl": 745,
+        "hash": "377e551d8362e636bc033f9a"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 798,
+        "hash": "4841d07f41081899a5e6598f"
+       },
+       "entries": {
+        "anzahl": 798,
+        "hash": "70710152574426845ab6c0f8"
+       }
+      }
+     }
+    },
+    "n68": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 762,
+        "hash": "3796c0d7518e13c05c5eb193"
+       },
+       "entries": {
+        "anzahl": 762,
+        "hash": "169fa3311d1b71b8a8b77de9"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 767,
+        "hash": "246ae94299778e9178e88af7"
+       },
+       "entries": {
+        "anzahl": 767,
+        "hash": "0d75b97643d4114985504d7c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 820,
+        "hash": "15852e5959c78639dc1a431c"
+       },
+       "entries": {
+        "anzahl": 820,
+        "hash": "c07464573be6332e2b43c6b7"
+       }
+      }
+     }
+    },
+    "n70": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 769,
+        "hash": "70f5d52cf3a1de4f099b0a6b"
+       },
+       "entries": {
+        "anzahl": 769,
+        "hash": "3ad1abdfdb011e711d1c79a3"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 774,
+        "hash": "d984460efc266ffdf9491655"
+       },
+       "entries": {
+        "anzahl": 774,
+        "hash": "a69fa001fec7cd013af15691"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 827,
+        "hash": "15aee8eeab6263c682d3fada"
+       },
+       "entries": {
+        "anzahl": 827,
+        "hash": "7ba439c339386487ae95db40"
+       }
+      }
+     }
+    },
+    "n72": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 783,
+        "hash": "f6219c64d6750320ec3c5449"
+       },
+       "entries": {
+        "anzahl": 783,
+        "hash": "d7fb6375cd0303f79d697de7"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 788,
+        "hash": "adfad3dea0cd5f94f6284fa3"
+       },
+       "entries": {
+        "anzahl": 788,
+        "hash": "e266189973e87c96a8fcbadf"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 841,
+        "hash": "19300149f5f189295b477cfa"
+       },
+       "entries": {
+        "anzahl": 841,
+        "hash": "e9b32c87e7a08b9dbd864cbf"
+       }
+      }
+     }
+    },
+    "n75": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 805,
+        "hash": "4e17a69f34c72b67fe578921"
+       },
+       "entries": {
+        "anzahl": 805,
+        "hash": "6ccf452bef753829122c71ab"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 811,
+        "hash": "1de580c67cdacd0a361dd7af"
+       },
+       "entries": {
+        "anzahl": 811,
+        "hash": "5299cae693e7b7a480a4fe42"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 867,
+        "hash": "a586e17a514779aec9bfed98"
+       },
+       "entries": {
+        "anzahl": 867,
+        "hash": "52ada924d301367af4b89830"
+       }
+      }
+     }
+    },
+    "n76": {
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 812,
+        "hash": "9ba7a5f5fd61f98750f43ad1"
+       },
+       "entries": {
+        "anzahl": 812,
+        "hash": "57005df2ff7d3cfe3e256fbd"
+       },
+       "letzteZeilen": [
+        "Kesirlerde yarım ½ şeklinde de yazılabilir.",
+        "Ninem çorbaya ½ limon suyu ekledi.",
+        "Ders ½ saat sonra bitecek.",
+        "Sütün ½ kadarını yoğurt mayalamak için ayırdık."
+       ]
+      },
+      "teens": {
+       "items": {
+        "anzahl": 819,
+        "hash": "266779feee7f15a9252bd885"
+       },
+       "entries": {
+        "anzahl": 819,
+        "hash": "a2697190695978308d826156"
+       },
+       "letzteZeilen": [
+        "Gönüllü ekibimizin ½ kadarı bu yıl mezun oluyor.",
+        "Antrenmanın ½ kadarı kondisyon çalışmasıydı.",
+        "Matematikte ½ ile 0,5 aynı sayıdır.",
+        "Kitabın ½ kadarını otobüste okudum."
+       ]
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 874,
+        "hash": "5da74f29d57af26d02364ede"
+       },
+       "entries": {
+        "anzahl": 874,
+        "hash": "bf74015e5b73e8a13c8ce889"
+       },
+       "letzteZeilen": [
+        "Bahçe duvarının masrafını komşumuzla ½ oranında paylaştık.",
+        "Sütlaca ½ çay bardağı pirinç koydum.",
+        "Doktor ilacın ½ dozuyla başlamamı söyledi.",
+        "Taşıt kredisinin ½ kısmını erken kapattık."
+       ]
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 1255,
+        "hash": "ae1c3245c857d785d19c6499"
+       },
+       "entries": {
+        "anzahl": 1255,
+        "hash": "5bb0038466af407103a17f2f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 1718,
+        "hash": "4793aa5fc356bf472c6e6dbc"
+       },
+       "entries": {
+        "anzahl": 1718,
+        "hash": "93098782f529989ec363a948"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 1085,
+        "hash": "a0459d83acfafbdcf56857ba"
+       },
+       "entries": {
+        "anzahl": 1085,
+        "hash": "2c3ec127b587a63fcfe16b17"
+       }
+      }
+     }
+    },
+    "ohneUmschalt": {
+     "n8": {
+      "items": {
+       "anzahl": 2,
+       "hash": "af16420ca844be3ff030f1ea"
+      },
+      "entries": {
+       "anzahl": 2,
+       "hash": "c9dfaf19ccce816c509ce8aa"
+      }
+     },
+     "n19": {
+      "items": {
+       "anzahl": 164,
+       "hash": "ec6787f48238dde68418b8ab"
+      },
+      "entries": {
+       "anzahl": 164,
+       "hash": "84d365b3d4d82abda3a97d0a"
+      }
+     },
+     "n20": {
+      "items": {
+       "anzahl": 164,
+       "hash": "ec6787f48238dde68418b8ab"
+      },
+      "entries": {
+       "anzahl": 164,
+       "hash": "84d365b3d4d82abda3a97d0a"
+      }
+     }
+    },
+    "lektionen": {
+     "ids": [
+      "tr-temel-1",
+      "tr-temel-2",
+      "tr-temel-3",
+      "tr-temel-4",
+      "tr-sik-1",
+      "tr-sik-2",
+      "tr-sik-3",
+      "tr-sik-4",
+      "tr-sik-5",
+      "tr-buyuk",
+      "tr-nokta-virgul",
+      "tr-zch",
+      "tr-gg",
+      "tr-uv",
+      "tr-pco",
+      "tr-kesme",
+      "tr-sapka",
+      "tr-wxq",
+      "tr-soru",
+      "tr-noktalama",
+      "tr-sayilar",
+      "tr-simge-1",
+      "tr-simge-2",
+      "tr-metin"
+     ],
+     "kinds": [
+      "home",
+      "home",
+      "home",
+      "home",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "shift",
+      "punctuation",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "letters",
+      "punctuation",
+      "punctuation",
+      "numbers",
+      "symbols",
+      "symbols",
+      "text"
+     ],
+     "newKeys": [
+      [
+       "f",
+       "j"
+      ],
+      [
+       "d",
+       "k"
+      ],
+      [
+       "s",
+       "l"
+      ],
+      [
+       "a",
+       "ş"
+      ],
+      [
+       "e",
+       "i"
+      ],
+      [
+       "n",
+       "m"
+      ],
+      [
+       "b",
+       "r"
+      ],
+      [
+       "ı",
+       "t"
+      ],
+      [
+       "y",
+       "o",
+       "u"
+      ],
+      [],
+      [
+       ".",
+       ","
+      ],
+      [
+       "z",
+       "ç",
+       "h"
+      ],
+      [
+       "g",
+       "ğ"
+      ],
+      [
+       "ü",
+       "v"
+      ],
+      [
+       "p",
+       "c",
+       "ö"
+      ],
+      [
+       "'"
+      ],
+      [
+       "^"
+      ],
+      [
+       "w",
+       "x",
+       "q"
+      ],
+      [
+       "?",
+       "!"
+      ],
+      [
+       ":",
+       "\"",
+       ";",
+       "-",
+       "(",
+       ")"
+      ],
+      [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "0"
+      ],
+      [
+       "%",
+       "&",
+       "/",
+       "+",
+       "*",
+       "=",
+       "_",
+       ">",
+       "<",
+       "$"
+      ],
+      [
+       "@",
+       "#",
+       "[",
+       "]",
+       "{",
+       "}",
+       "\\",
+       "|",
+       "€",
+       "₺",
+       "½"
+      ],
+      []
+     ],
+     "titles": {
+      "anzahl": 24,
+      "hash": "3bc940949fa0ec6adaf77db1"
+     }
+    }
+   }
+  },
+  "arcs": {
+   "kids": [],
+   "teens": [],
+   "erwachsen": []
+  },
+  "vorlagen": {
+   "ids": [
+    "kokler-aile",
+    "kokler-arapca",
+    "kokler-bati",
+    "kokler-farsca",
+    "kokler-yunanca-latince"
+   ],
+   "challengeIds": [
+    "kokc-1",
+    "kokc-2",
+    "kokc-3"
+   ],
+   "kids": {
+    "kokler-aile": {
+     "anzahl": 15,
+     "hash": "a0636693830e41e53eb86a47"
+    },
+    "kokler-arapca": {
+     "anzahl": 15,
+     "hash": "75e578d9725a08619d769975"
+    },
+    "kokler-bati": {
+     "anzahl": 15,
+     "hash": "32b28448ec82f8599291f5b4"
+    },
+    "kokler-farsca": {
+     "anzahl": 15,
+     "hash": "60adf70844a0bd5c96a20178"
+    },
+    "kokler-yunanca-latince": {
+     "anzahl": 20,
+     "hash": "c67a0d987a2d568c34752c3f"
+    },
+    "kokc-1": {
+     "anzahl": 27,
+     "hash": "73fdd63c456d8b5c4e9a1dc7"
+    },
+    "kokc-2": {
+     "anzahl": 26,
+     "hash": "6483fb9dab5cf92742f48dd7"
+    },
+    "kokc-3": {
+     "anzahl": 27,
+     "hash": "12782651b7cda1b9b85bef1e"
+    }
+   },
+   "teens": {
+    "kokler-aile": {
+     "anzahl": 15,
+     "hash": "4fad3c13188bcf6c3e56ddb7"
+    },
+    "kokler-arapca": {
+     "anzahl": 15,
+     "hash": "6f37a5de885166a3238a7124"
+    },
+    "kokler-bati": {
+     "anzahl": 15,
+     "hash": "587b45f6040fa268f4fcc784"
+    },
+    "kokler-farsca": {
+     "anzahl": 15,
+     "hash": "abb4c95fac0f37073c5d618a"
+    },
+    "kokler-yunanca-latince": {
+     "anzahl": 20,
+     "hash": "7c390528cf4298687c9ba412"
+    },
+    "kokc-1": {
+     "anzahl": 27,
+     "hash": "5f9b93daa33049a0628de195"
+    },
+    "kokc-2": {
+     "anzahl": 26,
+     "hash": "6af17c6ad7be621572bf3c5a"
+    },
+    "kokc-3": {
+     "anzahl": 27,
+     "hash": "58be1189064428ca2db90671"
+    }
+   },
+   "erwachsen": {
+    "kokler-aile": {
+     "anzahl": 15,
+     "hash": "bade78758bf6eebb5f6a1ce4"
+    },
+    "kokler-arapca": {
+     "anzahl": 15,
+     "hash": "0e04d67a31ac472dde68b4e8"
+    },
+    "kokler-bati": {
+     "anzahl": 15,
+     "hash": "6d6f1a79cb2f823ef4859296"
+    },
+    "kokler-farsca": {
+     "anzahl": 15,
+     "hash": "69080fed73896aa5f244d682"
+    },
+    "kokler-yunanca-latince": {
+     "anzahl": 20,
+     "hash": "fd5aafcaab6225ce7335d571"
+    },
+    "kokc-1": {
+     "anzahl": 27,
+     "hash": "d065d053e1fb384bace273ff"
+    },
+    "kokc-2": {
+     "anzahl": 26,
+     "hash": "e9f9a948daa21f9a26211e18"
+    },
+    "kokc-3": {
+     "anzahl": 27,
+     "hash": "94d536d003032588d45b3ba8"
+    }
+   }
+  },
+  "wortspiele": {
+   "frueh19:kids": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "9c409fdeb575569330cffbb9"
+     },
+     {
+      "anzahl": 12,
+      "hash": "d0a651ef4956c3f6d30b758b"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "da9640adb67ba473adc35209"
+     },
+     {
+      "anzahl": 14,
+      "hash": "43599d00ffb10228c9ae388c"
+     }
+    ],
+    "wandernder-gross": [],
+    "fingerdiktat": [
+     {
+      "anzahl": 17,
+      "hash": "243a830c97d891797f54829a"
+     },
+     {
+      "anzahl": 17,
+      "hash": "a74cddd3334e872a9662c9c9"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "3e314d7a59f6cad4c73df14c"
+     },
+     {
+      "anzahl": 1,
+      "hash": "917237322ca9520c3332e63f"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 15,
+      "hash": "c7d8616f676ce758029eee50"
+     },
+     {
+      "anzahl": 14,
+      "hash": "394f5c498bd675c63e977e4b"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "839ec8662319c966cb5fa72e"
+     },
+     {
+      "anzahl": 12,
+      "hash": "1a4e9468af45b8bc33ab3259"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "b7f703968c7b325fc5c39f0d"
+     },
+     {
+      "anzahl": 12,
+      "hash": "c06af5f5f707fd4276a73d7b"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "51d682c85fa774f992385eb3"
+     },
+     {
+      "anzahl": 12,
+      "hash": "a2179b9188cc741109359d73"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "dd38573e84688e6418dc099d"
+     },
+     {
+      "anzahl": 8,
+      "hash": "8b4a5409212a5a4e9fb4793b"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "354a10486be2a014a8b95659"
+     },
+     {
+      "anzahl": 8,
+      "hash": "7d44bad29b20163bbd0bcb72"
+     }
+    ]
+   },
+   "frueh19:teens": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "9c409fdeb575569330cffbb9"
+     },
+     {
+      "anzahl": 12,
+      "hash": "d0a651ef4956c3f6d30b758b"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "62c34644c9500b6ee674d88a"
+     },
+     {
+      "anzahl": 14,
+      "hash": "aa8012894c335a79b85da8ab"
+     }
+    ],
+    "wandernder-gross": [],
+    "fingerdiktat": [
+     {
+      "anzahl": 17,
+      "hash": "243a830c97d891797f54829a"
+     },
+     {
+      "anzahl": 17,
+      "hash": "a74cddd3334e872a9662c9c9"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "a22411788e52bd7eedbaa8ff"
+     },
+     {
+      "anzahl": 1,
+      "hash": "46a7aecd842682ef69894247"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 15,
+      "hash": "07e391944cfd54fa88bfb6f6"
+     },
+     {
+      "anzahl": 16,
+      "hash": "9edc042db23dee97f30b3fb7"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "839ec8662319c966cb5fa72e"
+     },
+     {
+      "anzahl": 12,
+      "hash": "1a4e9468af45b8bc33ab3259"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "b7f703968c7b325fc5c39f0d"
+     },
+     {
+      "anzahl": 12,
+      "hash": "c06af5f5f707fd4276a73d7b"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "51d682c85fa774f992385eb3"
+     },
+     {
+      "anzahl": 12,
+      "hash": "a2179b9188cc741109359d73"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "2e9910dfe30ea2c4d6733a5f"
+     },
+     {
+      "anzahl": 8,
+      "hash": "62febbf9e25dd975b38bd22d"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "354a10486be2a014a8b95659"
+     },
+     {
+      "anzahl": 8,
+      "hash": "7d44bad29b20163bbd0bcb72"
+     }
+    ]
+   },
+   "frueh19:erwachsen": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "9c409fdeb575569330cffbb9"
+     },
+     {
+      "anzahl": 12,
+      "hash": "d0a651ef4956c3f6d30b758b"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 12,
+      "hash": "531fe668026e9a1847314835"
+     },
+     {
+      "anzahl": 12,
+      "hash": "fcb59631394c91b2a094148e"
+     }
+    ],
+    "wandernder-gross": [],
+    "fingerdiktat": [
+     {
+      "anzahl": 17,
+      "hash": "243a830c97d891797f54829a"
+     },
+     {
+      "anzahl": 17,
+      "hash": "a74cddd3334e872a9662c9c9"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "a22411788e52bd7eedbaa8ff"
+     },
+     {
+      "anzahl": 1,
+      "hash": "46a7aecd842682ef69894247"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 15,
+      "hash": "07e391944cfd54fa88bfb6f6"
+     },
+     {
+      "anzahl": 16,
+      "hash": "9edc042db23dee97f30b3fb7"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "839ec8662319c966cb5fa72e"
+     },
+     {
+      "anzahl": 12,
+      "hash": "1a4e9468af45b8bc33ab3259"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "b7f703968c7b325fc5c39f0d"
+     },
+     {
+      "anzahl": 12,
+      "hash": "c06af5f5f707fd4276a73d7b"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "51d682c85fa774f992385eb3"
+     },
+     {
+      "anzahl": 12,
+      "hash": "a2179b9188cc741109359d73"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "48939c052ed8527dcdc9cc15"
+     },
+     {
+      "anzahl": 8,
+      "hash": "a18bd678c785bfeba8caaf8a"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "354a10486be2a014a8b95659"
+     },
+     {
+      "anzahl": 8,
+      "hash": "7d44bad29b20163bbd0bcb72"
+     }
+    ]
+   },
+   "buchstaben:kids": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "3ffd51df998eb231d5b75e15"
+     },
+     {
+      "anzahl": 12,
+      "hash": "6d137b2e7ca6216bc5a66d11"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "af05a28c5a3fb8dca456416c"
+     },
+     {
+      "anzahl": 14,
+      "hash": "0fcf91cc8224c2d41dfa75c7"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 13,
+      "hash": "073721b7114a17608a464fb8"
+     },
+     {
+      "anzahl": 12,
+      "hash": "954432ec3b928523d2f75966"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 18,
+      "hash": "6a754ed0c82cb6b2d7c1fe20"
+     },
+     {
+      "anzahl": 17,
+      "hash": "d88b4cc3c4647263b12b444d"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "53b3602683754f6a3458bbde"
+     },
+     {
+      "anzahl": 1,
+      "hash": "cbf478c935472f379d773745"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 20,
+      "hash": "a3386bff1fde23062bf2de2c"
+     },
+     {
+      "anzahl": 21,
+      "hash": "6ba1d8ae9d15c4298c7dddff"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "f0a35788d8ccbd59f6159125"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f1bbc43da9c0c7b8964acfdb"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "fa954a902d3f9e70d3fb2d7f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f4ed413b971f0b3858d5e6de"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "baf195660cafee10c9602861"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0e8b289785c9e5f6b64d6a1b"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "f9b945a9674e53e89cb61b8d"
+     },
+     {
+      "anzahl": 8,
+      "hash": "5b568115afd20dc31e9fd67e"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "8df57d9bf3c6335da66a62bb"
+     },
+     {
+      "anzahl": 8,
+      "hash": "b7fb397a29136a29687a35ff"
+     }
+    ]
+   },
+   "buchstaben:teens": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "3ffd51df998eb231d5b75e15"
+     },
+     {
+      "anzahl": 12,
+      "hash": "6d137b2e7ca6216bc5a66d11"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "a3475d3e2728f478352fcdc3"
+     },
+     {
+      "anzahl": 14,
+      "hash": "3c12dcff98145d9360e5994c"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 13,
+      "hash": "073721b7114a17608a464fb8"
+     },
+     {
+      "anzahl": 12,
+      "hash": "954432ec3b928523d2f75966"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 18,
+      "hash": "6a754ed0c82cb6b2d7c1fe20"
+     },
+     {
+      "anzahl": 17,
+      "hash": "d88b4cc3c4647263b12b444d"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "68707856ab42648e844f448f"
+     },
+     {
+      "anzahl": 1,
+      "hash": "99bd87425b0adc55a2d17c27"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 18,
+      "hash": "1784f6fd99b0a15e20f36721"
+     },
+     {
+      "anzahl": 18,
+      "hash": "f51d1fdc73e60edf1ec92ace"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "f0a35788d8ccbd59f6159125"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f1bbc43da9c0c7b8964acfdb"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "fa954a902d3f9e70d3fb2d7f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f4ed413b971f0b3858d5e6de"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "baf195660cafee10c9602861"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0e8b289785c9e5f6b64d6a1b"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "89a4a9fb8283b2908fba6a8a"
+     },
+     {
+      "anzahl": 8,
+      "hash": "37dfe18b9b0fc0ea3d0bb9b8"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "8df57d9bf3c6335da66a62bb"
+     },
+     {
+      "anzahl": 8,
+      "hash": "b7fb397a29136a29687a35ff"
+     }
+    ]
+   },
+   "buchstaben:erwachsen": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "3ffd51df998eb231d5b75e15"
+     },
+     {
+      "anzahl": 12,
+      "hash": "6d137b2e7ca6216bc5a66d11"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "074ab3c2cd97d392b690859c"
+     },
+     {
+      "anzahl": 14,
+      "hash": "961faa3f24460638f32d0513"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 13,
+      "hash": "073721b7114a17608a464fb8"
+     },
+     {
+      "anzahl": 12,
+      "hash": "954432ec3b928523d2f75966"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 18,
+      "hash": "6a754ed0c82cb6b2d7c1fe20"
+     },
+     {
+      "anzahl": 17,
+      "hash": "d88b4cc3c4647263b12b444d"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "68707856ab42648e844f448f"
+     },
+     {
+      "anzahl": 1,
+      "hash": "99bd87425b0adc55a2d17c27"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 18,
+      "hash": "1784f6fd99b0a15e20f36721"
+     },
+     {
+      "anzahl": 18,
+      "hash": "f51d1fdc73e60edf1ec92ace"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "f0a35788d8ccbd59f6159125"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f1bbc43da9c0c7b8964acfdb"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "fa954a902d3f9e70d3fb2d7f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f4ed413b971f0b3858d5e6de"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "baf195660cafee10c9602861"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0e8b289785c9e5f6b64d6a1b"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "36268b80d57f2a433fdde3a0"
+     },
+     {
+      "anzahl": 8,
+      "hash": "ba7a163f4ec01ab27145b122"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "8df57d9bf3c6335da66a62bb"
+     },
+     {
+      "anzahl": 8,
+      "hash": "b7fb397a29136a29687a35ff"
+     }
+    ]
+   },
+   "voll:kids": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "3ffd51df998eb231d5b75e15"
+     },
+     {
+      "anzahl": 12,
+      "hash": "6d137b2e7ca6216bc5a66d11"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "bc869ccfd243b65fa9dbbf57"
+     },
+     {
+      "anzahl": 14,
+      "hash": "a6e5d552b2e502ae87e4f54f"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 13,
+      "hash": "073721b7114a17608a464fb8"
+     },
+     {
+      "anzahl": 12,
+      "hash": "954432ec3b928523d2f75966"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 18,
+      "hash": "6a754ed0c82cb6b2d7c1fe20"
+     },
+     {
+      "anzahl": 17,
+      "hash": "d88b4cc3c4647263b12b444d"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "53b3602683754f6a3458bbde"
+     },
+     {
+      "anzahl": 1,
+      "hash": "cbf478c935472f379d773745"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 20,
+      "hash": "a3386bff1fde23062bf2de2c"
+     },
+     {
+      "anzahl": 21,
+      "hash": "6ba1d8ae9d15c4298c7dddff"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "f0a35788d8ccbd59f6159125"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f1bbc43da9c0c7b8964acfdb"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "fa954a902d3f9e70d3fb2d7f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f4ed413b971f0b3858d5e6de"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "baf195660cafee10c9602861"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0e8b289785c9e5f6b64d6a1b"
+     }
+    ],
+    "zahlendiktat": [
+     {
+      "anzahl": 10,
+      "hash": "6f2507c851f7a5ac251cdf4c"
+     },
+     {
+      "anzahl": 10,
+      "hash": "7f59d7b700d87efbb7cc494c"
+     }
+    ],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "f4ad42bfb108f771f77b6af0"
+     },
+     {
+      "anzahl": 8,
+      "hash": "661720c49fda9debe5810a0b"
+     }
+    ],
+    "langersatz": [
+     {
+      "anzahl": 12,
+      "hash": "01b19654dd5edf8bc0f82776"
+     },
+     {
+      "anzahl": 12,
+      "hash": "c02b5bf970ac06519bf7364c"
+     }
+    ],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "8df57d9bf3c6335da66a62bb"
+     },
+     {
+      "anzahl": 8,
+      "hash": "b7fb397a29136a29687a35ff"
+     }
+    ]
+   },
+   "voll:teens": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "3ffd51df998eb231d5b75e15"
+     },
+     {
+      "anzahl": 12,
+      "hash": "6d137b2e7ca6216bc5a66d11"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "04ef221b91028665b3a0a411"
+     },
+     {
+      "anzahl": 14,
+      "hash": "2531f77182e1a68239a09584"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 13,
+      "hash": "073721b7114a17608a464fb8"
+     },
+     {
+      "anzahl": 12,
+      "hash": "954432ec3b928523d2f75966"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 18,
+      "hash": "6a754ed0c82cb6b2d7c1fe20"
+     },
+     {
+      "anzahl": 17,
+      "hash": "d88b4cc3c4647263b12b444d"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "68707856ab42648e844f448f"
+     },
+     {
+      "anzahl": 1,
+      "hash": "99bd87425b0adc55a2d17c27"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 18,
+      "hash": "1784f6fd99b0a15e20f36721"
+     },
+     {
+      "anzahl": 18,
+      "hash": "f51d1fdc73e60edf1ec92ace"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "f0a35788d8ccbd59f6159125"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f1bbc43da9c0c7b8964acfdb"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "fa954a902d3f9e70d3fb2d7f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f4ed413b971f0b3858d5e6de"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "baf195660cafee10c9602861"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0e8b289785c9e5f6b64d6a1b"
+     }
+    ],
+    "zahlendiktat": [
+     {
+      "anzahl": 10,
+      "hash": "6f2507c851f7a5ac251cdf4c"
+     },
+     {
+      "anzahl": 10,
+      "hash": "7f59d7b700d87efbb7cc494c"
+     }
+    ],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "b153d17a6234f2546ba77c7e"
+     },
+     {
+      "anzahl": 8,
+      "hash": "3cd7be4905b0b44afa48f917"
+     }
+    ],
+    "langersatz": [
+     {
+      "anzahl": 12,
+      "hash": "71f67f3cc28518f6398d1835"
+     },
+     {
+      "anzahl": 13,
+      "hash": "daf6c796b736d50fc3ba2253"
+     }
+    ],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "8df57d9bf3c6335da66a62bb"
+     },
+     {
+      "anzahl": 8,
+      "hash": "b7fb397a29136a29687a35ff"
+     }
+    ]
+   },
+   "voll:erwachsen": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "3ffd51df998eb231d5b75e15"
+     },
+     {
+      "anzahl": 12,
+      "hash": "6d137b2e7ca6216bc5a66d11"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "3b71210609a305d85b3b1f54"
+     },
+     {
+      "anzahl": 14,
+      "hash": "f763c49ceaec91481d293835"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 13,
+      "hash": "073721b7114a17608a464fb8"
+     },
+     {
+      "anzahl": 12,
+      "hash": "954432ec3b928523d2f75966"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 18,
+      "hash": "6a754ed0c82cb6b2d7c1fe20"
+     },
+     {
+      "anzahl": 17,
+      "hash": "d88b4cc3c4647263b12b444d"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "68707856ab42648e844f448f"
+     },
+     {
+      "anzahl": 1,
+      "hash": "99bd87425b0adc55a2d17c27"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 18,
+      "hash": "1784f6fd99b0a15e20f36721"
+     },
+     {
+      "anzahl": 18,
+      "hash": "f51d1fdc73e60edf1ec92ace"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "f0a35788d8ccbd59f6159125"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f1bbc43da9c0c7b8964acfdb"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "fa954a902d3f9e70d3fb2d7f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "f4ed413b971f0b3858d5e6de"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "baf195660cafee10c9602861"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0e8b289785c9e5f6b64d6a1b"
+     }
+    ],
+    "zahlendiktat": [
+     {
+      "anzahl": 10,
+      "hash": "6f2507c851f7a5ac251cdf4c"
+     },
+     {
+      "anzahl": 10,
+      "hash": "7f59d7b700d87efbb7cc494c"
+     }
+    ],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "beb8b7f1d125dfdb3bd576aa"
+     },
+     {
+      "anzahl": 8,
+      "hash": "30545d4150e1fb1364b06c09"
+     }
+    ],
+    "langersatz": [
+     {
+      "anzahl": 13,
+      "hash": "9fde0bd0b8ad86be23a2b7ed"
+     },
+     {
+      "anzahl": 13,
+      "hash": "6c94a7ecc487ba4d6e679622"
+     }
+    ],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "8df57d9bf3c6335da66a62bb"
+     },
+     {
+      "anzahl": 8,
+      "hash": "b7fb397a29136a29687a35ff"
+     }
+    ]
+   }
+  }
+ },
+ "sprachpaket": {
+  "korpus": [
+   2505,
+   "1m4icq1"
+  ],
+  "korpusQuelle": "1m4icq1",
+  "serien": [
+   60,
+   "1gudhn",
+   "47y3h7"
+  ],
+  "lexikon": [
+   24463,
+   "k73ato"
+  ],
+  "lexikonGroesse": 24463
+ },
+ "serienBaseline": {
+  "eintraege": {
+   "kids": {
+    "tr-kids-1-sapkadaki-kagit": {
+     "anzahl": 30,
+     "hash": "b59f5ea38c6b34f00adec438",
+     "titel": "Şapkadaki kâğıt"
+    },
+    "tr-kids-1-karagozun-golgesi": {
+     "anzahl": 30,
+     "hash": "b191c60d30e8804cdfc2c88b",
+     "titel": "Karagöz'ün gölgesi"
+    },
+    "tr-kids-1-ruzgarin-adlari": {
+     "anzahl": 30,
+     "hash": "4b3b1072a16023f414334888",
+     "titel": "Rüzgârın adları"
+    },
+    "tr-kids-1-asansorun-merdivenleri": {
+     "anzahl": 30,
+     "hash": "1d9f11d8b61fbf769ab8b4fb",
+     "titel": "Asansör mü, merdiven mi?"
+    },
+    "tr-kids-1-kumdaki-yuva": {
+     "anzahl": 30,
+     "hash": "0f6f2545d55cc146fc2f8be8",
+     "titel": "Kumdaki yuva"
+    },
+    "tr-kids-1-beyaz-basamaklar": {
+     "anzahl": 30,
+     "hash": "44a100405bf84062524892ff",
+     "titel": "Beyaz basamaklar"
+    },
+    "tr-kids-1-gul-sabahi": {
+     "anzahl": 30,
+     "hash": "bde229cee8365882600bb7db",
+     "titel": "Gül sabahı"
+    },
+    "tr-kids-1-uzayan-dondurma": {
+     "anzahl": 30,
+     "hash": "8da59cc803f95143952e129c",
+     "titel": "Uzayan dondurma"
+    },
+    "tr-kids-1-kunefe-yarismasi": {
+     "anzahl": 30,
+     "hash": "419216d032b43f9bc937edc0",
+     "titel": "Künefe yarışması"
+    },
+    "tr-kids-1-balonlar-uyaninca": {
+     "anzahl": 30,
+     "hash": "b844774c93a6e1f68526b022",
+     "titel": "Balonlar uyanınca"
+    },
+    "tr-kids-1-beyaz-tasin-sirri": {
+     "anzahl": 30,
+     "hash": "9ff06366166bb81151f81e4f",
+     "titel": "Beyaz taşın sırrı"
+    },
+    "tr-kids-1-kasiga-kirk-manti": {
+     "anzahl": 30,
+     "hash": "0365e9c666c913342d31e89c",
+     "titel": "Kaşığa kırk mantı"
+    },
+    "tr-kids-1-yaylaya-goc": {
+     "anzahl": 30,
+     "hash": "fcda8a0f65cfcc99cabd979a",
+     "titel": "Yaylaya göç"
+    },
+    "tr-kids-1-sisin-icinde": {
+     "anzahl": 30,
+     "hash": "a511c41ba25d32945fe1afec",
+     "titel": "Sisin içinde"
+    },
+    "tr-kids-1-en-kuzeydeki-fener": {
+     "anzahl": 30,
+     "hash": "404b0ea181bea7a13eb1b4da",
+     "titel": "En kuzeydeki fener"
+    },
+    "tr-kids-1-bir-mavi-bir-sari": {
+     "anzahl": 30,
+     "hash": "a6145ff4c3e61eebfa87fb0e",
+     "titel": "Bir mavi, bir sarı göz"
+    },
+    "tr-kids-1-buzun-ustunde-kizak": {
+     "anzahl": 46,
+     "hash": "5eb125d739832667dd86da4e",
+     "titel": "Buzun üstünde kızak"
+    },
+    "tr-kids-1-gumus-teller": {
+     "anzahl": 30,
+     "hash": "0df86c91a709b37ad17c8ecc",
+     "titel": "Gümüş teller"
+    },
+    "tr-kids-1-on-gozlu-kopru": {
+     "anzahl": 30,
+     "hash": "17dc3e1fd47f6e56e2f7a1e8",
+     "titel": "On gözlü köprü"
+    },
+    "tr-kids-1-nineme-mektup": {
+     "anzahl": 30,
+     "hash": "ceb799fb22c52b9e04caf553",
+     "titel": "Nineme mektup"
+    }
+   },
+   "teens": {
+    "tr-teens-1-robot-takimi": {
+     "anzahl": 30,
+     "hash": "5e6a7320804f4661b36520ec",
+     "titel": "Robot takımı"
+    },
+    "tr-teens-1-iki-kita-arasinda": {
+     "anzahl": 30,
+     "hash": "1d9e001d51ead97eec3c9cba",
+     "titel": "İki kıta arasında"
+    },
+    "tr-teens-1-uludagda-ilk-kar": {
+     "anzahl": 29,
+     "hash": "4fb3fb851b1491efbe4786d6",
+     "titel": "Uludağ'da ilk kar"
+    },
+    "tr-teens-1-korfezin-sesi": {
+     "anzahl": 29,
+     "hash": "ac2fc7f1d6c4d47ffc35839a",
+     "titel": "Körfezin sesi"
+    },
+    "tr-teens-1-alacatida-ruzgar": {
+     "anzahl": 30,
+     "hash": "a81dd965e54d5afe45c00163",
+     "titel": "Alaçatı'da rüzgâr"
+    },
+    "tr-teens-1-mavi-cini": {
+     "anzahl": 30,
+     "hash": "44fecb314c5df5b704d67fed",
+     "titel": "Telefon kılıfında çini"
+    },
+    "tr-teens-1-kasta-dalis": {
+     "anzahl": 30,
+     "hash": "f4df711a2be0f3d64be6fab4",
+     "titel": "Kaş'ta ilk dalış"
+    },
+    "tr-teens-1-tantuni-kanali": {
+     "anzahl": 30,
+     "hash": "6531dcb7d3a93555cf9ec3ef",
+     "titel": "Tantuni kanalı"
+    },
+    "tr-teens-1-salda-golu": {
+     "anzahl": 30,
+     "hash": "1b865b038e900dd41a479e41",
+     "titel": "Salda'nın beyaz kumu"
+    },
+    "tr-teens-1-satranc-turnuvasi": {
+     "anzahl": 45,
+     "hash": "7fd129e770569c47b00a2a14",
+     "titel": "Parmak uçlarında satranç"
+    },
+    "tr-teens-1-pedal-atolyesi": {
+     "anzahl": 30,
+     "hash": "6af9c051b5ce47f810596303",
+     "titel": "Pedal atölyesi"
+    },
+    "tr-teens-1-baglamanin-teli": {
+     "anzahl": 30,
+     "hash": "46a9bf209d8e76b93c4b30c9",
+     "titel": "Bağlamanın teli"
+    },
+    "tr-teens-1-kemence-ve-rap": {
+     "anzahl": 30,
+     "hash": "e95992fe33e043fef9aba7f4",
+     "titel": "Kemençe ve rap"
+    },
+    "tr-teens-1-sahadaki-kizlar": {
+     "anzahl": 30,
+     "hash": "913fd933410a678a37106bda",
+     "titel": "Sahadaki kızlar"
+    },
+    "tr-teens-1-yedigollerde-sonbahar": {
+     "anzahl": 30,
+     "hash": "b3b27962ae2d31cc264f70e9",
+     "titel": "Yedigöller'de sonbahar"
+    },
+    "tr-teens-1-kayisi-sepeti": {
+     "anzahl": 30,
+     "hash": "aae7f94c90ae126c3ac6fd0f",
+     "titel": "Kayısı sepeti"
+    },
+    "tr-teens-1-inci-kefalinin-yolu": {
+     "anzahl": 30,
+     "hash": "788dc51b121805e8b5062cb6",
+     "titel": "İnci kefalinin yolu"
+    },
+    "tr-teens-1-bakirin-ritmi": {
+     "anzahl": 30,
+     "hash": "a07639d0122dc4ee679119f6",
+     "titel": "Bakırın ritmi"
+    },
+    "tr-teens-1-dikili-taslar": {
+     "anzahl": 30,
+     "hash": "47cf0bffa8c37889cd16d8fd",
+     "titel": "Dikili taşların sırrı"
+    },
+    "tr-teens-1-iki-dilde-siir": {
+     "anzahl": 30,
+     "hash": "8c1e87a4bbf92dd8cf67aa97",
+     "titel": "İki dilde şiir"
+    }
+   },
+   "erwachsen": {
+    "tr-erwachsen-1-hattin-ucundaki-ses": {
+     "anzahl": 30,
+     "hash": "873a4be190c4e4bfe9e50223",
+     "titel": "Hattın ucundaki ses"
+    },
+    "tr-erwachsen-1-altmis-ucunde-on-parmak": {
+     "anzahl": 45,
+     "hash": "a51b08433f4f6b73e5e53a0d",
+     "titel": "Altmış üçünde on parmak"
+    },
+    "tr-erwachsen-1-aycicegi-tarlasi": {
+     "anzahl": 30,
+     "hash": "55c85a5b5ec4a91fc13e1bd9",
+     "titel": "Ayçiçeği tarlası"
+    },
+    "tr-erwachsen-1-kavrulmus-cekirdek": {
+     "anzahl": 30,
+     "hash": "a6869272e8a8e115b84b0049",
+     "titel": "Kavrulmuş çekirdek"
+    },
+    "tr-erwachsen-1-zeytin-hasadi": {
+     "anzahl": 30,
+     "hash": "801b0a78f82b76c5316b3980",
+     "titel": "Kadınların zeytinyağı"
+    },
+    "tr-erwachsen-1-buldan-tezgahi": {
+     "anzahl": 30,
+     "hash": "33f8320b17fcc3bee9d393c0",
+     "titel": "Buldan'da tezgâh sesi"
+    },
+    "tr-erwachsen-1-sezon-bitince": {
+     "anzahl": 30,
+     "hash": "4bc51db2d6e4292137680753",
+     "titel": "Sezon bitince"
+    },
+    "tr-erwachsen-1-don-gecesi": {
+     "anzahl": 30,
+     "hash": "46b9353ca3f0af7f742ced84",
+     "titel": "Don gecesi"
+    },
+    "tr-erwachsen-1-firin-yeniden": {
+     "anzahl": 30,
+     "hash": "b7b3b083db5e18c6557b7ed0",
+     "titel": "Fırın yeniden açılıyor"
+    },
+    "tr-erwachsen-1-bir-randevu": {
+     "anzahl": 30,
+     "hash": "133bcc6e2aa48c0cf6bed3e2",
+     "titel": "Bir randevu peşinde"
+    },
+    "tr-erwachsen-1-ovadaki-cukur": {
+     "anzahl": 30,
+     "hash": "5ba2984a2e54e3ed50f2b562",
+     "titel": "Ovadaki çukur"
+    },
+    "tr-erwachsen-1-pastirma-dukkani": {
+     "anzahl": 30,
+     "hash": "80d0c2c842464ba9448c1448",
+     "titel": "Pastırma dükkânının varisi"
+    },
+    "tr-erwachsen-1-cay-kooperatifi": {
+     "anzahl": 30,
+     "hash": "0d8ffc7b5d6c5c7c9a88692e",
+     "titel": "Çay kooperatifi"
+    },
+    "tr-erwachsen-1-amasra-limani": {
+     "anzahl": 30,
+     "hash": "c5f9012d1f641db861a1febd",
+     "titel": "Amasra limanında fırtına"
+    },
+    "tr-erwachsen-1-kafkas-arilari": {
+     "anzahl": 30,
+     "hash": "75f31c9b5d588b0c2740a29d",
+     "titel": "Kafkas arıları"
+    },
+    "tr-erwachsen-1-koy-okulunda-kis": {
+     "anzahl": 30,
+     "hash": "111ada1ddd6e55b2b95d4e70",
+     "titel": "Köy okulunda kış"
+    },
+    "tr-erwachsen-1-dag-rehberi": {
+     "anzahl": 30,
+     "hash": "b69e07ecc90e0568417aa6f1",
+     "titel": "Dağın rehberi"
+    },
+    "tr-erwachsen-1-antep-mutfagi": {
+     "anzahl": 30,
+     "hash": "76819efd4f32df8ec1111302",
+     "titel": "Antep mutfağından siparişler"
+    },
+    "tr-erwachsen-1-tas-evde-ofis": {
+     "anzahl": 30,
+     "hash": "e8dc6fa39d2521bb501d0454",
+     "titel": "Taş evde ofis"
+    },
+    "tr-erwachsen-1-donmek-mi-kalmak-mi": {
+     "anzahl": 30,
+     "hash": "a1a789544d4e19fa01418776",
+     "titel": "Dönmek mi, kalmak mı?"
+    }
+   }
+  },
+  "unlocked": {
+   "kids": {
+    "buchstaben": [
+     "tr-kids-1-asansorun-merdivenleri",
+     "tr-kids-1-balonlar-uyaninca",
+     "tr-kids-1-beyaz-basamaklar",
+     "tr-kids-1-beyaz-tasin-sirri",
+     "tr-kids-1-bir-mavi-bir-sari",
+     "tr-kids-1-buzun-ustunde-kizak",
+     "tr-kids-1-en-kuzeydeki-fener",
+     "tr-kids-1-gul-sabahi",
+     "tr-kids-1-gumus-teller",
+     "tr-kids-1-karagozun-golgesi",
+     "tr-kids-1-kasiga-kirk-manti",
+     "tr-kids-1-kumdaki-yuva",
+     "tr-kids-1-kunefe-yarismasi",
+     "tr-kids-1-nineme-mektup",
+     "tr-kids-1-on-gozlu-kopru",
+     "tr-kids-1-ruzgarin-adlari",
+     "tr-kids-1-sapkadaki-kagit",
+     "tr-kids-1-sisin-icinde",
+     "tr-kids-1-uzayan-dondurma",
+     "tr-kids-1-yaylaya-goc"
+    ],
+    "satzzeichen": [
+     "tr-kids-1-asansorun-merdivenleri",
+     "tr-kids-1-balonlar-uyaninca",
+     "tr-kids-1-beyaz-basamaklar",
+     "tr-kids-1-beyaz-tasin-sirri",
+     "tr-kids-1-bir-mavi-bir-sari",
+     "tr-kids-1-buzun-ustunde-kizak",
+     "tr-kids-1-en-kuzeydeki-fener",
+     "tr-kids-1-gul-sabahi",
+     "tr-kids-1-gumus-teller",
+     "tr-kids-1-karagozun-golgesi",
+     "tr-kids-1-kasiga-kirk-manti",
+     "tr-kids-1-kumdaki-yuva",
+     "tr-kids-1-kunefe-yarismasi",
+     "tr-kids-1-nineme-mektup",
+     "tr-kids-1-on-gozlu-kopru",
+     "tr-kids-1-ruzgarin-adlari",
+     "tr-kids-1-sapkadaki-kagit",
+     "tr-kids-1-sisin-icinde",
+     "tr-kids-1-uzayan-dondurma",
+     "tr-kids-1-yaylaya-goc"
+    ],
+    "ziffern": [
+     "tr-kids-1-asansorun-merdivenleri",
+     "tr-kids-1-balonlar-uyaninca",
+     "tr-kids-1-beyaz-basamaklar",
+     "tr-kids-1-beyaz-tasin-sirri",
+     "tr-kids-1-bir-mavi-bir-sari",
+     "tr-kids-1-buzun-ustunde-kizak",
+     "tr-kids-1-en-kuzeydeki-fener",
+     "tr-kids-1-gul-sabahi",
+     "tr-kids-1-gumus-teller",
+     "tr-kids-1-karagozun-golgesi",
+     "tr-kids-1-kasiga-kirk-manti",
+     "tr-kids-1-kumdaki-yuva",
+     "tr-kids-1-kunefe-yarismasi",
+     "tr-kids-1-nineme-mektup",
+     "tr-kids-1-on-gozlu-kopru",
+     "tr-kids-1-ruzgarin-adlari",
+     "tr-kids-1-sapkadaki-kagit",
+     "tr-kids-1-sisin-icinde",
+     "tr-kids-1-uzayan-dondurma",
+     "tr-kids-1-yaylaya-goc"
+    ],
+    "voll": [
+     "tr-kids-1-asansorun-merdivenleri",
+     "tr-kids-1-balonlar-uyaninca",
+     "tr-kids-1-beyaz-basamaklar",
+     "tr-kids-1-beyaz-tasin-sirri",
+     "tr-kids-1-bir-mavi-bir-sari",
+     "tr-kids-1-buzun-ustunde-kizak",
+     "tr-kids-1-en-kuzeydeki-fener",
+     "tr-kids-1-gul-sabahi",
+     "tr-kids-1-gumus-teller",
+     "tr-kids-1-karagozun-golgesi",
+     "tr-kids-1-kasiga-kirk-manti",
+     "tr-kids-1-kumdaki-yuva",
+     "tr-kids-1-kunefe-yarismasi",
+     "tr-kids-1-nineme-mektup",
+     "tr-kids-1-on-gozlu-kopru",
+     "tr-kids-1-ruzgarin-adlari",
+     "tr-kids-1-sapkadaki-kagit",
+     "tr-kids-1-sisin-icinde",
+     "tr-kids-1-uzayan-dondurma",
+     "tr-kids-1-yaylaya-goc"
+    ]
+   },
+   "teens": {
+    "buchstaben": [
+     "tr-teens-1-alacatida-ruzgar",
+     "tr-teens-1-baglamanin-teli",
+     "tr-teens-1-bakirin-ritmi",
+     "tr-teens-1-dikili-taslar",
+     "tr-teens-1-iki-dilde-siir",
+     "tr-teens-1-iki-kita-arasinda",
+     "tr-teens-1-inci-kefalinin-yolu",
+     "tr-teens-1-kasta-dalis",
+     "tr-teens-1-kayisi-sepeti",
+     "tr-teens-1-kemence-ve-rap",
+     "tr-teens-1-korfezin-sesi",
+     "tr-teens-1-mavi-cini",
+     "tr-teens-1-pedal-atolyesi",
+     "tr-teens-1-robot-takimi",
+     "tr-teens-1-sahadaki-kizlar",
+     "tr-teens-1-salda-golu",
+     "tr-teens-1-satranc-turnuvasi",
+     "tr-teens-1-tantuni-kanali",
+     "tr-teens-1-uludagda-ilk-kar",
+     "tr-teens-1-yedigollerde-sonbahar"
+    ],
+    "satzzeichen": [
+     "tr-teens-1-alacatida-ruzgar",
+     "tr-teens-1-baglamanin-teli",
+     "tr-teens-1-bakirin-ritmi",
+     "tr-teens-1-dikili-taslar",
+     "tr-teens-1-iki-dilde-siir",
+     "tr-teens-1-iki-kita-arasinda",
+     "tr-teens-1-inci-kefalinin-yolu",
+     "tr-teens-1-kasta-dalis",
+     "tr-teens-1-kayisi-sepeti",
+     "tr-teens-1-kemence-ve-rap",
+     "tr-teens-1-korfezin-sesi",
+     "tr-teens-1-mavi-cini",
+     "tr-teens-1-pedal-atolyesi",
+     "tr-teens-1-robot-takimi",
+     "tr-teens-1-sahadaki-kizlar",
+     "tr-teens-1-salda-golu",
+     "tr-teens-1-satranc-turnuvasi",
+     "tr-teens-1-tantuni-kanali",
+     "tr-teens-1-uludagda-ilk-kar",
+     "tr-teens-1-yedigollerde-sonbahar"
+    ],
+    "ziffern": [
+     "tr-teens-1-alacatida-ruzgar",
+     "tr-teens-1-baglamanin-teli",
+     "tr-teens-1-bakirin-ritmi",
+     "tr-teens-1-dikili-taslar",
+     "tr-teens-1-iki-dilde-siir",
+     "tr-teens-1-iki-kita-arasinda",
+     "tr-teens-1-inci-kefalinin-yolu",
+     "tr-teens-1-kasta-dalis",
+     "tr-teens-1-kayisi-sepeti",
+     "tr-teens-1-kemence-ve-rap",
+     "tr-teens-1-korfezin-sesi",
+     "tr-teens-1-mavi-cini",
+     "tr-teens-1-pedal-atolyesi",
+     "tr-teens-1-robot-takimi",
+     "tr-teens-1-sahadaki-kizlar",
+     "tr-teens-1-salda-golu",
+     "tr-teens-1-satranc-turnuvasi",
+     "tr-teens-1-tantuni-kanali",
+     "tr-teens-1-uludagda-ilk-kar",
+     "tr-teens-1-yedigollerde-sonbahar"
+    ],
+    "voll": [
+     "tr-teens-1-alacatida-ruzgar",
+     "tr-teens-1-baglamanin-teli",
+     "tr-teens-1-bakirin-ritmi",
+     "tr-teens-1-dikili-taslar",
+     "tr-teens-1-iki-dilde-siir",
+     "tr-teens-1-iki-kita-arasinda",
+     "tr-teens-1-inci-kefalinin-yolu",
+     "tr-teens-1-kasta-dalis",
+     "tr-teens-1-kayisi-sepeti",
+     "tr-teens-1-kemence-ve-rap",
+     "tr-teens-1-korfezin-sesi",
+     "tr-teens-1-mavi-cini",
+     "tr-teens-1-pedal-atolyesi",
+     "tr-teens-1-robot-takimi",
+     "tr-teens-1-sahadaki-kizlar",
+     "tr-teens-1-salda-golu",
+     "tr-teens-1-satranc-turnuvasi",
+     "tr-teens-1-tantuni-kanali",
+     "tr-teens-1-uludagda-ilk-kar",
+     "tr-teens-1-yedigollerde-sonbahar"
+    ]
+   },
+   "erwachsen": {
+    "buchstaben": [
+     "tr-erwachsen-1-altmis-ucunde-on-parmak",
+     "tr-erwachsen-1-amasra-limani",
+     "tr-erwachsen-1-antep-mutfagi",
+     "tr-erwachsen-1-aycicegi-tarlasi",
+     "tr-erwachsen-1-bir-randevu",
+     "tr-erwachsen-1-buldan-tezgahi",
+     "tr-erwachsen-1-cay-kooperatifi",
+     "tr-erwachsen-1-dag-rehberi",
+     "tr-erwachsen-1-don-gecesi",
+     "tr-erwachsen-1-donmek-mi-kalmak-mi",
+     "tr-erwachsen-1-firin-yeniden",
+     "tr-erwachsen-1-hattin-ucundaki-ses",
+     "tr-erwachsen-1-kafkas-arilari",
+     "tr-erwachsen-1-kavrulmus-cekirdek",
+     "tr-erwachsen-1-koy-okulunda-kis",
+     "tr-erwachsen-1-ovadaki-cukur",
+     "tr-erwachsen-1-pastirma-dukkani",
+     "tr-erwachsen-1-sezon-bitince",
+     "tr-erwachsen-1-tas-evde-ofis",
+     "tr-erwachsen-1-zeytin-hasadi"
+    ],
+    "satzzeichen": [
+     "tr-erwachsen-1-altmis-ucunde-on-parmak",
+     "tr-erwachsen-1-amasra-limani",
+     "tr-erwachsen-1-antep-mutfagi",
+     "tr-erwachsen-1-aycicegi-tarlasi",
+     "tr-erwachsen-1-bir-randevu",
+     "tr-erwachsen-1-buldan-tezgahi",
+     "tr-erwachsen-1-cay-kooperatifi",
+     "tr-erwachsen-1-dag-rehberi",
+     "tr-erwachsen-1-don-gecesi",
+     "tr-erwachsen-1-donmek-mi-kalmak-mi",
+     "tr-erwachsen-1-firin-yeniden",
+     "tr-erwachsen-1-hattin-ucundaki-ses",
+     "tr-erwachsen-1-kafkas-arilari",
+     "tr-erwachsen-1-kavrulmus-cekirdek",
+     "tr-erwachsen-1-koy-okulunda-kis",
+     "tr-erwachsen-1-ovadaki-cukur",
+     "tr-erwachsen-1-pastirma-dukkani",
+     "tr-erwachsen-1-sezon-bitince",
+     "tr-erwachsen-1-tas-evde-ofis",
+     "tr-erwachsen-1-zeytin-hasadi"
+    ],
+    "ziffern": [
+     "tr-erwachsen-1-altmis-ucunde-on-parmak",
+     "tr-erwachsen-1-amasra-limani",
+     "tr-erwachsen-1-antep-mutfagi",
+     "tr-erwachsen-1-aycicegi-tarlasi",
+     "tr-erwachsen-1-bir-randevu",
+     "tr-erwachsen-1-buldan-tezgahi",
+     "tr-erwachsen-1-cay-kooperatifi",
+     "tr-erwachsen-1-dag-rehberi",
+     "tr-erwachsen-1-don-gecesi",
+     "tr-erwachsen-1-donmek-mi-kalmak-mi",
+     "tr-erwachsen-1-firin-yeniden",
+     "tr-erwachsen-1-hattin-ucundaki-ses",
+     "tr-erwachsen-1-kafkas-arilari",
+     "tr-erwachsen-1-kavrulmus-cekirdek",
+     "tr-erwachsen-1-koy-okulunda-kis",
+     "tr-erwachsen-1-ovadaki-cukur",
+     "tr-erwachsen-1-pastirma-dukkani",
+     "tr-erwachsen-1-sezon-bitince",
+     "tr-erwachsen-1-tas-evde-ofis",
+     "tr-erwachsen-1-zeytin-hasadi"
+    ],
+    "voll": [
+     "tr-erwachsen-1-altmis-ucunde-on-parmak",
+     "tr-erwachsen-1-amasra-limani",
+     "tr-erwachsen-1-antep-mutfagi",
+     "tr-erwachsen-1-aycicegi-tarlasi",
+     "tr-erwachsen-1-bir-randevu",
+     "tr-erwachsen-1-buldan-tezgahi",
+     "tr-erwachsen-1-cay-kooperatifi",
+     "tr-erwachsen-1-dag-rehberi",
+     "tr-erwachsen-1-don-gecesi",
+     "tr-erwachsen-1-donmek-mi-kalmak-mi",
+     "tr-erwachsen-1-firin-yeniden",
+     "tr-erwachsen-1-hattin-ucundaki-ses",
+     "tr-erwachsen-1-kafkas-arilari",
+     "tr-erwachsen-1-kavrulmus-cekirdek",
+     "tr-erwachsen-1-koy-okulunda-kis",
+     "tr-erwachsen-1-ovadaki-cukur",
+     "tr-erwachsen-1-pastirma-dukkani",
+     "tr-erwachsen-1-sezon-bitince",
+     "tr-erwachsen-1-tas-evde-ofis",
+     "tr-erwachsen-1-zeytin-hasadi"
+    ]
+   }
+  }
+ }
+}

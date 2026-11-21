@@ -1,0 +1,381 @@
+/**
+ * Korpus nur für Lernweg "fr", frühe Sprossen 9-24 - Altersstufe Erwachsene
+ * (15+, `erwachsen`) - E8c, 26.09.2026 (Bauplan
+ * `BAUPLAN-2026-09-25-FRANZÖSISCHER-LEHRGANG.md` §6, Befund
+ * `BEFUND-2026-09-26-E8C-TEXTE-ERWACHSENE.md`).
+ *
+ * Neu verfasst auf Französisch, nichts aus den deutschen oder englischen
+ * Dateien übernommen oder übertragen (Bauplan §6.2, D2), keine Zeile aus der
+ * Kinder- oder der Jugend-Datei (auch nicht fast gleich), keine alten
+ * Klassiker (D8). Ton: Berufsschule, Lehrkräfte, Eltern, Menschen in
+ * Umschulung - Arbeit, Wohnen, Verkehr, Gesundheit, Geld und Alltag,
+ * Nachbarschaft, Gesellschaft (sachlich, im Stil von „INSEE Première", ohne
+ * Wertung), Sprache (québécismes, belgicismes, helvétismes, africanismes -
+ * gleichwertiges Französisch, nie „falsch"), Kultur und kurze trockene
+ * Glossen. Keine Parteipolitik, keine Religion als Einzelthema, kein Alkohol.
+ * Zahlen nur als Wort und nur einteilige Zahlwörter (trois, cinq, vingt,
+ * trente) - zusammengesetzte schreibt die neue Rechtschreibung mit
+ * Bindestrich, und der ist im Weg „fr" vor seiner Sprosse hart. „septante"
+ * steht nirgends (Bauplan §6.5 Regel 4; bis 26.09.2026 stand es in der
+ * belgischen Serie, Prüfbericht M3).
+ * Nur neue Rechtschreibung (F4: „parait", „diner", „ile", „aout",
+ * „enchaine", „s'entrainer", „boite", „plait").
+ *
+ * ZEICHENSATZ (Fassung A2, `lernweg.ts`; Sprosse n = FR_LETTER_ORDER.slice(0, n),
+ * die Umschalt-Einheit zählt nicht mit):
+ *   9 +e · 10 +t · 11 +n · 12 +u · 13 +i · 14 +a · 15 +o · 16 +r (T1)
+ *   17 +p · 18 +c · 19 +v · 20 +' · 21 +é · 22 +b · 23 +g · 24 +h (T2)
+ * Nicht vor Sprosse 25: à è ê ç x y z w - also kein „à", kein „très", kein
+ * „être", kein „ça", kein „aux", kein „y", kein „français", kein „pays".
+ * Der Bindestrich ist im Weg „fr" hart - keine Zeile hat einen. Satzzeichen
+ * kommen erst ab Sprosse 34 - darum trägt KEINE Zeile ein Satzzeichen; zwei
+ * Hauptsätze stehen nie ohne Bindewort in einer Zeile.
+ *
+ * ZEILEN-REGEL (wie E8b-2): eine Zeile ist ENTWEDER eine klein geschriebene
+ * Wortreihe (nur Sprosse 9-13, ohne Namen) ODER ein grammatisch
+ * vollständiger Satz mit Grossbuchstaben am Anfang und bei Namen. Sprosse
+ * 9-13 sind bewusst kurz (lieber wenige saubere Zeilen als Füllsätze).
+ *
+ * TATOEBA: Zeilen mit `herkunft` sind unveränderte Originalsätze von Tatoeba
+ * (`fra_sentences_base`, Spalte 2 = 0, also keine Übersetzung), jeder
+ * einzeln gelesen. Einzige Änderung: das Schlusszeichen (. ? !) ist
+ * weggelassen, weil vor Sprosse 34 keine Zeile ein Satzzeichen trägt - das
+ * Original steht in `fundstelle`. Lizenz CC BY 2.0 FR, Namensnennung über den
+ * Benutzernamen (`autor`). Höchstens ein Viertel der Zeilen. Sätze aus
+ * Wikipédia oder INSEE sind keine darunter: gemessen trägt dort praktisch
+ * jeder Satz Ziffern, Kommas oder ein „à" - die Sachzeilen hier sind eigenes
+ * Werk im INSEE-Stil, mit allgemein belegten Grössen.
+ *
+ * Wächter: `tests/tastenflow-texte-fr-erwachsene.test.ts`. Nur anhängen - der
+ * Korpus-Anker kommt in denselben Commit (`npx tsx scripts/erzeuge-korpus-anker.mts`).
+ *
+ * ERZEUGT aus einer Entwurfsliste (Scratchpad der Sitzung E8c) - Änderungen
+ * von Hand sind erlaubt, die Datei ist die Quelle.
+ */
+import type { CorpusItem, Herkunft } from "./corpus";
+
+/** Namensnennung eines unveränderten Tatoeba-Originalsatzes (CC BY 2.0 FR). */
+function tatoeba(nr: string, benutzer: string, original: string): Herkunft {
+  return {
+    quelle: "Tatoeba",
+    lizenz: "CC BY 2.0 FR",
+    autor: benutzer,
+    fundstelle: `https://tatoeba.org/fr/sentences/show/${nr} (Original: ${original})`,
+  };
+}
+
+export const CORPUS_FR_WEG_FRUEH_ERWACHSEN: CorpusItem[] = [
+  // ── Sprosse 10 ──
+  { text: "mes effets", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  // ── Sprosse 11 ──
+  { text: "Je les entends", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("6000348", "PERCE_NEIGE", "Je les entends.") },
+  // ── Sprosse 12 ──
+  { text: "Tu me tends le sel", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  // ── Sprosse 13 ──
+  { text: "Je suis inquiet", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Je suis de nuit le jeudi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Elle tisse du lin", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Je suis du Midi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il lit le menu", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  // ── Sprosse 14 ──
+  { text: "Ma fille dessine des mandalas", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Elle a un fils et une fille", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Ma famille est au Mali", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "La dette est immense", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Salif a eu une amende", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tu as un instant", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "La date limite est lundi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Leila est matinale", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tu as une mutuelle", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il manque du lait", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Lamine a eu un malaise", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il assume sa faute", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il a sa fille le samedi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "La queue est immense", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il est sain et sauf", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("10467666", "Julien_PDC", "Il est sain et sauf.") },
+  { text: "Ma femme attend un enfant", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("9506354", "Julien_PDC", "Ma femme attend un enfant.") },
+  { text: "Je te fais la liste", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("11746043", "sacredceltic", "Je te fais la liste.") },
+  { text: "Je suis nase", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("1369161", "sacredceltic", "Je suis nase.") },
+  { text: "Il a eu une attaque", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("13544629", "sacredceltic", "Il a eu une attaque.") },
+  { text: "Ma fille est malade", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("9092594", "Julien_PDC", "Ma fille est malade.") },
+  // ── Sprosse 15 ──
+  { text: "On se tutoie", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mon dos me fait mal", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("6166685", "felix63", "Mon dos me fait mal.") },
+  { text: "La nounou est malade", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "On a du monde samedi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tu as de la monnaie", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mon fils tousse la nuit", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Le salon sent le moisi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Nous louons un studio", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mon fils quitte la maison", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tout est en solde", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il est sans le sou", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tiens on sonne", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tu as mon mail", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Nous allons au Mali en juillet", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Soudain tout le monde se tait", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tout le monde attend la fin du mois", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Le ton monte", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "On annule tout", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mon toit fuit", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mon solde est nul", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tout est de la faute du lundi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Un sou est un sou", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("8185537", "Aiji", "Un sou est un sou.") },
+  { text: "Il a tenu toute la nuit", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("9466695", "Julien_PDC", "Il a tenu toute la nuit.") },
+  { text: "Elle nettoie la maison", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("8741310", "Julien_PDC", "Elle nettoie la maison.") },
+  // ── Sprosse 16 ──
+  { text: "On a un doute sur la date", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Je fais le dos rond", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("2402537", "sacredceltic", "Je fais le dos rond.") },
+  { text: "Il nous tarde de rentrer", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("12433040", "sacredceltic", "Il nous tarde de rentrer.") },
+  { text: "On nous informe du retard du train", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("8637776", "Julien_PDC", "On nous informe du retard du train.") },
+  { text: "Ma fille est assistante maternelle", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("12148852", "felix63", "Ma fille est assistante maternelle.") },
+  { text: "Ses enfants sont en maternelle", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr", herkunft: tatoeba("8753090", "Julien_PDC", "Ses enfants sont en maternelle.") },
+  { text: "Les tarifs du tram montent", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Martine rentre tard tous les soirs", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mon mari ronfle si fort que je dors au salon", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mes amis de Rimouski se marient en juin", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Le mardi on sort les ordures", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Farid a un entretien lundi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Le radiateur du salon fuit", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Omar tient un restaurant familial en Tunisie", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Samir est infirmier de nuit", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Notre mairie ferme le samedi", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Le notaire relit tout le dossier", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il est sur les nerfs", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Elle a ri jaune", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il faut serrer les dents", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il est tard et la rue dort", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Mamadou est tailleur et il en est fier", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Tu as rendu le dossier", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  { text: "Il faut trier ses mails", kind: "satz", stufen: ["erwachsen"], minTier: 1, nurWeg: "fr" },
+  // ── Sprosse 17 ──
+  { text: "Mon armoire est en kit depuis le printemps", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il parait que le patron part en juin", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Idrissa postule pour un poste de soudeur", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mamie paie tout en liquide", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon paquet est perdu quelque part", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tu as un pansement", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tu as pris froid", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Laurent a une pneumonie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Moussa est papa depuis mardi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle a perdu son portefeuille", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il pleut et mon parapluie est dans le tram", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Sandrine se met au sport", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le tram est plein", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je prends un jour de repos", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Nadine demande un temps partiel", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Notre patronne prend sa retraite en mars", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon mari repeint le salon", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tu prends quoi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle soupire en lisant ses mails", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il a pris du poids", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il met les pieds dans le plat", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il pleut sur Lausanne", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je dois prendre le train de nuit", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("11731150", "Adrien_FR", "Je dois prendre le train de nuit.") },
+  { text: "Ma patronne est jeune", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("8454590", "felix63", "Ma patronne est jeune.") },
+  // ── Sprosse 18 ──
+  { text: "Au Maroc on parle la darija au quotidien", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Malik a enfin un CDI", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon contrat se termine en mai", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle conteste la facture", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Dans mon quartier les commerces ferment le lundi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Pascal cuisine pour trente personnes dans une cantine", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Ce soir on commande un couscous", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je cotise pour ma retraite", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le Cameroun produit du cacao", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Luc a une carie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Ousmane est docker au port de Dakar", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il pleut des cordes", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Mali la saison des pluies commence en juin", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il est tenu au secret professionnel", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le client est roi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Ils ont un compte commun", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon oncle sort de la clinique", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Ma cousine passe le code de la route", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle a eu un petit accident", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Ils remplissent le constat", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Les carottes sont cuites", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je porte un masque car je suis malade", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("8427011", "Aiji", "Je porte un masque car je suis malade.") },
+  { text: "La pendule de la cuisine retarde", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("10091248", "felix63", "La pendule de la cuisine retarde.") },
+  { text: "Cela fait un an que je suis sans emploi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("5961202", "Adelpa", "Cela fait un an que je suis sans emploi.") },
+  { text: "Il fait sa liste de courses", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("8655920", "Julien_PDC", "Il fait sa liste de courses.") },
+  { text: "La plupart des centenaires sont des femmes", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  // ── Sprosse 19 ──
+  { text: "Le vendredi soir la ville se vide", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle vit seule depuis son divorce", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il attend le virement de son salaire", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En Suisse on vote souvent", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Ma valise est trop lourde", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon amie vit en Suisse romande", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tu viens diner vendredi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Olivier arrive toujours en avance", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il a un avis sur tout", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Aminata envoie son CV", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle vit de sa musique", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Nous consultons un avocat", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le vol pour Dakar part tard", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Clarisse vit en colocation", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Nous visitons un appartement", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il vide son casier", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Nous avons un nouveau voisin", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Nous sommes voisins de palier", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("10298733", "felix63", "Nous sommes voisins de palier.") },
+  { text: "Ne faites jamais les courses le ventre vide", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("11162620", "marafon", "Ne faites jamais les courses le ventre vide.") },
+  { text: "Les soldes permettent de vider les stocks", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("1473173", "martin9", "Les soldes permettent de vider les stocks.") },
+  { text: "Mon ordinateur plante souvent", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("8685134", "Julien_PDC", "Mon ordinateur plante souvent.") },
+  { text: "Ma voiture cale souvent", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("9466719", "Julien_PDC", "Ma voiture cale souvent.") },
+  { text: "Mon avare de voisin vient toujours les mains vides", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("3160708", "nimfeo", "Mon avare de voisin vient toujours les mains vides.") },
+  { text: "Je ne travaille que quatre jours par semaine", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("11458503", "Adelpa", "Je ne travaille que quatre jours par semaine.") },
+  { text: "Il va au travail en trottinette", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("8671370", "lbdx", "Il va au travail en trottinette.") },
+  // ── Sprosse 20 ──
+  { text: "C'est la fin du mois et le compte est vide", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'ascenseur est en panne depuis mardi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "J'attends un appel", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle n'a pas de permis", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je n'ai pas le temps", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'addition est pour moi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'assurance ne couvre pas les lunettes", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "C'est le quartier de mon enfance", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'usine ferme en juin", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon quartier n'a plus de commerces", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Sur l'autoroute tout le monde roule trop vite", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tu as l'ordonnance", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Une carafe d'eau s'il vous plait", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il n'est pas d'accord", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "J'ai mal dormi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je m'en occupe", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il s'est endormi au volant", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'appartement est trop petit", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Personne n'aime les lundis", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'Acadie a son propre drapeau", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "J'ai trop de travail", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("8642608", "Julien_PDC", "J'ai trop de travail.") },
+  { text: "L'entreprise a les reins solides", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("2929216", "Blabla", "L'entreprise a les reins solides.") },
+  { text: "Un souffleur de feuilles mortes pollue plus qu'une voiture", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("3633181", "sacredceltic", "Un souffleur de feuilles mortes pollue plus qu'une voiture.") },
+  { text: "L'appartement du voisin du dessous est sens dessus dessous", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("9172295", "Julien_PDC", "L'appartement du voisin du dessous est sens dessus dessous.") },
+  { text: "Je lis cette offre d'emploi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("12446954", "felix63", "Je lis cette offre d'emploi.") },
+  // ── Sprosse 21 ──
+  { text: "Cette réunion aurait pu tenir dans un courriel", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon médecin part en retraite et personne ne le remplace", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Valérie est en télétravail le lundi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le samedi la sieste est sacrée", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La vaisselle attend dans l'évier", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle a réparé la fuite", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le préavis est de trois mois", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Frédéric a posé sa démission", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tout le quartier a été privé d'eau", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "C'est un métier d'avenir", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tu as réservé le restaurant", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "J'ai résilié mon contrat", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le crédit est accordé", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il a été muté dans le Valais", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Aurélie a été promue", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Émilie travaille en pédiatrie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Oumar a quitté Dakar pour Montréal", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon cousin s'est installé au Canada", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Les frais de scolarité sont élevés", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le réseau est coupé", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tout le service attend la prime de fin d'année", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'été dernier nous ne sommes pas partis", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle est épuisée", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Kossi a ouvert un restaurant dans le centre de Lomé", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le métro de Montréal est souterrain", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La réunion a lieu toutes les semaines", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("2842171", "Itms", "La réunion a lieu toutes les semaines.") },
+  { text: "Tout travail mérite salaire", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("2842165", "Julien_PDC", "Tout travail mérite salaire.") },
+  { text: "Il travaille en équipe de nuit", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("1489547", "martin9", "Il travaille en équipe de nuit.") },
+  { text: "Mon ordinateur a planté", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr", herkunft: tatoeba("10505360", "Aiji", "Mon ordinateur a planté.") },
+  { text: "Félicitations pour ton nouveau poste", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  // ── Sprosse 22 ──
+  { text: "Le formulaire est illisible", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Souad parle arabe avec sa famille de Tunis", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon cousin de Casablanca tient un commerce de tissus", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Adama vend des fruits au bord de la route", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le voisin du dessus fait du bruit", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La banque refuse le crédit", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le bébé ne fait pas encore ses nuits", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Son atelier de couture est au centre de Bamako", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le taboulé libanais contient surtout du persil", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Québec on ne dit pas spam mais pourriel", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Québec on clavarde sur internet", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Québec un podcast s'appelle un balado", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Québec le dépanneur vend un peu de tout", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Québec le souper est le repas du soir", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le bail se termine en juin", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La poubelle déborde", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Son bilan de santé est bon", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Des tomates poussent sur son balcon", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il travaille dans une banque de Libreville", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En Suisse un bancomat est un distributeur de billets", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'imprimante tombe en panne quand on est pressé", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle cumule les petits boulots", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le lundi matin le café est le vrai patron du bureau", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il a besoin d'un peu de repos", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je bois trop de café", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le facteur est bloqué dans l'ascenseur", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Bruno fabrique des meubles", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  // ── Sprosse 23 ──
+  { text: "Mon compte est dans le rouge", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Avec le covoiturage il paie moins d'essence", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Sur l'ile de La Réunion on mange du cari", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Sénégal on fait le plein dans une essencerie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Nous avons déménagé trois fois en cinq ans", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Cotonou est la plus grande ville du Bénin", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le boulanger commence avant l'aube", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Pour les gens d'Abidjan un maquis est un petit restaurant", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Tout augmente sauf mon salaire", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Les soldes commencent et mon budget se termine", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le GPS recalcule et moi aussi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon frigo ne contient qu'un citron et de l'espoir", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La facture d'électricité a encore augmenté", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle est en congé maladie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La grippe circule au bureau", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il gagne bien sa vie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Fatima attend un logement social depuis des années", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le garagiste annonce une grosse facture", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Mali on se salue longuement", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En Belgique on range ses cours dans une farde", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En Belgique on dit GSM pour portable", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Grégoire négocie son salaire", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Les gens du quartier se connaissent", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le village se vide", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon four tombe en panne le lendemain de la fin de la garantie", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Avant de signer il faut tout lire", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Liban beaucoup de gens parlent trois langues", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La Belgique a trois langues officielles", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Avant de partir en vacances il vide le frigo", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Par définition la moitié des salariés gagne moins que le salaire médian", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Plus d'un ménage sur trois ne compte qu'une seule personne", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  // ── Sprosse 24 ──
+  { text: "Kinshasa est immense", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il touche son salaire le trente du mois", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle touche le SMIC", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il couve quelque chose", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Chantal a acheté un vélo électrique", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Stéphane a un entretien d'embauche", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il est coincé dans les bouchons", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le nouchi est l'argot d'Abidjan", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Kinshasa est la plus grande ville francophone du monde", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "L'argent ne fait pas le bonheur", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le livreur sonne toujours quand je suis sous la douche", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle cherche une garderie pour sa fille", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En Belgique quand il pleut fort on dit qu'il drache", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En Belgique une praline est un chocolat fourré", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Québec on part en fin de semaine au chalet", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "C'est en Afrique qu'on trouve le plus de francophones", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le chauffage ne marche plus", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Je cherche du travail", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mon oncle change de métier", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "La chambre est humide", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Elle habite en banlieue et travaille en ville", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Mamie est hospitalisée", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Chaque matin il prend le bus de sept heures", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il enchaine les heures supplémentaires", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Le samedi on va au hammam avec les voisines", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Hicham répare des vélos dans la médina de Rabat", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Liban on commence souvent une phrase en arabe et on la termine en anglais", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au Sénégal on sert le thé en trois tournées", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Un chantier bloque la rue", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Il fait un temps de chien", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "En hiver l'harmattan souffle sur le Sahel", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Michel travaille dans une usine de Charleroi", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Les Suisses mangent beaucoup de chocolat", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+  { text: "Au restaurant chacun paie sa part", kind: "satz", stufen: ["erwachsen"], minTier: 2, nurWeg: "fr" },
+];

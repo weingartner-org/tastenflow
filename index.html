@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FBFBFD" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      // Ohne Aufblitzen: das gespeicherte Farbschema vor dem ersten Bild setzen.
+      (function () {
+        try {
+          var m = localStorage.getItem("sensorik:theme");
+          if (m !== "light" && m !== "dark") {
+            m =
+              window.matchMedia &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          }
+          var r = document.documentElement;
+          r.classList.toggle("dark", m === "dark");
+          r.setAttribute("data-theme", m);
+          r.style.colorScheme = m;
+        } catch (e) {}
+      })();
+    </script>
+    <title>Tastenflow - Zehnfingersystem lernen</title>
+    <link rel="icon" type="image/svg+xml" href="/tastenflow-logo.svg" />
+    <link rel="icon" type="image/png" sizes="180x180" href="/tastenflow-logo-180.png" />
+    <link rel="apple-touch-icon" href="/tastenflow-logo-180.png" />
+    <link rel="manifest" href="/tastenflow-manifest.json" />
+    <meta
+      name="description"
+      content="Tastenflow: das Zehnfingersystem lernen - barrierefrei, mit Tastatur, Screenreader und Braillezeile bedienbar."
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

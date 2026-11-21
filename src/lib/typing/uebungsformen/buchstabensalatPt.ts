@@ -1,0 +1,140 @@
+/**
+ * ★ D-LERNDATEN (25.10.2026): DIE QUELLWÖRTER DES BUCHSTABENSALATS des Weges „pt" (Portugiesisch (Portugal)) - gefüllt aus den vorbereiteten Lerndaten.
+ *
+ * Quelle: iCloud `sprachen-2026-10-25/tf-fest-neu/pt-PT/tf-fest-pt-PT.json`, Schlüssel `schreibWoerter` (Zuordnung: Rezept
+ * Teil D). Geprüft vom unabhängigen Prüfer der PC-Sitzung: `PRUEFBERICHT.md` im selben Ordner (25.10.2026) - Urteil:
+ * „Freigabefähig: ja (für den Bau) - Vorbehalt: Lese-Abnahme durch eine Person aus Portugal; Wurzeln und Buchstabenfolgen liegen mengenmäßig unter der Vorlage.“
+ * Übernommen vom Erzeuger-Skript der Etappe D-LERNDATEN im Format von `buchstabensalatCs.ts`, Eintrag für Eintrag in der Reihenfolge der
+ * Quelle. Geändert wurde nur Typografie, die keine Tastatur hat (gezählt im Befund `BEFUND-2026-10-25-D-LERNDATEN.md`).
+ * ⚠️ Eine Lese-Abnahme durch eine Person mit Portugiesisch (Portugal) als Erstsprache steht aus (Prüfbericht; Falle 59).
+ *
+ * ⚠️ Der Ertrag je Quellwort (mindestens `SALAT_ZIEL` echte Wörter) ist NICHT gemessen: er wird gegen das Lexikon der Sprache
+ * gezählt (`lexikonWoerter("pt")`), und ein Fach für „pt" baut erst F8 (`lexicon.ts`). Bis dahin findet der Salat auf diesem
+ * Weg keine Funde und bietet sich nicht an - die Daten liegen bereit.
+ *
+ * Verteiler: `buchstabensalat.ts` (Namen ausschliessen: `salatNamen${Xx}.ts`, noch leer) - liest diese Datei seit G3c; leer hiess Englisch, gefüllt gilt diese Liste (`geruestRueckfall.ts`).
+ * Unsichtbar, bis der Schalter `?portugiesisch-lehrgang=1` an ist (Vorgabe AUS). Wächter: `tests/tastenflow-lerndaten-pt.test.ts`
+ * (Regeln je Sprache in `tests/helfer/lerndatenNeueWege.ts`).
+ *
+ * ⚠️ DATENBLATT (`scripts/buendel-aufteilung.ts`): nur `import type`, kein Code.
+ */
+import type { Salatwort } from "./buchstabensalat";
+
+const ALLE: Salatwort["stufen"] = ["kids", "teens", "erwachsen"];
+const AB_TEENS: Salatwort["stufen"] = ["teens", "erwachsen"];
+
+export const SALATWOERTER_PT: Salatwort[] = [
+  { wort: "caça", stufen: ALLE },
+  { wort: "maçã", stufen: ALLE },
+  { wort: "massa", stufen: ALLE },
+  { wort: "peixe", stufen: ALLE },
+  { wort: "chave", stufen: ALLE },
+  { wort: "queijo", stufen: ALLE },
+  { wort: "gelo", stufen: ALLE },
+  { wort: "girafa", stufen: ALLE },
+  { wort: "jeito", stufen: ALLE },
+  { wort: "ninho", stufen: ALLE },
+  { wort: "filho", stufen: ALLE },
+  { wort: "folha", stufen: ALLE },
+  { wort: "palha", stufen: ALLE },
+  { wort: "abelha", stufen: ALLE },
+  { wort: "coelho", stufen: ALLE },
+  { wort: "carro", stufen: ALLE },
+  { wort: "terra", stufen: ALLE },
+  { wort: "rato", stufen: ALLE },
+  { wort: "chuva", stufen: ALLE },
+  { wort: "caixa", stufen: ALLE },
+  { wort: "hoje", stufen: ALLE },
+  { wort: "homem", stufen: ALLE },
+  { wort: "hora", stufen: ALLE },
+  { wort: "açúcar", stufen: ALLE },
+  { wort: "cozinha", stufen: ALLE },
+  { wort: "azeite", stufen: ALLE },
+  { wort: "mesa", stufen: ALLE },
+  { wort: "asa", stufen: ALLE },
+  { wort: "osso", stufen: ALLE },
+  { wort: "laço", stufen: ALLE },
+  { wort: "poço", stufen: ALLE },
+  { wort: "cebola", stufen: ALLE },
+  { wort: "cereja", stufen: ALLE },
+  { wort: "pão", stufen: ALLE },
+  { wort: "mãe", stufen: ALLE },
+  { wort: "irmão", stufen: ALLE },
+  { wort: "avó", stufen: ALLE },
+  { wort: "avô", stufen: ALLE },
+  { wort: "café", stufen: ALLE },
+  { wort: "bebé", stufen: ALLE },
+  { wort: "pé", stufen: ALLE },
+  { wort: "três", stufen: ALLE },
+  { wort: "mês", stufen: ALLE },
+  { wort: "guitarra", stufen: ALLE },
+  { wort: "foguete", stufen: ALLE },
+  { wort: "aquário", stufen: ALLE },
+  { wort: "cegonha", stufen: ALLE },
+  { wort: "golfinho", stufen: ALLE },
+  { wort: "sardinha", stufen: ALLE },
+  { wort: "bruxa", stufen: ALLE },
+  { wort: "onze", stufen: ALLE },
+  { wort: "doze", stufen: ALLE },
+  { wort: "zebra", stufen: ALLE },
+  { wort: "ecrã", stufen: ALLE },
+  { wort: "chávena", stufen: ALLE },
+  { wort: "exceção", stufen: AB_TEENS },
+  { wort: "excelente", stufen: AB_TEENS },
+  { wort: "exercício", stufen: AB_TEENS },
+  { wort: "exato", stufen: AB_TEENS },
+  { wort: "êxito", stufen: AB_TEENS },
+  { wort: "auxílio", stufen: AB_TEENS },
+  { wort: "próximo", stufen: AB_TEENS },
+  { wort: "máximo", stufen: AB_TEENS },
+  { wort: "sexta", stufen: AB_TEENS },
+  { wort: "texto", stufen: AB_TEENS },
+  { wort: "crescer", stufen: AB_TEENS },
+  { wort: "nascer", stufen: AB_TEENS },
+  { wort: "piscina", stufen: AB_TEENS },
+  { wort: "descer", stufen: AB_TEENS },
+  { wort: "consciência", stufen: AB_TEENS },
+  { wort: "secção", stufen: AB_TEENS },
+  { wort: "facto", stufen: AB_TEENS },
+  { wort: "contacto", stufen: AB_TEENS },
+  { wort: "receção", stufen: AB_TEENS },
+  { wort: "espetáculo", stufen: AB_TEENS },
+  { wort: "ótimo", stufen: AB_TEENS },
+  { wort: "direção", stufen: AB_TEENS },
+  { wort: "atual", stufen: AB_TEENS },
+  { wort: "coleção", stufen: AB_TEENS },
+  { wort: "ator", stufen: AB_TEENS },
+  { wort: "necessário", stufen: AB_TEENS },
+  { wort: "excesso", stufen: AB_TEENS },
+  { wort: "processo", stufen: AB_TEENS },
+  { wort: "sucesso", stufen: AB_TEENS },
+  { wort: "acesso", stufen: AB_TEENS },
+  { wort: "análise", stufen: AB_TEENS },
+  { wort: "através", stufen: AB_TEENS },
+  { wort: "xadrez", stufen: AB_TEENS },
+  { wort: "enxaqueca", stufen: AB_TEENS },
+  { wort: "mexer", stufen: AB_TEENS },
+  { wort: "viagem", stufen: AB_TEENS },
+  { wort: "beringela", stufen: AB_TEENS },
+  { wort: "surpresa", stufen: AB_TEENS },
+  { wort: "empresa", stufen: AB_TEENS },
+  { wort: "certeza", stufen: AB_TEENS },
+  { wort: "natureza", stufen: AB_TEENS },
+  { wort: "compreensão", stufen: AB_TEENS },
+  { wort: "discussão", stufen: AB_TEENS },
+  { wort: "telemóvel", stufen: AB_TEENS },
+  { wort: "frigorífico", stufen: AB_TEENS },
+  { wort: "quilómetro", stufen: AB_TEENS },
+  { wort: "económico", stufen: AB_TEENS },
+  { wort: "género", stufen: AB_TEENS },
+  { wort: "ténis", stufen: AB_TEENS },
+  { wort: "prémio", stufen: AB_TEENS },
+  { wort: "húmido", stufen: AB_TEENS },
+  { wort: "ruído", stufen: AB_TEENS },
+  { wort: "saúde", stufen: AB_TEENS },
+  { wort: "ninguém", stufen: AB_TEENS },
+  { wort: "também", stufen: AB_TEENS },
+  { wort: "dezasseis", stufen: AB_TEENS },
+  { wort: "dezanove", stufen: AB_TEENS },
+  { wort: "catorze", stufen: AB_TEENS },
+];

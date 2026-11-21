@@ -1,0 +1,5065 @@
+{
+ "_herkunft": {
+  "datei": "ERGEBNIS-IT-PL-TR-CS-WINDOWS.json (Messordner pc-messung-2026-10-02-it-pl-tr-cs, iCloud „Claude on PC“); gelesene Tabelle dazu: MATRIX-WINDOWS-IT-PL-TR-CS.md, Befund BEFUND-2026-10-02-WINDOWS-MESSUNG-IT-PL-TR-CS.md",
+  "messdatum": "02.10.2026",
+  "browser": "Edge 154.0.4258.48 und Chrome 154.0.8037.97 (in jeder Zelle gleich)",
+  "windows": "Windows 11 Pro 25H2, Build 26200.9550",
+  "umwandlung": "node scripts/windows-matrix-umwandeln.mjs <ERGEBNIS-...-WINDOWS.json>",
+  "ebenen": "grund = ohne, umschalt = Umschalt, altgr = AltGr, altgrUmschalt = AltGr + Umschalt. Wert: Zeichen | null (kein Zeichen entsteht) | { dead: Zeichen, das die Leertaste danach ergibt }",
+  "ungesendet": "Die Zelle AltGr + virtuelle Taste N wurde nicht gesendet (Strg+Alt+N startet am Mess-PC NVDA); der Wert steht dann aus der Windows-Layout-DLL in der Zelle und zusätzlich unter `ungesendet`.",
+  "hinweisMarkdownTabelle": "In MATRIX-...md steht anstelle von | das Zeichen ¦ (Markdown-Zeilen); diese Datei kommt aus der JSON und trägt das echte Zeichen.",
+  "messzeit": "2026-10-02 - 19:16"
+ },
+ "belegungen": {
+  "IT": {
+   "layoutId": "it",
+   "klid": "00000410",
+   "dll": "KBDIT.DLL",
+   "name": "Italian",
+   "tasten": {
+    "Backquote": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "\"",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "£",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "$",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "/",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "'",
+     "umschalt": "?",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": "ì",
+     "umschalt": "^",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "è",
+     "umschalt": "é",
+     "altgr": "[",
+     "altgrUmschalt": "{"
+    },
+    "BracketRight": {
+     "grund": "+",
+     "umschalt": "*",
+     "altgr": "]",
+     "altgrUmschalt": "}"
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ò",
+     "umschalt": "ç",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "à",
+     "umschalt": "°",
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "ù",
+     "umschalt": "§",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": null,
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "IT142": {
+   "layoutId": null,
+   "klid": "00010410",
+   "dll": "KBDIT142.DLL",
+   "name": "Italian (142)",
+   "tasten": {
+    "Backquote": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "\"",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "£",
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "$",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "/",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": "[",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": "]",
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "'",
+     "umschalt": "?",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": "ì",
+     "umschalt": "^",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "è",
+     "umschalt": "é",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": "+",
+     "umschalt": "*",
+     "altgr": "~",
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ò",
+     "umschalt": "ç",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "à",
+     "umschalt": "°",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "ù",
+     "umschalt": "§",
+     "altgr": "`",
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": null,
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "PLP": {
+   "layoutId": "pl",
+   "klid": "00000415",
+   "dll": "KBDPL1.DLL",
+   "name": "Polish (Programmers)",
+   "tasten": {
+    "Backquote": {
+     "grund": "`",
+     "umschalt": {
+      "dead": "~"
+     },
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "@",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "#",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "$",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "^",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "&",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "*",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": "(",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": ")",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": "=",
+     "umschalt": "+",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "ę",
+     "altgrUmschalt": "Ę"
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": "ó",
+     "altgrUmschalt": "Ó"
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "[",
+     "umschalt": "{",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": "]",
+     "umschalt": "}",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": "ą",
+     "altgrUmschalt": "Ą"
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": "ś",
+     "altgrUmschalt": "Ś"
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": "ł",
+     "altgrUmschalt": "Ł"
+    },
+    "Semicolon": {
+     "grund": ";",
+     "umschalt": ":",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "'",
+     "umschalt": "\"",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": "ż",
+     "altgrUmschalt": "Ż"
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": "ź",
+     "altgrUmschalt": "Ź"
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": "ć",
+     "altgrUmschalt": "Ć"
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": "ń",
+     "altgrUmschalt": "Ń"
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": "<",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ">",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "/",
+     "umschalt": "?",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": null,
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": "ń"
+    }
+   ]
+  },
+  "PL214": {
+   "layoutId": null,
+   "klid": "00010415",
+   "dll": "KBDPL.DLL",
+   "name": "Polish (214)",
+   "tasten": {
+    "Backquote": {
+     "grund": {
+      "dead": "˛"
+     },
+     "umschalt": {
+      "dead": "·"
+     },
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": "~",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "\"",
+     "altgr": {
+      "dead": "ˇ"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "#",
+     "altgr": {
+      "dead": "^"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "¤",
+     "altgr": {
+      "dead": "˘"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": {
+      "dead": "°"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": {
+      "dead": "˛"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "/",
+     "altgr": "`",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": {
+      "dead": "·"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": {
+      "dead": "˝"
+     },
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "+",
+     "umschalt": "?",
+     "altgr": {
+      "dead": "¨"
+     },
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": "'",
+     "umschalt": "*",
+     "altgr": {
+      "dead": "¸"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": "\\",
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": "¦",
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "ż",
+     "umschalt": "ń",
+     "altgr": "÷",
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": "ś",
+     "umschalt": "ć",
+     "altgr": "×",
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": "đ",
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": "Đ",
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ł",
+     "umschalt": "Ł",
+     "altgr": "$",
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "ą",
+     "umschalt": "ę",
+     "altgr": "ß",
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "ó",
+     "umschalt": "ź",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": "§",
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": "<",
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": ">",
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": null,
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": "}"
+    }
+   ]
+  },
+  "TRQ": {
+   "layoutId": "tr-q",
+   "klid": "0000041F",
+   "dll": "KBDTUQ.DLL",
+   "name": "Turkish Q",
+   "tasten": {
+    "Backquote": {
+     "grund": "\"",
+     "umschalt": "é",
+     "altgr": "<",
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": ">",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "'",
+     "altgr": "£",
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": {
+      "dead": "^"
+     },
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "+",
+     "altgr": "$",
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "½",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "/",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": "[",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": "]",
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "*",
+     "umschalt": "?",
+     "altgr": "\\",
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": "|",
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": "₺",
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "ı",
+     "umschalt": "I",
+     "altgr": "i",
+     "altgrUmschalt": "İ"
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "ğ",
+     "umschalt": "Ğ",
+     "altgr": {
+      "dead": "¨"
+     },
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": "ü",
+     "umschalt": "Ü",
+     "altgr": {
+      "dead": "~"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": "æ",
+     "altgrUmschalt": "Æ"
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": "ß",
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ş",
+     "umschalt": "Ş",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "i",
+     "umschalt": "İ",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": {
+      "dead": "`"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": "ö",
+     "umschalt": "Ö",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": "ç",
+     "umschalt": "Ç",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": "|",
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "TRF": {
+   "layoutId": "tr-f",
+   "klid": "0001041F",
+   "dll": "KBDTUF.DLL",
+   "name": "Turkish F",
+   "tasten": {
+    "Backquote": {
+     "grund": "+",
+     "umschalt": "*",
+     "altgr": "¬",
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": "¹",
+     "altgrUmschalt": "¡"
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "\"",
+     "altgr": "²",
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": {
+      "dead": "^"
+     },
+     "altgr": "#",
+     "altgrUmschalt": "³"
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "$",
+     "altgr": "¼",
+     "altgrUmschalt": "¤"
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "½",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": "¾",
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "'",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": "[",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": "]",
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "/",
+     "umschalt": "?",
+     "altgr": "\\",
+     "altgrUmschalt": "¿"
+    },
+    "Equal": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": "|",
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "ğ",
+     "umschalt": "Ğ",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "ı",
+     "umschalt": "I",
+     "altgr": "¶",
+     "altgrUmschalt": "®"
+    },
+    "KeyT": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": "¥",
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": "ø",
+     "altgrUmschalt": "Ø"
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": "£",
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": {
+      "dead": "¨"
+     },
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": {
+      "dead": "~"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": "æ",
+     "altgrUmschalt": "Æ"
+    },
+    "KeyS": {
+     "grund": "i",
+     "umschalt": "İ",
+     "altgr": "ß",
+     "altgrUmschalt": "§"
+    },
+    "KeyD": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": "ª"
+    },
+    "KeyG": {
+     "grund": "ü",
+     "umschalt": "Ü",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": "₺",
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "ş",
+     "umschalt": "Ş",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": {
+      "dead": "`"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": "«",
+     "altgrUmschalt": "<"
+    },
+    "KeyX": {
+     "grund": "ö",
+     "umschalt": "Ö",
+     "altgr": "»",
+     "altgrUmschalt": ">"
+    },
+    "KeyC": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": "¢",
+     "altgrUmschalt": "©"
+    },
+    "KeyV": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "ç",
+     "umschalt": "Ç",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": "µ",
+     "altgrUmschalt": "º"
+    },
+    "Comma": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": "×",
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": "÷",
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": "­",
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": "|",
+     "altgrUmschalt": "¦"
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyI",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "CS": {
+   "layoutId": "cs",
+   "klid": "00000405",
+   "dll": "KBDCZ.DLL",
+   "name": "Czech",
+   "tasten": {
+    "Backquote": {
+     "grund": ";",
+     "umschalt": {
+      "dead": "°"
+     },
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "+",
+     "umschalt": "1",
+     "altgr": "~",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "ě",
+     "umschalt": "2",
+     "altgr": {
+      "dead": "ˇ"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "š",
+     "umschalt": "3",
+     "altgr": {
+      "dead": "^"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "č",
+     "umschalt": "4",
+     "altgr": {
+      "dead": "˘"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "ř",
+     "umschalt": "5",
+     "altgr": {
+      "dead": "°"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "ž",
+     "umschalt": "6",
+     "altgr": {
+      "dead": "˛"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "ý",
+     "umschalt": "7",
+     "altgr": {
+      "dead": "`"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "á",
+     "umschalt": "8",
+     "altgr": {
+      "dead": "·",
+      "dll": "˙"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "í",
+     "umschalt": "9",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "é",
+     "umschalt": "0",
+     "altgr": {
+      "dead": "˝"
+     },
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "=",
+     "umschalt": "%",
+     "altgr": {
+      "dead": "¨"
+     },
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": {
+      "dead": "´"
+     },
+     "umschalt": {
+      "dead": "ˇ"
+     },
+     "altgr": {
+      "dead": "¸"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": "\\",
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": "|",
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "ú",
+     "umschalt": "/",
+     "altgr": "÷",
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": ")",
+     "umschalt": "(",
+     "altgr": "×",
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": "đ",
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": "Đ",
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": "[",
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": "]",
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": "ł",
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": "Ł",
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ů",
+     "umschalt": "\"",
+     "altgr": "$",
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "§",
+     "umschalt": "!",
+     "altgr": "ß",
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": {
+      "dead": "¨"
+     },
+     "umschalt": "'",
+     "altgr": "¤",
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": "&",
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": "?",
+     "altgr": "<",
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": ">",
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": "*",
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": null,
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": "}"
+    }
+   ]
+  },
+  "CSQ": {
+   "layoutId": "cs-qwerty",
+   "klid": "00010405",
+   "dll": "KBDCZ1.DLL",
+   "name": "Czech (QWERTY)",
+   "tasten": {
+    "Backquote": {
+     "grund": ";",
+     "umschalt": {
+      "dead": "°"
+     },
+     "altgr": "`",
+     "altgrUmschalt": "~"
+    },
+    "Digit1": {
+     "grund": "+",
+     "umschalt": "1",
+     "altgr": "!",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "ě",
+     "umschalt": "2",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "š",
+     "umschalt": "3",
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "č",
+     "umschalt": "4",
+     "altgr": "$",
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "ř",
+     "umschalt": "5",
+     "altgr": "%",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "ž",
+     "umschalt": "6",
+     "altgr": "^",
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "ý",
+     "umschalt": "7",
+     "altgr": "&",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "á",
+     "umschalt": "8",
+     "altgr": "*",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "í",
+     "umschalt": "9",
+     "altgr": "(",
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "é",
+     "umschalt": "0",
+     "altgr": ")",
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "=",
+     "umschalt": "%",
+     "altgr": "-",
+     "altgrUmschalt": "_"
+    },
+    "Equal": {
+     "grund": {
+      "dead": "´"
+     },
+     "umschalt": {
+      "dead": "ˇ"
+     },
+     "altgr": "=",
+     "altgrUmschalt": "+"
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "ú",
+     "umschalt": "/",
+     "altgr": "[",
+     "altgrUmschalt": "{"
+    },
+    "BracketRight": {
+     "grund": ")",
+     "umschalt": "(",
+     "altgr": "]",
+     "altgrUmschalt": "}"
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ů",
+     "umschalt": "\"",
+     "altgr": ";",
+     "altgrUmschalt": ":"
+    },
+    "Quote": {
+     "grund": "§",
+     "umschalt": "!",
+     "altgr": "¤",
+     "altgrUmschalt": {
+      "dead": "^"
+     }
+    },
+    "Backslash": {
+     "grund": {
+      "dead": "¨"
+     },
+     "umschalt": "'",
+     "altgr": "\\",
+     "altgrUmschalt": "|"
+    },
+    "KeyZ": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": "?",
+     "altgr": "<",
+     "altgrUmschalt": "×"
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": ">",
+     "altgrUmschalt": "÷"
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": "/",
+     "altgrUmschalt": "?"
+    },
+    "IntlBackslash": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": "ß",
+     "altgrUmschalt": {
+      "dead": "˝"
+     }
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "CSP": {
+   "layoutId": null,
+   "klid": "00020405",
+   "dll": "KBDCZ2.DLL",
+   "name": "Czech Programmers",
+   "tasten": {
+    "Backquote": {
+     "grund": "`",
+     "umschalt": "~",
+     "altgr": ";",
+     "altgrUmschalt": {
+      "dead": "°"
+     }
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "!",
+     "altgr": "+",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "@",
+     "altgr": "ě",
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "#",
+     "altgr": "š",
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "$",
+     "altgr": "č",
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "ř",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "^",
+     "altgr": "ž",
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "&",
+     "altgr": "ý",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "*",
+     "altgr": "á",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": "(",
+     "altgr": "í",
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": ")",
+     "altgr": "é",
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": "=",
+     "altgrUmschalt": "%"
+    },
+    "Equal": {
+     "grund": "=",
+     "umschalt": "+",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": {
+      "dead": "ˇ"
+     }
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "[",
+     "umschalt": "{",
+     "altgr": "ú",
+     "altgrUmschalt": "/"
+    },
+    "BracketRight": {
+     "grund": "]",
+     "umschalt": "}",
+     "altgr": ")",
+     "altgrUmschalt": "("
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": ";",
+     "umschalt": ":",
+     "altgr": "ů",
+     "altgrUmschalt": "\""
+    },
+    "Quote": {
+     "grund": "'",
+     "umschalt": "\"",
+     "altgr": "§",
+     "altgrUmschalt": "!"
+    },
+    "Backslash": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": {
+      "dead": "¨"
+     },
+     "altgrUmschalt": {
+      "dead": "^"
+     }
+    },
+    "KeyZ": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": "<",
+     "altgr": "?",
+     "altgrUmschalt": "×"
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ">",
+     "altgr": ":",
+     "altgrUmschalt": "÷"
+    },
+    "Slash": {
+     "grund": "/",
+     "umschalt": "?",
+     "altgr": "-",
+     "altgrUmschalt": "_"
+    },
+    "IntlBackslash": {
+     "grund": "\\",
+     "umschalt": "|",
+     "altgr": "ß",
+     "altgrUmschalt": {
+      "dead": "˝"
+     }
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "SG": {
+   "layoutId": "ch",
+   "klid": "00000807",
+   "dll": "KBDSG.DLL",
+   "name": "Swiss German",
+   "tasten": {
+    "Backquote": {
+     "grund": "§",
+     "umschalt": "°",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "+",
+     "altgr": "¦",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "\"",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "*",
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "ç",
+     "altgr": "°",
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "§",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": "¬",
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "/",
+     "altgr": "|",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": "¢",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "'",
+     "umschalt": "?",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": {
+      "dead": "^"
+     },
+     "umschalt": {
+      "dead": "`"
+     },
+     "altgr": {
+      "dead": "~"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "ü",
+     "umschalt": "è",
+     "altgr": "[",
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": {
+      "dead": "¨"
+     },
+     "umschalt": "!",
+     "altgr": "]",
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "ö",
+     "umschalt": "é",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "ä",
+     "umschalt": "à",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "$",
+     "umschalt": "£",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": "\\",
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  },
+  "SF": {
+   "layoutId": "ch-fr",
+   "klid": "0000100C",
+   "dll": "KBDSF.DLL",
+   "name": "Swiss French",
+   "tasten": {
+    "Backquote": {
+     "grund": "§",
+     "umschalt": "°",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit1": {
+     "grund": "1",
+     "umschalt": "+",
+     "altgr": "¦",
+     "altgrUmschalt": null
+    },
+    "Digit2": {
+     "grund": "2",
+     "umschalt": "\"",
+     "altgr": "@",
+     "altgrUmschalt": null
+    },
+    "Digit3": {
+     "grund": "3",
+     "umschalt": "*",
+     "altgr": "#",
+     "altgrUmschalt": null
+    },
+    "Digit4": {
+     "grund": "4",
+     "umschalt": "ç",
+     "altgr": "°",
+     "altgrUmschalt": null
+    },
+    "Digit5": {
+     "grund": "5",
+     "umschalt": "%",
+     "altgr": "§",
+     "altgrUmschalt": null
+    },
+    "Digit6": {
+     "grund": "6",
+     "umschalt": "&",
+     "altgr": "¬",
+     "altgrUmschalt": null
+    },
+    "Digit7": {
+     "grund": "7",
+     "umschalt": "/",
+     "altgr": "|",
+     "altgrUmschalt": null
+    },
+    "Digit8": {
+     "grund": "8",
+     "umschalt": "(",
+     "altgr": "¢",
+     "altgrUmschalt": null
+    },
+    "Digit9": {
+     "grund": "9",
+     "umschalt": ")",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Digit0": {
+     "grund": "0",
+     "umschalt": "=",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Minus": {
+     "grund": "'",
+     "umschalt": "?",
+     "altgr": {
+      "dead": "´"
+     },
+     "altgrUmschalt": null
+    },
+    "Equal": {
+     "grund": {
+      "dead": "^"
+     },
+     "umschalt": {
+      "dead": "`"
+     },
+     "altgr": {
+      "dead": "~"
+     },
+     "altgrUmschalt": null
+    },
+    "KeyQ": {
+     "grund": "q",
+     "umschalt": "Q",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyW": {
+     "grund": "w",
+     "umschalt": "W",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyE": {
+     "grund": "e",
+     "umschalt": "E",
+     "altgr": "€",
+     "altgrUmschalt": null
+    },
+    "KeyR": {
+     "grund": "r",
+     "umschalt": "R",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyT": {
+     "grund": "t",
+     "umschalt": "T",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyY": {
+     "grund": "z",
+     "umschalt": "Z",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyU": {
+     "grund": "u",
+     "umschalt": "U",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyI": {
+     "grund": "i",
+     "umschalt": "I",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyO": {
+     "grund": "o",
+     "umschalt": "O",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyP": {
+     "grund": "p",
+     "umschalt": "P",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "BracketLeft": {
+     "grund": "è",
+     "umschalt": "ü",
+     "altgr": "[",
+     "altgrUmschalt": null
+    },
+    "BracketRight": {
+     "grund": {
+      "dead": "\"",
+      "dll": "¨"
+     },
+     "umschalt": "!",
+     "altgr": "]",
+     "altgrUmschalt": null
+    },
+    "KeyA": {
+     "grund": "a",
+     "umschalt": "A",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyS": {
+     "grund": "s",
+     "umschalt": "S",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyD": {
+     "grund": "d",
+     "umschalt": "D",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyF": {
+     "grund": "f",
+     "umschalt": "F",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyG": {
+     "grund": "g",
+     "umschalt": "G",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyH": {
+     "grund": "h",
+     "umschalt": "H",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyJ": {
+     "grund": "j",
+     "umschalt": "J",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyK": {
+     "grund": "k",
+     "umschalt": "K",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyL": {
+     "grund": "l",
+     "umschalt": "L",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Semicolon": {
+     "grund": "é",
+     "umschalt": "ö",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Quote": {
+     "grund": "à",
+     "umschalt": "ä",
+     "altgr": "{",
+     "altgrUmschalt": null
+    },
+    "Backslash": {
+     "grund": "$",
+     "umschalt": "£",
+     "altgr": "}",
+     "altgrUmschalt": null
+    },
+    "KeyZ": {
+     "grund": "y",
+     "umschalt": "Y",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyX": {
+     "grund": "x",
+     "umschalt": "X",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyC": {
+     "grund": "c",
+     "umschalt": "C",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyV": {
+     "grund": "v",
+     "umschalt": "V",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyB": {
+     "grund": "b",
+     "umschalt": "B",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyN": {
+     "grund": "n",
+     "umschalt": "N",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "KeyM": {
+     "grund": "m",
+     "umschalt": "M",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Comma": {
+     "grund": ",",
+     "umschalt": ";",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Period": {
+     "grund": ".",
+     "umschalt": ":",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "Slash": {
+     "grund": "-",
+     "umschalt": "_",
+     "altgr": null,
+     "altgrUmschalt": null
+    },
+    "IntlBackslash": {
+     "grund": "<",
+     "umschalt": ">",
+     "altgr": "\\",
+     "altgrUmschalt": null
+    }
+   },
+   "ungesendet": [
+    {
+     "code": "KeyN",
+     "ebene": "altgr",
+     "wertAusDll": null
+    }
+   ]
+  }
+ },
+ "kompositionen": [
+  {
+   "nr": "P6b",
+   "belegung": "PLP",
+   "tot": {
+    "code": "Backquote",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyA",
+    "umschalt": false
+   },
+   "ergebnis": "ą",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+a",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyA",
+    "umschalt": false
+   },
+   "ergebnis": "â",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+i-Taste (Q:sc28)",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "Quote",
+    "umschalt": false
+   },
+   "ergebnis": "î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+ı-Taste (Q:sc17)",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyI",
+    "umschalt": false
+   },
+   "ergebnis": "î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+u",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": false
+   },
+   "ergebnis": "û",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+Umschalt+a",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyA",
+    "umschalt": true
+   },
+   "ergebnis": "Â",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+Umschalt+i-Taste (Q:sc28)",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "Quote",
+    "umschalt": true
+   },
+   "ergebnis": "Î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+Umschalt+ı-Taste (Q:sc17)",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyI",
+    "umschalt": true
+   },
+   "ergebnis": "Î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-Q-^+Umschalt+u",
+   "belegung": "TRQ",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": true
+   },
+   "ergebnis": "Û",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+a",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyF",
+    "umschalt": false
+   },
+   "ergebnis": "â",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+i-Taste (F:sc1F)",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyS",
+    "umschalt": false
+   },
+   "ergebnis": "î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+ı-Taste (F:sc13)",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyR",
+    "umschalt": false
+   },
+   "ergebnis": "î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+u",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyA",
+    "umschalt": false
+   },
+   "ergebnis": "û",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+Umschalt+a",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyF",
+    "umschalt": true
+   },
+   "ergebnis": "Â",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+Umschalt+i-Taste (F:sc1F)",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyS",
+    "umschalt": true
+   },
+   "ergebnis": "Î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+Umschalt+ı-Taste (F:sc13)",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyR",
+    "umschalt": true
+   },
+   "ergebnis": "Î",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T4-F-^+Umschalt+u",
+   "belegung": "TRF",
+   "tot": {
+    "code": "Digit3",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyA",
+    "umschalt": true
+   },
+   "ergebnis": "Û",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-d",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyD",
+    "umschalt": false
+   },
+   "ergebnis": "ď",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-t",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyT",
+    "umschalt": false
+   },
+   "ergebnis": "ť",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-n",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyN",
+    "umschalt": false
+   },
+   "ergebnis": "ň",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-e",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyE",
+    "umschalt": false
+   },
+   "ergebnis": "ě",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-D",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyD",
+    "umschalt": true
+   },
+   "ergebnis": "Ď",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-T",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyT",
+    "umschalt": true
+   },
+   "ergebnis": "Ť",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-hacek-N",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyN",
+    "umschalt": true
+   },
+   "ergebnis": "Ň",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C2b",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyE",
+    "umschalt": true
+   },
+   "ergebnis": "Ě",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C2b",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyS",
+    "umschalt": true
+   },
+   "ergebnis": "Š",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C2b",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyC",
+    "umschalt": true
+   },
+   "ergebnis": "Č",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-carka-o",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": false
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": false
+   },
+   "ergebnis": "ó",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-carka-a",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": false
+   },
+   "dann": {
+    "code": "KeyA",
+    "umschalt": false
+   },
+   "ergebnis": "á",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3-carka-O",
+   "belegung": "CS",
+   "tot": {
+    "code": "Equal",
+    "umschalt": false
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": true
+   },
+   "ergebnis": "Ó",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C4-ring-u",
+   "belegung": "CS",
+   "tot": {
+    "code": "Backquote",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": false
+   },
+   "ergebnis": "ů",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C4-ring-U",
+   "belegung": "CS",
+   "tot": {
+    "code": "Backquote",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": true
+   },
+   "ergebnis": "Ů",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3q-hacek-d",
+   "belegung": "CSQ",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyD",
+    "umschalt": false
+   },
+   "ergebnis": "ď",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C3q-carka-o",
+   "belegung": "CSQ",
+   "tot": {
+    "code": "Equal",
+    "umschalt": false
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": false
+   },
+   "ergebnis": "ó",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SF-ì",
+   "belegung": "SF",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyI",
+    "umschalt": false
+   },
+   "ergebnis": "ì",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SF-Ì",
+   "belegung": "SF",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyI",
+    "umschalt": true
+   },
+   "ergebnis": "Ì",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SF-ò",
+   "belegung": "SF",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": false
+   },
+   "ergebnis": "ò",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SF-Ò",
+   "belegung": "SF",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": true
+   },
+   "ergebnis": "Ò",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SF-ù",
+   "belegung": "SF",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": false
+   },
+   "ergebnis": "ù",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SF-Ù",
+   "belegung": "SF",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": true
+   },
+   "ergebnis": "Ù",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SG-ì",
+   "belegung": "SG",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyI",
+    "umschalt": false
+   },
+   "ergebnis": "ì",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SG-Ì",
+   "belegung": "SG",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyI",
+    "umschalt": true
+   },
+   "ergebnis": "Ì",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SG-ò",
+   "belegung": "SG",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": false
+   },
+   "ergebnis": "ò",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SG-Ò",
+   "belegung": "SG",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyO",
+    "umschalt": true
+   },
+   "ergebnis": "Ò",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SG-ù",
+   "belegung": "SG",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": false
+   },
+   "ergebnis": "ù",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A11-SG-Ù",
+   "belegung": "SG",
+   "tot": {
+    "code": "Equal",
+    "umschalt": true
+   },
+   "dann": {
+    "code": "KeyU",
+    "umschalt": true
+   },
+   "ergebnis": "Ù",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  }
+ ],
+ "feststell": [
+  {
+   "nr": "P4a",
+   "belegung": "PLP",
+   "anschlaege": [
+    {
+     "code": "KeyA",
+     "key": "Ą",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyC",
+     "key": "Ć",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyE",
+     "key": "Ę",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyL",
+     "key": "Ł",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyO",
+     "key": "Ó",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyS",
+     "key": "Ś",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyX",
+     "key": "Ź",
+     "umschalt": false,
+     "altgr": true
+    },
+    {
+     "code": "KeyZ",
+     "key": "Ż",
+     "umschalt": false,
+     "altgr": true
+    }
+   ],
+   "feld": "ĄĆĘŁÓŚŹŻ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "P4b",
+   "belegung": "PLP",
+   "anschlaege": [
+    {
+     "code": "KeyA",
+     "key": "ą",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyC",
+     "key": "ć",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyE",
+     "key": "ę",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyL",
+     "key": "ł",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyN",
+     "key": "ń",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyO",
+     "key": "ó",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyS",
+     "key": "ś",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyX",
+     "key": "ź",
+     "umschalt": true,
+     "altgr": true
+    },
+    {
+     "code": "KeyZ",
+     "key": "ż",
+     "umschalt": true,
+     "altgr": true
+    }
+   ],
+   "feld": "ąćęłńóśźż",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "P10",
+   "belegung": "PL214",
+   "anschlaege": [
+    {
+     "code": "Quote",
+     "key": "ą",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Backslash",
+     "key": "ó",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "ż",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "BracketRight",
+     "key": "ś",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "Ł",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "ąóżśŁ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "P10d",
+   "belegung": "PL214",
+   "anschlaege": [
+    {
+     "code": "Quote",
+     "key": "ę",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Backslash",
+     "key": "ź",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "ń",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "BracketRight",
+     "key": "ć",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "ł",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "ęźńćł",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T1-Q",
+   "belegung": "TRQ",
+   "anschlaege": [
+    {
+     "code": "Quote",
+     "key": "İ",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "KeyI",
+     "key": "I",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "İI",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T1-F",
+   "belegung": "TRF",
+   "anschlaege": [
+    {
+     "code": "KeyS",
+     "key": "İ",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "KeyR",
+     "key": "I",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "İI",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T3-Q",
+   "belegung": "TRQ",
+   "anschlaege": [
+    {
+     "code": "Quote",
+     "key": "i",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "KeyI",
+     "key": "ı",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "iı",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "T3-F",
+   "belegung": "TRF",
+   "anschlaege": [
+    {
+     "code": "KeyS",
+     "key": "i",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "KeyR",
+     "key": "ı",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "iı",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C1-CS-Feststell",
+   "belegung": "CS",
+   "anschlaege": [
+    {
+     "code": "Digit1",
+     "key": "+",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit2",
+     "key": "Ě",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit3",
+     "key": "Š",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit4",
+     "key": "Č",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit5",
+     "key": "Ř",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit6",
+     "key": "Ž",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit7",
+     "key": "Ý",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit8",
+     "key": "Á",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit9",
+     "key": "Í",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit0",
+     "key": "É",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "Ú",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "Ů",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "+ĚŠČŘŽÝÁÍÉÚŮ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C1-CS-FeststellUmschalt",
+   "belegung": "CS",
+   "anschlaege": [
+    {
+     "code": "Digit1",
+     "key": "1",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit2",
+     "key": "2",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit3",
+     "key": "3",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit4",
+     "key": "4",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit5",
+     "key": "5",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit6",
+     "key": "6",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit7",
+     "key": "7",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit8",
+     "key": "8",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit9",
+     "key": "9",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit0",
+     "key": "0",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "/",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "\"",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "1234567890/\"",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C1-CSQ-Feststell",
+   "belegung": "CSQ",
+   "anschlaege": [
+    {
+     "code": "Digit1",
+     "key": "+",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit2",
+     "key": "Ě",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit3",
+     "key": "Š",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit4",
+     "key": "Č",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit5",
+     "key": "Ř",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit6",
+     "key": "Ž",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit7",
+     "key": "Ý",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit8",
+     "key": "Á",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit9",
+     "key": "Í",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit0",
+     "key": "É",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "Ú",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "Ů",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "+ĚŠČŘŽÝÁÍÉÚŮ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C1-CSQ-FeststellUmschalt",
+   "belegung": "CSQ",
+   "anschlaege": [
+    {
+     "code": "Digit1",
+     "key": "1",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit2",
+     "key": "2",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit3",
+     "key": "3",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit4",
+     "key": "4",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit5",
+     "key": "5",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit6",
+     "key": "6",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit7",
+     "key": "7",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit8",
+     "key": "8",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit9",
+     "key": "9",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Digit0",
+     "key": "0",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "/",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "\"",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "1234567890/\"",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "C2a",
+   "belegung": "CS",
+   "anschlaege": [
+    {
+     "code": "Digit2",
+     "key": "Ě",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit3",
+     "key": "Š",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Digit4",
+     "key": "Č",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "ĚŠČ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A2a",
+   "belegung": "IT",
+   "anschlaege": [
+    {
+     "code": "BracketLeft",
+     "key": "è",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "è",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "A2b",
+   "belegung": "IT",
+   "anschlaege": [
+    {
+     "code": "BracketLeft",
+     "key": "é",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "é",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "Z1-SG",
+   "belegung": "SG",
+   "anschlaege": [
+    {
+     "code": "Quote",
+     "key": "Ä",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "Ö",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "Ü",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "ÄÖÜ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "Z1-SGb",
+   "belegung": "SG",
+   "anschlaege": [
+    {
+     "code": "Quote",
+     "key": "À",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Semicolon",
+     "key": "É",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "È",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "ÀÉÈ",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "Z2-SF",
+   "belegung": "SF",
+   "anschlaege": [
+    {
+     "code": "Semicolon",
+     "key": "é",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "Quote",
+     "key": "à",
+     "umschalt": false,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "è",
+     "umschalt": false,
+     "altgr": false
+    }
+   ],
+   "feld": "éàè",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  },
+  {
+   "nr": "Z2-SFb",
+   "belegung": "SF",
+   "anschlaege": [
+    {
+     "code": "Semicolon",
+     "key": "ö",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "Quote",
+     "key": "ä",
+     "umschalt": true,
+     "altgr": false
+    },
+    {
+     "code": "BracketLeft",
+     "key": "ü",
+     "umschalt": true,
+     "altgr": false
+    }
+   ],
+   "feld": "öäü",
+   "browser": [
+    "chrome",
+    "edge"
+   ]
+  }
+ ]
+}

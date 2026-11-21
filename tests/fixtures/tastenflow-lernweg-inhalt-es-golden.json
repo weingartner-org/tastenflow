@@ -1,0 +1,3120 @@
+{
+ "kern": {
+  "jeLayout": {
+   "es": {
+    "n3": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n8": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 9,
+        "hash": "7c8edf7739d7f6829f9e7d97"
+       },
+       "entries": {
+        "anzahl": 9,
+        "hash": "1f4436b699eddba92e59e340"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 6,
+        "hash": "f61f5571311146090d5012e7"
+       },
+       "entries": {
+        "anzahl": 6,
+        "hash": "ce6e9a7af987a056dd0b3386"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 3,
+        "hash": "099328773dd026c6fddfbe12"
+       },
+       "entries": {
+        "anzahl": 3,
+        "hash": "186064110851cf515b147cd6"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n12": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 49,
+        "hash": "b885b26eb3c71e7941c7d060"
+       },
+       "entries": {
+        "anzahl": 49,
+        "hash": "aa5f2dc18fcc7602edf7beea"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 32,
+        "hash": "fd9764096b9a4e7a139d1877"
+       },
+       "entries": {
+        "anzahl": 32,
+        "hash": "47e191e417b5810fdde64c22"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 22,
+        "hash": "dcdcb63110b031258ca0ff66"
+       },
+       "entries": {
+        "anzahl": 22,
+        "hash": "7bbc3035926e1fb1c8b4967f"
+       }
+      }
+     }
+    },
+    "n17": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 140,
+        "hash": "e9c7d9ec1ec03ee668578bdb"
+       },
+       "entries": {
+        "anzahl": 140,
+        "hash": "eb9e93dc39bc90d8d36e0dab"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 124,
+        "hash": "053e7a11f39380baac4d1b6f"
+       },
+       "entries": {
+        "anzahl": 124,
+        "hash": "dbbff3c337416ad9ab7389f2"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 126,
+        "hash": "c2d3c92b6038f1b3694d8043"
+       },
+       "entries": {
+        "anzahl": 126,
+        "hash": "bc151bbd961ec89aa10abeb1"
+       }
+      }
+     }
+    },
+    "n18": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 184,
+        "hash": "81c15a994810416ae926407d"
+       },
+       "entries": {
+        "anzahl": 184,
+        "hash": "64e7eb3b3cc517c1db4d335f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 171,
+        "hash": "49e2695481e644c0383bb60e"
+       },
+       "entries": {
+        "anzahl": 171,
+        "hash": "984c235eda8569265acb44f8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 177,
+        "hash": "5bf61a1b7ad3bfbe16ca480a"
+       },
+       "entries": {
+        "anzahl": 177,
+        "hash": "3c95e935cecd16c5b26e2e9b"
+       }
+      }
+     }
+    },
+    "n19": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 184,
+        "hash": "81c15a994810416ae926407d"
+       },
+       "entries": {
+        "anzahl": 184,
+        "hash": "64e7eb3b3cc517c1db4d335f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 171,
+        "hash": "49e2695481e644c0383bb60e"
+       },
+       "entries": {
+        "anzahl": 171,
+        "hash": "984c235eda8569265acb44f8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 177,
+        "hash": "5bf61a1b7ad3bfbe16ca480a"
+       },
+       "entries": {
+        "anzahl": 177,
+        "hash": "3c95e935cecd16c5b26e2e9b"
+       }
+      }
+     }
+    },
+    "n22": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 209,
+        "hash": "79d1e65fbdf8d666f667c9f5"
+       },
+       "entries": {
+        "anzahl": 209,
+        "hash": "410952430baad4595febb486"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 192,
+        "hash": "584affaea194e7bf9408cb57"
+       },
+       "entries": {
+        "anzahl": 192,
+        "hash": "40e289f84c4049ea0b8002b4"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 199,
+        "hash": "4bbf3edc5685b082aec07871"
+       },
+       "entries": {
+        "anzahl": 199,
+        "hash": "482277c57aad477699845e15"
+       }
+      }
+     }
+    },
+    "n25": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 304,
+        "hash": "b272c08496180f18bd93f5e0"
+       },
+       "entries": {
+        "anzahl": 304,
+        "hash": "d12e752239dd9388a24fcd99"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 254,
+        "hash": "7ed16f6c1cdc04ab9d6bd038"
+       },
+       "entries": {
+        "anzahl": 254,
+        "hash": "d8757b250a8df1d94370399e"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 281,
+        "hash": "4aa3a01191bac92a5e180ea0"
+       },
+       "entries": {
+        "anzahl": 281,
+        "hash": "72d1e1a2bc19f59641acd111"
+       }
+      }
+     }
+    },
+    "n30": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 534,
+        "hash": "fdfa099020e7d5ce4ca780fe"
+       },
+       "entries": {
+        "anzahl": 534,
+        "hash": "49b4d59ff68840ef1a05ceb0"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 498,
+        "hash": "4ec43e5c1f093e16c20775dd"
+       },
+       "entries": {
+        "anzahl": 498,
+        "hash": "4728f3c96fc35eb5edfefbb5"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 525,
+        "hash": "90472d1f8dbae788be8b9e43"
+       },
+       "entries": {
+        "anzahl": 525,
+        "hash": "db2820938c9c1ccacddae697"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 584,
+        "hash": "e79bff1948cf3590bcd33fba"
+       },
+       "entries": {
+        "anzahl": 584,
+        "hash": "db89119fb3ba51719595f084"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 695,
+        "hash": "97d7ecac47a18d1b9d1f9155"
+       },
+       "entries": {
+        "anzahl": 695,
+        "hash": "6940acc5780afbf97c511fc2"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 392,
+        "hash": "c1f284437d27d8b53c01080d"
+       },
+       "entries": {
+        "anzahl": 392,
+        "hash": "b101efbc73da808387ee2526"
+       }
+      }
+     }
+    },
+    "n33": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 564,
+        "hash": "1074e5940dd306e6feeac015"
+       },
+       "entries": {
+        "anzahl": 564,
+        "hash": "1b166a720c06a066c75f0b15"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 534,
+        "hash": "867625da02e5b467f15fadd6"
+       },
+       "entries": {
+        "anzahl": 534,
+        "hash": "b47ae5e13b582e3c2f27bb76"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 564,
+        "hash": "e727a9e406a5cb3ee6ee7014"
+       },
+       "entries": {
+        "anzahl": 564,
+        "hash": "27dafa153e654a3894165c54"
+       }
+      }
+     }
+    },
+    "n34": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 603,
+        "hash": "6fb8655b1608721ad5214669"
+       },
+       "entries": {
+        "anzahl": 603,
+        "hash": "96c54d68daefab94288cf63b"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 567,
+        "hash": "92488f0a33870070d4c1ce48"
+       },
+       "entries": {
+        "anzahl": 567,
+        "hash": "03efd7ceac1b86590421f158"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 600,
+        "hash": "0dead70dd1e75ec1f9b9eb49"
+       },
+       "entries": {
+        "anzahl": 600,
+        "hash": "a2364755364d7c814f7ba60b"
+       }
+      }
+     }
+    },
+    "n36": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 637,
+        "hash": "0402c191be0d56dff61e5357"
+       },
+       "entries": {
+        "anzahl": 637,
+        "hash": "86e3cdac42a3c546367f1e6e"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 596,
+        "hash": "214178fb3070bd11fc203ac8"
+       },
+       "entries": {
+        "anzahl": 596,
+        "hash": "ec0165d962fe24e9e9853e58"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 631,
+        "hash": "26dc63e879dfc3ba701ec5ff"
+       },
+       "entries": {
+        "anzahl": 631,
+        "hash": "09181d6fcc942bb1f9733248"
+       }
+      }
+     }
+    },
+    "n38": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 637,
+        "hash": "a8192f1334c84985841a0f99"
+       },
+       "entries": {
+        "anzahl": 637,
+        "hash": "1dc1ecf6dca033a6cc4900c0"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 596,
+        "hash": "aa297ac3fd3043acf0f079b2"
+       },
+       "entries": {
+        "anzahl": 596,
+        "hash": "99d9956aa54e8d105a7e46ed"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 631,
+        "hash": "162a7d9f8ddd697f9d68acef"
+       },
+       "entries": {
+        "anzahl": 631,
+        "hash": "8cae8b7988a3d6008694eb2c"
+       }
+      }
+     }
+    },
+    "n42": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 637,
+        "hash": "135806dd56db5417e284647d"
+       },
+       "entries": {
+        "anzahl": 637,
+        "hash": "afd5dbcb4954543c64b633aa"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 596,
+        "hash": "d643752871dc80568e88ffdd"
+       },
+       "entries": {
+        "anzahl": 596,
+        "hash": "a7793011c7db04087d91ab05"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 631,
+        "hash": "4556a6c4bf65400ad1ac5971"
+       },
+       "entries": {
+        "anzahl": 631,
+        "hash": "04fb06ad24cb23f5a2b7e696"
+       }
+      }
+     }
+    },
+    "n46": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 685,
+        "hash": "40f29d35937afa56073268a9"
+       },
+       "entries": {
+        "anzahl": 685,
+        "hash": "950935b358599adea73b9644"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 636,
+        "hash": "e223d026fba0c2afaf34a7e5"
+       },
+       "entries": {
+        "anzahl": 636,
+        "hash": "93fb66b93ed1420c8d6b8a9f"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 677,
+        "hash": "a0ae7f8e2d22cefa613880e4"
+       },
+       "entries": {
+        "anzahl": 677,
+        "hash": "e384948bea8a144922d07ce7"
+       }
+      }
+     }
+    },
+    "n52": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 767,
+        "hash": "d409c95f88b127c4734abe53"
+       },
+       "entries": {
+        "anzahl": 767,
+        "hash": "c483a45defaaf3c992e23869"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 703,
+        "hash": "7598c509293e02ee90d3b118"
+       },
+       "entries": {
+        "anzahl": 703,
+        "hash": "7781c431db655d1ba43bd561"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 750,
+        "hash": "0c2432446a4c0e70aa80c285"
+       },
+       "entries": {
+        "anzahl": 750,
+        "hash": "18bde6e83c70c979725825a6"
+       }
+      }
+     }
+    },
+    "n56": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 795,
+        "hash": "e1ed1d3bd95518162c7ea537"
+       },
+       "entries": {
+        "anzahl": 795,
+        "hash": "364ed23ad2ca0965b2377c5c"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 734,
+        "hash": "ad3eb91e6e75b992fe22e697"
+       },
+       "entries": {
+        "anzahl": 734,
+        "hash": "9ee80b1522c36fd72d5ba78c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 781,
+        "hash": "bbdbcb9228269a71e9fe3948"
+       },
+       "entries": {
+        "anzahl": 781,
+        "hash": "03f67c57810c33a6eeda23e0"
+       }
+      }
+     }
+    },
+    "n60": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 823,
+        "hash": "3104ba8f5b685dacce68248f"
+       },
+       "entries": {
+        "anzahl": 823,
+        "hash": "6d6ce17954bcfb2f17c1fc3f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 762,
+        "hash": "dee128cd227224f210554d3a"
+       },
+       "entries": {
+        "anzahl": 762,
+        "hash": "a0c9b7322a762597b9ccc163"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 808,
+        "hash": "216ffa741e4af42995f7af16"
+       },
+       "entries": {
+        "anzahl": 808,
+        "hash": "db97072786fc48b320b9db3d"
+       }
+      }
+     }
+    },
+    "n64": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 851,
+        "hash": "be55998c625d9f28d81ce1fc"
+       },
+       "entries": {
+        "anzahl": 851,
+        "hash": "45a01071dc4e31dfa1b6e10f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 790,
+        "hash": "9de7454d612e586245189479"
+       },
+       "entries": {
+        "anzahl": 790,
+        "hash": "3f3a3e2827b5d66972d541b5"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 832,
+        "hash": "2be66d3bc9c034dedc9e2370"
+       },
+       "entries": {
+        "anzahl": 832,
+        "hash": "9a086fcb2236d7d8bd12f451"
+       }
+      }
+     }
+    },
+    "n70": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 879,
+        "hash": "badd3d11b64663ebc70ea940"
+       },
+       "entries": {
+        "anzahl": 879,
+        "hash": "88121a85301abddb1d8ae65f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 817,
+        "hash": "397ea57467fd2ab04ea45126"
+       },
+       "entries": {
+        "anzahl": 817,
+        "hash": "7f421a098dc23cf688c74228"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 857,
+        "hash": "094364a7ae6a3cdf6cff55c4"
+       },
+       "entries": {
+        "anzahl": 857,
+        "hash": "eb70ed579bce373fa44c449c"
+       }
+      }
+     }
+    },
+    "n71": {
+     "variante": "es-ES",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 889,
+        "hash": "77810ba34c994becc04680c9"
+       },
+       "entries": {
+        "anzahl": 889,
+        "hash": "b09aca4cfab121c452a5f908"
+       },
+       "letzteZeilen": [
+        "Mi prima de Yucatán grita \"¡Ko'ox!\" y todos salimos corriendo al parque.",
+        "Bernardo O'Higgins, héroe de la independencia chilena, era de Chillán.",
+        "En Guatemala, mucha gente habla k'iche' en casa y en el mercado.",
+        "La Carretera Austral termina cerca de Villa O'Higgins, en la Patagonia."
+       ]
+      },
+      "teens": {
+       "items": {
+        "anzahl": 827,
+        "hash": "28a20ce378a4eeb7fd654cf3"
+       },
+       "entries": {
+        "anzahl": 827,
+        "hash": "f50f2e5f20e8484228936575"
+       },
+       "letzteZeilen": [
+        "K'inich Janaab' Pakal gobernó Palenque, en Chiapas, entre 615 y 683.",
+        "En Paraguay, la yerba mate se llama ka'a en guaraní.",
+        "Rigoberta Menchú, mujer k'iche', lucha por los derechos indígenas en Guatemala.",
+        "Ek' Balam, en Yucatán, se traduce del maya como jaguar negro o lucero jaguar."
+       ]
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 867,
+        "hash": "e54c590021619b24c3593801"
+       },
+       "entries": {
+        "anzahl": 867,
+        "hash": "cc3030f5c470e1196c3aceff"
+       },
+       "letzteZeilen": [
+        "En SQL, WHERE ciudad = 'Asunción' deja solo los clientes de esa ciudad.",
+        "La tumba de K'inich Janaab' Pakal, en Palenque, se descubrió en junio de 1952.",
+        "Ambrosio O'Higgins, padre de Bernardo, gobernó el Perú como virrey entre 1796 y 1801.",
+        "El guaraní es idioma oficial de Paraguay, y en Asunción se oye \"mba'éichapa\" a diario."
+       ]
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 1255,
+        "hash": "ae1c3245c857d785d19c6499"
+       },
+       "entries": {
+        "anzahl": 1255,
+        "hash": "5bb0038466af407103a17f2f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 1718,
+        "hash": "4793aa5fc356bf472c6e6dbc"
+       },
+       "entries": {
+        "anzahl": 1718,
+        "hash": "93098782f529989ec363a948"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 1085,
+        "hash": "a0459d83acfafbdcf56857ba"
+       },
+       "entries": {
+        "anzahl": 1085,
+        "hash": "2c3ec127b587a63fcfe16b17"
+       }
+      }
+     }
+    },
+    "ohneUmschalt": {
+     "n8": {
+      "items": {
+       "anzahl": 3,
+       "hash": "099328773dd026c6fddfbe12"
+      },
+      "entries": {
+       "anzahl": 3,
+       "hash": "186064110851cf515b147cd6"
+      }
+     },
+     "n17": {
+      "items": {
+       "anzahl": 121,
+       "hash": "8061a097fe364b2821f1a824"
+      },
+      "entries": {
+       "anzahl": 121,
+       "hash": "ae998e6a7e52d4247b5441fa"
+      }
+     },
+     "n18": {
+      "items": {
+       "anzahl": 150,
+       "hash": "7c74fcc20680e8e850555c00"
+      },
+      "entries": {
+       "anzahl": 150,
+       "hash": "4038fa61b24d7e3f090c7b98"
+      }
+     }
+    }
+   },
+   "latam": {
+    "n3": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n8": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 9,
+        "hash": "7c8edf7739d7f6829f9e7d97"
+       },
+       "entries": {
+        "anzahl": 9,
+        "hash": "1f4436b699eddba92e59e340"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 6,
+        "hash": "f61f5571311146090d5012e7"
+       },
+       "entries": {
+        "anzahl": 6,
+        "hash": "ce6e9a7af987a056dd0b3386"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 3,
+        "hash": "099328773dd026c6fddfbe12"
+       },
+       "entries": {
+        "anzahl": 3,
+        "hash": "186064110851cf515b147cd6"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       },
+       "entries": {
+        "anzahl": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8"
+       }
+      }
+     }
+    },
+    "n12": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 49,
+        "hash": "b885b26eb3c71e7941c7d060"
+       },
+       "entries": {
+        "anzahl": 49,
+        "hash": "aa5f2dc18fcc7602edf7beea"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 32,
+        "hash": "fd9764096b9a4e7a139d1877"
+       },
+       "entries": {
+        "anzahl": 32,
+        "hash": "47e191e417b5810fdde64c22"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 22,
+        "hash": "dcdcb63110b031258ca0ff66"
+       },
+       "entries": {
+        "anzahl": 22,
+        "hash": "7bbc3035926e1fb1c8b4967f"
+       }
+      }
+     }
+    },
+    "n17": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 140,
+        "hash": "e9c7d9ec1ec03ee668578bdb"
+       },
+       "entries": {
+        "anzahl": 140,
+        "hash": "eb9e93dc39bc90d8d36e0dab"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 124,
+        "hash": "053e7a11f39380baac4d1b6f"
+       },
+       "entries": {
+        "anzahl": 124,
+        "hash": "dbbff3c337416ad9ab7389f2"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 126,
+        "hash": "c2d3c92b6038f1b3694d8043"
+       },
+       "entries": {
+        "anzahl": 126,
+        "hash": "bc151bbd961ec89aa10abeb1"
+       }
+      }
+     }
+    },
+    "n18": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 184,
+        "hash": "81c15a994810416ae926407d"
+       },
+       "entries": {
+        "anzahl": 184,
+        "hash": "64e7eb3b3cc517c1db4d335f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 171,
+        "hash": "49e2695481e644c0383bb60e"
+       },
+       "entries": {
+        "anzahl": 171,
+        "hash": "984c235eda8569265acb44f8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 177,
+        "hash": "5bf61a1b7ad3bfbe16ca480a"
+       },
+       "entries": {
+        "anzahl": 177,
+        "hash": "3c95e935cecd16c5b26e2e9b"
+       }
+      }
+     }
+    },
+    "n19": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 184,
+        "hash": "81c15a994810416ae926407d"
+       },
+       "entries": {
+        "anzahl": 184,
+        "hash": "64e7eb3b3cc517c1db4d335f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 171,
+        "hash": "49e2695481e644c0383bb60e"
+       },
+       "entries": {
+        "anzahl": 171,
+        "hash": "984c235eda8569265acb44f8"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 177,
+        "hash": "5bf61a1b7ad3bfbe16ca480a"
+       },
+       "entries": {
+        "anzahl": 177,
+        "hash": "3c95e935cecd16c5b26e2e9b"
+       }
+      }
+     }
+    },
+    "n22": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 209,
+        "hash": "79d1e65fbdf8d666f667c9f5"
+       },
+       "entries": {
+        "anzahl": 209,
+        "hash": "410952430baad4595febb486"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 192,
+        "hash": "584affaea194e7bf9408cb57"
+       },
+       "entries": {
+        "anzahl": 192,
+        "hash": "40e289f84c4049ea0b8002b4"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 199,
+        "hash": "4bbf3edc5685b082aec07871"
+       },
+       "entries": {
+        "anzahl": 199,
+        "hash": "482277c57aad477699845e15"
+       }
+      }
+     }
+    },
+    "n25": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 304,
+        "hash": "b272c08496180f18bd93f5e0"
+       },
+       "entries": {
+        "anzahl": 304,
+        "hash": "d12e752239dd9388a24fcd99"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 254,
+        "hash": "7ed16f6c1cdc04ab9d6bd038"
+       },
+       "entries": {
+        "anzahl": 254,
+        "hash": "d8757b250a8df1d94370399e"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 281,
+        "hash": "4aa3a01191bac92a5e180ea0"
+       },
+       "entries": {
+        "anzahl": 281,
+        "hash": "72d1e1a2bc19f59641acd111"
+       }
+      }
+     }
+    },
+    "n30": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 534,
+        "hash": "fdfa099020e7d5ce4ca780fe"
+       },
+       "entries": {
+        "anzahl": 534,
+        "hash": "49b4d59ff68840ef1a05ceb0"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 498,
+        "hash": "4ec43e5c1f093e16c20775dd"
+       },
+       "entries": {
+        "anzahl": 498,
+        "hash": "4728f3c96fc35eb5edfefbb5"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 525,
+        "hash": "90472d1f8dbae788be8b9e43"
+       },
+       "entries": {
+        "anzahl": 525,
+        "hash": "db2820938c9c1ccacddae697"
+       }
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 584,
+        "hash": "e79bff1948cf3590bcd33fba"
+       },
+       "entries": {
+        "anzahl": 584,
+        "hash": "db89119fb3ba51719595f084"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 695,
+        "hash": "97d7ecac47a18d1b9d1f9155"
+       },
+       "entries": {
+        "anzahl": 695,
+        "hash": "6940acc5780afbf97c511fc2"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 392,
+        "hash": "c1f284437d27d8b53c01080d"
+       },
+       "entries": {
+        "anzahl": 392,
+        "hash": "b101efbc73da808387ee2526"
+       }
+      }
+     }
+    },
+    "n33": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 564,
+        "hash": "1074e5940dd306e6feeac015"
+       },
+       "entries": {
+        "anzahl": 564,
+        "hash": "1b166a720c06a066c75f0b15"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 534,
+        "hash": "867625da02e5b467f15fadd6"
+       },
+       "entries": {
+        "anzahl": 534,
+        "hash": "b47ae5e13b582e3c2f27bb76"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 564,
+        "hash": "e727a9e406a5cb3ee6ee7014"
+       },
+       "entries": {
+        "anzahl": 564,
+        "hash": "27dafa153e654a3894165c54"
+       }
+      }
+     }
+    },
+    "n34": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 603,
+        "hash": "6fb8655b1608721ad5214669"
+       },
+       "entries": {
+        "anzahl": 603,
+        "hash": "96c54d68daefab94288cf63b"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 567,
+        "hash": "92488f0a33870070d4c1ce48"
+       },
+       "entries": {
+        "anzahl": 567,
+        "hash": "03efd7ceac1b86590421f158"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 600,
+        "hash": "0dead70dd1e75ec1f9b9eb49"
+       },
+       "entries": {
+        "anzahl": 600,
+        "hash": "a2364755364d7c814f7ba60b"
+       }
+      }
+     }
+    },
+    "n36": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 637,
+        "hash": "0402c191be0d56dff61e5357"
+       },
+       "entries": {
+        "anzahl": 637,
+        "hash": "86e3cdac42a3c546367f1e6e"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 596,
+        "hash": "214178fb3070bd11fc203ac8"
+       },
+       "entries": {
+        "anzahl": 596,
+        "hash": "ec0165d962fe24e9e9853e58"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 631,
+        "hash": "26dc63e879dfc3ba701ec5ff"
+       },
+       "entries": {
+        "anzahl": 631,
+        "hash": "09181d6fcc942bb1f9733248"
+       }
+      }
+     }
+    },
+    "n38": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 637,
+        "hash": "a8192f1334c84985841a0f99"
+       },
+       "entries": {
+        "anzahl": 637,
+        "hash": "1dc1ecf6dca033a6cc4900c0"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 596,
+        "hash": "aa297ac3fd3043acf0f079b2"
+       },
+       "entries": {
+        "anzahl": 596,
+        "hash": "99d9956aa54e8d105a7e46ed"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 631,
+        "hash": "162a7d9f8ddd697f9d68acef"
+       },
+       "entries": {
+        "anzahl": 631,
+        "hash": "8cae8b7988a3d6008694eb2c"
+       }
+      }
+     }
+    },
+    "n42": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 637,
+        "hash": "135806dd56db5417e284647d"
+       },
+       "entries": {
+        "anzahl": 637,
+        "hash": "afd5dbcb4954543c64b633aa"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 596,
+        "hash": "d643752871dc80568e88ffdd"
+       },
+       "entries": {
+        "anzahl": 596,
+        "hash": "a7793011c7db04087d91ab05"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 631,
+        "hash": "4556a6c4bf65400ad1ac5971"
+       },
+       "entries": {
+        "anzahl": 631,
+        "hash": "04fb06ad24cb23f5a2b7e696"
+       }
+      }
+     }
+    },
+    "n46": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 685,
+        "hash": "40f29d35937afa56073268a9"
+       },
+       "entries": {
+        "anzahl": 685,
+        "hash": "950935b358599adea73b9644"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 636,
+        "hash": "e223d026fba0c2afaf34a7e5"
+       },
+       "entries": {
+        "anzahl": 636,
+        "hash": "93fb66b93ed1420c8d6b8a9f"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 677,
+        "hash": "a0ae7f8e2d22cefa613880e4"
+       },
+       "entries": {
+        "anzahl": 677,
+        "hash": "e384948bea8a144922d07ce7"
+       }
+      }
+     }
+    },
+    "n52": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 767,
+        "hash": "d409c95f88b127c4734abe53"
+       },
+       "entries": {
+        "anzahl": 767,
+        "hash": "c483a45defaaf3c992e23869"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 703,
+        "hash": "7598c509293e02ee90d3b118"
+       },
+       "entries": {
+        "anzahl": 703,
+        "hash": "7781c431db655d1ba43bd561"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 750,
+        "hash": "0c2432446a4c0e70aa80c285"
+       },
+       "entries": {
+        "anzahl": 750,
+        "hash": "18bde6e83c70c979725825a6"
+       }
+      }
+     }
+    },
+    "n56": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 795,
+        "hash": "bcfb208b889d333534ad197c"
+       },
+       "entries": {
+        "anzahl": 795,
+        "hash": "b1cdb99d44d8a390a06536c0"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 735,
+        "hash": "022ae54253017c3b3b495f9a"
+       },
+       "entries": {
+        "anzahl": 735,
+        "hash": "fce1ca917803b7d4cb8ea8b6"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 781,
+        "hash": "c29737f5a4859bf6d630cbc7"
+       },
+       "entries": {
+        "anzahl": 781,
+        "hash": "da88d844a269abd8fd2e1b20"
+       }
+      }
+     }
+    },
+    "n60": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 823,
+        "hash": "a04c4a0c2bdb0ed16e6c71cc"
+       },
+       "entries": {
+        "anzahl": 823,
+        "hash": "94b28c593600eb871f1d98b6"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 762,
+        "hash": "8d1b03b4f80b9d44d445e71b"
+       },
+       "entries": {
+        "anzahl": 762,
+        "hash": "2be25f17537641a0882d1ed3"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 806,
+        "hash": "94cc52a96aa1bb085215c0be"
+       },
+       "entries": {
+        "anzahl": 806,
+        "hash": "fce9e028c3a84b4619e4c335"
+       }
+      }
+     }
+    },
+    "n64": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 844,
+        "hash": "096f055d029c6c2067f8193f"
+       },
+       "entries": {
+        "anzahl": 844,
+        "hash": "e839e75576554257d4027427"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 783,
+        "hash": "ced2515eca494d9e3a832d2d"
+       },
+       "entries": {
+        "anzahl": 783,
+        "hash": "9d456f242640bd0040dc7e1c"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 824,
+        "hash": "95d589894fb086fd78e73092"
+       },
+       "entries": {
+        "anzahl": 824,
+        "hash": "e959bd21c9be97bfd96180ce"
+       }
+      }
+     }
+    },
+    "n69": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 872,
+        "hash": "016059c06901779b251235d8"
+       },
+       "entries": {
+        "anzahl": 872,
+        "hash": "ef4d98cde3be6a76b3b220f8"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 810,
+        "hash": "9c30c9b01ca56f6a3aa6a197"
+       },
+       "entries": {
+        "anzahl": 810,
+        "hash": "4fe9e30fbb829361aa3b7d05"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 849,
+        "hash": "5f4c71a6187b01554ac2761e"
+       },
+       "entries": {
+        "anzahl": 849,
+        "hash": "9b8474fd43d58b897c8d868f"
+       }
+      }
+     }
+    },
+    "n70": {
+     "variante": "es-419",
+     "korpus": {
+      "kids": {
+       "items": {
+        "anzahl": 882,
+        "hash": "2c11bc32fe382edfe98213a1"
+       },
+       "entries": {
+        "anzahl": 882,
+        "hash": "090da0a7bd1ec167b1d08a18"
+       },
+       "letzteZeilen": [
+        "Mi prima de Yucatán grita \"¡Ko'ox!\" y todos salimos corriendo al parque.",
+        "Bernardo O'Higgins, héroe de la independencia chilena, era de Chillán.",
+        "En Guatemala, mucha gente habla k'iche' en casa y en el mercado.",
+        "La Carretera Austral termina cerca de Villa O'Higgins, en la Patagonia."
+       ]
+      },
+      "teens": {
+       "items": {
+        "anzahl": 820,
+        "hash": "b9045765b276f9e7cd737899"
+       },
+       "entries": {
+        "anzahl": 820,
+        "hash": "448dfb682341717839205f69"
+       },
+       "letzteZeilen": [
+        "K'inich Janaab' Pakal gobernó Palenque, en Chiapas, entre 615 y 683.",
+        "En Paraguay, la yerba mate se llama ka'a en guaraní.",
+        "Rigoberta Menchú, mujer k'iche', lucha por los derechos indígenas en Guatemala.",
+        "Ek' Balam, en Yucatán, se traduce del maya como jaguar negro o lucero jaguar."
+       ]
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 859,
+        "hash": "2a74a1d4b45c5dc323df6ae8"
+       },
+       "entries": {
+        "anzahl": 859,
+        "hash": "3284e448dd2189bc70404ac7"
+       },
+       "letzteZeilen": [
+        "En SQL, WHERE ciudad = 'Asunción' deja solo los clientes de esa ciudad.",
+        "La tumba de K'inich Janaab' Pakal, en Palenque, se descubrió en junio de 1952.",
+        "Ambrosio O'Higgins, padre de Bernardo, gobernó el Perú como virrey entre 1796 y 1801.",
+        "El guaraní es idioma oficial de Paraguay, y en Asunción se oye \"mba'éichapa\" a diario."
+       ]
+      }
+     },
+     "korpusEn": {
+      "kids": {
+       "items": {
+        "anzahl": 1255,
+        "hash": "ae1c3245c857d785d19c6499"
+       },
+       "entries": {
+        "anzahl": 1255,
+        "hash": "5bb0038466af407103a17f2f"
+       }
+      },
+      "teens": {
+       "items": {
+        "anzahl": 1718,
+        "hash": "4793aa5fc356bf472c6e6dbc"
+       },
+       "entries": {
+        "anzahl": 1718,
+        "hash": "93098782f529989ec363a948"
+       }
+      },
+      "erwachsen": {
+       "items": {
+        "anzahl": 1085,
+        "hash": "a0459d83acfafbdcf56857ba"
+       },
+       "entries": {
+        "anzahl": 1085,
+        "hash": "2c3ec127b587a63fcfe16b17"
+       }
+      }
+     }
+    },
+    "ohneUmschalt": {
+     "n8": {
+      "items": {
+       "anzahl": 3,
+       "hash": "099328773dd026c6fddfbe12"
+      },
+      "entries": {
+       "anzahl": 3,
+       "hash": "186064110851cf515b147cd6"
+      }
+     },
+     "n17": {
+      "items": {
+       "anzahl": 121,
+       "hash": "8061a097fe364b2821f1a824"
+      },
+      "entries": {
+       "anzahl": 121,
+       "hash": "ae998e6a7e52d4247b5441fa"
+      }
+     },
+     "n18": {
+      "items": {
+       "anzahl": 150,
+       "hash": "7c74fcc20680e8e850555c00"
+      },
+      "entries": {
+       "anzahl": 150,
+       "hash": "4038fa61b24d7e3f090c7b98"
+      }
+     }
+    }
+   }
+  },
+  "arcs": {
+   "kids": [],
+   "teens": [],
+   "erwachsen": []
+  },
+  "lektionen": {
+   "es": {
+    "ids": [
+     "es-guia-1",
+     "es-guia-2",
+     "es-guia-3",
+     "es-guia-4",
+     "es-enye",
+     "es-frecuentes-1",
+     "es-frecuentes-2",
+     "es-frecuentes-3",
+     "es-frecuentes-4",
+     "es-tilde",
+     "es-mayus",
+     "es-puntuacion-1",
+     "es-pqb",
+     "es-ghv",
+     "es-yzx",
+     "es-dieresis",
+     "es-w",
+     "es-interrogacion",
+     "es-exclamacion",
+     "es-puntuacion-2",
+     "es-numeros",
+     "es-especiales-1",
+     "es-especiales-2",
+     "es-textos"
+    ],
+    "kinds": [
+     "home",
+     "home",
+     "home",
+     "home",
+     "home",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "shift",
+     "punctuation",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "punctuation",
+     "punctuation",
+     "punctuation",
+     "numbers",
+     "symbols",
+     "symbols",
+     "text"
+    ],
+    "newKeys": [
+     [
+      "f",
+      "j"
+     ],
+     [
+      "d",
+      "k"
+     ],
+     [
+      "s",
+      "l"
+     ],
+     [
+      "a"
+     ],
+     [
+      "ñ"
+     ],
+     [
+      "e",
+      "o"
+     ],
+     [
+      "n",
+      "t"
+     ],
+     [
+      "u",
+      "r"
+     ],
+     [
+      "c",
+      "i",
+      "m"
+     ],
+     [
+      "´"
+     ],
+     [],
+     [
+      ".",
+      ","
+     ],
+     [
+      "p",
+      "q",
+      "b"
+     ],
+     [
+      "g",
+      "h",
+      "v"
+     ],
+     [
+      "y",
+      "z",
+      "x"
+     ],
+     [
+      "¨"
+     ],
+     [
+      "w"
+     ],
+     [
+      "¿",
+      "?"
+     ],
+     [
+      "¡",
+      "!"
+     ],
+     [
+      ";",
+      ":",
+      "\"",
+      "-",
+      "(",
+      ")"
+     ],
+     [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "0"
+     ],
+     [
+      "%",
+      "€",
+      "$",
+      "@",
+      "/",
+      "&",
+      "*",
+      "+",
+      "="
+     ],
+     [
+      "_",
+      "<",
+      ">",
+      "[",
+      "]",
+      "{",
+      "}",
+      "#",
+      "|",
+      "'"
+     ],
+     []
+    ],
+    "titles": {
+     "anzahl": 24,
+     "hash": "ff70bf9cbf4d731d949477cb"
+    }
+   },
+   "latam": {
+    "ids": [
+     "es-guia-1",
+     "es-guia-2",
+     "es-guia-3",
+     "es-guia-4",
+     "es-enye",
+     "es-frecuentes-1",
+     "es-frecuentes-2",
+     "es-frecuentes-3",
+     "es-frecuentes-4",
+     "es-tilde",
+     "es-mayus",
+     "es-puntuacion-1",
+     "es-pqb",
+     "es-ghv",
+     "es-yzx",
+     "es-dieresis",
+     "es-w",
+     "es-interrogacion",
+     "es-exclamacion",
+     "es-puntuacion-2",
+     "es-numeros",
+     "es-especiales-1",
+     "es-especiales-2",
+     "es-textos"
+    ],
+    "kinds": [
+     "home",
+     "home",
+     "home",
+     "home",
+     "home",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "shift",
+     "punctuation",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "letters",
+     "punctuation",
+     "punctuation",
+     "punctuation",
+     "numbers",
+     "symbols",
+     "symbols",
+     "text"
+    ],
+    "newKeys": [
+     [
+      "f",
+      "j"
+     ],
+     [
+      "d",
+      "k"
+     ],
+     [
+      "s",
+      "l"
+     ],
+     [
+      "a"
+     ],
+     [
+      "ñ"
+     ],
+     [
+      "e",
+      "o"
+     ],
+     [
+      "n",
+      "t"
+     ],
+     [
+      "u",
+      "r"
+     ],
+     [
+      "c",
+      "i",
+      "m"
+     ],
+     [
+      "´"
+     ],
+     [],
+     [
+      ".",
+      ","
+     ],
+     [
+      "p",
+      "q",
+      "b"
+     ],
+     [
+      "g",
+      "h",
+      "v"
+     ],
+     [
+      "y",
+      "z",
+      "x"
+     ],
+     [
+      "¨"
+     ],
+     [
+      "w"
+     ],
+     [
+      "¿",
+      "?"
+     ],
+     [
+      "¡",
+      "!"
+     ],
+     [
+      ";",
+      ":",
+      "\"",
+      "-",
+      "(",
+      ")"
+     ],
+     [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "0"
+     ],
+     [
+      "%",
+      "$",
+      "@",
+      "/",
+      "&",
+      "*",
+      "+",
+      "="
+     ],
+     [
+      "_",
+      "<",
+      ">",
+      "[",
+      "]",
+      "{",
+      "}",
+      "#",
+      "|",
+      "'"
+     ],
+     []
+    ],
+    "titles": {
+     "anzahl": 24,
+     "hash": "bd216e95afa3ac7a016f4cbd"
+    }
+   }
+  },
+  "wortherkunft": {
+   "ids": [
+    "palabras-america",
+    "palabras-arabe",
+    "palabras-griego-latin",
+    "palabras-prestamos"
+   ],
+   "challengeIds": [
+    "palabrasc-1",
+    "palabrasc-2",
+    "palabrasc-3"
+   ],
+   "kids": {
+    "palabras-america": {
+     "anzahl": 25,
+     "hash": "52557c202f9c119512366b0e"
+    },
+    "palabras-arabe": {
+     "anzahl": 15,
+     "hash": "6ef785bd6acfe99d92777ce5"
+    },
+    "palabras-griego-latin": {
+     "anzahl": 25,
+     "hash": "297edd563179063cc337ad44"
+    },
+    "palabras-prestamos": {
+     "anzahl": 15,
+     "hash": "4cec2b6aa78d54241ae512cf"
+    },
+    "palabrasc-1": {
+     "anzahl": 27,
+     "hash": "5972362e84299088e6404066"
+    },
+    "palabrasc-2": {
+     "anzahl": 26,
+     "hash": "ac4316218155107fe4a0f8e0"
+    },
+    "palabrasc-3": {
+     "anzahl": 27,
+     "hash": "dbe254fbfb22a02254dac199"
+    }
+   },
+   "teens": {
+    "palabras-america": {
+     "anzahl": 25,
+     "hash": "c30a62919caaaa041c28fd5e"
+    },
+    "palabras-arabe": {
+     "anzahl": 15,
+     "hash": "b723539e1bf9f982c6c9c661"
+    },
+    "palabras-griego-latin": {
+     "anzahl": 25,
+     "hash": "a778cd17cec0d03dcf9a2923"
+    },
+    "palabras-prestamos": {
+     "anzahl": 15,
+     "hash": "afe12279cfd199457ba9243f"
+    },
+    "palabrasc-1": {
+     "anzahl": 27,
+     "hash": "e85ffe0c4bc0e2f414e3ed80"
+    },
+    "palabrasc-2": {
+     "anzahl": 26,
+     "hash": "0a6a7b32820ca9721c186b5e"
+    },
+    "palabrasc-3": {
+     "anzahl": 27,
+     "hash": "0ac268d7f3633f7b362d89ad"
+    }
+   },
+   "erwachsen": {
+    "palabras-america": {
+     "anzahl": 25,
+     "hash": "e57f3df7baafae41d80d74ae"
+    },
+    "palabras-arabe": {
+     "anzahl": 15,
+     "hash": "0e81755c07d9b56cabfb1098"
+    },
+    "palabras-griego-latin": {
+     "anzahl": 25,
+     "hash": "88dc6e7c830d958325338fb7"
+    },
+    "palabras-prestamos": {
+     "anzahl": 15,
+     "hash": "81d127b2848e7e15b46c10c2"
+    },
+    "palabrasc-1": {
+     "anzahl": 27,
+     "hash": "eb074c8488af552667e5d5db"
+    },
+    "palabrasc-2": {
+     "anzahl": 26,
+     "hash": "8313b6cc4f7ece9b082c9ec1"
+    },
+    "palabrasc-3": {
+     "anzahl": 27,
+     "hash": "a056297377060a8ec383019d"
+    }
+   }
+  },
+  "wortspiele": {
+   "frueh19": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "b001c3ec42907c2ce893c96b"
+     },
+     {
+      "anzahl": 12,
+      "hash": "d280e988c0979eafaee61461"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "793021ff09d437cf762272e5"
+     },
+     {
+      "anzahl": 14,
+      "hash": "f86e11796c1378335aeb8ba8"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 14,
+      "hash": "7e95e6917cf40d328fed4130"
+     },
+     {
+      "anzahl": 13,
+      "hash": "db1fe19559b840ff84018433"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 15,
+      "hash": "1da13cb4bd71beacbaa05860"
+     },
+     {
+      "anzahl": 17,
+      "hash": "b3377bdb4cc42d64839bd54b"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "b498ab5b8fb378192b0ba8a2"
+     },
+     {
+      "anzahl": 1,
+      "hash": "29ed6b400b84b5ec9d04ae9a"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 13,
+      "hash": "4c8f9e9e1981fa1b0f7b63c9"
+     },
+     {
+      "anzahl": 16,
+      "hash": "7d8a4ca4fe18da5036ce3d8e"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "49d3e1637ab59b62758ac17f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "1fa16b13732ae267f2b18502"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "88273bdcf5b8a0174815bc03"
+     },
+     {
+      "anzahl": 12,
+      "hash": "0008d89cb678a0ec3f8a5fa7"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "9b233bd8b589049c66193b0a"
+     },
+     {
+      "anzahl": 12,
+      "hash": "940149cb83d6c3c76f50166a"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "d1e035d1e6533ce8f4859494"
+     },
+     {
+      "anzahl": 8,
+      "hash": "0a094a4c26a1f4d2bae34010"
+     }
+    ],
+    "langersatz": [],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "bdadc4d3b42392250e1e1085"
+     },
+     {
+      "anzahl": 8,
+      "hash": "93a7325ce3835edce54e3785"
+     }
+    ]
+   },
+   "mitte42": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "2126087c557b279b7f69007e"
+     },
+     {
+      "anzahl": 12,
+      "hash": "d92f88131e2f441119bcd179"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "9b07370641db4976e90b5b78"
+     },
+     {
+      "anzahl": 14,
+      "hash": "9c7d55d27a13df21c0ac1953"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 12,
+      "hash": "e43439ff5213bb4ea7ca06e6"
+     },
+     {
+      "anzahl": 12,
+      "hash": "fe23a3af1254154441105d67"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 14,
+      "hash": "a1449e15a3d0c14b15e789eb"
+     },
+     {
+      "anzahl": 14,
+      "hash": "89e18df846dbde9d35e68c77"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "ee5580fc333dca93ad6f735b"
+     },
+     {
+      "anzahl": 1,
+      "hash": "29ed6b400b84b5ec9d04ae9a"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 21,
+      "hash": "2535244141b58d782ddf6952"
+     },
+     {
+      "anzahl": 16,
+      "hash": "712f310c26f94610d803afc0"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "cdc83f72577ec32e104c6c4f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "59b0d1cec8e06bc5f576c7f8"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "3fd522b1d99de64bf94bd6df"
+     },
+     {
+      "anzahl": 12,
+      "hash": "448814afba7b5ed6d6a449eb"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "54a755e366a1d980049e959a"
+     },
+     {
+      "anzahl": 12,
+      "hash": "8852c4dc923375557f82cf5c"
+     }
+    ],
+    "zahlendiktat": [],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "5ccfac13f945ea738752f530"
+     },
+     {
+      "anzahl": 8,
+      "hash": "121894cc0724a6a2f6aa9e2a"
+     }
+    ],
+    "langersatz": [
+     {
+      "anzahl": 12,
+      "hash": "a27a89d9e3bb9281ad8e2ba5"
+     },
+     {
+      "anzahl": 13,
+      "hash": "e0052b30baacfea6b9b22ead"
+     }
+    ],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "10ed4b918fb3cef136d65d13"
+     },
+     {
+      "anzahl": 8,
+      "hash": "cf884fef7cbae32b76f5405c"
+     }
+    ]
+   },
+   "voll": {
+    "alphabetreihen": [
+     {
+      "anzahl": 12,
+      "hash": "2126087c557b279b7f69007e"
+     },
+     {
+      "anzahl": 12,
+      "hash": "d92f88131e2f441119bcd179"
+     }
+    ],
+    "pyramide": [
+     {
+      "anzahl": 14,
+      "hash": "31cb3912b298bd9c39680532"
+     },
+     {
+      "anzahl": 14,
+      "hash": "29de0a56a0b13c232392383f"
+     }
+    ],
+    "wandernder-gross": [
+     {
+      "anzahl": 12,
+      "hash": "e43439ff5213bb4ea7ca06e6"
+     },
+     {
+      "anzahl": 12,
+      "hash": "fe23a3af1254154441105d67"
+     }
+    ],
+    "fingerdiktat": [
+     {
+      "anzahl": 14,
+      "hash": "a1449e15a3d0c14b15e789eb"
+     },
+     {
+      "anzahl": 14,
+      "hash": "89e18df846dbde9d35e68c77"
+     }
+    ],
+    "buchstabensalat": [
+     {
+      "anzahl": 1,
+      "hash": "ee5580fc333dca93ad6f735b"
+     },
+     {
+      "anzahl": 1,
+      "hash": "29ed6b400b84b5ec9d04ae9a"
+     }
+    ],
+    "lueckentext": [
+     {
+      "anzahl": 21,
+      "hash": "2535244141b58d782ddf6952"
+     },
+     {
+      "anzahl": 16,
+      "hash": "712f310c26f94610d803afc0"
+     }
+    ],
+    "handschwerpunkte": [
+     {
+      "anzahl": 12,
+      "hash": "cdc83f72577ec32e104c6c4f"
+     },
+     {
+      "anzahl": 12,
+      "hash": "59b0d1cec8e06bc5f576c7f8"
+     }
+    ],
+    "spiegelwoerter": [
+     {
+      "anzahl": 12,
+      "hash": "3fd522b1d99de64bf94bd6df"
+     },
+     {
+      "anzahl": 12,
+      "hash": "448814afba7b5ed6d6a449eb"
+     }
+    ],
+    "zwillingsgriffe": [
+     {
+      "anzahl": 12,
+      "hash": "54a755e366a1d980049e959a"
+     },
+     {
+      "anzahl": 12,
+      "hash": "8852c4dc923375557f82cf5c"
+     }
+    ],
+    "zahlendiktat": [
+     {
+      "anzahl": 10,
+      "hash": "9d3e70dc5d8380c1a02cb0a4"
+     },
+     {
+      "anzahl": 10,
+      "hash": "21fb8b4f871b0be939af01c1"
+     }
+    ],
+    "wasfehlt": [
+     {
+      "anzahl": 8,
+      "hash": "1a2093c81d82e50180f8176b"
+     },
+     {
+      "anzahl": 8,
+      "hash": "e1c89203494ba1d851e3d6c4"
+     }
+    ],
+    "langersatz": [
+     {
+      "anzahl": 13,
+      "hash": "7cb096a9fa3a2102aac1edfd"
+     },
+     {
+      "anzahl": 12,
+      "hash": "1f0bc0312ce1b5c8d9b46534"
+     }
+    ],
+    "korrekturlesen": [
+     {
+      "anzahl": 8,
+      "hash": "10ed4b918fb3cef136d65d13"
+     },
+     {
+      "anzahl": 8,
+      "hash": "cf884fef7cbae32b76f5405c"
+     }
+    ]
+   }
+  }
+ },
+ "serienBaseline": {
+  "eintraege": {
+   "kids": {
+    "es-kids-1-la-tortuga-de-carton": {
+     "anzahl": 30,
+     "hash": "5a541ee2c3c47232b6947f67",
+     "titel": "La tortuga de papel"
+    },
+    "es-kids-1-el-silbo-de-aday": {
+     "anzahl": 30,
+     "hash": "23edfebd3a35fac12fc7ec5f",
+     "titel": "El silbo de Aday"
+    },
+    "es-kids-1-flores-para-canela": {
+     "anzahl": 45,
+     "hash": "418fd08d172cfcd121395e9d",
+     "titel": "Flores para Canela"
+    },
+    "es-kids-1-la-lista-de-wayra": {
+     "anzahl": 31,
+     "hash": "a7066dda8d54927924805306",
+     "titel": "La lista de Wayra"
+    },
+    "es-kids-1-el-balde-de-mariana": {
+     "anzahl": 30,
+     "hash": "c5af3c9fbdce182766acc641",
+     "titel": "El balde de Mariana"
+    },
+    "es-kids-1-manchas-blancas": {
+     "anzahl": 30,
+     "hash": "339b9ec0dc6714ba1095a3bb",
+     "titel": "Manchas blancas"
+    },
+    "es-kids-1-el-desierto-florido": {
+     "anzahl": 30,
+     "hash": "b86149fe196c281b1c79cca8",
+     "titel": "El desierto florido"
+    },
+    "es-kids-1-deseos-en-miniatura": {
+     "anzahl": 30,
+     "hash": "a37d126a684d1ad297bc761e",
+     "titel": "Deseos en miniatura"
+    },
+    "es-kids-1-la-cuerda-azul": {
+     "anzahl": 30,
+     "hash": "7300d3931a9f84f722ccf932",
+     "titel": "La cuerda azul"
+    },
+    "es-kids-1-el-tambor-piano": {
+     "anzahl": 30,
+     "hash": "2744af4a5c30a2335064a798",
+     "titel": "El tambor piano"
+    },
+    "es-kids-1-el-papa-nandu": {
+     "anzahl": 30,
+     "hash": "623f6bc3486415b9ba2cd934",
+     "titel": "El papá ñandú"
+    },
+    "es-kids-1-un-chiguire-en-la-curiara": {
+     "anzahl": 31,
+     "hash": "6ab64c589d16ca793710d2ea",
+     "titel": "Un chigüire en la curiara"
+    },
+    "es-kids-1-la-lanzadora-de-centro-habana": {
+     "anzahl": 30,
+     "hash": "367efc840dcdfdaff6cfe9e2",
+     "titel": "La lanzadora de Centro Habana"
+    },
+    "es-kids-1-cuernos-torcidos": {
+     "anzahl": 30,
+     "hash": "766789aaba99d98b1574e260",
+     "titel": "Cuernos torcidos"
+    },
+    "es-kids-1-un-mensaje-en-la-cola": {
+     "anzahl": 30,
+     "hash": "1f17fdcac506f5827994874f",
+     "titel": "Un mensaje en la cola"
+    },
+    "es-kids-1-un-puente-para-el-perezoso": {
+     "anzahl": 29,
+     "hash": "f2fe765d97dcbe05834e336b",
+     "titel": "Un puente para el perezoso"
+    },
+    "es-kids-1-la-bahia-que-brilla": {
+     "anzahl": 30,
+     "hash": "c19a9c0eb483d3fd24c6d54b",
+     "titel": "La bahía que brilla"
+    },
+    "es-kids-1-el-refugio-de-los-ajolotes": {
+     "anzahl": 30,
+     "hash": "d7c0f44f67795b0d5e352cb2",
+     "titel": "El refugio de los ajolotes"
+    },
+    "es-kids-1-millones-de-alas": {
+     "anzahl": 30,
+     "hash": "b0075b57e60d3d4d30b1a4d8",
+     "titel": "Millones de alas"
+    },
+    "es-kids-1-la-noche-de-reyes": {
+     "anzahl": 31,
+     "hash": "08185981654a97fa4394561b",
+     "titel": "La noche de Reyes"
+    }
+   },
+   "teens": {
+    "es-teens-1-el-rincon-mas-fresco": {
+     "anzahl": 30,
+     "hash": "a4270ad62de52db12f1c6760",
+     "titel": "El rincón más fresco"
+    },
+    "es-teens-1-silencio-en-la-pista": {
+     "anzahl": 30,
+     "hash": "8542bd4e902759a7ac26265c",
+     "titel": "Silencio en la pista"
+    },
+    "es-teens-1-cuando-suena-la-alerta": {
+     "anzahl": 32,
+     "hash": "3d037ca03470653d72f4cedd",
+     "titel": "Cuando suena la alerta"
+    },
+    "es-teens-1-bix-a-beel": {
+     "anzahl": 30,
+     "hash": "938f2af06057c91691c588e0",
+     "titel": "Bix a beel, dice Ofelia"
+    },
+    "es-teens-1-visorias-a-las-siete": {
+     "anzahl": 29,
+     "hash": "b24346e701129b541d96f403",
+     "titel": "Visorías a las siete"
+    },
+    "es-teens-1-una-cancion-para-el-colectivo": {
+     "anzahl": 30,
+     "hash": "f7aa9c782817f0ab513cdd81",
+     "titel": "Una canción para el colectivo"
+    },
+    "es-teens-1-lugar-de-partida": {
+     "anzahl": 30,
+     "hash": "4b7784bdcf3384bd0342759c",
+     "titel": "Lugar de partida"
+    },
+    "es-teens-1-la-pared-de-la-comuna-13": {
+     "anzahl": 30,
+     "hash": "c8982d0f2aa031dac2730b60",
+     "titel": "La pared de la Comuna 13"
+    },
+    "es-teens-1-garua-en-punta-hermosa": {
+     "anzahl": 30,
+     "hash": "036ab59763e336eb603fe474",
+     "titel": "Garúa en Punta Hermosa"
+    },
+    "es-teens-1-lo-que-se-fue": {
+     "anzahl": 29,
+     "hash": "124ce80d3eb3f02bf786357d",
+     "titel": "Lo que se fue"
+    },
+    "es-teens-1-achachay-en-el-chimborazo": {
+     "anzahl": 30,
+     "hash": "16b36fdb5d3674843633e193",
+     "titel": "Achachay en el Chimborazo"
+    },
+    "es-teens-1-pollera-y-crampones": {
+     "anzahl": 30,
+     "hash": "77fb11c11871000ff58ac99d",
+     "titel": "Pollera y crampones"
+    },
+    "es-teens-1-un-minuto-de-casa": {
+     "anzahl": 30,
+     "hash": "a1854a6abadf74ec3849e99b",
+     "titel": "Un minuto de casa"
+    },
+    "es-teens-1-una-zapatilla-en-la-guagua": {
+     "anzahl": 30,
+     "hash": "d0f18d13319529fdc71894f7",
+     "titel": "Una zapatilla en la guagua"
+    },
+    "es-teens-1-catorce-a-catorce": {
+     "anzahl": 31,
+     "hash": "5205b3abcef1c11b1373d433",
+     "titel": "Catorce a catorce"
+    },
+    "es-teens-1-carga-solar-en-caguas": {
+     "anzahl": 30,
+     "hash": "48d446f9c9b787556a823da3",
+     "titel": "Carga solar en Caguas"
+    },
+    "es-teens-1-la-guara-del-anillo": {
+     "anzahl": 31,
+     "hash": "20d01ac2eb30fd3f500dcd17",
+     "titel": "La guara del anillo"
+    },
+    "es-teens-1-un-idioma-casi-recien-nacido": {
+     "anzahl": 30,
+     "hash": "bed8ab04edc85c5eaa07ee94",
+     "titel": "Un idioma casi recién nacido"
+    },
+    "es-teens-1-el-mismo-lago": {
+     "anzahl": 30,
+     "hash": "30ea97047fc069b28f918a58",
+     "titel": "El mismo lago"
+    },
+    "es-teens-1-la-alfombra-vacunada": {
+     "anzahl": 30,
+     "hash": "aaf4c7f0b50f6e6872460544",
+     "titel": "La alfombra vacunada"
+    }
+   },
+   "erwachsen": {
+    "es-erwachsen-1-percebes-al-amanecer": {
+     "anzahl": 30,
+     "hash": "2d5b2c20df2112bdf34e2862",
+     "titel": "Percebes al amanecer"
+    },
+    "es-erwachsen-1-tension-o-presion": {
+     "anzahl": 30,
+     "hash": "e291ad5226efc057b2558ae8",
+     "titel": "Tensión o presión"
+    },
+    "es-erwachsen-1-un-perfil-para-la-radio": {
+     "anzahl": 26,
+     "hash": "ec96495e647773947b249a27",
+     "titel": "Un perfil para la radio"
+    },
+    "es-erwachsen-1-la-consulta-en-maya": {
+     "anzahl": 28,
+     "hash": "b39e1c9429c27e64bea26af6",
+     "titel": "La consulta en maya"
+    },
+    "es-erwachsen-1-cacao-de-comalcalco": {
+     "anzahl": 28,
+     "hash": "141752dded6c8e283e928000",
+     "titel": "Cacao de Comalcalco"
+    },
+    "es-erwachsen-1-granizo-en-la-vendimia": {
+     "anzahl": 30,
+     "hash": "8f939696ccbe5dd2c4a193e0",
+     "titel": "Granizo en la vendimia"
+    },
+    "es-erwachsen-1-un-tinto-en-filandia": {
+     "anzahl": 29,
+     "hash": "b571d45f7cb7ac46d3ff3574",
+     "titel": "Un tinto en Filandia"
+    },
+    "es-erwachsen-1-sesenta-carpetas": {
+     "anzahl": 28,
+     "hash": "291dd3a90aa08cd52e1a2c81",
+     "titel": "Sesenta carpetas"
+    },
+    "es-erwachsen-1-el-cuaderno-del-ascensor": {
+     "anzahl": 29,
+     "hash": "d25f10428da284edc0c9da2c",
+     "titel": "El cuaderno del ascensor"
+    },
+    "es-erwachsen-1-espejo-de-sal": {
+     "anzahl": 29,
+     "hash": "447007dfffc6950be31a63c2",
+     "titel": "Espejo de sal"
+    },
+    "es-erwachsen-1-trece-grados": {
+     "anzahl": 29,
+     "hash": "b25b919b4e51b98add791d73",
+     "titel": "Trece grados"
+    },
+    "es-erwachsen-1-boton-boton-boton": {
+     "anzahl": 29,
+     "hash": "56d14def2c566e5657ab9ab7",
+     "titel": "Botón, botón, botón"
+    },
+    "es-erwachsen-1-noticias-en-dos-idiomas": {
+     "anzahl": 29,
+     "hash": "324b657d46be5cd19f549422",
+     "titel": "Noticias en dos idiomas"
+    },
+    "es-erwachsen-1-la-lectora-de-la-tabaqueria": {
+     "anzahl": 29,
+     "hash": "609dd439bcf2c72e40ee769e",
+     "titel": "La lectora de la tabaquería"
+    },
+    "es-erwachsen-1-la-libreta-del-fiao": {
+     "anzahl": 29,
+     "hash": "0ac4bfa7ab17dce7bb4d19a2",
+     "titel": "La libreta del fiao"
+    },
+    "es-erwachsen-1-el-azul-del-lago": {
+     "anzahl": 29,
+     "hash": "835652c7593f564968e901ee",
+     "titel": "El azul del lago"
+    },
+    "es-erwachsen-1-un-motor-cerca-de-liberia": {
+     "anzahl": 28,
+     "hash": "479977201a59b7af88fb4245",
+     "titel": "Un motor cerca de Liberia"
+    },
+    "es-erwachsen-1-cocinar-en-garifuna": {
+     "anzahl": 28,
+     "hash": "75049435850a0a19e614a5ce",
+     "titel": "Cocinar en garífuna"
+    },
+    "es-erwachsen-1-el-sobre-de-bata": {
+     "anzahl": 28,
+     "hash": "44bb58b5e95e5dce58e70d4f",
+     "titel": "El sobre de Bata"
+    },
+    "es-erwachsen-1-ciento-cuatro-grados": {
+     "anzahl": 29,
+     "hash": "cbde13f323c40730a13d04a0",
+     "titel": "Ciento cuatro grados"
+    }
+   }
+  },
+  "unlocked": {
+   "kids": {
+    "n34": [
+     "es-kids-1-cuernos-torcidos",
+     "es-kids-1-deseos-en-miniatura",
+     "es-kids-1-el-tambor-piano",
+     "es-kids-1-la-cuerda-azul",
+     "es-kids-1-un-chiguire-en-la-curiara"
+    ],
+    "n52": [
+     "es-kids-1-cuernos-torcidos",
+     "es-kids-1-deseos-en-miniatura",
+     "es-kids-1-el-balde-de-mariana",
+     "es-kids-1-el-desierto-florido",
+     "es-kids-1-el-papa-nandu",
+     "es-kids-1-el-refugio-de-los-ajolotes",
+     "es-kids-1-el-silbo-de-aday",
+     "es-kids-1-el-tambor-piano",
+     "es-kids-1-flores-para-canela",
+     "es-kids-1-la-bahia-que-brilla",
+     "es-kids-1-la-cuerda-azul",
+     "es-kids-1-la-lanzadora-de-centro-habana",
+     "es-kids-1-la-lista-de-wayra",
+     "es-kids-1-la-noche-de-reyes",
+     "es-kids-1-la-tortuga-de-carton",
+     "es-kids-1-manchas-blancas",
+     "es-kids-1-millones-de-alas",
+     "es-kids-1-un-chiguire-en-la-curiara",
+     "es-kids-1-un-mensaje-en-la-cola",
+     "es-kids-1-un-puente-para-el-perezoso"
+    ],
+    "n60": [
+     "es-kids-1-cuernos-torcidos",
+     "es-kids-1-deseos-en-miniatura",
+     "es-kids-1-el-balde-de-mariana",
+     "es-kids-1-el-desierto-florido",
+     "es-kids-1-el-papa-nandu",
+     "es-kids-1-el-refugio-de-los-ajolotes",
+     "es-kids-1-el-silbo-de-aday",
+     "es-kids-1-el-tambor-piano",
+     "es-kids-1-flores-para-canela",
+     "es-kids-1-la-bahia-que-brilla",
+     "es-kids-1-la-cuerda-azul",
+     "es-kids-1-la-lanzadora-de-centro-habana",
+     "es-kids-1-la-lista-de-wayra",
+     "es-kids-1-la-noche-de-reyes",
+     "es-kids-1-la-tortuga-de-carton",
+     "es-kids-1-manchas-blancas",
+     "es-kids-1-millones-de-alas",
+     "es-kids-1-un-chiguire-en-la-curiara",
+     "es-kids-1-un-mensaje-en-la-cola",
+     "es-kids-1-un-puente-para-el-perezoso"
+    ],
+    "voll": [
+     "es-kids-1-cuernos-torcidos",
+     "es-kids-1-deseos-en-miniatura",
+     "es-kids-1-el-balde-de-mariana",
+     "es-kids-1-el-desierto-florido",
+     "es-kids-1-el-papa-nandu",
+     "es-kids-1-el-refugio-de-los-ajolotes",
+     "es-kids-1-el-silbo-de-aday",
+     "es-kids-1-el-tambor-piano",
+     "es-kids-1-flores-para-canela",
+     "es-kids-1-la-bahia-que-brilla",
+     "es-kids-1-la-cuerda-azul",
+     "es-kids-1-la-lanzadora-de-centro-habana",
+     "es-kids-1-la-lista-de-wayra",
+     "es-kids-1-la-noche-de-reyes",
+     "es-kids-1-la-tortuga-de-carton",
+     "es-kids-1-manchas-blancas",
+     "es-kids-1-millones-de-alas",
+     "es-kids-1-un-chiguire-en-la-curiara",
+     "es-kids-1-un-mensaje-en-la-cola",
+     "es-kids-1-un-puente-para-el-perezoso"
+    ]
+   },
+   "teens": {
+    "n34": [
+     "es-teens-1-la-alfombra-vacunada",
+     "es-teens-1-un-idioma-casi-recien-nacido",
+     "es-teens-1-un-minuto-de-casa",
+     "es-teens-1-una-cancion-para-el-colectivo"
+    ],
+    "n52": [
+     "es-teens-1-achachay-en-el-chimborazo",
+     "es-teens-1-catorce-a-catorce",
+     "es-teens-1-cuando-suena-la-alerta",
+     "es-teens-1-el-mismo-lago",
+     "es-teens-1-el-rincon-mas-fresco",
+     "es-teens-1-la-alfombra-vacunada",
+     "es-teens-1-la-guara-del-anillo",
+     "es-teens-1-la-pared-de-la-comuna-13",
+     "es-teens-1-lo-que-se-fue",
+     "es-teens-1-lugar-de-partida",
+     "es-teens-1-pollera-y-crampones",
+     "es-teens-1-silencio-en-la-pista",
+     "es-teens-1-un-idioma-casi-recien-nacido",
+     "es-teens-1-un-minuto-de-casa",
+     "es-teens-1-una-cancion-para-el-colectivo",
+     "es-teens-1-una-zapatilla-en-la-guagua",
+     "es-teens-1-visorias-a-las-siete"
+    ],
+    "n60": [
+     "es-teens-1-achachay-en-el-chimborazo",
+     "es-teens-1-carga-solar-en-caguas",
+     "es-teens-1-catorce-a-catorce",
+     "es-teens-1-cuando-suena-la-alerta",
+     "es-teens-1-el-mismo-lago",
+     "es-teens-1-el-rincon-mas-fresco",
+     "es-teens-1-garua-en-punta-hermosa",
+     "es-teens-1-la-alfombra-vacunada",
+     "es-teens-1-la-guara-del-anillo",
+     "es-teens-1-la-pared-de-la-comuna-13",
+     "es-teens-1-lo-que-se-fue",
+     "es-teens-1-lugar-de-partida",
+     "es-teens-1-pollera-y-crampones",
+     "es-teens-1-silencio-en-la-pista",
+     "es-teens-1-un-idioma-casi-recien-nacido",
+     "es-teens-1-un-minuto-de-casa",
+     "es-teens-1-una-cancion-para-el-colectivo",
+     "es-teens-1-una-zapatilla-en-la-guagua",
+     "es-teens-1-visorias-a-las-siete"
+    ],
+    "voll": [
+     "es-teens-1-achachay-en-el-chimborazo",
+     "es-teens-1-bix-a-beel",
+     "es-teens-1-carga-solar-en-caguas",
+     "es-teens-1-catorce-a-catorce",
+     "es-teens-1-cuando-suena-la-alerta",
+     "es-teens-1-el-mismo-lago",
+     "es-teens-1-el-rincon-mas-fresco",
+     "es-teens-1-garua-en-punta-hermosa",
+     "es-teens-1-la-alfombra-vacunada",
+     "es-teens-1-la-guara-del-anillo",
+     "es-teens-1-la-pared-de-la-comuna-13",
+     "es-teens-1-lo-que-se-fue",
+     "es-teens-1-lugar-de-partida",
+     "es-teens-1-pollera-y-crampones",
+     "es-teens-1-silencio-en-la-pista",
+     "es-teens-1-un-idioma-casi-recien-nacido",
+     "es-teens-1-un-minuto-de-casa",
+     "es-teens-1-una-cancion-para-el-colectivo",
+     "es-teens-1-una-zapatilla-en-la-guagua",
+     "es-teens-1-visorias-a-las-siete"
+    ]
+   },
+   "erwachsen": {
+    "n34": [
+     "es-erwachsen-1-el-sobre-de-bata"
+    ],
+    "n52": [
+     "es-erwachsen-1-cocinar-en-garifuna",
+     "es-erwachsen-1-el-sobre-de-bata",
+     "es-erwachsen-1-espejo-de-sal",
+     "es-erwachsen-1-granizo-en-la-vendimia",
+     "es-erwachsen-1-la-lectora-de-la-tabaqueria",
+     "es-erwachsen-1-noticias-en-dos-idiomas",
+     "es-erwachsen-1-percebes-al-amanecer",
+     "es-erwachsen-1-trece-grados",
+     "es-erwachsen-1-un-motor-cerca-de-liberia",
+     "es-erwachsen-1-un-perfil-para-la-radio"
+    ],
+    "n60": [
+     "es-erwachsen-1-boton-boton-boton",
+     "es-erwachsen-1-cacao-de-comalcalco",
+     "es-erwachsen-1-ciento-cuatro-grados",
+     "es-erwachsen-1-cocinar-en-garifuna",
+     "es-erwachsen-1-el-cuaderno-del-ascensor",
+     "es-erwachsen-1-el-sobre-de-bata",
+     "es-erwachsen-1-espejo-de-sal",
+     "es-erwachsen-1-granizo-en-la-vendimia",
+     "es-erwachsen-1-la-lectora-de-la-tabaqueria",
+     "es-erwachsen-1-la-libreta-del-fiao",
+     "es-erwachsen-1-noticias-en-dos-idiomas",
+     "es-erwachsen-1-percebes-al-amanecer",
+     "es-erwachsen-1-sesenta-carpetas",
+     "es-erwachsen-1-tension-o-presion",
+     "es-erwachsen-1-trece-grados",
+     "es-erwachsen-1-un-motor-cerca-de-liberia",
+     "es-erwachsen-1-un-perfil-para-la-radio",
+     "es-erwachsen-1-un-tinto-en-filandia"
+    ],
+    "voll": [
+     "es-erwachsen-1-boton-boton-boton",
+     "es-erwachsen-1-cacao-de-comalcalco",
+     "es-erwachsen-1-ciento-cuatro-grados",
+     "es-erwachsen-1-cocinar-en-garifuna",
+     "es-erwachsen-1-el-azul-del-lago",
+     "es-erwachsen-1-el-cuaderno-del-ascensor",
+     "es-erwachsen-1-el-sobre-de-bata",
+     "es-erwachsen-1-espejo-de-sal",
+     "es-erwachsen-1-granizo-en-la-vendimia",
+     "es-erwachsen-1-la-consulta-en-maya",
+     "es-erwachsen-1-la-lectora-de-la-tabaqueria",
+     "es-erwachsen-1-la-libreta-del-fiao",
+     "es-erwachsen-1-noticias-en-dos-idiomas",
+     "es-erwachsen-1-percebes-al-amanecer",
+     "es-erwachsen-1-sesenta-carpetas",
+     "es-erwachsen-1-tension-o-presion",
+     "es-erwachsen-1-trece-grados",
+     "es-erwachsen-1-un-motor-cerca-de-liberia",
+     "es-erwachsen-1-un-perfil-para-la-radio",
+     "es-erwachsen-1-un-tinto-en-filandia"
+    ]
+   }
+  }
+ }
+}

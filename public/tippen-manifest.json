@@ -1,0 +1,29 @@
+{
+  "name": "Tastenflow - 10-Finger-Schreiben lernen",
+  "short_name": "Tastenflow",
+  "description": "10-Finger-Schreiben lernen mit Tastenflow von Sensorik",
+  "start_url": "/programme/tastenflow",
+  "scope": "/programme/tastenflow",
+  "display": "standalone",
+  "background_color": "#FBFBFD",
+  "theme_color": "#FBFBFD",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/tastenflow-logo-180.png?v=2",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/tastenflow-logo-512.png?v=2",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/tastenflow-logo.svg?v=2",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+/**
+ * ★ D-LERNDATEN (25.10.2026): DIE QUELLWÖRTER DES BUCHSTABENSALATS des Weges „sv" (Schwedisch) - gefüllt aus den vorbereiteten Lerndaten.
+ *
+ * Quelle: iCloud `sprachen-2026-10-25/tf-fest-neu/sv/tf-fest-sv.json`, Schlüssel `schreibWoerter` (Zuordnung: Rezept
+ * Teil D). Geprüft vom unabhängigen Prüfer der PC-Sitzung: `PRUEFBERICHT.md` im selben Ordner (25.10.2026) - Urteil:
+ * „Freigabefähig: ja, unter zwei Bedingungen: Die Punkte 1 und 5 aus §5 müssen technisch geklärt werden, und ein Mensch mit Schwedisch als Erstsprache sollte das Ganze gegenlesen.“
+ * Übernommen vom Erzeuger-Skript der Etappe D-LERNDATEN im Format von `buchstabensalatCs.ts`, Eintrag für Eintrag in der Reihenfolge der
+ * Quelle. Geändert wurde nur Typografie, die keine Tastatur hat (gezählt im Befund `BEFUND-2026-10-25-D-LERNDATEN.md`).
+ * ⚠️ Eine Lese-Abnahme durch eine Person mit Schwedisch als Erstsprache steht aus (Prüfbericht; Falle 59).
+ *
+ * ⚠️ Der Ertrag je Quellwort (mindestens `SALAT_ZIEL` echte Wörter) ist NICHT gemessen: er wird gegen das Lexikon der Sprache
+ * gezählt (`lexikonWoerter("sv")`), und ein Fach für „sv" baut erst F8 (`lexicon.ts`). Bis dahin findet der Salat auf diesem
+ * Weg keine Funde und bietet sich nicht an - die Daten liegen bereit.
+ *
+ * Verteiler: `buchstabensalat.ts` (Namen ausschliessen: `salatNamen${Xx}.ts`, noch leer) - liest diese Datei seit G3c; leer hiess Englisch, gefüllt gilt diese Liste (`geruestRueckfall.ts`).
+ * Unsichtbar, bis der Schalter `?schwedisch-lehrgang=1` an ist (Vorgabe AUS). Wächter: `tests/tastenflow-lerndaten-sv.test.ts`
+ * (Regeln je Sprache in `tests/helfer/lerndatenNeueWege.ts`).
+ *
+ * ⚠️ DATENBLATT (`scripts/buendel-aufteilung.ts`): nur `import type`, kein Code.
+ */
+import type { Salatwort } from "./buchstabensalat";
+
+const ALLE: Salatwort["stufen"] = ["kids", "teens", "erwachsen"];
+const AB_TEENS: Salatwort["stufen"] = ["teens", "erwachsen"];
+
+export const SALATWOERTER_SV: Salatwort[] = [
+  { wort: "sjö", stufen: ALLE },
+  { wort: "sju", stufen: ALLE },
+  { wort: "sjuk", stufen: ALLE },
+  { wort: "sjunga", stufen: ALLE },
+  { wort: "själv", stufen: ALLE },
+  { wort: "skjorta", stufen: ALLE },
+  { wort: "stjärna", stufen: ALLE },
+  { wort: "skön", stufen: ALLE },
+  { wort: "sked", stufen: ALLE },
+  { wort: "skida", stufen: ALLE },
+  { wort: "skärm", stufen: ALLE },
+  { wort: "skärgård", stufen: ALLE },
+  { wort: "choklad", stufen: ALLE },
+  { wort: "dusch", stufen: ALLE },
+  { wort: "tjej", stufen: ALLE },
+  { wort: "tjugo", stufen: ALLE },
+  { wort: "kjol", stufen: ALLE },
+  { wort: "kyrka", stufen: ALLE },
+  { wort: "kind", stufen: ALLE },
+  { wort: "köpa", stufen: ALLE },
+  { wort: "kök", stufen: ALLE },
+  { wort: "kärlek", stufen: ALLE },
+  { wort: "kyckling", stufen: ALLE },
+  { wort: "tjock", stufen: ALLE },
+  { wort: "gjorde", stufen: ALLE },
+  { wort: "hjärta", stufen: ALLE },
+  { wort: "hjälpa", stufen: ALLE },
+  { wort: "ljus", stufen: ALLE },
+  { wort: "ljud", stufen: ALLE },
+  { wort: "djur", stufen: ALLE },
+  { wort: "djup", stufen: ALLE },
+  { wort: "jord", stufen: ALLE },
+  { wort: "gärna", stufen: ALLE },
+  { wort: "gilla", stufen: ALLE },
+  { wort: "älg", stufen: ALLE },
+  { wort: "berg", stufen: ALLE },
+  { wort: "färg", stufen: ALLE },
+  { wort: "lång", stufen: ALLE },
+  { wort: "sång", stufen: ALLE },
+  { wort: "regn", stufen: ALLE },
+  { wort: "vagn", stufen: ALLE },
+  { wort: "ugn", stufen: ALLE },
+  { wort: "lugn", stufen: ALLE },
+  { wort: "tunga", stufen: ALLE },
+  { wort: "finger", stufen: ALLE },
+  { wort: "tänka", stufen: ALLE },
+  { wort: "glass", stufen: ALLE },
+  { wort: "glas", stufen: ALLE },
+  { wort: "tak", stufen: ALLE },
+  { wort: "tack", stufen: ALLE },
+  { wort: "vit", stufen: ALLE },
+  { wort: "vitt", stufen: ALLE },
+  { wort: "mamma", stufen: ALLE },
+  { wort: "pappa", stufen: ALLE },
+  { wort: "katt", stufen: ALLE },
+  { wort: "boll", stufen: ALLE },
+  { wort: "kommer", stufen: ALLE },
+  { wort: "rum", stufen: ALLE },
+  { wort: "dum", stufen: ALLE },
+  { wort: "hem", stufen: ALLE },
+  { wort: "fem", stufen: ALLE },
+  { wort: "vem", stufen: ALLE },
+  { wort: "kam", stufen: ALLE },
+  { wort: "simma", stufen: ALLE },
+  { wort: "himmel", stufen: ALLE },
+  { wort: "sommar", stufen: ALLE },
+  { wort: "sova", stufen: ALLE },
+  { wort: "åka", stufen: ALLE },
+  { wort: "kål", stufen: ALLE },
+  { wort: "son", stufen: ALLE },
+  { wort: "våg", stufen: ALLE },
+  { wort: "sol", stufen: ALLE },
+  { wort: "åtta", stufen: ALLE },
+  { wort: "två", stufen: ALLE },
+  { wort: "sätt", stufen: ALLE },
+  { wort: "sett", stufen: ALLE },
+  { wort: "äta", stufen: ALLE },
+  { wort: "eld", stufen: ALLE },
+  { wort: "lärare", stufen: ALLE },
+  { wort: "äpple", stufen: ALLE },
+  { wort: "station", stufen: ALLE },
+  { wort: "lektion", stufen: ALLE },
+  { wort: "motion", stufen: ALLE },
+  { wort: "också", stufen: ALLE },
+  { wort: "mycket", stufen: ALLE },
+  { wort: "någon", stufen: ALLE },
+  { wort: "något", stufen: ALLE },
+  { wort: "kanske", stufen: ALLE },
+  { wort: "midsommar", stufen: ALLE },
+  { wort: "förlåt", stufen: ALLE },
+  { wort: "veckor", stufen: ALLE },
+  { wort: "tidning", stufen: ALLE },
+  { wort: "giraff", stufen: ALLE },
+  { wort: "idé", stufen: ALLE },
+  { wort: "kafé", stufen: ALLE },
+  { wort: "information", stufen: AB_TEENS },
+  { wort: "egentligen", stufen: AB_TEENS },
+  { wort: "sjuksköterska", stufen: AB_TEENS },
+  { wort: "parallell", stufen: AB_TEENS },
+  { wort: "journalist", stufen: AB_TEENS },
+  { wort: "champinjon", stufen: AB_TEENS },
+  { wort: "restaurang", stufen: AB_TEENS },
+  { wort: "ingenjör", stufen: AB_TEENS },
+  { wort: "generation", stufen: AB_TEENS },
+  { wort: "intelligent", stufen: AB_TEENS },
+  { wort: "garage", stufen: AB_TEENS },
+  { wort: "tillräckligt", stufen: AB_TEENS },
+  { wort: "fortfarande", stufen: AB_TEENS },
+  { wort: "ögonblick", stufen: AB_TEENS },
+  { wort: "försäkring", stufen: AB_TEENS },
+  { wort: "myndighet", stufen: AB_TEENS },
+  { wort: "rättighet", stufen: AB_TEENS },
+  { wort: "uppmärksamhet", stufen: AB_TEENS },
+  { wort: "armé", stufen: AB_TEENS },
+  { wort: "allemansrätten", stufen: AB_TEENS },
+];

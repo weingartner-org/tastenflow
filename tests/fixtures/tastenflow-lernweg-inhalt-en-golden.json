@@ -1,0 +1,4252 @@
+{
+ "jeLayout": {
+  "de": {
+   "n2": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n5": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n8": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n10": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1,
+       "hash": "8024d6a0968a45904af5f115"
+      },
+      "teens": {
+       "anzahl": 1,
+       "hash": "8024d6a0968a45904af5f115"
+      },
+      "erwachsen": {
+       "anzahl": 1,
+       "hash": "8024d6a0968a45904af5f115"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 54,
+       "hash": "11af0db578e2b5b454321996"
+      },
+      "teens": {
+       "anzahl": 56,
+       "hash": "8e96750edf7d4abc214fff54"
+      },
+      "erwachsen": {
+       "anzahl": 57,
+       "hash": "a48ff498eeb0591a73e23565"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n13": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 90,
+       "hash": "9cdc5f68995deefa9abc2e15"
+      },
+      "teens": {
+       "anzahl": 98,
+       "hash": "86ca5266e82800f4c44354ad"
+      },
+      "erwachsen": {
+       "anzahl": 53,
+       "hash": "077c7bb321042f8da4a8cc09"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 224,
+       "hash": "7eb91c929d84e6bd2b77ce00"
+      },
+      "teens": {
+       "anzahl": 233,
+       "hash": "109e5bb67fdca3451bfe7072"
+      },
+      "erwachsen": {
+       "anzahl": 184,
+       "hash": "34a97d4252496ffbbbf9bc61"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "der-riss",
+       "die-kreide-an-der-tafel"
+      ],
+      "teens": [
+       "der-riss",
+       "die-antenne",
+       "die-frist",
+       "die-terrasse"
+      ],
+      "erwachsen": [
+       "der-kai",
+       "der-laden",
+       "die-ernte",
+       "die-terrasse"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-weg-kids-nine-kites"
+      ],
+      "teens": [
+       "en-weg-teens-a-test-of-nerve"
+      ],
+      "erwachsen": []
+     }
+    }
+   },
+   "n16": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 110,
+       "hash": "6160a3ea992b90e71fde68c0"
+      },
+      "teens": {
+       "anzahl": 116,
+       "hash": "ac9ad61eb19704800e179070"
+      },
+      "erwachsen": {
+       "anzahl": 68,
+       "hash": "2c589f4882ff85d22485a1d2"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 327,
+       "hash": "df9c955e7b64a5b91e7750a8"
+      },
+      "teens": {
+       "anzahl": 331,
+       "hash": "4c654a56939761454585158c"
+      },
+      "erwachsen": {
+       "anzahl": 275,
+       "hash": "8f7bdee336b17ec878633620"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "der-riss",
+       "die-kreide-an-der-tafel"
+      ],
+      "teens": [
+       "der-riss",
+       "die-antenne",
+       "die-frist",
+       "die-terrasse"
+      ],
+      "erwachsen": [
+       "der-kai",
+       "der-laden",
+       "die-ernte",
+       "die-terrasse"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-salt-and-the-sea",
+       "en-the-otter-at-the-ford",
+       "en-the-shell-at-the-tide-line",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-nine-kites"
+      ],
+      "teens": [
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-third-stair",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-test-of-nerve"
+      ],
+      "erwachsen": [
+       "en-the-line-at-the-alder",
+       "en-the-three-oak-doors",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore"
+      ]
+     }
+    }
+   },
+   "n20": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 122,
+       "hash": "cb9d154169fdfef28e908e58"
+      },
+      "teens": {
+       "anzahl": 126,
+       "hash": "cc85662b1f96c7f74c376707"
+      },
+      "erwachsen": {
+       "anzahl": 74,
+       "hash": "91ac0b62072a5a18347278ca"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 393,
+       "hash": "0c6ad73438eb09a399d8b2f2"
+      },
+      "teens": {
+       "anzahl": 401,
+       "hash": "bda1e42c559792a5c9d22a87"
+      },
+      "erwachsen": {
+       "anzahl": 339,
+       "hash": "475619101eb8abdc06e524c7"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-hund-an-der-tankstelle",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-kreide-an-der-tafel"
+      ],
+      "teens": [
+       "das-los",
+       "das-ruder",
+       "der-anrufer",
+       "der-riss",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-insel-in-der-furt",
+       "die-neunte-stufe",
+       "die-terrasse"
+      ],
+      "erwachsen": [
+       "der-kahn",
+       "der-kai",
+       "der-laden",
+       "der-notruf",
+       "die-ernte",
+       "die-kantine",
+       "die-terrasse",
+       "die-truhe"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-noon-radio",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-salt-and-the-sea",
+       "en-the-hare-at-dusk",
+       "en-the-otter-at-the-ford",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones"
+      ],
+      "teens": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-the-sailors-last-letter"
+      ],
+      "erwachsen": [
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail"
+      ]
+     }
+    }
+   },
+   "n23": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 279,
+       "hash": "4aeb494e841f660fab979959"
+      },
+      "teens": {
+       "anzahl": 287,
+       "hash": "d739ccca5142fb6cf426ec81"
+      },
+      "erwachsen": {
+       "anzahl": 112,
+       "hash": "caebae42ab0fe6ac3ae70be8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 681,
+       "hash": "0ff1ae6b6615532ca358d2bc"
+      },
+      "teens": {
+       "anzahl": 722,
+       "hash": "ec9b0fbbd5f288e19336ba4b"
+      },
+      "erwachsen": {
+       "anzahl": 547,
+       "hash": "c3e08ed8da7895ba4305af5d"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-hund-an-der-tankstelle",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-kreide-an-der-tafel",
+       "die-uhr-steht-still"
+      ],
+      "teens": [
+       "das-los",
+       "das-ruder",
+       "der-anrufer",
+       "der-riss",
+       "der-strudel",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still"
+      ],
+      "erwachsen": [
+       "der-kahn",
+       "der-kai",
+       "der-laden",
+       "der-notruf",
+       "der-tunnel",
+       "die-ernte",
+       "die-kantine",
+       "die-nachtschicht",
+       "die-terrasse",
+       "die-truhe"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-noon-radio",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-otter-at-the-ford",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow"
+      ],
+      "teens": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-sailors-last-letter"
+      ],
+      "erwachsen": [
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-the-fall-in-the-drain",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds"
+      ]
+     }
+    }
+   },
+   "n27": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 822,
+       "hash": "51b49672ac636e917581b710"
+      },
+      "teens": {
+       "anzahl": 848,
+       "hash": "59626a87605d7b0b93030454"
+      },
+      "erwachsen": {
+       "anzahl": 340,
+       "hash": "4d0add03a304ad73fb34a575"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 1567,
+       "hash": "e9b2e8570147f0011bb1a8a4"
+      },
+      "teens": {
+       "anzahl": 1815,
+       "hash": "37788c5671725ab34be4ebee"
+      },
+      "erwachsen": {
+       "anzahl": 1251,
+       "hash": "44ad0bdfdbbd18b22d2b5e17"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "anna-und-das-boot",
+       "ben-findet-ein-ei",
+       "bruno-backt-brot",
+       "das-echo",
+       "das-fest-an-der-linde",
+       "das-karussell-am-kanal",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-fuchs-an-der-garage",
+       "der-handschuh-im-schnee",
+       "der-hund-an-der-tankstelle",
+       "der-igel-in-der-nacht",
+       "der-kleine-schneemann",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-rote-hut",
+       "der-schatten-im-garten",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-grille-im-gras",
+       "die-kreide-an-der-tafel",
+       "die-uhr-steht-still",
+       "filo-und-mira",
+       "lena-und-der-kleine-fisch",
+       "lisas-laterne",
+       "nuri-hoert-mehr",
+       "tags-darauf"
+      ],
+      "teens": [
+       "das-echo",
+       "das-foto",
+       "das-los",
+       "das-mikrofon",
+       "das-ruder",
+       "der-anrufer",
+       "der-fund-im-moor",
+       "der-garten-hinter-dem-haus",
+       "der-mond",
+       "der-riss",
+       "der-schall",
+       "der-schlaf",
+       "der-stein",
+       "der-strudel",
+       "der-wind",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-halle-in-der-nacht",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still",
+       "tags-darauf"
+      ],
+      "erwachsen": [
+       "der-garten-hinter-dem-haus",
+       "der-kahn",
+       "der-kai",
+       "der-kalk",
+       "der-laden",
+       "der-notruf",
+       "der-sturm",
+       "der-tunnel",
+       "die-backstube",
+       "die-ernte",
+       "die-haltestelle",
+       "die-kantine",
+       "die-nachtschicht",
+       "die-schleuse",
+       "die-terrasse",
+       "die-truhe",
+       "die-turmuhr"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-from-seed-to-plant",
+       "en-g1-chicken-and-millipede",
+       "en-g1-donkey-child",
+       "en-g1-hen-and-eagle",
+       "en-g1-the-day-i-left-for-the-city",
+       "en-g1-what-vusis-sister-said",
+       "en-how-ants-find-food",
+       "en-i4-one-frame-at-a-time",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-noon-radio",
+       "en-i4-the-pigeon-and-the-green-ring",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-i4-the-tune-in-the-cellar",
+       "en-i4-the-weather-roof",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-light-in-the-garden-shed",
+       "en-the-otter-at-the-ford",
+       "en-the-red-hen-at-the-school-gate",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-the-wooden-whistle",
+       "en-w1-how-a-feather-holds-the-heat",
+       "en-w1-how-a-seed-travels",
+       "en-w1-how-a-ship-stands-on-water",
+       "en-w1-how-a-snail-moves",
+       "en-w1-how-owls-hear-in-the-dark",
+       "en-w1-how-soap-cleans",
+       "en-w1-what-makes-a-rainbow",
+       "en-weg-kids-best-birthday-bridge",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-grand-market-morning",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-pip-the-puppy",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-school-garden-club",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow",
+       "nell-and-the-harbour-cat"
+      ],
+      "teens": [
+       "en-baldwin-androclus-and-the-lion",
+       "en-baldwin-bruce-and-the-spider",
+       "en-baldwin-damon-and-pythias",
+       "en-baldwin-grace-darling",
+       "en-baldwin-the-bell-of-atri",
+       "en-baldwin-the-miller-of-the-dee",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-mending-hall",
+       "en-i4-the-night-train-north",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-placement-in-the-limb-shop",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-light-and-the-second",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-signal-on-the-ridge",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-the-wallet-in-the-long-grass",
+       "en-w1-how-a-compass-finds-north",
+       "en-w1-how-paper-is-made",
+       "en-w1-how-sound-reaches-the-ear",
+       "en-w1-how-wool-becomes-cloth",
+       "en-w1-what-a-volcano-does",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-mural-for-station-road",
+       "en-weg-teens-a-proper-plan",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-warm-memory",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-how-a-robot-learns",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-owl-at-the-window",
+       "en-weg-teens-the-sailors-last-letter",
+       "en-weg-teens-trust-on-the-trail",
+       "en-weg-teens-why-light-outruns-sound",
+       "nell-and-the-harbour-cat"
+      ],
+      "erwachsen": [
+       "en-cheese-and-months",
+       "en-e1-by-courier",
+       "en-e1-dusk",
+       "en-e1-ripe-figs",
+       "en-e1-the-cop-and-the-anthem",
+       "en-e1-the-lumber-room",
+       "en-e1-the-open-window",
+       "en-e1-the-philanthropist-and-the-cat",
+       "en-e1-the-skylight-room",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-the-book-of-first-frosts",
+       "en-i4-the-caretaker-and-the-frost",
+       "en-i4-the-chart-of-the-coast",
+       "en-i4-the-interpreter-at-the-housing-desk",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-last-turn-at-the-wheel",
+       "en-i4-the-mending-hall",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-sound-under-the-sea",
+       "en-the-fall-in-the-drain",
+       "en-the-left-hand",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-the-wall-between-two-gardens",
+       "en-w1-how-a-screen-reader-speaks",
+       "en-w1-how-ink-was-made",
+       "en-w1-how-rubber-became-useful",
+       "en-w1-how-wood-bends-and-holds",
+       "en-w1-what-a-barometer-measures",
+       "en-w1-what-concrete-does",
+       "en-weg-erw-a-community-garden-morning",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-basics-of-a-broad-business",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-light-through-garden-gate",
+       "en-weg-erw-proper-plan-airport",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds"
+      ]
+     }
+    }
+   },
+   "n36": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1027,
+       "hash": "0d49d964733801c7e09d1c5b"
+      },
+      "teens": {
+       "anzahl": 1108,
+       "hash": "63bdc3f3ad16cadadc916df6"
+      },
+      "erwachsen": {
+       "anzahl": 491,
+       "hash": "18e9733f1e28a7fae02e665f"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 1663,
+       "hash": "d4505702fd0b6f6814d2fae2"
+      },
+      "teens": {
+       "anzahl": 1947,
+       "hash": "950d252bc90c77624cf867f5"
+      },
+      "erwachsen": {
+       "anzahl": 1348,
+       "hash": "8b4f858d93049b5082d16013"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "anna-und-das-boot",
+       "ben-findet-ein-ei",
+       "bruno-backt-brot",
+       "das-echo",
+       "das-fest-an-der-linde",
+       "das-karussell-am-kanal",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-fuchs-an-der-garage",
+       "der-graue-kater",
+       "der-handschuh-im-schnee",
+       "der-hund-an-der-tankstelle",
+       "der-igel-in-der-nacht",
+       "der-kleine-schneemann",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-rote-hut",
+       "der-schatten-im-garten",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-grille-im-gras",
+       "die-kreide-an-der-tafel",
+       "die-maus-im-turm",
+       "die-uhr-steht-still",
+       "filo-und-mira",
+       "lena-und-der-kleine-fisch",
+       "lisas-laterne",
+       "nuri-hoert-mehr",
+       "otto-der-otter",
+       "tags-darauf"
+      ],
+      "teens": [
+       "das-alte-hotel",
+       "das-echo",
+       "das-foto",
+       "das-los",
+       "das-mikrofon",
+       "das-ruder",
+       "der-anrufer",
+       "der-fund-im-moor",
+       "der-garten-hinter-dem-haus",
+       "der-graue-kater",
+       "der-marmorsaal",
+       "der-mond",
+       "der-riss",
+       "der-schall",
+       "der-schlaf",
+       "der-stein",
+       "der-strudel",
+       "der-wind",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-halle-in-der-nacht",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-letzte-kiste",
+       "die-maus-im-turm",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still",
+       "otto-der-otter",
+       "tags-darauf"
+      ],
+      "erwachsen": [
+       "das-alte-hotel",
+       "der-garten-hinter-dem-haus",
+       "der-kahn",
+       "der-kai",
+       "der-kalk",
+       "der-laden",
+       "der-marmorsaal",
+       "der-notruf",
+       "der-sturm",
+       "der-tunnel",
+       "die-backstube",
+       "die-ernte",
+       "die-haltestelle",
+       "die-kantine",
+       "die-letzte-kiste",
+       "die-nachtschicht",
+       "die-schleuse",
+       "die-terrasse",
+       "die-truhe",
+       "die-turmuhr"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-from-seed-to-plant",
+       "en-g1-a-tiny-seed",
+       "en-g1-anansi-and-wisdom",
+       "en-g1-chicken-and-millipede",
+       "en-g1-decision",
+       "en-g1-donkey-child",
+       "en-g1-grandmas-bananas",
+       "en-g1-hen-and-eagle",
+       "en-g1-holidays-with-grandmother",
+       "en-g1-magozwe",
+       "en-g1-nozibele-and-the-three-hairs",
+       "en-g1-sakimas-song",
+       "en-g1-simbegwire",
+       "en-g1-the-day-i-left-for-the-city",
+       "en-g1-the-honeyguide",
+       "en-g1-what-vusis-sister-said",
+       "en-g1-why-hippos-have-no-hair",
+       "en-how-ants-find-food",
+       "en-how-birds-build-a-nest",
+       "en-i4-one-frame-at-a-time",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-noon-radio",
+       "en-i4-the-pigeon-and-the-green-ring",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-six-dots",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-i4-the-tune-in-the-cellar",
+       "en-i4-the-weather-roof",
+       "en-i4-where-money-came-from",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-light-in-the-garden-shed",
+       "en-the-moon-and-the-month",
+       "en-the-otter-at-the-ford",
+       "en-the-red-hen-at-the-school-gate",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-the-wooden-whistle",
+       "en-w1-how-a-feather-holds-the-heat",
+       "en-w1-how-a-seed-travels",
+       "en-w1-how-a-ship-stands-on-water",
+       "en-w1-how-a-snail-moves",
+       "en-w1-how-bats-hear-the-dark",
+       "en-w1-how-ice-floats",
+       "en-w1-how-leaves-turn-red-and-gold",
+       "en-w1-how-owls-hear-in-the-dark",
+       "en-w1-how-soap-cleans",
+       "en-w1-the-bones-in-a-hand",
+       "en-w1-what-a-shadow-is",
+       "en-w1-what-makes-a-rainbow",
+       "en-w1-where-the-wind-comes-from",
+       "en-weg-kids-best-birthday-bridge",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-grand-market-morning",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-pip-the-puppy",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-school-garden-club",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas"
+      ],
+      "teens": [
+       "a-trip-through-space",
+       "en-baldwin-a-laconic-answer",
+       "en-baldwin-alexander-and-bucephalus",
+       "en-baldwin-androclus-and-the-lion",
+       "en-baldwin-antonio-canova",
+       "en-baldwin-bruce-and-the-spider",
+       "en-baldwin-damon-and-pythias",
+       "en-baldwin-diogenes-and-the-sunlight",
+       "en-baldwin-grace-darling",
+       "en-baldwin-king-canute-and-the-tide",
+       "en-baldwin-picciola",
+       "en-baldwin-the-bell-of-atri",
+       "en-baldwin-the-endless-tale",
+       "en-baldwin-the-miller-of-the-dee",
+       "en-behind-the-sports-hall",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-mending-hall",
+       "en-i4-the-night-train-north",
+       "en-i4-the-photo-she-did-not-post",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-placement-in-the-limb-shop",
+       "en-i4-the-six-dots",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-what-a-battery-really-does",
+       "en-i4-where-money-came-from",
+       "en-light-and-the-second",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-river-and-the-sea",
+       "en-the-signal-on-the-ridge",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-the-wallet-in-the-long-grass",
+       "en-w1-how-a-clock-marks-the-hours",
+       "en-w1-how-a-compass-finds-north",
+       "en-w1-how-a-lock-works",
+       "en-w1-how-bridges-stand",
+       "en-w1-how-glass-is-made",
+       "en-w1-how-paper-is-made",
+       "en-w1-how-sound-reaches-the-ear",
+       "en-w1-how-the-tides-move",
+       "en-w1-how-wool-becomes-cloth",
+       "en-w1-what-a-volcano-does",
+       "en-w1-what-rust-does-to-iron",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-mural-for-station-road",
+       "en-weg-teens-a-proper-plan",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-warm-memory",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-how-a-robot-learns",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-owl-at-the-window",
+       "en-weg-teens-the-sailors-last-letter",
+       "en-weg-teens-trust-on-the-trail",
+       "en-weg-teens-why-light-outruns-sound",
+       "how-animals-sleep",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ],
+      "erwachsen": [
+       "a-trip-through-space",
+       "en-cheese-and-months",
+       "en-e1-a-pair-of-silk-stockings",
+       "en-e1-a-respectable-woman",
+       "en-e1-a-service-of-love",
+       "en-e1-after-twenty-years",
+       "en-e1-by-courier",
+       "en-e1-dusk",
+       "en-e1-ripe-figs",
+       "en-e1-the-boar-pig",
+       "en-e1-the-cop-and-the-anthem",
+       "en-e1-the-dolls-house",
+       "en-e1-the-garden-party",
+       "en-e1-the-gift-of-the-magi",
+       "en-e1-the-green-door",
+       "en-e1-the-last-leaf",
+       "en-e1-the-lumber-room",
+       "en-e1-the-open-window",
+       "en-e1-the-philanthropist-and-the-cat",
+       "en-e1-the-skylight-room",
+       "en-e1-the-stalled-ox",
+       "en-e1-the-story-of-an-hour",
+       "en-e1-the-story-teller",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-the-book-of-first-frosts",
+       "en-i4-the-caretaker-and-the-frost",
+       "en-i4-the-chart-of-the-coast",
+       "en-i4-the-interpreter-at-the-housing-desk",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-last-turn-at-the-wheel",
+       "en-i4-the-mending-hall",
+       "en-i4-the-quarry-road",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-what-a-battery-really-does",
+       "en-sound-under-the-sea",
+       "en-the-fall-in-the-drain",
+       "en-the-left-hand",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-the-wall-between-two-gardens",
+       "en-w1-how-a-sail-moves-a-boat",
+       "en-w1-how-a-screen-reader-speaks",
+       "en-w1-how-a-well-reaches-water",
+       "en-w1-how-ink-was-made",
+       "en-w1-how-insulin-was-found",
+       "en-w1-how-rubber-became-useful",
+       "en-w1-how-wood-bends-and-holds",
+       "en-w1-what-a-barometer-measures",
+       "en-w1-what-a-guide-dog-learns",
+       "en-w1-what-a-lighthouse-does",
+       "en-w1-what-a-thermometer-does",
+       "en-w1-what-concrete-does",
+       "en-weg-erw-a-community-garden-morning",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-basics-of-a-broad-business",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-light-through-garden-gate",
+       "en-weg-erw-proper-plan-airport",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds",
+       "en-what-a-kilogram-is",
+       "how-animals-sleep",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ]
+     }
+    }
+   },
+   "n68": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1066,
+       "hash": "90fc95b688a4237e4c0100fc"
+      },
+      "teens": {
+       "anzahl": 1298,
+       "hash": "118ecb0672ec63a8e949dcf9"
+      },
+      "erwachsen": {
+       "anzahl": 668,
+       "hash": "e0a92b63208567889dcec255"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 1706,
+       "hash": "c46732b42a848fe526ac53c0"
+      },
+      "teens": {
+       "anzahl": 2163,
+       "hash": "aeb7676d18d01c2c7fa67dbb"
+      },
+      "erwachsen": {
+       "anzahl": 1533,
+       "hash": "9f658c411a894164f5381261"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "anna-und-das-boot",
+       "ben-findet-ein-ei",
+       "bruno-backt-brot",
+       "das-echo",
+       "das-fest-an-der-linde",
+       "das-karussell-am-kanal",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-fuchs-an-der-garage",
+       "der-graue-kater",
+       "der-handschuh-im-schnee",
+       "der-hund-an-der-tankstelle",
+       "der-igel-in-der-nacht",
+       "der-kleine-schneemann",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-rote-hut",
+       "der-schatten-im-garten",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-grille-im-gras",
+       "die-kreide-an-der-tafel",
+       "die-maus-im-turm",
+       "die-uhr-steht-still",
+       "filo-und-mira",
+       "lena-und-der-kleine-fisch",
+       "lisas-laterne",
+       "nuri-hoert-mehr",
+       "otto-der-otter",
+       "tags-darauf"
+      ],
+      "teens": [
+       "das-alte-hotel",
+       "das-echo",
+       "das-foto",
+       "das-los",
+       "das-mikrofon",
+       "das-ruder",
+       "der-anrufer",
+       "der-fund-im-moor",
+       "der-garten-hinter-dem-haus",
+       "der-graue-kater",
+       "der-marmorsaal",
+       "der-mond",
+       "der-riss",
+       "der-schall",
+       "der-schlaf",
+       "der-stein",
+       "der-strudel",
+       "der-wind",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-halle-in-der-nacht",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-letzte-kiste",
+       "die-maus-im-turm",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still",
+       "otto-der-otter",
+       "tags-darauf"
+      ],
+      "erwachsen": [
+       "das-alte-hotel",
+       "der-garten-hinter-dem-haus",
+       "der-kahn",
+       "der-kai",
+       "der-kalk",
+       "der-laden",
+       "der-marmorsaal",
+       "der-notruf",
+       "der-sturm",
+       "der-tunnel",
+       "die-backstube",
+       "die-ernte",
+       "die-haltestelle",
+       "die-kantine",
+       "die-letzte-kiste",
+       "die-nachtschicht",
+       "die-schleuse",
+       "die-terrasse",
+       "die-truhe",
+       "die-turmuhr"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-from-seed-to-plant",
+       "en-g1-a-tiny-seed",
+       "en-g1-anansi-and-wisdom",
+       "en-g1-chicken-and-millipede",
+       "en-g1-decision",
+       "en-g1-donkey-child",
+       "en-g1-grandmas-bananas",
+       "en-g1-hen-and-eagle",
+       "en-g1-holidays-with-grandmother",
+       "en-g1-magozwe",
+       "en-g1-nozibele-and-the-three-hairs",
+       "en-g1-sakimas-song",
+       "en-g1-simbegwire",
+       "en-g1-the-day-i-left-for-the-city",
+       "en-g1-the-honeyguide",
+       "en-g1-what-vusis-sister-said",
+       "en-g1-why-hippos-have-no-hair",
+       "en-how-ants-find-food",
+       "en-how-birds-build-a-nest",
+       "en-i4-one-frame-at-a-time",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-noon-radio",
+       "en-i4-the-pigeon-and-the-green-ring",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-six-dots",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-i4-the-tune-in-the-cellar",
+       "en-i4-the-weather-roof",
+       "en-i4-where-money-came-from",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-light-in-the-garden-shed",
+       "en-the-moon-and-the-month",
+       "en-the-otter-at-the-ford",
+       "en-the-red-hen-at-the-school-gate",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-the-wooden-whistle",
+       "en-w1-how-a-feather-holds-the-heat",
+       "en-w1-how-a-seed-travels",
+       "en-w1-how-a-ship-stands-on-water",
+       "en-w1-how-a-snail-moves",
+       "en-w1-how-bats-hear-the-dark",
+       "en-w1-how-ice-floats",
+       "en-w1-how-leaves-turn-red-and-gold",
+       "en-w1-how-owls-hear-in-the-dark",
+       "en-w1-how-soap-cleans",
+       "en-w1-the-bones-in-a-hand",
+       "en-w1-what-a-shadow-is",
+       "en-w1-what-makes-a-rainbow",
+       "en-w1-where-the-wind-comes-from",
+       "en-weg-kids-best-birthday-bridge",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-grand-market-morning",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-pip-the-puppy",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-school-garden-club",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas"
+      ],
+      "teens": [
+       "a-trip-through-space",
+       "en-baldwin-a-laconic-answer",
+       "en-baldwin-alexander-and-bucephalus",
+       "en-baldwin-androclus-and-the-lion",
+       "en-baldwin-antonio-canova",
+       "en-baldwin-bruce-and-the-spider",
+       "en-baldwin-damon-and-pythias",
+       "en-baldwin-diogenes-and-the-sunlight",
+       "en-baldwin-grace-darling",
+       "en-baldwin-king-canute-and-the-tide",
+       "en-baldwin-picciola",
+       "en-baldwin-the-bell-of-atri",
+       "en-baldwin-the-endless-tale",
+       "en-baldwin-the-miller-of-the-dee",
+       "en-behind-the-sports-hall",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-mending-hall",
+       "en-i4-the-night-train-north",
+       "en-i4-the-photo-she-did-not-post",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-placement-in-the-limb-shop",
+       "en-i4-the-six-dots",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-what-a-battery-really-does",
+       "en-i4-where-money-came-from",
+       "en-light-and-the-second",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-river-and-the-sea",
+       "en-the-signal-on-the-ridge",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-the-wallet-in-the-long-grass",
+       "en-w1-how-a-clock-marks-the-hours",
+       "en-w1-how-a-compass-finds-north",
+       "en-w1-how-a-lock-works",
+       "en-w1-how-bridges-stand",
+       "en-w1-how-glass-is-made",
+       "en-w1-how-paper-is-made",
+       "en-w1-how-sound-reaches-the-ear",
+       "en-w1-how-the-tides-move",
+       "en-w1-how-wool-becomes-cloth",
+       "en-w1-what-a-volcano-does",
+       "en-w1-what-rust-does-to-iron",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-mural-for-station-road",
+       "en-weg-teens-a-proper-plan",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-warm-memory",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-how-a-robot-learns",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-owl-at-the-window",
+       "en-weg-teens-the-sailors-last-letter",
+       "en-weg-teens-trust-on-the-trail",
+       "en-weg-teens-why-light-outruns-sound",
+       "how-animals-sleep",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ],
+      "erwachsen": [
+       "a-trip-through-space",
+       "en-cheese-and-months",
+       "en-e1-a-pair-of-silk-stockings",
+       "en-e1-a-respectable-woman",
+       "en-e1-a-service-of-love",
+       "en-e1-after-twenty-years",
+       "en-e1-by-courier",
+       "en-e1-dusk",
+       "en-e1-ripe-figs",
+       "en-e1-the-boar-pig",
+       "en-e1-the-cop-and-the-anthem",
+       "en-e1-the-dolls-house",
+       "en-e1-the-garden-party",
+       "en-e1-the-gift-of-the-magi",
+       "en-e1-the-green-door",
+       "en-e1-the-last-leaf",
+       "en-e1-the-lumber-room",
+       "en-e1-the-open-window",
+       "en-e1-the-philanthropist-and-the-cat",
+       "en-e1-the-skylight-room",
+       "en-e1-the-stalled-ox",
+       "en-e1-the-story-of-an-hour",
+       "en-e1-the-story-teller",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-the-book-of-first-frosts",
+       "en-i4-the-caretaker-and-the-frost",
+       "en-i4-the-chart-of-the-coast",
+       "en-i4-the-interpreter-at-the-housing-desk",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-last-turn-at-the-wheel",
+       "en-i4-the-mending-hall",
+       "en-i4-the-quarry-road",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-what-a-battery-really-does",
+       "en-sound-under-the-sea",
+       "en-the-fall-in-the-drain",
+       "en-the-left-hand",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-the-wall-between-two-gardens",
+       "en-w1-how-a-sail-moves-a-boat",
+       "en-w1-how-a-screen-reader-speaks",
+       "en-w1-how-a-well-reaches-water",
+       "en-w1-how-ink-was-made",
+       "en-w1-how-insulin-was-found",
+       "en-w1-how-rubber-became-useful",
+       "en-w1-how-wood-bends-and-holds",
+       "en-w1-what-a-barometer-measures",
+       "en-w1-what-a-guide-dog-learns",
+       "en-w1-what-a-lighthouse-does",
+       "en-w1-what-a-thermometer-does",
+       "en-w1-what-concrete-does",
+       "en-weg-erw-a-community-garden-morning",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-basics-of-a-broad-business",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-light-through-garden-gate",
+       "en-weg-erw-proper-plan-airport",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds",
+       "en-what-a-kilogram-is",
+       "how-animals-sleep",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ]
+     }
+    }
+   }
+  },
+  "us": {
+   "n2": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n5": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n8": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "teens": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      },
+      "erwachsen": {
+       "anzahl": 0,
+       "hash": "e3b0c44298fc1c149afbf4c8"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n10": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1,
+       "hash": "8024d6a0968a45904af5f115"
+      },
+      "teens": {
+       "anzahl": 1,
+       "hash": "8024d6a0968a45904af5f115"
+      },
+      "erwachsen": {
+       "anzahl": 1,
+       "hash": "8024d6a0968a45904af5f115"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 54,
+       "hash": "11af0db578e2b5b454321996"
+      },
+      "teens": {
+       "anzahl": 56,
+       "hash": "29a82b1d3c5104fdd7887740"
+      },
+      "erwachsen": {
+       "anzahl": 57,
+       "hash": "a48ff498eeb0591a73e23565"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     },
+     "en": {
+      "kids": [],
+      "teens": [],
+      "erwachsen": []
+     }
+    }
+   },
+   "n13": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 90,
+       "hash": "9cdc5f68995deefa9abc2e15"
+      },
+      "teens": {
+       "anzahl": 98,
+       "hash": "86ca5266e82800f4c44354ad"
+      },
+      "erwachsen": {
+       "anzahl": 53,
+       "hash": "077c7bb321042f8da4a8cc09"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 224,
+       "hash": "7eb91c929d84e6bd2b77ce00"
+      },
+      "teens": {
+       "anzahl": 233,
+       "hash": "b754d5460b7bc23f48a54ce3"
+      },
+      "erwachsen": {
+       "anzahl": 184,
+       "hash": "34a97d4252496ffbbbf9bc61"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "der-riss",
+       "die-kreide-an-der-tafel"
+      ],
+      "teens": [
+       "der-riss",
+       "die-antenne",
+       "die-frist",
+       "die-terrasse"
+      ],
+      "erwachsen": [
+       "der-kai",
+       "die-ernte",
+       "die-terrasse"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-weg-kids-nine-kites"
+      ],
+      "teens": [
+       "en-weg-teens-a-test-of-nerve"
+      ],
+      "erwachsen": []
+     }
+    }
+   },
+   "n16": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 110,
+       "hash": "6160a3ea992b90e71fde68c0"
+      },
+      "teens": {
+       "anzahl": 117,
+       "hash": "7ba4304e6dc8650caabd271b"
+      },
+      "erwachsen": {
+       "anzahl": 69,
+       "hash": "59d2ff63306361f75ea6a754"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 327,
+       "hash": "df9c955e7b64a5b91e7750a8"
+      },
+      "teens": {
+       "anzahl": 331,
+       "hash": "9d6be29a39d630a90d3eb1e5"
+      },
+      "erwachsen": {
+       "anzahl": 275,
+       "hash": "8f7bdee336b17ec878633620"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "der-riss",
+       "die-kreide-an-der-tafel"
+      ],
+      "teens": [
+       "der-riss",
+       "die-antenne",
+       "die-frist",
+       "die-terrasse"
+      ],
+      "erwachsen": [
+       "der-kai",
+       "der-laden",
+       "die-ernte",
+       "die-terrasse"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-salt-and-the-sea",
+       "en-the-otter-at-the-ford",
+       "en-the-shell-at-the-tide-line",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-nine-kites"
+      ],
+      "teens": [
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-third-stair",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-test-of-nerve"
+      ],
+      "erwachsen": [
+       "en-the-line-at-the-alder",
+       "en-the-three-oak-doors",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore"
+      ]
+     }
+    }
+   },
+   "n20": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 122,
+       "hash": "cb9d154169fdfef28e908e58"
+      },
+      "teens": {
+       "anzahl": 127,
+       "hash": "0eb28d175995a260e99d7229"
+      },
+      "erwachsen": {
+       "anzahl": 75,
+       "hash": "773cb2b4cf91e68b8b4f19f5"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 393,
+       "hash": "8f55244aad6747c02e6c4231"
+      },
+      "teens": {
+       "anzahl": 401,
+       "hash": "95e2e28df73fea489b5e17b3"
+      },
+      "erwachsen": {
+       "anzahl": 339,
+       "hash": "475619101eb8abdc06e524c7"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-hund-an-der-tankstelle",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-kreide-an-der-tafel"
+      ],
+      "teens": [
+       "das-los",
+       "das-ruder",
+       "der-anrufer",
+       "der-riss",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-insel-in-der-furt",
+       "die-neunte-stufe",
+       "die-terrasse"
+      ],
+      "erwachsen": [
+       "der-kahn",
+       "der-kai",
+       "der-laden",
+       "der-notruf",
+       "die-ernte",
+       "die-kantine",
+       "die-terrasse",
+       "die-truhe"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-noon-radio",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-salt-and-the-sea",
+       "en-the-hare-at-dusk",
+       "en-the-otter-at-the-ford",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones"
+      ],
+      "teens": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-the-sailors-last-letter"
+      ],
+      "erwachsen": [
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail"
+      ]
+     }
+    }
+   },
+   "n23": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 296,
+       "hash": "e0628bb2ddf442cd3ec7052e"
+      },
+      "teens": {
+       "anzahl": 308,
+       "hash": "45f2fbf51fdcb123df3a6419"
+      },
+      "erwachsen": {
+       "anzahl": 119,
+       "hash": "b942e20a175bfe187608ca10"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 681,
+       "hash": "205e611ba1365bb6500da73c"
+      },
+      "teens": {
+       "anzahl": 722,
+       "hash": "3f05645eaccafad73bba064d"
+      },
+      "erwachsen": {
+       "anzahl": 547,
+       "hash": "c3e08ed8da7895ba4305af5d"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "das-fest-an-der-linde",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-hund-an-der-tankstelle",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-kreide-an-der-tafel",
+       "die-uhr-steht-still"
+      ],
+      "teens": [
+       "das-los",
+       "das-ruder",
+       "der-anrufer",
+       "der-riss",
+       "der-strudel",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still"
+      ],
+      "erwachsen": [
+       "der-kahn",
+       "der-kai",
+       "der-laden",
+       "der-notruf",
+       "der-tunnel",
+       "die-ernte",
+       "die-kantine",
+       "die-nachtschicht",
+       "die-terrasse",
+       "die-truhe"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-noon-radio",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-otter-at-the-ford",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow"
+      ],
+      "teens": [
+       "en-i4-one-in-one-out",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-sailors-last-letter"
+      ],
+      "erwachsen": [
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-the-fall-in-the-drain",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds"
+      ]
+     }
+    }
+   },
+   "n27": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1041,
+       "hash": "0fc232d463857470f9a91887"
+      },
+      "teens": {
+       "anzahl": 1124,
+       "hash": "61bf907d625182c958707451"
+      },
+      "erwachsen": {
+       "anzahl": 507,
+       "hash": "c3be3dde0d5d34fd5cafb0f0"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 1567,
+       "hash": "8084b7407e41cbf589515012"
+      },
+      "teens": {
+       "anzahl": 1815,
+       "hash": "493978e3d721da73f03ea05b"
+      },
+      "erwachsen": {
+       "anzahl": 1251,
+       "hash": "f6c4823ef05a62fae4e007df"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "anna-und-das-boot",
+       "ben-findet-ein-ei",
+       "bruno-backt-brot",
+       "das-echo",
+       "das-fest-an-der-linde",
+       "das-karussell-am-kanal",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-fuchs-an-der-garage",
+       "der-handschuh-im-schnee",
+       "der-hund-an-der-tankstelle",
+       "der-igel-in-der-nacht",
+       "der-kleine-schneemann",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-rote-hut",
+       "der-schatten-im-garten",
+       "der-uhu-hinter-der-luke",
+       "die-ente-in-der-rinne",
+       "die-grille-im-gras",
+       "die-kreide-an-der-tafel",
+       "die-uhr-steht-still",
+       "filo-und-mira",
+       "lena-und-der-kleine-fisch",
+       "lisas-laterne",
+       "nuri-hoert-mehr",
+       "tags-darauf"
+      ],
+      "teens": [
+       "das-echo",
+       "das-foto",
+       "das-los",
+       "das-mikrofon",
+       "das-ruder",
+       "der-anrufer",
+       "der-fund-im-moor",
+       "der-garten-hinter-dem-haus",
+       "der-mond",
+       "der-riss",
+       "der-schall",
+       "der-schlaf",
+       "der-stein",
+       "der-strudel",
+       "der-wind",
+       "die-antenne",
+       "die-frist",
+       "die-halde",
+       "die-halle-in-der-nacht",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still",
+       "tags-darauf"
+      ],
+      "erwachsen": [
+       "der-garten-hinter-dem-haus",
+       "der-kahn",
+       "der-kai",
+       "der-kalk",
+       "der-laden",
+       "der-notruf",
+       "der-sturm",
+       "der-tunnel",
+       "die-backstube",
+       "die-ernte",
+       "die-haltestelle",
+       "die-kantine",
+       "die-nachtschicht",
+       "die-schleuse",
+       "die-terrasse",
+       "die-truhe",
+       "die-turmuhr"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-from-seed-to-plant",
+       "en-g1-chicken-and-millipede",
+       "en-g1-donkey-child",
+       "en-g1-hen-and-eagle",
+       "en-g1-the-day-i-left-for-the-city",
+       "en-g1-what-vusis-sister-said",
+       "en-how-ants-find-food",
+       "en-i4-one-frame-at-a-time",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-noon-radio",
+       "en-i4-the-pigeon-and-the-green-ring",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-i4-the-tune-in-the-cellar",
+       "en-i4-the-weather-roof",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-light-in-the-garden-shed",
+       "en-the-otter-at-the-ford",
+       "en-the-red-hen-at-the-school-gate",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-the-wooden-whistle",
+       "en-w1-how-a-feather-holds-the-heat",
+       "en-w1-how-a-seed-travels",
+       "en-w1-how-a-ship-stands-on-water",
+       "en-w1-how-a-snail-moves",
+       "en-w1-how-owls-hear-in-the-dark",
+       "en-w1-how-soap-cleans",
+       "en-w1-what-makes-a-rainbow",
+       "en-weg-kids-best-birthday-bridge",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-grand-market-morning",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-pip-the-puppy",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-school-garden-club",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow",
+       "nell-and-the-harbour-cat"
+      ],
+      "teens": [
+       "en-baldwin-androclus-and-the-lion",
+       "en-baldwin-bruce-and-the-spider",
+       "en-baldwin-damon-and-pythias",
+       "en-baldwin-grace-darling",
+       "en-baldwin-the-bell-of-atri",
+       "en-baldwin-the-miller-of-the-dee",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-mending-hall",
+       "en-i4-the-night-train-north",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-placement-in-the-limb-shop",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-light-and-the-second",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-signal-on-the-ridge",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-the-wallet-in-the-long-grass",
+       "en-w1-how-a-compass-finds-north",
+       "en-w1-how-paper-is-made",
+       "en-w1-how-sound-reaches-the-ear",
+       "en-w1-how-wool-becomes-cloth",
+       "en-w1-what-a-volcano-does",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-mural-for-station-road",
+       "en-weg-teens-a-proper-plan",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-warm-memory",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-how-a-robot-learns",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-owl-at-the-window",
+       "en-weg-teens-the-sailors-last-letter",
+       "en-weg-teens-trust-on-the-trail",
+       "en-weg-teens-why-light-outruns-sound",
+       "nell-and-the-harbour-cat"
+      ],
+      "erwachsen": [
+       "en-cheese-and-months",
+       "en-e1-by-courier",
+       "en-e1-dusk",
+       "en-e1-ripe-figs",
+       "en-e1-the-cop-and-the-anthem",
+       "en-e1-the-lumber-room",
+       "en-e1-the-open-window",
+       "en-e1-the-philanthropist-and-the-cat",
+       "en-e1-the-skylight-room",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-the-book-of-first-frosts",
+       "en-i4-the-caretaker-and-the-frost",
+       "en-i4-the-chart-of-the-coast",
+       "en-i4-the-interpreter-at-the-housing-desk",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-last-turn-at-the-wheel",
+       "en-i4-the-mending-hall",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-sound-under-the-sea",
+       "en-the-fall-in-the-drain",
+       "en-the-left-hand",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-the-wall-between-two-gardens",
+       "en-w1-how-a-screen-reader-speaks",
+       "en-w1-how-ink-was-made",
+       "en-w1-how-rubber-became-useful",
+       "en-w1-how-wood-bends-and-holds",
+       "en-w1-what-a-barometer-measures",
+       "en-w1-what-concrete-does",
+       "en-weg-erw-a-community-garden-morning",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-basics-of-a-broad-business",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-light-through-garden-gate",
+       "en-weg-erw-proper-plan-airport",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds"
+      ]
+     }
+    }
+   },
+   "n36": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1392,
+       "hash": "15506ec62a16f22fca006aee"
+      },
+      "teens": {
+       "anzahl": 1598,
+       "hash": "a7253e7914a4b381d121bbd7"
+      },
+      "erwachsen": {
+       "anzahl": 818,
+       "hash": "ece538fcff85df8d4834345b"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 1663,
+       "hash": "9a9ea9914dd30318d6d88c33"
+      },
+      "teens": {
+       "anzahl": 1947,
+       "hash": "28be6241d098b8d0615bedda"
+      },
+      "erwachsen": {
+       "anzahl": 1348,
+       "hash": "483beddead9dba530a8fe672"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "anna-und-das-boot",
+       "ben-findet-ein-ei",
+       "bruno-backt-brot",
+       "das-echo",
+       "das-fest-an-der-linde",
+       "das-geheimnis-im-alten-turm",
+       "das-karussell-am-kanal",
+       "das-leben-der-bienen",
+       "das-licht-in-der-hoehle",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "de-g2-khalai-spricht-mit-pflanzen",
+       "de-g2-kinder-aus-wachs",
+       "de-g2-zama-ist-toll",
+       "de-g2-ziege-hund-und-kuh",
+       "de-w2-das-ohr",
+       "de-w2-das-salz-im-winter",
+       "de-w2-der-apfelbaum-im-jahr",
+       "de-w2-der-igel-im-winter",
+       "de-w2-der-regenbogen",
+       "de-w2-der-schatten",
+       "de-w2-die-kartoffel",
+       "de-w2-die-kerze",
+       "de-w2-die-milch",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-fuchs-an-der-garage",
+       "der-graue-kater",
+       "der-handschuh-im-schnee",
+       "der-hund-an-der-tankstelle",
+       "der-igel-in-der-nacht",
+       "der-kleine-schneemann",
+       "der-marienkaefer",
+       "der-regenwurm",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-rote-hut",
+       "der-schatten-im-garten",
+       "der-uhu-hinter-der-luke",
+       "der-weg-des-wassers",
+       "die-ameisen",
+       "die-ente-in-der-rinne",
+       "die-grille-im-gras",
+       "die-kreide-an-der-tafel",
+       "die-maus-im-turm",
+       "die-nachricht-auf-seite-zwoelf",
+       "die-schatzkarte",
+       "die-spinne",
+       "die-uhr-steht-still",
+       "ein-jahr-im-wald",
+       "filo-und-mira",
+       "lena-und-der-kleine-fisch",
+       "lisas-laterne",
+       "nuri-hoert-mehr",
+       "otto-der-otter",
+       "tag-und-nacht",
+       "tags-darauf",
+       "vom-ei-zum-schmetterling",
+       "vom-korn-zum-brot"
+      ],
+      "teens": [
+       "das-alte-hotel",
+       "das-echo",
+       "das-foto",
+       "das-geheimnis-im-alten-turm",
+       "das-leben-der-bienen",
+       "das-licht-in-der-hoehle",
+       "das-los",
+       "das-mikrofon",
+       "das-ruder",
+       "de-g2-das-mittagessen-im-hof",
+       "de-g2-der-barbierjunge",
+       "de-g2-der-geheilte-patient",
+       "de-g2-der-kluge-richter",
+       "de-g2-kannitverstan",
+       "de-g2-seltsamer-spazierritt",
+       "de-w2-das-fahrrad",
+       "de-w2-der-kompass",
+       "de-w2-die-brille",
+       "der-anrufer",
+       "der-fund-im-moor",
+       "der-garten-hinter-dem-haus",
+       "der-graue-kater",
+       "der-marmorsaal",
+       "der-mond",
+       "der-riss",
+       "der-schall",
+       "der-schlaf",
+       "der-stein",
+       "der-strudel",
+       "der-weg-des-wassers",
+       "der-wind",
+       "der-zweite-schluessel",
+       "die-ameisen",
+       "die-antenne",
+       "die-bank-am-fluss",
+       "die-frist",
+       "die-halde",
+       "die-halle-in-der-nacht",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-letzte-kiste",
+       "die-letzten-zehn-prozent",
+       "die-martinswand",
+       "die-maus-im-turm",
+       "die-nachricht-auf-seite-zwoelf",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still",
+       "die-wolle",
+       "die-zweite-quelle",
+       "ein-jahr-im-wald",
+       "kaffee-von-der-kirsche-in-die-tasse",
+       "otto-der-otter",
+       "tag-und-nacht",
+       "tags-darauf",
+       "vom-korn-zum-brot",
+       "was-ein-quadratmeter-boden-leistet",
+       "wie-das-wasser-in-die-leitung-kommt",
+       "wie-eine-e-mail-reist"
+      ],
+      "erwachsen": [
+       "das-alte-hotel",
+       "das-papier",
+       "de-g3-das-bettelweib-von-locarno",
+       "de-g3-das-dorf-auf-der-heide",
+       "de-g3-das-wiedersehen-in-falun",
+       "de-g3-der-fremde-herr",
+       "de-g3-der-geduldige-mann",
+       "de-g3-der-junge-mann-aus-london",
+       "de-g3-der-kaiser-und-die-obstfrau",
+       "de-g3-der-kuebelreiter",
+       "de-g3-der-ploetzliche-spaziergang",
+       "de-g3-der-reiter-im-dorf-bei-jena",
+       "de-g3-der-silberne-loeffel",
+       "de-g3-der-stein-vor-dem-haus",
+       "de-g3-die-anmut-und-der-spiegel",
+       "de-g3-die-antwort-des-schreibers",
+       "de-g3-die-drei-diebe",
+       "de-g3-vor-dem-gesetz",
+       "de-w2-das-glas",
+       "de-w2-das-insulin",
+       "de-w2-das-segel",
+       "de-w2-der-beton",
+       "de-w2-der-dachstuhl",
+       "de-w2-der-fuehrhund",
+       "de-w2-der-kaese",
+       "de-w2-der-rost",
+       "de-w2-der-sauerteig",
+       "de-w2-der-tunnel",
+       "de-w2-der-ziegel",
+       "de-w2-die-sprachausgabe",
+       "de-w2-die-tinte",
+       "de-w2-die-uhr",
+       "der-chor",
+       "der-dienstplan",
+       "der-garten-hinter-dem-haus",
+       "der-kahn",
+       "der-kai",
+       "der-kalk",
+       "der-laden",
+       "der-marmorsaal",
+       "der-notruf",
+       "der-sturm",
+       "der-tunnel",
+       "der-zweite-schluessel",
+       "die-backstube",
+       "die-bank-am-fluss",
+       "die-ernte",
+       "die-haltestelle",
+       "die-kantine",
+       "die-letzte-kiste",
+       "die-nachtschicht",
+       "die-schleuse",
+       "die-terrasse",
+       "die-truhe",
+       "die-turmuhr",
+       "die-wand",
+       "die-wolle",
+       "kaffee-von-der-kirsche-in-die-tasse",
+       "wie-das-wasser-in-die-leitung-kommt",
+       "wie-eine-e-mail-reist"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-from-seed-to-plant",
+       "en-g1-a-tiny-seed",
+       "en-g1-anansi-and-wisdom",
+       "en-g1-chicken-and-millipede",
+       "en-g1-decision",
+       "en-g1-donkey-child",
+       "en-g1-grandmas-bananas",
+       "en-g1-hen-and-eagle",
+       "en-g1-holidays-with-grandmother",
+       "en-g1-magozwe",
+       "en-g1-nozibele-and-the-three-hairs",
+       "en-g1-sakimas-song",
+       "en-g1-simbegwire",
+       "en-g1-the-day-i-left-for-the-city",
+       "en-g1-the-honeyguide",
+       "en-g1-what-vusis-sister-said",
+       "en-g1-why-hippos-have-no-hair",
+       "en-how-ants-find-food",
+       "en-how-birds-build-a-nest",
+       "en-i4-one-frame-at-a-time",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-noon-radio",
+       "en-i4-the-pigeon-and-the-green-ring",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-six-dots",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-i4-the-tune-in-the-cellar",
+       "en-i4-the-weather-roof",
+       "en-i4-where-money-came-from",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-light-in-the-garden-shed",
+       "en-the-moon-and-the-month",
+       "en-the-otter-at-the-ford",
+       "en-the-red-hen-at-the-school-gate",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-the-wooden-whistle",
+       "en-w1-how-a-feather-holds-the-heat",
+       "en-w1-how-a-seed-travels",
+       "en-w1-how-a-ship-stands-on-water",
+       "en-w1-how-a-snail-moves",
+       "en-w1-how-bats-hear-the-dark",
+       "en-w1-how-ice-floats",
+       "en-w1-how-leaves-turn-red-and-gold",
+       "en-w1-how-owls-hear-in-the-dark",
+       "en-w1-how-soap-cleans",
+       "en-w1-the-bones-in-a-hand",
+       "en-w1-what-a-shadow-is",
+       "en-w1-what-makes-a-rainbow",
+       "en-w1-where-the-wind-comes-from",
+       "en-weg-kids-best-birthday-bridge",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-grand-market-morning",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-pip-the-puppy",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-school-garden-club",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas"
+      ],
+      "teens": [
+       "a-trip-through-space",
+       "en-baldwin-a-laconic-answer",
+       "en-baldwin-alexander-and-bucephalus",
+       "en-baldwin-androclus-and-the-lion",
+       "en-baldwin-antonio-canova",
+       "en-baldwin-bruce-and-the-spider",
+       "en-baldwin-damon-and-pythias",
+       "en-baldwin-diogenes-and-the-sunlight",
+       "en-baldwin-grace-darling",
+       "en-baldwin-king-canute-and-the-tide",
+       "en-baldwin-picciola",
+       "en-baldwin-the-bell-of-atri",
+       "en-baldwin-the-endless-tale",
+       "en-baldwin-the-miller-of-the-dee",
+       "en-behind-the-sports-hall",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-mending-hall",
+       "en-i4-the-night-train-north",
+       "en-i4-the-photo-she-did-not-post",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-placement-in-the-limb-shop",
+       "en-i4-the-six-dots",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-what-a-battery-really-does",
+       "en-i4-where-money-came-from",
+       "en-light-and-the-second",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-river-and-the-sea",
+       "en-the-signal-on-the-ridge",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-the-wallet-in-the-long-grass",
+       "en-w1-how-a-clock-marks-the-hours",
+       "en-w1-how-a-compass-finds-north",
+       "en-w1-how-a-lock-works",
+       "en-w1-how-bridges-stand",
+       "en-w1-how-glass-is-made",
+       "en-w1-how-paper-is-made",
+       "en-w1-how-sound-reaches-the-ear",
+       "en-w1-how-the-tides-move",
+       "en-w1-how-wool-becomes-cloth",
+       "en-w1-what-a-volcano-does",
+       "en-w1-what-rust-does-to-iron",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-mural-for-station-road",
+       "en-weg-teens-a-proper-plan",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-warm-memory",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-how-a-robot-learns",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-owl-at-the-window",
+       "en-weg-teens-the-sailors-last-letter",
+       "en-weg-teens-trust-on-the-trail",
+       "en-weg-teens-why-light-outruns-sound",
+       "how-animals-sleep",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ],
+      "erwachsen": [
+       "a-trip-through-space",
+       "en-cheese-and-months",
+       "en-e1-a-pair-of-silk-stockings",
+       "en-e1-a-respectable-woman",
+       "en-e1-a-service-of-love",
+       "en-e1-after-twenty-years",
+       "en-e1-by-courier",
+       "en-e1-dusk",
+       "en-e1-ripe-figs",
+       "en-e1-the-boar-pig",
+       "en-e1-the-cop-and-the-anthem",
+       "en-e1-the-dolls-house",
+       "en-e1-the-garden-party",
+       "en-e1-the-gift-of-the-magi",
+       "en-e1-the-green-door",
+       "en-e1-the-last-leaf",
+       "en-e1-the-lumber-room",
+       "en-e1-the-open-window",
+       "en-e1-the-philanthropist-and-the-cat",
+       "en-e1-the-skylight-room",
+       "en-e1-the-stalled-ox",
+       "en-e1-the-story-of-an-hour",
+       "en-e1-the-story-teller",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-the-book-of-first-frosts",
+       "en-i4-the-caretaker-and-the-frost",
+       "en-i4-the-chart-of-the-coast",
+       "en-i4-the-interpreter-at-the-housing-desk",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-last-turn-at-the-wheel",
+       "en-i4-the-mending-hall",
+       "en-i4-the-quarry-road",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-what-a-battery-really-does",
+       "en-sound-under-the-sea",
+       "en-the-fall-in-the-drain",
+       "en-the-left-hand",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-the-wall-between-two-gardens",
+       "en-w1-how-a-sail-moves-a-boat",
+       "en-w1-how-a-screen-reader-speaks",
+       "en-w1-how-a-well-reaches-water",
+       "en-w1-how-ink-was-made",
+       "en-w1-how-insulin-was-found",
+       "en-w1-how-rubber-became-useful",
+       "en-w1-how-wood-bends-and-holds",
+       "en-w1-what-a-barometer-measures",
+       "en-w1-what-a-guide-dog-learns",
+       "en-w1-what-a-lighthouse-does",
+       "en-w1-what-a-thermometer-does",
+       "en-w1-what-concrete-does",
+       "en-weg-erw-a-community-garden-morning",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-basics-of-a-broad-business",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-light-through-garden-gate",
+       "en-weg-erw-proper-plan-airport",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds",
+       "en-what-a-kilogram-is",
+       "how-animals-sleep",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ]
+     }
+    }
+   },
+   "n67": {
+    "korpus": {
+     "de": {
+      "kids": {
+       "anzahl": 1442,
+       "hash": "fbdea7212e0ae4604373de65"
+      },
+      "teens": {
+       "anzahl": 1838,
+       "hash": "ddf630e25da996ffb7ed6218"
+      },
+      "erwachsen": {
+       "anzahl": 1044,
+       "hash": "cd8f50c445b57eabefe08eec"
+      }
+     },
+     "en": {
+      "kids": {
+       "anzahl": 1706,
+       "hash": "d7314de71487dd5e40aff5dc"
+      },
+      "teens": {
+       "anzahl": 2163,
+       "hash": "f66e90d9339b78ab50284c19"
+      },
+      "erwachsen": {
+       "anzahl": 1533,
+       "hash": "ec77a9044c3b5ceb72d6cba1"
+      }
+     }
+    },
+    "serien": {
+     "de": {
+      "kids": [
+       "anna-und-das-boot",
+       "ben-findet-ein-ei",
+       "bruno-backt-brot",
+       "das-echo",
+       "das-fest-an-der-linde",
+       "das-geheimnis-im-alten-turm",
+       "das-karussell-am-kanal",
+       "das-leben-der-bienen",
+       "das-licht-in-der-hoehle",
+       "das-nest-in-der-tanne",
+       "das-rote-fahrrad",
+       "de-g2-khalai-spricht-mit-pflanzen",
+       "de-g2-kinder-aus-wachs",
+       "de-g2-zama-ist-toll",
+       "de-g2-ziege-hund-und-kuh",
+       "de-w2-das-ohr",
+       "de-w2-das-salz-im-winter",
+       "de-w2-der-apfelbaum-im-jahr",
+       "de-w2-der-igel-im-winter",
+       "de-w2-der-regenbogen",
+       "de-w2-der-schatten",
+       "de-w2-die-kartoffel",
+       "de-w2-die-kerze",
+       "de-w2-die-milch",
+       "der-efeu-an-der-nordseite",
+       "der-ferienhof",
+       "der-flur-hinter-der-aula",
+       "der-fuchs-an-der-garage",
+       "der-graue-kater",
+       "der-handschuh-im-schnee",
+       "der-hund-an-der-tankstelle",
+       "der-igel-in-der-nacht",
+       "der-kleine-schneemann",
+       "der-marienkaefer",
+       "der-regenwurm",
+       "der-riss",
+       "der-rost-an-der-klinke",
+       "der-rote-hut",
+       "der-schatten-im-garten",
+       "der-uhu-hinter-der-luke",
+       "der-weg-des-wassers",
+       "die-ameisen",
+       "die-ente-in-der-rinne",
+       "die-grille-im-gras",
+       "die-kreide-an-der-tafel",
+       "die-maus-im-turm",
+       "die-nachricht-auf-seite-zwoelf",
+       "die-schatzkarte",
+       "die-spinne",
+       "die-uhr-steht-still",
+       "ein-jahr-im-wald",
+       "filo-und-mira",
+       "lena-und-der-kleine-fisch",
+       "lisas-laterne",
+       "nuri-hoert-mehr",
+       "otto-der-otter",
+       "tag-und-nacht",
+       "tags-darauf",
+       "vom-ei-zum-schmetterling",
+       "vom-korn-zum-brot"
+      ],
+      "teens": [
+       "das-alte-hotel",
+       "das-echo",
+       "das-foto",
+       "das-geheimnis-im-alten-turm",
+       "das-leben-der-bienen",
+       "das-licht-in-der-hoehle",
+       "das-los",
+       "das-mikrofon",
+       "das-ruder",
+       "de-g2-das-mittagessen-im-hof",
+       "de-g2-der-barbierjunge",
+       "de-g2-der-geheilte-patient",
+       "de-g2-der-kluge-richter",
+       "de-g2-kannitverstan",
+       "de-g2-seltsamer-spazierritt",
+       "de-w2-das-fahrrad",
+       "de-w2-der-kompass",
+       "de-w2-die-brille",
+       "der-anrufer",
+       "der-fund-im-moor",
+       "der-garten-hinter-dem-haus",
+       "der-graue-kater",
+       "der-marmorsaal",
+       "der-mond",
+       "der-riss",
+       "der-schall",
+       "der-schlaf",
+       "der-stein",
+       "der-strudel",
+       "der-weg-des-wassers",
+       "der-wind",
+       "der-zweite-schluessel",
+       "die-ameisen",
+       "die-antenne",
+       "die-bank-am-fluss",
+       "die-frist",
+       "die-halde",
+       "die-halle-in-der-nacht",
+       "die-insel-in-der-furt",
+       "die-kette",
+       "die-letzte-kiste",
+       "die-letzten-zehn-prozent",
+       "die-martinswand",
+       "die-maus-im-turm",
+       "die-nachricht-auf-seite-zwoelf",
+       "die-nachtschicht",
+       "die-neunte-stufe",
+       "die-terrasse",
+       "die-uhr-steht-still",
+       "die-wolle",
+       "die-zweite-quelle",
+       "ein-jahr-im-wald",
+       "kaffee-von-der-kirsche-in-die-tasse",
+       "otto-der-otter",
+       "tag-und-nacht",
+       "tags-darauf",
+       "vom-korn-zum-brot",
+       "was-ein-quadratmeter-boden-leistet",
+       "wie-das-wasser-in-die-leitung-kommt",
+       "wie-eine-e-mail-reist"
+      ],
+      "erwachsen": [
+       "das-alte-hotel",
+       "das-papier",
+       "de-g3-das-bettelweib-von-locarno",
+       "de-g3-das-dorf-auf-der-heide",
+       "de-g3-das-wiedersehen-in-falun",
+       "de-g3-der-fremde-herr",
+       "de-g3-der-geduldige-mann",
+       "de-g3-der-junge-mann-aus-london",
+       "de-g3-der-kaiser-und-die-obstfrau",
+       "de-g3-der-kuebelreiter",
+       "de-g3-der-ploetzliche-spaziergang",
+       "de-g3-der-reiter-im-dorf-bei-jena",
+       "de-g3-der-silberne-loeffel",
+       "de-g3-der-stein-vor-dem-haus",
+       "de-g3-die-anmut-und-der-spiegel",
+       "de-g3-die-antwort-des-schreibers",
+       "de-g3-die-drei-diebe",
+       "de-g3-vor-dem-gesetz",
+       "de-w2-das-glas",
+       "de-w2-das-insulin",
+       "de-w2-das-segel",
+       "de-w2-der-beton",
+       "de-w2-der-dachstuhl",
+       "de-w2-der-fuehrhund",
+       "de-w2-der-kaese",
+       "de-w2-der-rost",
+       "de-w2-der-sauerteig",
+       "de-w2-der-tunnel",
+       "de-w2-der-ziegel",
+       "de-w2-die-sprachausgabe",
+       "de-w2-die-tinte",
+       "de-w2-die-uhr",
+       "der-chor",
+       "der-dienstplan",
+       "der-garten-hinter-dem-haus",
+       "der-kahn",
+       "der-kai",
+       "der-kalk",
+       "der-laden",
+       "der-marmorsaal",
+       "der-notruf",
+       "der-sturm",
+       "der-tunnel",
+       "der-zweite-schluessel",
+       "die-backstube",
+       "die-bank-am-fluss",
+       "die-ernte",
+       "die-haltestelle",
+       "die-kantine",
+       "die-letzte-kiste",
+       "die-nachtschicht",
+       "die-schleuse",
+       "die-terrasse",
+       "die-truhe",
+       "die-turmuhr",
+       "die-wand",
+       "die-wolle",
+       "kaffee-von-der-kirsche-in-die-tasse",
+       "wie-das-wasser-in-die-leitung-kommt",
+       "wie-eine-e-mail-reist"
+      ]
+     },
+     "en": {
+      "kids": [
+       "en-from-seed-to-plant",
+       "en-g1-a-tiny-seed",
+       "en-g1-anansi-and-wisdom",
+       "en-g1-chicken-and-millipede",
+       "en-g1-decision",
+       "en-g1-donkey-child",
+       "en-g1-grandmas-bananas",
+       "en-g1-hen-and-eagle",
+       "en-g1-holidays-with-grandmother",
+       "en-g1-magozwe",
+       "en-g1-nozibele-and-the-three-hairs",
+       "en-g1-sakimas-song",
+       "en-g1-simbegwire",
+       "en-g1-the-day-i-left-for-the-city",
+       "en-g1-the-honeyguide",
+       "en-g1-what-vusis-sister-said",
+       "en-g1-why-hippos-have-no-hair",
+       "en-how-ants-find-food",
+       "en-how-birds-build-a-nest",
+       "en-i4-one-frame-at-a-time",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-kestrel-on-the-flat-roof",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-noon-radio",
+       "en-i4-the-pigeon-and-the-green-ring",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-six-dots",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-the-train-to-nan",
+       "en-i4-the-tune-in-the-cellar",
+       "en-i4-the-weather-roof",
+       "en-i4-where-money-came-from",
+       "en-salt-and-the-sea",
+       "en-the-cat-in-the-attic",
+       "en-the-hare-at-dusk",
+       "en-the-light-in-the-garden-shed",
+       "en-the-moon-and-the-month",
+       "en-the-otter-at-the-ford",
+       "en-the-red-hen-at-the-school-gate",
+       "en-the-shell-at-the-tide-line",
+       "en-the-tin-on-the-shelf",
+       "en-the-wooden-whistle",
+       "en-w1-how-a-feather-holds-the-heat",
+       "en-w1-how-a-seed-travels",
+       "en-w1-how-a-ship-stands-on-water",
+       "en-w1-how-a-snail-moves",
+       "en-w1-how-bats-hear-the-dark",
+       "en-w1-how-ice-floats",
+       "en-w1-how-leaves-turn-red-and-gold",
+       "en-w1-how-owls-hear-in-the-dark",
+       "en-w1-how-soap-cleans",
+       "en-w1-the-bones-in-a-hand",
+       "en-w1-what-a-shadow-is",
+       "en-w1-what-makes-a-rainbow",
+       "en-w1-where-the-wind-comes-from",
+       "en-weg-kids-best-birthday-bridge",
+       "en-weg-kids-fort-in-the-forest",
+       "en-weg-kids-grand-market-morning",
+       "en-weg-kids-little-drum-at-home",
+       "en-weg-kids-nine-kites",
+       "en-weg-kids-pip-the-puppy",
+       "en-weg-kids-sam-the-lamb",
+       "en-weg-kids-school-garden-club",
+       "en-weg-kids-tide-trail-otters",
+       "en-weg-kids-trail-of-four-stones",
+       "en-weg-kids-wheel-by-the-water",
+       "en-weg-kids-wind-and-snow",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas"
+      ],
+      "teens": [
+       "a-trip-through-space",
+       "en-baldwin-a-laconic-answer",
+       "en-baldwin-alexander-and-bucephalus",
+       "en-baldwin-androclus-and-the-lion",
+       "en-baldwin-antonio-canova",
+       "en-baldwin-bruce-and-the-spider",
+       "en-baldwin-damon-and-pythias",
+       "en-baldwin-diogenes-and-the-sunlight",
+       "en-baldwin-grace-darling",
+       "en-baldwin-king-canute-and-the-tide",
+       "en-baldwin-picciola",
+       "en-baldwin-the-bell-of-atri",
+       "en-baldwin-the-endless-tale",
+       "en-baldwin-the-miller-of-the-dee",
+       "en-behind-the-sports-hall",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-one-in-one-out",
+       "en-i4-the-books-in-the-shelter",
+       "en-i4-the-ford-at-fell-head",
+       "en-i4-the-heat-in-the-hall",
+       "en-i4-the-holdall-on-rail-three",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-letter-that-ran-late",
+       "en-i4-the-mending-hall",
+       "en-i4-the-night-train-north",
+       "en-i4-the-photo-she-did-not-post",
+       "en-i4-the-pitch-behind-the-flats",
+       "en-i4-the-placement-in-the-limb-shop",
+       "en-i4-the-six-dots",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-the-station-at-ten-to-nine",
+       "en-i4-what-a-battery-really-does",
+       "en-i4-where-money-came-from",
+       "en-light-and-the-second",
+       "en-the-cliff-trail",
+       "en-the-flood-line",
+       "en-the-ninth-snare",
+       "en-the-river-and-the-sea",
+       "en-the-signal-on-the-ridge",
+       "en-the-third-floor",
+       "en-the-third-stair",
+       "en-the-wallet-in-the-long-grass",
+       "en-w1-how-a-clock-marks-the-hours",
+       "en-w1-how-a-compass-finds-north",
+       "en-w1-how-a-lock-works",
+       "en-w1-how-bridges-stand",
+       "en-w1-how-glass-is-made",
+       "en-w1-how-paper-is-made",
+       "en-w1-how-sound-reaches-the-ear",
+       "en-w1-how-the-tides-move",
+       "en-w1-how-wool-becomes-cloth",
+       "en-w1-what-a-volcano-does",
+       "en-w1-what-rust-does-to-iron",
+       "en-weg-teens-a-desert-island-holds-on",
+       "en-weg-teens-a-mural-for-station-road",
+       "en-weg-teens-a-proper-plan",
+       "en-weg-teens-a-test-of-nerve",
+       "en-weg-teens-a-warm-memory",
+       "en-weg-teens-a-weekend-away",
+       "en-weg-teens-how-a-robot-learns",
+       "en-weg-teens-the-first-drumline-show",
+       "en-weg-teens-the-owl-at-the-window",
+       "en-weg-teens-the-sailors-last-letter",
+       "en-weg-teens-trust-on-the-trail",
+       "en-weg-teens-why-light-outruns-sound",
+       "how-animals-sleep",
+       "nell-and-the-harbour-cat",
+       "the-copper-key",
+       "too-many-bananas",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ],
+      "erwachsen": [
+       "a-trip-through-space",
+       "en-cheese-and-months",
+       "en-e1-a-pair-of-silk-stockings",
+       "en-e1-a-respectable-woman",
+       "en-e1-a-service-of-love",
+       "en-e1-after-twenty-years",
+       "en-e1-by-courier",
+       "en-e1-dusk",
+       "en-e1-ripe-figs",
+       "en-e1-the-boar-pig",
+       "en-e1-the-cop-and-the-anthem",
+       "en-e1-the-dolls-house",
+       "en-e1-the-garden-party",
+       "en-e1-the-gift-of-the-magi",
+       "en-e1-the-green-door",
+       "en-e1-the-last-leaf",
+       "en-e1-the-lumber-room",
+       "en-e1-the-open-window",
+       "en-e1-the-philanthropist-and-the-cat",
+       "en-e1-the-skylight-room",
+       "en-e1-the-stalled-ox",
+       "en-e1-the-story-of-an-hour",
+       "en-e1-the-story-teller",
+       "en-i4-last-winter-at-the-baths",
+       "en-i4-the-book-of-first-frosts",
+       "en-i4-the-caretaker-and-the-frost",
+       "en-i4-the-chart-of-the-coast",
+       "en-i4-the-interpreter-at-the-housing-desk",
+       "en-i4-the-label-in-store-three",
+       "en-i4-the-larder-at-the-old-hall",
+       "en-i4-the-last-turn-at-the-wheel",
+       "en-i4-the-mending-hall",
+       "en-i4-the-quarry-road",
+       "en-i4-the-rota-on-the-hall-door",
+       "en-i4-the-slates-that-hold-the-sun",
+       "en-i4-the-stall-at-the-dale-head",
+       "en-i4-what-a-battery-really-does",
+       "en-sound-under-the-sea",
+       "en-the-fall-in-the-drain",
+       "en-the-left-hand",
+       "en-the-line-at-the-alder",
+       "en-the-salt-shed",
+       "en-the-three-oak-doors",
+       "en-the-wall-between-two-gardens",
+       "en-w1-how-a-sail-moves-a-boat",
+       "en-w1-how-a-screen-reader-speaks",
+       "en-w1-how-a-well-reaches-water",
+       "en-w1-how-ink-was-made",
+       "en-w1-how-insulin-was-found",
+       "en-w1-how-rubber-became-useful",
+       "en-w1-how-wood-bends-and-holds",
+       "en-w1-what-a-barometer-measures",
+       "en-w1-what-a-guide-dog-learns",
+       "en-w1-what-a-lighthouse-does",
+       "en-w1-what-a-thermometer-does",
+       "en-w1-what-concrete-does",
+       "en-weg-erw-a-community-garden-morning",
+       "en-weg-erw-a-quiet-return-north",
+       "en-weg-erw-basics-of-a-broad-business",
+       "en-weg-erw-farmer-in-harmony",
+       "en-weg-erw-fathers-health",
+       "en-weg-erw-forest-and-shore",
+       "en-weg-erw-house-by-the-trail",
+       "en-weg-erw-how-sundials-tell-the-hour",
+       "en-weg-erw-light-through-garden-gate",
+       "en-weg-erw-proper-plan-airport",
+       "en-weg-erw-the-same-early-hour",
+       "en-weg-erw-winter-winds",
+       "en-what-a-kilogram-is",
+       "how-animals-sleep",
+       "water-and-weather",
+       "yellowstone-first-park"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "arcs": {
+  "kids": {
+   "de": [
+    "spinne"
+   ],
+   "en": []
+  },
+  "teens": {
+   "de": [
+    "spinne",
+    "tn-de-c-iss",
+    "tn-de-c-koerper"
+   ],
+   "en": [
+    "arc-en-sleep",
+    "arc-en-space"
+   ]
+  },
+  "erwachsen": {
+   "de": [],
+   "en": [
+    "arc-en-sleep",
+    "arc-en-space"
+   ]
+  }
+ },
+ "serienRegale": {
+  "de": {
+   "kids": {
+    "slugs": [
+     "anna-und-das-boot",
+     "ben-findet-ein-ei",
+     "bruno-backt-brot",
+     "das-echo",
+     "das-fest-an-der-linde",
+     "das-geheimnis-im-alten-turm",
+     "das-karussell-am-kanal",
+     "das-leben-der-bienen",
+     "das-licht-in-der-hoehle",
+     "das-nest-in-der-tanne",
+     "das-rote-fahrrad",
+     "de-g2-khalai-spricht-mit-pflanzen",
+     "de-g2-kinder-aus-wachs",
+     "de-g2-zama-ist-toll",
+     "de-g2-ziege-hund-und-kuh",
+     "de-w2-das-ohr",
+     "de-w2-das-salz-im-winter",
+     "de-w2-der-apfelbaum-im-jahr",
+     "de-w2-der-igel-im-winter",
+     "de-w2-der-regenbogen",
+     "de-w2-der-schatten",
+     "de-w2-die-kartoffel",
+     "de-w2-die-kerze",
+     "de-w2-die-milch",
+     "der-efeu-an-der-nordseite",
+     "der-ferienhof",
+     "der-flur-hinter-der-aula",
+     "der-fuchs-an-der-garage",
+     "der-graue-kater",
+     "der-handschuh-im-schnee",
+     "der-hund-an-der-tankstelle",
+     "der-igel-in-der-nacht",
+     "der-kleine-schneemann",
+     "der-marienkaefer",
+     "der-regenwurm",
+     "der-riss",
+     "der-rost-an-der-klinke",
+     "der-rote-hut",
+     "der-schatten-im-garten",
+     "der-uhu-hinter-der-luke",
+     "der-weg-des-wassers",
+     "die-ameisen",
+     "die-ente-in-der-rinne",
+     "die-grille-im-gras",
+     "die-kreide-an-der-tafel",
+     "die-maus-im-turm",
+     "die-nachricht-auf-seite-zwoelf",
+     "die-schatzkarte",
+     "die-spinne",
+     "die-uhr-steht-still",
+     "ein-jahr-im-wald",
+     "filo-und-mira",
+     "lena-und-der-kleine-fisch",
+     "lisas-laterne",
+     "nuri-hoert-mehr",
+     "otto-der-otter",
+     "tag-und-nacht",
+     "tags-darauf",
+     "vom-ei-zum-schmetterling",
+     "vom-korn-zum-brot"
+    ],
+    "inhalt": {
+     "anzahl": 2976,
+     "hash": "ce77f8ee36fbf83a17ee715e"
+    }
+   },
+   "teens": {
+    "slugs": [
+     "das-alte-hotel",
+     "das-echo",
+     "das-foto",
+     "das-geheimnis-im-alten-turm",
+     "das-leben-der-bienen",
+     "das-licht-in-der-hoehle",
+     "das-los",
+     "das-mikrofon",
+     "das-ruder",
+     "de-g2-das-mittagessen-im-hof",
+     "de-g2-der-barbierjunge",
+     "de-g2-der-geheilte-patient",
+     "de-g2-der-kluge-richter",
+     "de-g2-kannitverstan",
+     "de-g2-seltsamer-spazierritt",
+     "de-w2-das-fahrrad",
+     "de-w2-der-kompass",
+     "de-w2-die-brille",
+     "der-anrufer",
+     "der-fund-im-moor",
+     "der-garten-hinter-dem-haus",
+     "der-graue-kater",
+     "der-marmorsaal",
+     "der-mond",
+     "der-riss",
+     "der-schall",
+     "der-schlaf",
+     "der-stein",
+     "der-strudel",
+     "der-weg-des-wassers",
+     "der-wind",
+     "der-zweite-schluessel",
+     "die-ameisen",
+     "die-antenne",
+     "die-bank-am-fluss",
+     "die-frist",
+     "die-halde",
+     "die-halle-in-der-nacht",
+     "die-insel-in-der-furt",
+     "die-kette",
+     "die-letzte-kiste",
+     "die-letzten-zehn-prozent",
+     "die-martinswand",
+     "die-maus-im-turm",
+     "die-nachricht-auf-seite-zwoelf",
+     "die-nachtschicht",
+     "die-neunte-stufe",
+     "die-terrasse",
+     "die-uhr-steht-still",
+     "die-wolle",
+     "die-zweite-quelle",
+     "ein-jahr-im-wald",
+     "kaffee-von-der-kirsche-in-die-tasse",
+     "otto-der-otter",
+     "tag-und-nacht",
+     "tags-darauf",
+     "vom-korn-zum-brot",
+     "was-ein-quadratmeter-boden-leistet",
+     "wie-das-wasser-in-die-leitung-kommt",
+     "wie-eine-e-mail-reist"
+    ],
+    "inhalt": {
+     "anzahl": 2904,
+     "hash": "c57466ac60615db6a969b6fa"
+    }
+   },
+   "erwachsen": {
+    "slugs": [
+     "das-alte-hotel",
+     "das-papier",
+     "de-g3-das-bettelweib-von-locarno",
+     "de-g3-das-dorf-auf-der-heide",
+     "de-g3-das-wiedersehen-in-falun",
+     "de-g3-der-fremde-herr",
+     "de-g3-der-geduldige-mann",
+     "de-g3-der-junge-mann-aus-london",
+     "de-g3-der-kaiser-und-die-obstfrau",
+     "de-g3-der-kuebelreiter",
+     "de-g3-der-ploetzliche-spaziergang",
+     "de-g3-der-reiter-im-dorf-bei-jena",
+     "de-g3-der-silberne-loeffel",
+     "de-g3-der-stein-vor-dem-haus",
+     "de-g3-die-anmut-und-der-spiegel",
+     "de-g3-die-antwort-des-schreibers",
+     "de-g3-die-drei-diebe",
+     "de-g3-vor-dem-gesetz",
+     "de-w2-das-glas",
+     "de-w2-das-insulin",
+     "de-w2-das-segel",
+     "de-w2-der-beton",
+     "de-w2-der-dachstuhl",
+     "de-w2-der-fuehrhund",
+     "de-w2-der-kaese",
+     "de-w2-der-rost",
+     "de-w2-der-sauerteig",
+     "de-w2-der-tunnel",
+     "de-w2-der-ziegel",
+     "de-w2-die-sprachausgabe",
+     "de-w2-die-tinte",
+     "de-w2-die-uhr",
+     "der-chor",
+     "der-dienstplan",
+     "der-garten-hinter-dem-haus",
+     "der-kahn",
+     "der-kai",
+     "der-kalk",
+     "der-laden",
+     "der-marmorsaal",
+     "der-notruf",
+     "der-sturm",
+     "der-tunnel",
+     "der-zweite-schluessel",
+     "die-backstube",
+     "die-bank-am-fluss",
+     "die-ernte",
+     "die-haltestelle",
+     "die-kantine",
+     "die-letzte-kiste",
+     "die-nachtschicht",
+     "die-schleuse",
+     "die-terrasse",
+     "die-truhe",
+     "die-turmuhr",
+     "die-wand",
+     "die-wolle",
+     "kaffee-von-der-kirsche-in-die-tasse",
+     "wie-das-wasser-in-die-leitung-kommt",
+     "wie-eine-e-mail-reist"
+    ],
+    "inhalt": {
+     "anzahl": 2928,
+     "hash": "5db0a1a14faf0954415c9e3b"
+    }
+   }
+  },
+  "en": {
+   "kids": {
+    "slugs": [
+     "en-from-seed-to-plant",
+     "en-g1-a-tiny-seed",
+     "en-g1-anansi-and-wisdom",
+     "en-g1-chicken-and-millipede",
+     "en-g1-decision",
+     "en-g1-donkey-child",
+     "en-g1-grandmas-bananas",
+     "en-g1-hen-and-eagle",
+     "en-g1-holidays-with-grandmother",
+     "en-g1-magozwe",
+     "en-g1-nozibele-and-the-three-hairs",
+     "en-g1-sakimas-song",
+     "en-g1-simbegwire",
+     "en-g1-the-day-i-left-for-the-city",
+     "en-g1-the-honeyguide",
+     "en-g1-what-vusis-sister-said",
+     "en-g1-why-hippos-have-no-hair",
+     "en-how-ants-find-food",
+     "en-how-birds-build-a-nest",
+     "en-i4-one-frame-at-a-time",
+     "en-i4-one-in-one-out",
+     "en-i4-the-books-in-the-shelter",
+     "en-i4-the-heat-in-the-hall",
+     "en-i4-the-kestrel-on-the-flat-roof",
+     "en-i4-the-letter-that-ran-late",
+     "en-i4-the-noon-radio",
+     "en-i4-the-pigeon-and-the-green-ring",
+     "en-i4-the-pitch-behind-the-flats",
+     "en-i4-the-six-dots",
+     "en-i4-the-station-at-ten-to-nine",
+     "en-i4-the-train-to-nan",
+     "en-i4-the-tune-in-the-cellar",
+     "en-i4-the-weather-roof",
+     "en-i4-where-money-came-from",
+     "en-salt-and-the-sea",
+     "en-the-cat-in-the-attic",
+     "en-the-hare-at-dusk",
+     "en-the-light-in-the-garden-shed",
+     "en-the-moon-and-the-month",
+     "en-the-otter-at-the-ford",
+     "en-the-red-hen-at-the-school-gate",
+     "en-the-shell-at-the-tide-line",
+     "en-the-tin-on-the-shelf",
+     "en-the-wooden-whistle",
+     "en-w1-how-a-feather-holds-the-heat",
+     "en-w1-how-a-seed-travels",
+     "en-w1-how-a-ship-stands-on-water",
+     "en-w1-how-a-snail-moves",
+     "en-w1-how-bats-hear-the-dark",
+     "en-w1-how-ice-floats",
+     "en-w1-how-leaves-turn-red-and-gold",
+     "en-w1-how-owls-hear-in-the-dark",
+     "en-w1-how-soap-cleans",
+     "en-w1-the-bones-in-a-hand",
+     "en-w1-what-a-shadow-is",
+     "en-w1-what-makes-a-rainbow",
+     "en-w1-where-the-wind-comes-from",
+     "en-weg-kids-best-birthday-bridge",
+     "en-weg-kids-fort-in-the-forest",
+     "en-weg-kids-grand-market-morning",
+     "en-weg-kids-little-drum-at-home",
+     "en-weg-kids-nine-kites",
+     "en-weg-kids-pip-the-puppy",
+     "en-weg-kids-sam-the-lamb",
+     "en-weg-kids-school-garden-club",
+     "en-weg-kids-tide-trail-otters",
+     "en-weg-kids-trail-of-four-stones",
+     "en-weg-kids-wheel-by-the-water",
+     "en-weg-kids-wind-and-snow",
+     "nell-and-the-harbour-cat",
+     "the-copper-key",
+     "too-many-bananas"
+    ],
+    "inhalt": {
+     "anzahl": 3628,
+     "hash": "e9d38f1c80a660a584f94db7"
+    }
+   },
+   "teens": {
+    "slugs": [
+     "a-trip-through-space",
+     "en-baldwin-a-laconic-answer",
+     "en-baldwin-alexander-and-bucephalus",
+     "en-baldwin-androclus-and-the-lion",
+     "en-baldwin-antonio-canova",
+     "en-baldwin-bruce-and-the-spider",
+     "en-baldwin-damon-and-pythias",
+     "en-baldwin-diogenes-and-the-sunlight",
+     "en-baldwin-grace-darling",
+     "en-baldwin-king-canute-and-the-tide",
+     "en-baldwin-picciola",
+     "en-baldwin-the-bell-of-atri",
+     "en-baldwin-the-endless-tale",
+     "en-baldwin-the-miller-of-the-dee",
+     "en-behind-the-sports-hall",
+     "en-i4-last-winter-at-the-baths",
+     "en-i4-one-in-one-out",
+     "en-i4-the-books-in-the-shelter",
+     "en-i4-the-ford-at-fell-head",
+     "en-i4-the-heat-in-the-hall",
+     "en-i4-the-holdall-on-rail-three",
+     "en-i4-the-label-in-store-three",
+     "en-i4-the-larder-at-the-old-hall",
+     "en-i4-the-letter-that-ran-late",
+     "en-i4-the-mending-hall",
+     "en-i4-the-night-train-north",
+     "en-i4-the-photo-she-did-not-post",
+     "en-i4-the-pitch-behind-the-flats",
+     "en-i4-the-placement-in-the-limb-shop",
+     "en-i4-the-six-dots",
+     "en-i4-the-stall-at-the-dale-head",
+     "en-i4-the-station-at-ten-to-nine",
+     "en-i4-what-a-battery-really-does",
+     "en-i4-where-money-came-from",
+     "en-light-and-the-second",
+     "en-the-cliff-trail",
+     "en-the-flood-line",
+     "en-the-ninth-snare",
+     "en-the-river-and-the-sea",
+     "en-the-signal-on-the-ridge",
+     "en-the-third-floor",
+     "en-the-third-stair",
+     "en-the-wallet-in-the-long-grass",
+     "en-w1-how-a-clock-marks-the-hours",
+     "en-w1-how-a-compass-finds-north",
+     "en-w1-how-a-lock-works",
+     "en-w1-how-bridges-stand",
+     "en-w1-how-glass-is-made",
+     "en-w1-how-paper-is-made",
+     "en-w1-how-sound-reaches-the-ear",
+     "en-w1-how-the-tides-move",
+     "en-w1-how-wool-becomes-cloth",
+     "en-w1-what-a-volcano-does",
+     "en-w1-what-rust-does-to-iron",
+     "en-weg-teens-a-desert-island-holds-on",
+     "en-weg-teens-a-mural-for-station-road",
+     "en-weg-teens-a-proper-plan",
+     "en-weg-teens-a-test-of-nerve",
+     "en-weg-teens-a-warm-memory",
+     "en-weg-teens-a-weekend-away",
+     "en-weg-teens-how-a-robot-learns",
+     "en-weg-teens-the-first-drumline-show",
+     "en-weg-teens-the-owl-at-the-window",
+     "en-weg-teens-the-sailors-last-letter",
+     "en-weg-teens-trust-on-the-trail",
+     "en-weg-teens-why-light-outruns-sound",
+     "how-animals-sleep",
+     "nell-and-the-harbour-cat",
+     "the-copper-key",
+     "too-many-bananas",
+     "water-and-weather",
+     "yellowstone-first-park"
+    ],
+    "inhalt": {
+     "anzahl": 3664,
+     "hash": "6ed11f66ea329a5f5a9b220c"
+    }
+   },
+   "erwachsen": {
+    "slugs": [
+     "a-trip-through-space",
+     "en-cheese-and-months",
+     "en-e1-a-pair-of-silk-stockings",
+     "en-e1-a-respectable-woman",
+     "en-e1-a-service-of-love",
+     "en-e1-after-twenty-years",
+     "en-e1-by-courier",
+     "en-e1-dusk",
+     "en-e1-ripe-figs",
+     "en-e1-the-boar-pig",
+     "en-e1-the-cop-and-the-anthem",
+     "en-e1-the-dolls-house",
+     "en-e1-the-garden-party",
+     "en-e1-the-gift-of-the-magi",
+     "en-e1-the-green-door",
+     "en-e1-the-last-leaf",
+     "en-e1-the-lumber-room",
+     "en-e1-the-open-window",
+     "en-e1-the-philanthropist-and-the-cat",
+     "en-e1-the-skylight-room",
+     "en-e1-the-stalled-ox",
+     "en-e1-the-story-of-an-hour",
+     "en-e1-the-story-teller",
+     "en-i4-last-winter-at-the-baths",
+     "en-i4-the-book-of-first-frosts",
+     "en-i4-the-caretaker-and-the-frost",
+     "en-i4-the-chart-of-the-coast",
+     "en-i4-the-interpreter-at-the-housing-desk",
+     "en-i4-the-label-in-store-three",
+     "en-i4-the-larder-at-the-old-hall",
+     "en-i4-the-last-turn-at-the-wheel",
+     "en-i4-the-mending-hall",
+     "en-i4-the-quarry-road",
+     "en-i4-the-rota-on-the-hall-door",
+     "en-i4-the-slates-that-hold-the-sun",
+     "en-i4-the-stall-at-the-dale-head",
+     "en-i4-what-a-battery-really-does",
+     "en-sound-under-the-sea",
+     "en-the-fall-in-the-drain",
+     "en-the-left-hand",
+     "en-the-line-at-the-alder",
+     "en-the-salt-shed",
+     "en-the-three-oak-doors",
+     "en-the-wall-between-two-gardens",
+     "en-w1-how-a-sail-moves-a-boat",
+     "en-w1-how-a-screen-reader-speaks",
+     "en-w1-how-a-well-reaches-water",
+     "en-w1-how-ink-was-made",
+     "en-w1-how-insulin-was-found",
+     "en-w1-how-rubber-became-useful",
+     "en-w1-how-wood-bends-and-holds",
+     "en-w1-what-a-barometer-measures",
+     "en-w1-what-a-guide-dog-learns",
+     "en-w1-what-a-lighthouse-does",
+     "en-w1-what-a-thermometer-does",
+     "en-w1-what-concrete-does",
+     "en-weg-erw-a-community-garden-morning",
+     "en-weg-erw-a-quiet-return-north",
+     "en-weg-erw-basics-of-a-broad-business",
+     "en-weg-erw-farmer-in-harmony",
+     "en-weg-erw-fathers-health",
+     "en-weg-erw-forest-and-shore",
+     "en-weg-erw-house-by-the-trail",
+     "en-weg-erw-how-sundials-tell-the-hour",
+     "en-weg-erw-light-through-garden-gate",
+     "en-weg-erw-proper-plan-airport",
+     "en-weg-erw-the-same-early-hour",
+     "en-weg-erw-winter-winds",
+     "en-what-a-kilogram-is",
+     "how-animals-sleep",
+     "water-and-weather",
+     "yellowstone-first-park"
+    ],
+    "inhalt": {
+     "anzahl": 3564,
+     "hash": "349713c56b5f525916fe830c"
+    }
+   }
+  }
+ },
+ "lektionen": {
+  "ids": [
+   "en-home-fj",
+   "en-home-dk",
+   "en-home-sl",
+   "en-home-complete",
+   "en-freq-ei",
+   "en-freq-rt",
+   "en-freq-ho",
+   "en-freq-n",
+   "en-shift",
+   "en-more-uy",
+   "en-more-wm",
+   "en-more-cg",
+   "en-more-pb",
+   "en-rare-vx",
+   "en-rare-qz",
+   "en-punctuation",
+   "en-quote",
+   "en-numbers",
+   "en-symbols"
+  ],
+  "kinds": [
+   "home",
+   "home",
+   "home",
+   "home",
+   "letters",
+   "letters",
+   "letters",
+   "letters",
+   "shift",
+   "letters",
+   "letters",
+   "letters",
+   "letters",
+   "letters",
+   "letters",
+   "punctuation",
+   "punctuation",
+   "numbers",
+   "symbols"
+  ],
+  "newKeys": [
+   [
+    "f",
+    "j"
+   ],
+   [
+    "d",
+    "k"
+   ],
+   [
+    "s",
+    "l"
+   ],
+   [
+    "a",
+    ";"
+   ],
+   [
+    "e",
+    "i"
+   ],
+   [
+    "r",
+    "t"
+   ],
+   [
+    "h",
+    "o"
+   ],
+   [
+    "n"
+   ],
+   [],
+   [
+    "u",
+    "y"
+   ],
+   [
+    "w",
+    "m"
+   ],
+   [
+    "c",
+    "g"
+   ],
+   [
+    "p",
+    "b"
+   ],
+   [
+    "v",
+    "x"
+   ],
+   [
+    "q",
+    "z"
+   ],
+   [
+    ".",
+    ",",
+    "'",
+    "?",
+    "!",
+    "-",
+    ":"
+   ],
+   [
+    "\""
+   ],
+   [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+   ],
+   [
+    "(",
+    ")",
+    "+",
+    "*",
+    "/",
+    "\\",
+    "=",
+    "%",
+    "&",
+    "@",
+    "#",
+    "$",
+    "£",
+    "<",
+    ">",
+    "[",
+    "]",
+    "{",
+    "}",
+    "|",
+    "^",
+    "~",
+    "€"
+   ]
+  ],
+  "titles": {
+   "anzahl": 19,
+   "hash": "83abfc7f2b5091ab4f989040"
+  }
+ },
+ "wordRoots": {
+  "kids": {
+   "wurzeln-nature": {
+    "anzahl": 20,
+    "hash": "72868d47126a55727ad012eb"
+   },
+   "wurzeln-numbers": {
+    "anzahl": 20,
+    "hash": "412a766388929a76557790a9"
+   },
+   "wurzeln-people": {
+    "anzahl": 20,
+    "hash": "12a05630f942f18fe04342e8"
+   },
+   "wurzeln-words": {
+    "anzahl": 20,
+    "hash": "f22c3bf215cb0a2f26819367"
+   },
+   "wurzelnc-1": {
+    "anzahl": 27,
+    "hash": "3fbcbe4a2776b5f10a0b429c"
+   },
+   "wurzelnc-2": {
+    "anzahl": 26,
+    "hash": "519b9dd0a4e044f9203ebf1a"
+   },
+   "wurzelnc-3": {
+    "anzahl": 27,
+    "hash": "bdf483aa809d188d1c00e91c"
+   }
+  },
+  "teens": {
+   "wurzeln-nature": {
+    "anzahl": 20,
+    "hash": "4d4cca5b7c635b9ac934f370"
+   },
+   "wurzeln-numbers": {
+    "anzahl": 20,
+    "hash": "4ab7e3f3efd36eb3dad022c3"
+   },
+   "wurzeln-people": {
+    "anzahl": 20,
+    "hash": "31a8ad5ae9b4f7e1a96dda12"
+   },
+   "wurzeln-words": {
+    "anzahl": 20,
+    "hash": "eb6389f82a019f204f26c119"
+   },
+   "wurzelnc-1": {
+    "anzahl": 27,
+    "hash": "ef57f94ddf363d51e7498143"
+   },
+   "wurzelnc-2": {
+    "anzahl": 26,
+    "hash": "10612bf4f881ece2f2f1c633"
+   },
+   "wurzelnc-3": {
+    "anzahl": 27,
+    "hash": "a15c217dc8a01e01037c6a85"
+   }
+  },
+  "erwachsen": {
+   "wurzeln-nature": {
+    "anzahl": 20,
+    "hash": "8b72aff7cb446b51f2de9175"
+   },
+   "wurzeln-numbers": {
+    "anzahl": 20,
+    "hash": "71bb9851c9e2555608048e07"
+   },
+   "wurzeln-people": {
+    "anzahl": 20,
+    "hash": "1a4c94d0274339aa2a07c914"
+   },
+   "wurzeln-words": {
+    "anzahl": 20,
+    "hash": "3be8b8fdc16bec1f00f2a7bc"
+   },
+   "wurzelnc-1": {
+    "anzahl": 27,
+    "hash": "a33d1262378844d61beef16f"
+   },
+   "wurzelnc-2": {
+    "anzahl": 26,
+    "hash": "18f68352ddf9c5b4f9289498"
+   },
+   "wurzelnc-3": {
+    "anzahl": 27,
+    "hash": "cf499e034f150dbf5c170c4e"
+   }
+  }
+ },
+ "wortspiele": {
+  "frueh16": {
+   "alphabetreihen": [
+    {
+     "anzahl": 12,
+     "hash": "7b9bca3dcea83e6781627806"
+    },
+    {
+     "anzahl": 12,
+     "hash": "316dfd92dd751acfc98e8579"
+    }
+   ],
+   "pyramide": [
+    {
+     "anzahl": 14,
+     "hash": "a8459fb35797ec3254b13e8a"
+    },
+    {
+     "anzahl": 14,
+     "hash": "4c6b15dd11e567861f103bfd"
+    }
+   ],
+   "wandernder-gross": [
+    {
+     "anzahl": 12,
+     "hash": "2d8da8a7be6f8f5e03ca8f17"
+    },
+    {
+     "anzahl": 12,
+     "hash": "402ba5bae6250d4ee7e011e1"
+    }
+   ],
+   "fingerdiktat": [
+    {
+     "anzahl": 15,
+     "hash": "c172909efb0c3ec6d65d87a9"
+    },
+    {
+     "anzahl": 13,
+     "hash": "67b8a0f473a8ff0fd4e31b1f"
+    }
+   ],
+   "buchstabensalat": [
+    {
+     "anzahl": 1,
+     "hash": "1b803f666e0214b8c4d35de7"
+    },
+    {
+     "anzahl": 1,
+     "hash": "ab64aa94e7bab549458440df"
+    }
+   ],
+   "lueckentext": [
+    {
+     "anzahl": 12,
+     "hash": "1e3ffd96ed1579395236c88a"
+    },
+    {
+     "anzahl": 12,
+     "hash": "5b7b98014bb5b042e10d297d"
+    }
+   ],
+   "handschwerpunkte": [
+    {
+     "anzahl": 12,
+     "hash": "1b8fdc951da36a8c57e9e8a8"
+    },
+    {
+     "anzahl": 12,
+     "hash": "d99e82182607def4a078281f"
+    }
+   ],
+   "spiegelwoerter": [
+    {
+     "anzahl": 12,
+     "hash": "804da75aff87669191e22c7a"
+    },
+    {
+     "anzahl": 12,
+     "hash": "9fbbf034c5d18437f0a649d7"
+    }
+   ],
+   "zwillingsgriffe": [
+    {
+     "anzahl": 12,
+     "hash": "6e44625baa23e087ca15e1ac"
+    },
+    {
+     "anzahl": 12,
+     "hash": "4d869d4b3b8d8a0c2e038bb8"
+    }
+   ],
+   "zahlendiktat": [],
+   "wasfehlt": [
+    {
+     "anzahl": 8,
+     "hash": "c13ea86b5bd60e66974287c2"
+    },
+    {
+     "anzahl": 8,
+     "hash": "756fae231208bcff58474795"
+    }
+   ],
+   "langersatz": [],
+   "korrekturlesen": [
+    {
+     "anzahl": 7,
+     "hash": "b05c0be9c50f480eff280165"
+    },
+    {
+     "anzahl": 7,
+     "hash": "63120f0336bde58d16e302a9"
+    }
+   ]
+  },
+  "voll": {
+   "alphabetreihen": [
+    {
+     "anzahl": 12,
+     "hash": "2e9569bc44272ea34c250cda"
+    },
+    {
+     "anzahl": 12,
+     "hash": "bd80c52b404dd577921a6827"
+    }
+   ],
+   "pyramide": [
+    {
+     "anzahl": 14,
+     "hash": "00c8abf8e669059f93761e7e"
+    },
+    {
+     "anzahl": 14,
+     "hash": "a9a7e32abee306298fd244fa"
+    }
+   ],
+   "wandernder-gross": [
+    {
+     "anzahl": 13,
+     "hash": "cdf592b10a3d0632cfc101ef"
+    },
+    {
+     "anzahl": 13,
+     "hash": "d51d987426bbf6b45d2e606c"
+    }
+   ],
+   "fingerdiktat": [
+    {
+     "anzahl": 15,
+     "hash": "3d478c4a124847a712a11392"
+    },
+    {
+     "anzahl": 15,
+     "hash": "2a42c473fa920122b5e2fbf6"
+    }
+   ],
+   "buchstabensalat": [
+    {
+     "anzahl": 1,
+     "hash": "8cf5105b204d4527c9ff6117"
+    },
+    {
+     "anzahl": 1,
+     "hash": "dac696f1a6d8f81d1a81407f"
+    }
+   ],
+   "lueckentext": [
+    {
+     "anzahl": 13,
+     "hash": "6f87e8db1e3053d879bbf9b7"
+    },
+    {
+     "anzahl": 12,
+     "hash": "a90f9f09587041495befc66c"
+    }
+   ],
+   "handschwerpunkte": [
+    {
+     "anzahl": 12,
+     "hash": "fd44cadb6ef878a8db4f893c"
+    },
+    {
+     "anzahl": 12,
+     "hash": "b234eda5a0a2a3d5a71d3c45"
+    }
+   ],
+   "spiegelwoerter": [
+    {
+     "anzahl": 12,
+     "hash": "c99602b6589682991ec5f90a"
+    },
+    {
+     "anzahl": 12,
+     "hash": "7383387efd24dd70610dc9b3"
+    }
+   ],
+   "zwillingsgriffe": [
+    {
+     "anzahl": 12,
+     "hash": "161e417f74f93bdf6da2c87d"
+    },
+    {
+     "anzahl": 12,
+     "hash": "309f8a7c03569843ae80f60d"
+    }
+   ],
+   "zahlendiktat": [
+    {
+     "anzahl": 10,
+     "hash": "49366237914e30d96b835513"
+    },
+    {
+     "anzahl": 10,
+     "hash": "1de37457243bf086278db89b"
+    }
+   ],
+   "wasfehlt": [
+    {
+     "anzahl": 8,
+     "hash": "2d413ca389ed26f92ec17ded"
+    },
+    {
+     "anzahl": 8,
+     "hash": "05122fc665d9515497ae65ef"
+    }
+   ],
+   "langersatz": [
+    {
+     "anzahl": 13,
+     "hash": "e925dd60caac6aeed05f99b7"
+    },
+    {
+     "anzahl": 12,
+     "hash": "0cfb28a0fc14fff4566d3b0c"
+    }
+   ],
+   "korrekturlesen": [
+    {
+     "anzahl": 8,
+     "hash": "689c2d93ff82e76ff2aca4e0"
+    },
+    {
+     "anzahl": 8,
+     "hash": "d06e47a46387e9e033f0978a"
+    }
+   ]
+  }
+ }
+}
