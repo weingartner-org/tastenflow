@@ -1,6 +1,27 @@
 # Mitmachen
 
-Danke, dass Sie helfen wollen.
+Danke, dass Sie helfen wollen. Tastenflow wird gemeinsam in **einer** Fassung
+weitergebaut, die für alle Kinder und Lehrkräfte läuft (tastenflow.org). Verbesserungen
+gehören deshalb in dieses Repository und nicht in eine eigene Abspaltung: So
+haben alle etwas davon, und niemand pflegt dieselbe Arbeit zweimal.
+
+## Wie Sie mitgestalten können
+
+- **Fehler und Wünsche** als Fehlermeldung (Issue) - auch ohne Code.
+- **Inhalte**: Übungstexte, Übersetzungen, Beschreibungen.
+- **Testen** mit Screenreader und Braillezeile und berichten, was Sie erleben.
+- **Code** als Pull-Request (siehe unten).
+
+**Größere Änderungen bitte zuerst als Issue besprechen**, bevor Sie viel Arbeit
+hineinstecken. Wir entscheiden, was ins Hauptprojekt kommt, und sagen Ihnen
+offen, wenn etwas nicht passt - zum Beispiel, weil es die Bedienung ohne Maus
+bricht oder Kinder-Daten gefährdet.
+
+Zum Mitmachen brauchen Sie keinen eigenen Server: Ausprobieren ohne Server
+(siehe README) genügt. Wenn Sie eine eigene Installation betreiben möchten,
+sprechen Sie uns vorher an - oft lässt sich Ihr Wunsch im Hauptprojekt lösen,
+etwa als Einstellung. Eine veränderte Fassung braucht einen eigenen Namen
+([NAMEN-UND-MARKEN.md](NAMEN-UND-MARKEN.md)).
 
 ## Fehler melden
 

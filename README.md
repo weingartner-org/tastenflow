@@ -17,6 +17,14 @@ Das Paket enthält:
 Sie ist ein eigenständiger Auszug aus der Lernplattform, in der Tastenflow
 entsteht. Die anderen Programme der Plattform sind nicht Teil dieses Pakets.
 
+## Mitmachen
+
+Wir bauen Tastenflow gemeinsam in **einer** Fassung weiter - Fehler melden,
+Inhalte und Übersetzungen beisteuern, mit Screenreader testen oder Code
+einbringen. Wie das geht und was uns wichtig ist: [CONTRIBUTING.md](CONTRIBUTING.md).
+Bitte bringen Sie Verbesserungen hierher zurück, statt eine Parallelversion
+aufzubauen.
+
 ## Ausprobieren (ohne Server)
 
 ```bash
@@ -28,7 +36,14 @@ npm run dev
 Der Trainer öffnet sich auf der Startseite. Die Klassenverwaltung liegt unter
 `/meine-klasse`.
 
-## Mit eigenem PocketBase
+## Eigene Installation (für Entwicklung und Sonderfälle)
+
+Das ist der Weg für alle, die am Code mitarbeiten oder aus besonderen Gründen (zum Beispiel
+Datenschutz einer Einrichtung) selbst betreiben müssen. Für den Unterricht empfehlen wir
+die gemeinsame Installation auf tastenflow.org. Wer ändert, bringt die Änderungen bitte
+als Beitrag zurück ([CONTRIBUTING.md](CONTRIBUTING.md)) und gibt einer veränderten
+Fassung einen eigenen Namen. Der Betrieb liegt dann bei Ihnen: Datenschutz, Sicherung,
+Updates und Kinder-Daten - wir leisten dafür keinen Support.
 
 Entwickelt und betrieben wird Tastenflow mit **PocketBase 0.38** (die Server-Regeln
 sind JavaScript für PocketBase und nutzen dessen Hook-Schnittstelle). Neuere Versionen
@@ -106,9 +121,6 @@ npm test
   `public/fonts/SCHRIFTEN-LIZENZEN.md`.
 - **Namen und Logos** sind nicht freigegeben: [NAMEN-UND-MARKEN.md](NAMEN-UND-MARKEN.md).
 
-## Mitmachen
-
-Siehe [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
@@ -139,3 +151,6 @@ operator fills them in (`src/features/legal/`). Code: EUPL-1.2. Project
 content: CC BY-SA 4.0. Third-party parts keep their licenses (`REUSE.toml`);
 the Primæ typeface is CC BY-NC-SA (non-commercial only). The names and logos
 are not licensed - see NAMEN-UND-MARKEN.md.
+
+**Contributing:** we build this project together in one shared version. Please bring
+improvements back instead of forking - see CONTRIBUTING.md.
